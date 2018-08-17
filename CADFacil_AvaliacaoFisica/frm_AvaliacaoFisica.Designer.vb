@@ -26,8 +26,8 @@ Partial Class frm_AvaliacaoFisica
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.GroupBox6 = New System.Windows.Forms.GroupBox()
-        Me.txtQuantSeman = New System.Windows.Forms.TextBox()
-        Me.txtTempoAtiv = New System.Windows.Forms.TextBox()
+        Me.TxtQuantSeman = New System.Windows.Forms.TextBox()
+        Me.TxtTempoAtiv = New System.Windows.Forms.TextBox()
         Me.Label77 = New System.Windows.Forms.Label()
         Me.Label78 = New System.Windows.Forms.Label()
         Me.Label79 = New System.Windows.Forms.Label()
@@ -35,184 +35,182 @@ Partial Class frm_AvaliacaoFisica
         Me.Label81 = New System.Windows.Forms.Label()
         Me.Label62 = New System.Windows.Forms.Label()
         Me.Label67 = New System.Windows.Forms.Label()
-        Me.txtDistanciaAtiv = New System.Windows.Forms.TextBox()
+        Me.TxtDistanciaAtiv = New System.Windows.Forms.TextBox()
         Me.Label71 = New System.Windows.Forms.Label()
         Me.Label75 = New System.Windows.Forms.Label()
-        Me.txtVo2Trab = New System.Windows.Forms.TextBox()
-        Me.txtRitmoAtiv = New System.Windows.Forms.TextBox()
+        Me.TxtVo2Trab = New System.Windows.Forms.TextBox()
+        Me.TxtRitmoAtiv = New System.Windows.Forms.TextBox()
         Me.Label76 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.Label40 = New System.Windows.Forms.Label()
         Me.Label39 = New System.Windows.Forms.Label()
-        Me.txtVO2 = New System.Windows.Forms.TextBox()
-        Me.txtClaCoo = New System.Windows.Forms.TextBox()
-        Me.txtClaFle = New System.Windows.Forms.TextBox()
-        Me.txtClaAbd = New System.Windows.Forms.TextBox()
-        Me.txtClasv = New System.Windows.Forms.TextBox()
+        Me.TxtVO2 = New System.Windows.Forms.TextBox()
+        Me.TxtClaCoo = New System.Windows.Forms.TextBox()
+        Me.TxtClaFle = New System.Windows.Forms.TextBox()
+        Me.TxtClaAbd = New System.Windows.Forms.TextBox()
+        Me.TxtClasv = New System.Windows.Forms.TextBox()
         Me.Label38 = New System.Windows.Forms.Label()
         Me.Label37 = New System.Windows.Forms.Label()
         Me.Label36 = New System.Windows.Forms.Label()
         Me.Label35 = New System.Windows.Forms.Label()
         Me.Label34 = New System.Windows.Forms.Label()
         Me.Label33 = New System.Windows.Forms.Label()
-        Me.txtCooper = New System.Windows.Forms.TextBox()
-        Me.txtFlexaoBraco = New System.Windows.Forms.TextBox()
-        Me.txtAbdominais = New System.Windows.Forms.TextBox()
-        Me.txtSaltoVert = New System.Windows.Forms.TextBox()
+        Me.TxtCooper = New System.Windows.Forms.TextBox()
+        Me.TxtFlexaoBraco = New System.Windows.Forms.TextBox()
+        Me.TxtAbdominais = New System.Windows.Forms.TextBox()
+        Me.TxtSaltoVert = New System.Windows.Forms.TextBox()
         Me.Label32 = New System.Windows.Forms.Label()
         Me.Label31 = New System.Windows.Forms.Label()
         Me.Label30 = New System.Windows.Forms.Label()
         Me.Label29 = New System.Windows.Forms.Label()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.GroupBox5 = New System.Windows.Forms.GroupBox()
-        Me.txtResIMC = New System.Windows.Forms.TextBox()
+        Me.TxtResIMC = New System.Windows.Forms.TextBox()
         Me.Label57 = New System.Windows.Forms.Label()
-        Me.txtResCFisico = New System.Windows.Forms.TextBox()
-        Me.txtPesoNormal = New System.Windows.Forms.TextBox()
-        Me.txtResOssatura = New System.Windows.Forms.TextBox()
+        Me.TxtResCFisico = New System.Windows.Forms.TextBox()
+        Me.TxtPesoNormal = New System.Windows.Forms.TextBox()
+        Me.TxtResOssatura = New System.Windows.Forms.TextBox()
         Me.Label60 = New System.Windows.Forms.Label()
         Me.Label74 = New System.Windows.Forms.Label()
-        Me.txtIMC = New System.Windows.Forms.TextBox()
-        Me.txtPesoMaximo = New System.Windows.Forms.TextBox()
+        Me.TxtIMC = New System.Windows.Forms.TextBox()
+        Me.TxtPesoMaximo = New System.Windows.Forms.TextBox()
         Me.Label73 = New System.Windows.Forms.Label()
         Me.Label61 = New System.Windows.Forms.Label()
         Me.Label72 = New System.Windows.Forms.Label()
-        Me.txtPesoMinimo = New System.Windows.Forms.TextBox()
-        Me.txtCFisico = New System.Windows.Forms.TextBox()
+        Me.TxtPesoMinimo = New System.Windows.Forms.TextBox()
+        Me.TxtCFisico = New System.Windows.Forms.TextBox()
         Me.Label68 = New System.Windows.Forms.Label()
-        Me.txtOssatura = New System.Windows.Forms.TextBox()
+        Me.TxtOssatura = New System.Windows.Forms.TextBox()
         Me.Label69 = New System.Windows.Forms.Label()
         Me.Label70 = New System.Windows.Forms.Label()
         Me.GroupBox8 = New System.Windows.Forms.GroupBox()
-        Me.txtPerdaDesGord = New System.Windows.Forms.TextBox()
+        Me.TxtPerdaDesGord = New System.Windows.Forms.TextBox()
         Me.Label84 = New System.Windows.Forms.Label()
         Me.Label92 = New System.Windows.Forms.Label()
         Me.Label94 = New System.Windows.Forms.Label()
-        Me.txtDiasNeces = New System.Windows.Forms.TextBox()
-        Me.txtMesesNecess = New System.Windows.Forms.TextBox()
+        Me.TxtDiasNeces = New System.Windows.Forms.TextBox()
+        Me.TxtMesesNecess = New System.Windows.Forms.TextBox()
         Me.GroupBox9 = New System.Windows.Forms.GroupBox()
-        Me.txtPesoDia = New System.Windows.Forms.TextBox()
+        Me.TxtPesoDia = New System.Windows.Forms.TextBox()
         Me.Label93 = New System.Windows.Forms.Label()
         Me.Label95 = New System.Windows.Forms.Label()
         Me.Label96 = New System.Windows.Forms.Label()
-        Me.txtPesoSemana = New System.Windows.Forms.TextBox()
-        Me.txtPesoMes = New System.Windows.Forms.TextBox()
+        Me.TxtPesoSemana = New System.Windows.Forms.TextBox()
+        Me.TxtPesoMes = New System.Windows.Forms.TextBox()
         Me.TabPage4 = New System.Windows.Forms.TabPage()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.Label55 = New System.Windows.Forms.Label()
-        Me.txtPorcGordura = New System.Windows.Forms.TextBox()
+        Me.TxtPorcGordura = New System.Windows.Forms.TextBox()
         Me.Label43 = New System.Windows.Forms.Label()
         Me.Label44 = New System.Windows.Forms.Label()
         Me.Label42 = New System.Windows.Forms.Label()
-        Me.txtPesoOsseo = New System.Windows.Forms.TextBox()
-        Me.txtMcm = New System.Windows.Forms.TextBox()
+        Me.TxtPesoOsseo = New System.Windows.Forms.TextBox()
+        Me.TxtMcm = New System.Windows.Forms.TextBox()
         Me.Label46 = New System.Windows.Forms.Label()
         Me.Label47 = New System.Windows.Forms.Label()
         Me.Label48 = New System.Windows.Forms.Label()
         Me.Label49 = New System.Windows.Forms.Label()
-        Me.txtPesoResid = New System.Windows.Forms.TextBox()
-        Me.txtPesoMusc = New System.Windows.Forms.TextBox()
-        Me.txtPesoGordura = New System.Windows.Forms.TextBox()
+        Me.TxtPesoResid = New System.Windows.Forms.TextBox()
+        Me.TxtPesoMusc = New System.Windows.Forms.TextBox()
+        Me.TxtPesoGordura = New System.Windows.Forms.TextBox()
         Me.Label50 = New System.Windows.Forms.Label()
         Me.Label51 = New System.Windows.Forms.Label()
         Me.Label52 = New System.Windows.Forms.Label()
         Me.Label53 = New System.Windows.Forms.Label()
         Me.GroupBox7 = New System.Windows.Forms.GroupBox()
-        Me.txtAtividade = New System.Windows.Forms.TextBox()
+        Me.TxtAtividade = New System.Windows.Forms.TextBox()
         Me.Label91 = New System.Windows.Forms.Label()
         Me.Label90 = New System.Windows.Forms.Label()
         Me.Label83 = New System.Windows.Forms.Label()
         Me.Label89 = New System.Windows.Forms.Label()
         Me.Label88 = New System.Windows.Forms.Label()
-        Me.txtRepouso = New System.Windows.Forms.TextBox()
+        Me.TxtRepouso = New System.Windows.Forms.TextBox()
         Me.Label85 = New System.Windows.Forms.Label()
-        Me.txtDiario = New System.Windows.Forms.TextBox()
+        Me.TxtDiario = New System.Windows.Forms.TextBox()
         Me.Label86 = New System.Windows.Forms.Label()
-        Me.txtTotal = New System.Windows.Forms.TextBox()
+        Me.TxtTotal = New System.Windows.Forms.TextBox()
         Me.Label87 = New System.Windows.Forms.Label()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
         Me.Label54 = New System.Windows.Forms.Label()
-        Me.txtPerna = New System.Windows.Forms.TextBox()
-        Me.txtPe = New System.Windows.Forms.TextBox()
+        Me.TxtPerna = New System.Windows.Forms.TextBox()
+        Me.TxtPe = New System.Windows.Forms.TextBox()
         Me.Label56 = New System.Windows.Forms.Label()
-        Me.txtCabeca = New System.Windows.Forms.TextBox()
+        Me.TxtCabeca = New System.Windows.Forms.TextBox()
         Me.Label58 = New System.Windows.Forms.Label()
-        Me.txtMao = New System.Windows.Forms.TextBox()
-        Me.txtCoxa = New System.Windows.Forms.TextBox()
+        Me.TxtMao = New System.Windows.Forms.TextBox()
+        Me.TxtCoxa = New System.Windows.Forms.TextBox()
         Me.Label59 = New System.Windows.Forms.Label()
-        Me.txtAntebraco = New System.Windows.Forms.TextBox()
-        Me.txtBraco = New System.Windows.Forms.TextBox()
-        Me.txtTronco = New System.Windows.Forms.TextBox()
+        Me.TxtAntebraco = New System.Windows.Forms.TextBox()
+        Me.TxtBraco = New System.Windows.Forms.TextBox()
+        Me.TxtTronco = New System.Windows.Forms.TextBox()
         Me.Label63 = New System.Windows.Forms.Label()
         Me.Label64 = New System.Windows.Forms.Label()
         Me.Label65 = New System.Windows.Forms.Label()
         Me.Label66 = New System.Windows.Forms.Label()
-        Me.cbxAtivFisDia = New System.Windows.Forms.ComboBox()
+        Me.CbxAtivFisDia = New System.Windows.Forms.ComboBox()
         Me.Label82 = New System.Windows.Forms.Label()
-        Me.lblRelCinQua = New System.Windows.Forms.Label()
-        Me.btnProcessar = New System.Windows.Forms.Button()
+        Me.LblRelCinQua = New System.Windows.Forms.Label()
+        Me.BtnProcessar = New System.Windows.Forms.Button()
         Me.Label45 = New System.Windows.Forms.Label()
-        Me.txtRelCinQua = New System.Windows.Forms.TextBox()
+        Me.TxtRelCinQua = New System.Windows.Forms.TextBox()
         Me.Label41 = New System.Windows.Forms.Label()
-        Me.dtpDataNasc = New System.Windows.Forms.DateTimePicker()
-        Me.txtIdade = New System.Windows.Forms.TextBox()
+        Me.DtpDataNasc = New System.Windows.Forms.DateTimePicker()
+        Me.TxtIdade = New System.Windows.Forms.TextBox()
         Me.Label28 = New System.Windows.Forms.Label()
-        Me.cbxSexo = New System.Windows.Forms.ComboBox()
-        Me.txtRadio = New System.Windows.Forms.TextBox()
+        Me.CbxSexo = New System.Windows.Forms.ComboBox()
+        Me.TxtRadio = New System.Windows.Forms.TextBox()
         Me.Label24 = New System.Windows.Forms.Label()
-        Me.txtFemur = New System.Windows.Forms.TextBox()
+        Me.TxtFemur = New System.Windows.Forms.TextBox()
         Me.Label25 = New System.Windows.Forms.Label()
-        Me.txtQuadril = New System.Windows.Forms.TextBox()
+        Me.TxtQuadril = New System.Windows.Forms.TextBox()
         Me.Label26 = New System.Windows.Forms.Label()
-        Me.txtCintura = New System.Windows.Forms.TextBox()
+        Me.TxtCintura = New System.Windows.Forms.TextBox()
         Me.Label27 = New System.Windows.Forms.Label()
-        Me.txtPunho = New System.Windows.Forms.TextBox()
+        Me.TxtPunho = New System.Windows.Forms.TextBox()
         Me.Label21 = New System.Windows.Forms.Label()
-        Me.txtJoelho = New System.Windows.Forms.TextBox()
+        Me.TxtJoelho = New System.Windows.Forms.TextBox()
         Me.Label22 = New System.Windows.Forms.Label()
         Me.txtTornozelo = New System.Windows.Forms.TextBox()
         Me.Label23 = New System.Windows.Forms.Label()
-        Me.txtPernaEsquerda = New System.Windows.Forms.TextBox()
+        Me.TxtPernaEsquerda = New System.Windows.Forms.TextBox()
         Me.Label17 = New System.Windows.Forms.Label()
-        Me.txtPernaDireita = New System.Windows.Forms.TextBox()
+        Me.TxtPernaDireita = New System.Windows.Forms.TextBox()
         Me.Label18 = New System.Windows.Forms.Label()
-        Me.txtCoxaEsquerda = New System.Windows.Forms.TextBox()
+        Me.TxtCoxaEsquerda = New System.Windows.Forms.TextBox()
         Me.Label19 = New System.Windows.Forms.Label()
-        Me.txtCoxaDireita = New System.Windows.Forms.TextBox()
+        Me.TxtCoxaDireita = New System.Windows.Forms.TextBox()
         Me.Label20 = New System.Windows.Forms.Label()
-        Me.txtAbdomen = New System.Windows.Forms.TextBox()
+        Me.TxtAbdomen = New System.Windows.Forms.TextBox()
         Me.Label14 = New System.Windows.Forms.Label()
-        Me.txtTorax = New System.Windows.Forms.TextBox()
+        Me.TxtTorax = New System.Windows.Forms.TextBox()
         Me.Label15 = New System.Windows.Forms.Label()
-        Me.txtAnteEsquerdo = New System.Windows.Forms.TextBox()
+        Me.TxtAnteEsquerdo = New System.Windows.Forms.TextBox()
         Me.Label16 = New System.Windows.Forms.Label()
-        Me.txtAnteDireito = New System.Windows.Forms.TextBox()
+        Me.TxtAnteDireito = New System.Windows.Forms.TextBox()
         Me.Label13 = New System.Windows.Forms.Label()
-        Me.txtBraEsquerdo = New System.Windows.Forms.TextBox()
+        Me.TxtBraEsquerdo = New System.Windows.Forms.TextBox()
         Me.Label12 = New System.Windows.Forms.Label()
-        Me.txtBraDireito = New System.Windows.Forms.TextBox()
+        Me.TxtBraDireito = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.txtFCmaxima = New System.Windows.Forms.TextBox()
+        Me.TxtFCmaxima = New System.Windows.Forms.TextBox()
         Me.Label10 = New System.Windows.Forms.Label()
-        Me.txtFCrepouso = New System.Windows.Forms.TextBox()
+        Me.TxtFCrepouso = New System.Windows.Forms.TextBox()
         Me.Label11 = New System.Windows.Forms.Label()
-        Me.txtAltura = New System.Windows.Forms.TextBox()
+        Me.TxtAltura = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.txtPeso = New System.Windows.Forms.TextBox()
+        Me.TxtPeso = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.txtNome = New System.Windows.Forms.TextBox()
+        Me.TxtNome = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.txtLocal = New System.Windows.Forms.TextBox()
+        Me.TxtLocal = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.txtProf = New System.Windows.Forms.TextBox()
+        Me.TxtProf = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.dtpHoje = New System.Windows.Forms.DateTimePicker()
+        Me.DtpHoje = New System.Windows.Forms.DateTimePicker()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
-        Me.TécnicoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SerialToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ImpressãoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.FitaMétricaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AdipômetroToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -261,8 +259,8 @@ Partial Class frm_AvaliacaoFisica
         '
         'GroupBox6
         '
-        Me.GroupBox6.Controls.Add(Me.txtQuantSeman)
-        Me.GroupBox6.Controls.Add(Me.txtTempoAtiv)
+        Me.GroupBox6.Controls.Add(Me.TxtQuantSeman)
+        Me.GroupBox6.Controls.Add(Me.TxtTempoAtiv)
         Me.GroupBox6.Controls.Add(Me.Label77)
         Me.GroupBox6.Controls.Add(Me.Label78)
         Me.GroupBox6.Controls.Add(Me.Label79)
@@ -270,11 +268,11 @@ Partial Class frm_AvaliacaoFisica
         Me.GroupBox6.Controls.Add(Me.Label81)
         Me.GroupBox6.Controls.Add(Me.Label62)
         Me.GroupBox6.Controls.Add(Me.Label67)
-        Me.GroupBox6.Controls.Add(Me.txtDistanciaAtiv)
+        Me.GroupBox6.Controls.Add(Me.TxtDistanciaAtiv)
         Me.GroupBox6.Controls.Add(Me.Label71)
         Me.GroupBox6.Controls.Add(Me.Label75)
-        Me.GroupBox6.Controls.Add(Me.txtVo2Trab)
-        Me.GroupBox6.Controls.Add(Me.txtRitmoAtiv)
+        Me.GroupBox6.Controls.Add(Me.TxtVo2Trab)
+        Me.GroupBox6.Controls.Add(Me.TxtRitmoAtiv)
         Me.GroupBox6.Controls.Add(Me.Label76)
         Me.GroupBox6.Location = New System.Drawing.Point(476, 6)
         Me.GroupBox6.Name = "GroupBox6"
@@ -283,27 +281,27 @@ Partial Class frm_AvaliacaoFisica
         Me.GroupBox6.TabStop = False
         Me.GroupBox6.Text = "Prescrição do Treinamento"
         '
-        'txtQuantSeman
+        'TxtQuantSeman
         '
-        Me.txtQuantSeman.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.txtQuantSeman.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
-        Me.txtQuantSeman.Location = New System.Drawing.Point(151, 102)
-        Me.txtQuantSeman.MaxLength = 6
-        Me.txtQuantSeman.Name = "txtQuantSeman"
-        Me.txtQuantSeman.Size = New System.Drawing.Size(63, 21)
-        Me.txtQuantSeman.TabIndex = 101
-        Me.txtQuantSeman.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TxtQuantSeman.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.TxtQuantSeman.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
+        Me.TxtQuantSeman.Location = New System.Drawing.Point(151, 102)
+        Me.TxtQuantSeman.MaxLength = 6
+        Me.TxtQuantSeman.Name = "TxtQuantSeman"
+        Me.TxtQuantSeman.Size = New System.Drawing.Size(63, 21)
+        Me.TxtQuantSeman.TabIndex = 101
+        Me.TxtQuantSeman.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'txtTempoAtiv
+        'TxtTempoAtiv
         '
-        Me.txtTempoAtiv.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.txtTempoAtiv.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
-        Me.txtTempoAtiv.Location = New System.Drawing.Point(151, 82)
-        Me.txtTempoAtiv.MaxLength = 6
-        Me.txtTempoAtiv.Name = "txtTempoAtiv"
-        Me.txtTempoAtiv.Size = New System.Drawing.Size(63, 21)
-        Me.txtTempoAtiv.TabIndex = 100
-        Me.txtTempoAtiv.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TxtTempoAtiv.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.TxtTempoAtiv.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
+        Me.TxtTempoAtiv.Location = New System.Drawing.Point(151, 82)
+        Me.TxtTempoAtiv.MaxLength = 6
+        Me.TxtTempoAtiv.Name = "TxtTempoAtiv"
+        Me.TxtTempoAtiv.Size = New System.Drawing.Size(63, 21)
+        Me.TxtTempoAtiv.TabIndex = 100
+        Me.TxtTempoAtiv.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label77
         '
@@ -368,16 +366,16 @@ Partial Class frm_AvaliacaoFisica
         Me.Label67.TabIndex = 92
         Me.Label67.Text = "Distancia/ativ."
         '
-        'txtDistanciaAtiv
+        'TxtDistanciaAtiv
         '
-        Me.txtDistanciaAtiv.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.txtDistanciaAtiv.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
-        Me.txtDistanciaAtiv.Location = New System.Drawing.Point(151, 62)
-        Me.txtDistanciaAtiv.Name = "txtDistanciaAtiv"
-        Me.txtDistanciaAtiv.ReadOnly = True
-        Me.txtDistanciaAtiv.Size = New System.Drawing.Size(63, 21)
-        Me.txtDistanciaAtiv.TabIndex = 91
-        Me.txtDistanciaAtiv.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TxtDistanciaAtiv.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.TxtDistanciaAtiv.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
+        Me.TxtDistanciaAtiv.Location = New System.Drawing.Point(151, 62)
+        Me.TxtDistanciaAtiv.Name = "TxtDistanciaAtiv"
+        Me.TxtDistanciaAtiv.ReadOnly = True
+        Me.TxtDistanciaAtiv.Size = New System.Drawing.Size(63, 21)
+        Me.TxtDistanciaAtiv.TabIndex = 91
+        Me.TxtDistanciaAtiv.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label71
         '
@@ -397,27 +395,27 @@ Partial Class frm_AvaliacaoFisica
         Me.Label75.TabIndex = 88
         Me.Label75.Text = "% VO2 trab."
         '
-        'txtVo2Trab
+        'TxtVo2Trab
         '
-        Me.txtVo2Trab.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.txtVo2Trab.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
-        Me.txtVo2Trab.Location = New System.Drawing.Point(151, 23)
-        Me.txtVo2Trab.MaxLength = 6
-        Me.txtVo2Trab.Name = "txtVo2Trab"
-        Me.txtVo2Trab.Size = New System.Drawing.Size(63, 21)
-        Me.txtVo2Trab.TabIndex = 87
-        Me.txtVo2Trab.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TxtVo2Trab.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.TxtVo2Trab.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
+        Me.TxtVo2Trab.Location = New System.Drawing.Point(151, 23)
+        Me.TxtVo2Trab.MaxLength = 6
+        Me.TxtVo2Trab.Name = "TxtVo2Trab"
+        Me.TxtVo2Trab.Size = New System.Drawing.Size(63, 21)
+        Me.TxtVo2Trab.TabIndex = 87
+        Me.TxtVo2Trab.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'txtRitmoAtiv
+        'TxtRitmoAtiv
         '
-        Me.txtRitmoAtiv.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.txtRitmoAtiv.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
-        Me.txtRitmoAtiv.Location = New System.Drawing.Point(151, 42)
-        Me.txtRitmoAtiv.Name = "txtRitmoAtiv"
-        Me.txtRitmoAtiv.ReadOnly = True
-        Me.txtRitmoAtiv.Size = New System.Drawing.Size(63, 21)
-        Me.txtRitmoAtiv.TabIndex = 86
-        Me.txtRitmoAtiv.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TxtRitmoAtiv.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.TxtRitmoAtiv.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
+        Me.TxtRitmoAtiv.Location = New System.Drawing.Point(151, 42)
+        Me.TxtRitmoAtiv.Name = "TxtRitmoAtiv"
+        Me.TxtRitmoAtiv.ReadOnly = True
+        Me.TxtRitmoAtiv.Size = New System.Drawing.Size(63, 21)
+        Me.TxtRitmoAtiv.TabIndex = 86
+        Me.TxtRitmoAtiv.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label76
         '
@@ -432,21 +430,21 @@ Partial Class frm_AvaliacaoFisica
         '
         Me.GroupBox2.Controls.Add(Me.Label40)
         Me.GroupBox2.Controls.Add(Me.Label39)
-        Me.GroupBox2.Controls.Add(Me.txtVO2)
-        Me.GroupBox2.Controls.Add(Me.txtClaCoo)
-        Me.GroupBox2.Controls.Add(Me.txtClaFle)
-        Me.GroupBox2.Controls.Add(Me.txtClaAbd)
-        Me.GroupBox2.Controls.Add(Me.txtClasv)
+        Me.GroupBox2.Controls.Add(Me.TxtVO2)
+        Me.GroupBox2.Controls.Add(Me.TxtClaCoo)
+        Me.GroupBox2.Controls.Add(Me.TxtClaFle)
+        Me.GroupBox2.Controls.Add(Me.TxtClaAbd)
+        Me.GroupBox2.Controls.Add(Me.TxtClasv)
         Me.GroupBox2.Controls.Add(Me.Label38)
         Me.GroupBox2.Controls.Add(Me.Label37)
         Me.GroupBox2.Controls.Add(Me.Label36)
         Me.GroupBox2.Controls.Add(Me.Label35)
         Me.GroupBox2.Controls.Add(Me.Label34)
         Me.GroupBox2.Controls.Add(Me.Label33)
-        Me.GroupBox2.Controls.Add(Me.txtCooper)
-        Me.GroupBox2.Controls.Add(Me.txtFlexaoBraco)
-        Me.GroupBox2.Controls.Add(Me.txtAbdominais)
-        Me.GroupBox2.Controls.Add(Me.txtSaltoVert)
+        Me.GroupBox2.Controls.Add(Me.TxtCooper)
+        Me.GroupBox2.Controls.Add(Me.TxtFlexaoBraco)
+        Me.GroupBox2.Controls.Add(Me.TxtAbdominais)
+        Me.GroupBox2.Controls.Add(Me.TxtSaltoVert)
         Me.GroupBox2.Controls.Add(Me.Label32)
         Me.GroupBox2.Controls.Add(Me.Label31)
         Me.GroupBox2.Controls.Add(Me.Label30)
@@ -476,60 +474,60 @@ Partial Class frm_AvaliacaoFisica
         Me.Label39.TabIndex = 75
         Me.Label39.Text = "ml(kg.min)-1"
         '
-        'txtVO2
+        'TxtVO2
         '
-        Me.txtVO2.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.txtVO2.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
-        Me.txtVO2.Location = New System.Drawing.Point(182, 108)
-        Me.txtVO2.Name = "txtVO2"
-        Me.txtVO2.ReadOnly = True
-        Me.txtVO2.Size = New System.Drawing.Size(76, 21)
-        Me.txtVO2.TabIndex = 74
-        Me.txtVO2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TxtVO2.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.TxtVO2.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
+        Me.TxtVO2.Location = New System.Drawing.Point(182, 108)
+        Me.TxtVO2.Name = "TxtVO2"
+        Me.TxtVO2.ReadOnly = True
+        Me.TxtVO2.Size = New System.Drawing.Size(76, 21)
+        Me.TxtVO2.TabIndex = 74
+        Me.TxtVO2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'txtClaCoo
+        'TxtClaCoo
         '
-        Me.txtClaCoo.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.txtClaCoo.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtClaCoo.Location = New System.Drawing.Point(257, 89)
-        Me.txtClaCoo.Name = "txtClaCoo"
-        Me.txtClaCoo.ReadOnly = True
-        Me.txtClaCoo.Size = New System.Drawing.Size(119, 21)
-        Me.txtClaCoo.TabIndex = 73
-        Me.txtClaCoo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TxtClaCoo.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.TxtClaCoo.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtClaCoo.Location = New System.Drawing.Point(257, 89)
+        Me.TxtClaCoo.Name = "TxtClaCoo"
+        Me.TxtClaCoo.ReadOnly = True
+        Me.TxtClaCoo.Size = New System.Drawing.Size(119, 21)
+        Me.TxtClaCoo.TabIndex = 73
+        Me.TxtClaCoo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'txtClaFle
+        'TxtClaFle
         '
-        Me.txtClaFle.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.txtClaFle.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtClaFle.Location = New System.Drawing.Point(257, 70)
-        Me.txtClaFle.Name = "txtClaFle"
-        Me.txtClaFle.ReadOnly = True
-        Me.txtClaFle.Size = New System.Drawing.Size(119, 21)
-        Me.txtClaFle.TabIndex = 72
-        Me.txtClaFle.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TxtClaFle.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.TxtClaFle.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtClaFle.Location = New System.Drawing.Point(257, 70)
+        Me.TxtClaFle.Name = "TxtClaFle"
+        Me.TxtClaFle.ReadOnly = True
+        Me.TxtClaFle.Size = New System.Drawing.Size(119, 21)
+        Me.TxtClaFle.TabIndex = 72
+        Me.TxtClaFle.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'txtClaAbd
+        'TxtClaAbd
         '
-        Me.txtClaAbd.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.txtClaAbd.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtClaAbd.Location = New System.Drawing.Point(257, 51)
-        Me.txtClaAbd.Name = "txtClaAbd"
-        Me.txtClaAbd.ReadOnly = True
-        Me.txtClaAbd.Size = New System.Drawing.Size(119, 21)
-        Me.txtClaAbd.TabIndex = 71
-        Me.txtClaAbd.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TxtClaAbd.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.TxtClaAbd.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtClaAbd.Location = New System.Drawing.Point(257, 51)
+        Me.TxtClaAbd.Name = "TxtClaAbd"
+        Me.TxtClaAbd.ReadOnly = True
+        Me.TxtClaAbd.Size = New System.Drawing.Size(119, 21)
+        Me.TxtClaAbd.TabIndex = 71
+        Me.TxtClaAbd.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'txtClasv
+        'TxtClasv
         '
-        Me.txtClasv.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.txtClasv.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtClasv.Location = New System.Drawing.Point(257, 32)
-        Me.txtClasv.Name = "txtClasv"
-        Me.txtClasv.ReadOnly = True
-        Me.txtClasv.Size = New System.Drawing.Size(119, 21)
-        Me.txtClasv.TabIndex = 70
-        Me.txtClasv.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TxtClasv.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.TxtClasv.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtClasv.Location = New System.Drawing.Point(257, 32)
+        Me.TxtClasv.Name = "TxtClasv"
+        Me.TxtClasv.ReadOnly = True
+        Me.TxtClasv.Size = New System.Drawing.Size(119, 21)
+        Me.TxtClasv.TabIndex = 70
+        Me.TxtClasv.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label38
         '
@@ -585,45 +583,45 @@ Partial Class frm_AvaliacaoFisica
         Me.Label33.TabIndex = 64
         Me.Label33.Text = "cm"
         '
-        'txtCooper
+        'TxtCooper
         '
-        Me.txtCooper.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.txtCooper.Location = New System.Drawing.Point(137, 88)
-        Me.txtCooper.MaxLength = 6
-        Me.txtCooper.Name = "txtCooper"
-        Me.txtCooper.Size = New System.Drawing.Size(46, 20)
-        Me.txtCooper.TabIndex = 63
-        Me.txtCooper.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TxtCooper.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.TxtCooper.Location = New System.Drawing.Point(137, 88)
+        Me.TxtCooper.MaxLength = 6
+        Me.TxtCooper.Name = "TxtCooper"
+        Me.TxtCooper.Size = New System.Drawing.Size(46, 20)
+        Me.TxtCooper.TabIndex = 63
+        Me.TxtCooper.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'txtFlexaoBraco
+        'TxtFlexaoBraco
         '
-        Me.txtFlexaoBraco.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.txtFlexaoBraco.Location = New System.Drawing.Point(137, 69)
-        Me.txtFlexaoBraco.MaxLength = 6
-        Me.txtFlexaoBraco.Name = "txtFlexaoBraco"
-        Me.txtFlexaoBraco.Size = New System.Drawing.Size(46, 20)
-        Me.txtFlexaoBraco.TabIndex = 62
-        Me.txtFlexaoBraco.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TxtFlexaoBraco.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.TxtFlexaoBraco.Location = New System.Drawing.Point(137, 69)
+        Me.TxtFlexaoBraco.MaxLength = 6
+        Me.TxtFlexaoBraco.Name = "TxtFlexaoBraco"
+        Me.TxtFlexaoBraco.Size = New System.Drawing.Size(46, 20)
+        Me.TxtFlexaoBraco.TabIndex = 62
+        Me.TxtFlexaoBraco.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'txtAbdominais
+        'TxtAbdominais
         '
-        Me.txtAbdominais.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.txtAbdominais.Location = New System.Drawing.Point(137, 50)
-        Me.txtAbdominais.MaxLength = 6
-        Me.txtAbdominais.Name = "txtAbdominais"
-        Me.txtAbdominais.Size = New System.Drawing.Size(46, 20)
-        Me.txtAbdominais.TabIndex = 61
-        Me.txtAbdominais.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TxtAbdominais.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.TxtAbdominais.Location = New System.Drawing.Point(137, 50)
+        Me.TxtAbdominais.MaxLength = 6
+        Me.TxtAbdominais.Name = "TxtAbdominais"
+        Me.TxtAbdominais.Size = New System.Drawing.Size(46, 20)
+        Me.TxtAbdominais.TabIndex = 61
+        Me.TxtAbdominais.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'txtSaltoVert
+        'TxtSaltoVert
         '
-        Me.txtSaltoVert.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.txtSaltoVert.Location = New System.Drawing.Point(137, 31)
-        Me.txtSaltoVert.MaxLength = 6
-        Me.txtSaltoVert.Name = "txtSaltoVert"
-        Me.txtSaltoVert.Size = New System.Drawing.Size(46, 20)
-        Me.txtSaltoVert.TabIndex = 60
-        Me.txtSaltoVert.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TxtSaltoVert.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.TxtSaltoVert.Location = New System.Drawing.Point(137, 31)
+        Me.TxtSaltoVert.MaxLength = 6
+        Me.TxtSaltoVert.Name = "TxtSaltoVert"
+        Me.TxtSaltoVert.Size = New System.Drawing.Size(46, 20)
+        Me.TxtSaltoVert.TabIndex = 60
+        Me.TxtSaltoVert.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label32
         '
@@ -676,22 +674,22 @@ Partial Class frm_AvaliacaoFisica
         '
         'GroupBox5
         '
-        Me.GroupBox5.Controls.Add(Me.txtResIMC)
+        Me.GroupBox5.Controls.Add(Me.TxtResIMC)
         Me.GroupBox5.Controls.Add(Me.Label57)
-        Me.GroupBox5.Controls.Add(Me.txtResCFisico)
-        Me.GroupBox5.Controls.Add(Me.txtPesoNormal)
-        Me.GroupBox5.Controls.Add(Me.txtResOssatura)
+        Me.GroupBox5.Controls.Add(Me.TxtResCFisico)
+        Me.GroupBox5.Controls.Add(Me.TxtPesoNormal)
+        Me.GroupBox5.Controls.Add(Me.TxtResOssatura)
         Me.GroupBox5.Controls.Add(Me.Label60)
         Me.GroupBox5.Controls.Add(Me.Label74)
-        Me.GroupBox5.Controls.Add(Me.txtIMC)
-        Me.GroupBox5.Controls.Add(Me.txtPesoMaximo)
+        Me.GroupBox5.Controls.Add(Me.TxtIMC)
+        Me.GroupBox5.Controls.Add(Me.TxtPesoMaximo)
         Me.GroupBox5.Controls.Add(Me.Label73)
         Me.GroupBox5.Controls.Add(Me.Label61)
         Me.GroupBox5.Controls.Add(Me.Label72)
-        Me.GroupBox5.Controls.Add(Me.txtPesoMinimo)
-        Me.GroupBox5.Controls.Add(Me.txtCFisico)
+        Me.GroupBox5.Controls.Add(Me.TxtPesoMinimo)
+        Me.GroupBox5.Controls.Add(Me.TxtCFisico)
         Me.GroupBox5.Controls.Add(Me.Label68)
-        Me.GroupBox5.Controls.Add(Me.txtOssatura)
+        Me.GroupBox5.Controls.Add(Me.TxtOssatura)
         Me.GroupBox5.Controls.Add(Me.Label69)
         Me.GroupBox5.Controls.Add(Me.Label70)
         Me.GroupBox5.Location = New System.Drawing.Point(436, 15)
@@ -701,16 +699,16 @@ Partial Class frm_AvaliacaoFisica
         Me.GroupBox5.TabStop = False
         Me.GroupBox5.Text = "Peso Ideal"
         '
-        'txtResIMC
+        'TxtResIMC
         '
-        Me.txtResIMC.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.txtResIMC.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
-        Me.txtResIMC.Location = New System.Drawing.Point(295, 38)
-        Me.txtResIMC.Name = "txtResIMC"
-        Me.txtResIMC.ReadOnly = True
-        Me.txtResIMC.Size = New System.Drawing.Size(79, 21)
-        Me.txtResIMC.TabIndex = 95
-        Me.txtResIMC.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TxtResIMC.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.TxtResIMC.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
+        Me.TxtResIMC.Location = New System.Drawing.Point(295, 38)
+        Me.TxtResIMC.Name = "TxtResIMC"
+        Me.TxtResIMC.ReadOnly = True
+        Me.TxtResIMC.Size = New System.Drawing.Size(79, 21)
+        Me.TxtResIMC.TabIndex = 95
+        Me.TxtResIMC.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label57
         '
@@ -721,38 +719,38 @@ Partial Class frm_AvaliacaoFisica
         Me.Label57.TabIndex = 86
         Me.Label57.Text = "Kg"
         '
-        'txtResCFisico
+        'TxtResCFisico
         '
-        Me.txtResCFisico.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.txtResCFisico.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
-        Me.txtResCFisico.Location = New System.Drawing.Point(295, 76)
-        Me.txtResCFisico.Name = "txtResCFisico"
-        Me.txtResCFisico.ReadOnly = True
-        Me.txtResCFisico.Size = New System.Drawing.Size(79, 21)
-        Me.txtResCFisico.TabIndex = 94
-        Me.txtResCFisico.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TxtResCFisico.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.TxtResCFisico.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
+        Me.TxtResCFisico.Location = New System.Drawing.Point(295, 76)
+        Me.TxtResCFisico.Name = "TxtResCFisico"
+        Me.TxtResCFisico.ReadOnly = True
+        Me.TxtResCFisico.Size = New System.Drawing.Size(79, 21)
+        Me.TxtResCFisico.TabIndex = 94
+        Me.TxtResCFisico.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'txtPesoNormal
+        'TxtPesoNormal
         '
-        Me.txtPesoNormal.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.txtPesoNormal.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
-        Me.txtPesoNormal.Location = New System.Drawing.Point(73, 37)
-        Me.txtPesoNormal.Name = "txtPesoNormal"
-        Me.txtPesoNormal.ReadOnly = True
-        Me.txtPesoNormal.Size = New System.Drawing.Size(63, 21)
-        Me.txtPesoNormal.TabIndex = 80
-        Me.txtPesoNormal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TxtPesoNormal.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.TxtPesoNormal.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
+        Me.TxtPesoNormal.Location = New System.Drawing.Point(73, 37)
+        Me.TxtPesoNormal.Name = "TxtPesoNormal"
+        Me.TxtPesoNormal.ReadOnly = True
+        Me.TxtPesoNormal.Size = New System.Drawing.Size(63, 21)
+        Me.TxtPesoNormal.TabIndex = 80
+        Me.TxtPesoNormal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'txtResOssatura
+        'TxtResOssatura
         '
-        Me.txtResOssatura.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.txtResOssatura.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
-        Me.txtResOssatura.Location = New System.Drawing.Point(295, 57)
-        Me.txtResOssatura.Name = "txtResOssatura"
-        Me.txtResOssatura.ReadOnly = True
-        Me.txtResOssatura.Size = New System.Drawing.Size(79, 21)
-        Me.txtResOssatura.TabIndex = 93
-        Me.txtResOssatura.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TxtResOssatura.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.TxtResOssatura.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
+        Me.TxtResOssatura.Location = New System.Drawing.Point(295, 57)
+        Me.TxtResOssatura.Name = "TxtResOssatura"
+        Me.TxtResOssatura.ReadOnly = True
+        Me.TxtResOssatura.Size = New System.Drawing.Size(79, 21)
+        Me.TxtResOssatura.TabIndex = 93
+        Me.TxtResOssatura.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label60
         '
@@ -772,27 +770,27 @@ Partial Class frm_AvaliacaoFisica
         Me.Label74.TabIndex = 87
         Me.Label74.Text = "IMC"
         '
-        'txtIMC
+        'TxtIMC
         '
-        Me.txtIMC.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.txtIMC.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
-        Me.txtIMC.Location = New System.Drawing.Point(247, 38)
-        Me.txtIMC.Name = "txtIMC"
-        Me.txtIMC.ReadOnly = True
-        Me.txtIMC.Size = New System.Drawing.Size(49, 21)
-        Me.txtIMC.TabIndex = 92
-        Me.txtIMC.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TxtIMC.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.TxtIMC.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
+        Me.TxtIMC.Location = New System.Drawing.Point(247, 38)
+        Me.TxtIMC.Name = "TxtIMC"
+        Me.TxtIMC.ReadOnly = True
+        Me.TxtIMC.Size = New System.Drawing.Size(49, 21)
+        Me.TxtIMC.TabIndex = 92
+        Me.TxtIMC.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'txtPesoMaximo
+        'TxtPesoMaximo
         '
-        Me.txtPesoMaximo.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.txtPesoMaximo.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
-        Me.txtPesoMaximo.Location = New System.Drawing.Point(73, 75)
-        Me.txtPesoMaximo.Name = "txtPesoMaximo"
-        Me.txtPesoMaximo.ReadOnly = True
-        Me.txtPesoMaximo.Size = New System.Drawing.Size(63, 21)
-        Me.txtPesoMaximo.TabIndex = 62
-        Me.txtPesoMaximo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TxtPesoMaximo.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.TxtPesoMaximo.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
+        Me.TxtPesoMaximo.Location = New System.Drawing.Point(73, 75)
+        Me.TxtPesoMaximo.Name = "TxtPesoMaximo"
+        Me.TxtPesoMaximo.ReadOnly = True
+        Me.TxtPesoMaximo.Size = New System.Drawing.Size(63, 21)
+        Me.TxtPesoMaximo.TabIndex = 62
+        Me.TxtPesoMaximo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label73
         '
@@ -821,27 +819,27 @@ Partial Class frm_AvaliacaoFisica
         Me.Label72.TabIndex = 89
         Me.Label72.Text = "Compl. Física"
         '
-        'txtPesoMinimo
+        'TxtPesoMinimo
         '
-        Me.txtPesoMinimo.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.txtPesoMinimo.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
-        Me.txtPesoMinimo.Location = New System.Drawing.Point(73, 56)
-        Me.txtPesoMinimo.Name = "txtPesoMinimo"
-        Me.txtPesoMinimo.ReadOnly = True
-        Me.txtPesoMinimo.Size = New System.Drawing.Size(63, 21)
-        Me.txtPesoMinimo.TabIndex = 61
-        Me.txtPesoMinimo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TxtPesoMinimo.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.TxtPesoMinimo.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
+        Me.TxtPesoMinimo.Location = New System.Drawing.Point(73, 56)
+        Me.TxtPesoMinimo.Name = "TxtPesoMinimo"
+        Me.TxtPesoMinimo.ReadOnly = True
+        Me.TxtPesoMinimo.Size = New System.Drawing.Size(63, 21)
+        Me.TxtPesoMinimo.TabIndex = 61
+        Me.TxtPesoMinimo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'txtCFisico
+        'TxtCFisico
         '
-        Me.txtCFisico.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.txtCFisico.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
-        Me.txtCFisico.Location = New System.Drawing.Point(247, 76)
-        Me.txtCFisico.Name = "txtCFisico"
-        Me.txtCFisico.ReadOnly = True
-        Me.txtCFisico.Size = New System.Drawing.Size(49, 21)
-        Me.txtCFisico.TabIndex = 91
-        Me.txtCFisico.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TxtCFisico.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.TxtCFisico.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
+        Me.TxtCFisico.Location = New System.Drawing.Point(247, 76)
+        Me.TxtCFisico.Name = "TxtCFisico"
+        Me.TxtCFisico.ReadOnly = True
+        Me.TxtCFisico.Size = New System.Drawing.Size(49, 21)
+        Me.TxtCFisico.TabIndex = 91
+        Me.TxtCFisico.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label68
         '
@@ -852,16 +850,16 @@ Partial Class frm_AvaliacaoFisica
         Me.Label68.TabIndex = 2
         Me.Label68.Text = "Máximo"
         '
-        'txtOssatura
+        'TxtOssatura
         '
-        Me.txtOssatura.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.txtOssatura.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
-        Me.txtOssatura.Location = New System.Drawing.Point(247, 57)
-        Me.txtOssatura.Name = "txtOssatura"
-        Me.txtOssatura.ReadOnly = True
-        Me.txtOssatura.Size = New System.Drawing.Size(49, 21)
-        Me.txtOssatura.TabIndex = 90
-        Me.txtOssatura.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TxtOssatura.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.TxtOssatura.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
+        Me.TxtOssatura.Location = New System.Drawing.Point(247, 57)
+        Me.TxtOssatura.Name = "TxtOssatura"
+        Me.TxtOssatura.ReadOnly = True
+        Me.TxtOssatura.Size = New System.Drawing.Size(49, 21)
+        Me.TxtOssatura.TabIndex = 90
+        Me.TxtOssatura.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label69
         '
@@ -883,12 +881,12 @@ Partial Class frm_AvaliacaoFisica
         '
         'GroupBox8
         '
-        Me.GroupBox8.Controls.Add(Me.txtPerdaDesGord)
+        Me.GroupBox8.Controls.Add(Me.TxtPerdaDesGord)
         Me.GroupBox8.Controls.Add(Me.Label84)
         Me.GroupBox8.Controls.Add(Me.Label92)
         Me.GroupBox8.Controls.Add(Me.Label94)
-        Me.GroupBox8.Controls.Add(Me.txtDiasNeces)
-        Me.GroupBox8.Controls.Add(Me.txtMesesNecess)
+        Me.GroupBox8.Controls.Add(Me.TxtDiasNeces)
+        Me.GroupBox8.Controls.Add(Me.TxtMesesNecess)
         Me.GroupBox8.Location = New System.Drawing.Point(6, 15)
         Me.GroupBox8.Name = "GroupBox8"
         Me.GroupBox8.Size = New System.Drawing.Size(271, 134)
@@ -896,16 +894,16 @@ Partial Class frm_AvaliacaoFisica
         Me.GroupBox8.TabStop = False
         Me.GroupBox8.Text = "Redução de Peso"
         '
-        'txtPerdaDesGord
+        'TxtPerdaDesGord
         '
-        Me.txtPerdaDesGord.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.txtPerdaDesGord.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
-        Me.txtPerdaDesGord.Location = New System.Drawing.Point(173, 34)
-        Me.txtPerdaDesGord.Name = "txtPerdaDesGord"
-        Me.txtPerdaDesGord.ReadOnly = True
-        Me.txtPerdaDesGord.Size = New System.Drawing.Size(63, 21)
-        Me.txtPerdaDesGord.TabIndex = 95
-        Me.txtPerdaDesGord.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TxtPerdaDesGord.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.TxtPerdaDesGord.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
+        Me.TxtPerdaDesGord.Location = New System.Drawing.Point(173, 34)
+        Me.TxtPerdaDesGord.Name = "TxtPerdaDesGord"
+        Me.TxtPerdaDesGord.ReadOnly = True
+        Me.TxtPerdaDesGord.Size = New System.Drawing.Size(63, 21)
+        Me.TxtPerdaDesGord.TabIndex = 95
+        Me.TxtPerdaDesGord.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label84
         '
@@ -934,36 +932,36 @@ Partial Class frm_AvaliacaoFisica
         Me.Label94.TabIndex = 83
         Me.Label94.Text = "Meses necessários"
         '
-        'txtDiasNeces
+        'TxtDiasNeces
         '
-        Me.txtDiasNeces.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.txtDiasNeces.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
-        Me.txtDiasNeces.Location = New System.Drawing.Point(173, 53)
-        Me.txtDiasNeces.Name = "txtDiasNeces"
-        Me.txtDiasNeces.ReadOnly = True
-        Me.txtDiasNeces.Size = New System.Drawing.Size(63, 21)
-        Me.txtDiasNeces.TabIndex = 85
-        Me.txtDiasNeces.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TxtDiasNeces.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.TxtDiasNeces.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
+        Me.TxtDiasNeces.Location = New System.Drawing.Point(173, 53)
+        Me.TxtDiasNeces.Name = "TxtDiasNeces"
+        Me.TxtDiasNeces.ReadOnly = True
+        Me.TxtDiasNeces.Size = New System.Drawing.Size(63, 21)
+        Me.TxtDiasNeces.TabIndex = 85
+        Me.TxtDiasNeces.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'txtMesesNecess
+        'TxtMesesNecess
         '
-        Me.txtMesesNecess.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.txtMesesNecess.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
-        Me.txtMesesNecess.Location = New System.Drawing.Point(173, 72)
-        Me.txtMesesNecess.Name = "txtMesesNecess"
-        Me.txtMesesNecess.ReadOnly = True
-        Me.txtMesesNecess.Size = New System.Drawing.Size(63, 21)
-        Me.txtMesesNecess.TabIndex = 86
-        Me.txtMesesNecess.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TxtMesesNecess.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.TxtMesesNecess.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
+        Me.TxtMesesNecess.Location = New System.Drawing.Point(173, 72)
+        Me.TxtMesesNecess.Name = "TxtMesesNecess"
+        Me.TxtMesesNecess.ReadOnly = True
+        Me.TxtMesesNecess.Size = New System.Drawing.Size(63, 21)
+        Me.TxtMesesNecess.TabIndex = 86
+        Me.TxtMesesNecess.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'GroupBox9
         '
-        Me.GroupBox9.Controls.Add(Me.txtPesoDia)
+        Me.GroupBox9.Controls.Add(Me.TxtPesoDia)
         Me.GroupBox9.Controls.Add(Me.Label93)
         Me.GroupBox9.Controls.Add(Me.Label95)
         Me.GroupBox9.Controls.Add(Me.Label96)
-        Me.GroupBox9.Controls.Add(Me.txtPesoSemana)
-        Me.GroupBox9.Controls.Add(Me.txtPesoMes)
+        Me.GroupBox9.Controls.Add(Me.TxtPesoSemana)
+        Me.GroupBox9.Controls.Add(Me.TxtPesoMes)
         Me.GroupBox9.Location = New System.Drawing.Point(283, 15)
         Me.GroupBox9.Name = "GroupBox9"
         Me.GroupBox9.Size = New System.Drawing.Size(149, 134)
@@ -971,16 +969,16 @@ Partial Class frm_AvaliacaoFisica
         Me.GroupBox9.TabStop = False
         Me.GroupBox9.Text = "Peso Perdido (Kg)"
         '
-        'txtPesoDia
+        'TxtPesoDia
         '
-        Me.txtPesoDia.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.txtPesoDia.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
-        Me.txtPesoDia.Location = New System.Drawing.Point(67, 37)
-        Me.txtPesoDia.Name = "txtPesoDia"
-        Me.txtPesoDia.ReadOnly = True
-        Me.txtPesoDia.Size = New System.Drawing.Size(63, 21)
-        Me.txtPesoDia.TabIndex = 95
-        Me.txtPesoDia.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TxtPesoDia.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.TxtPesoDia.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
+        Me.TxtPesoDia.Location = New System.Drawing.Point(67, 37)
+        Me.TxtPesoDia.Name = "TxtPesoDia"
+        Me.TxtPesoDia.ReadOnly = True
+        Me.TxtPesoDia.Size = New System.Drawing.Size(63, 21)
+        Me.TxtPesoDia.TabIndex = 95
+        Me.TxtPesoDia.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label93
         '
@@ -1009,27 +1007,27 @@ Partial Class frm_AvaliacaoFisica
         Me.Label96.TabIndex = 83
         Me.Label96.Text = "Mes"
         '
-        'txtPesoSemana
+        'TxtPesoSemana
         '
-        Me.txtPesoSemana.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.txtPesoSemana.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
-        Me.txtPesoSemana.Location = New System.Drawing.Point(67, 56)
-        Me.txtPesoSemana.Name = "txtPesoSemana"
-        Me.txtPesoSemana.ReadOnly = True
-        Me.txtPesoSemana.Size = New System.Drawing.Size(63, 21)
-        Me.txtPesoSemana.TabIndex = 85
-        Me.txtPesoSemana.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TxtPesoSemana.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.TxtPesoSemana.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
+        Me.TxtPesoSemana.Location = New System.Drawing.Point(67, 56)
+        Me.TxtPesoSemana.Name = "TxtPesoSemana"
+        Me.TxtPesoSemana.ReadOnly = True
+        Me.TxtPesoSemana.Size = New System.Drawing.Size(63, 21)
+        Me.TxtPesoSemana.TabIndex = 85
+        Me.TxtPesoSemana.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'txtPesoMes
+        'TxtPesoMes
         '
-        Me.txtPesoMes.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.txtPesoMes.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
-        Me.txtPesoMes.Location = New System.Drawing.Point(67, 75)
-        Me.txtPesoMes.Name = "txtPesoMes"
-        Me.txtPesoMes.ReadOnly = True
-        Me.txtPesoMes.Size = New System.Drawing.Size(63, 21)
-        Me.txtPesoMes.TabIndex = 86
-        Me.txtPesoMes.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TxtPesoMes.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.TxtPesoMes.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
+        Me.TxtPesoMes.Location = New System.Drawing.Point(67, 75)
+        Me.TxtPesoMes.Name = "TxtPesoMes"
+        Me.TxtPesoMes.ReadOnly = True
+        Me.TxtPesoMes.Size = New System.Drawing.Size(63, 21)
+        Me.TxtPesoMes.TabIndex = 86
+        Me.TxtPesoMes.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TabPage4
         '
@@ -1047,19 +1045,19 @@ Partial Class frm_AvaliacaoFisica
         'GroupBox3
         '
         Me.GroupBox3.Controls.Add(Me.Label55)
-        Me.GroupBox3.Controls.Add(Me.txtPorcGordura)
+        Me.GroupBox3.Controls.Add(Me.TxtPorcGordura)
         Me.GroupBox3.Controls.Add(Me.Label43)
         Me.GroupBox3.Controls.Add(Me.Label44)
         Me.GroupBox3.Controls.Add(Me.Label42)
-        Me.GroupBox3.Controls.Add(Me.txtPesoOsseo)
-        Me.GroupBox3.Controls.Add(Me.txtMcm)
+        Me.GroupBox3.Controls.Add(Me.TxtPesoOsseo)
+        Me.GroupBox3.Controls.Add(Me.TxtMcm)
         Me.GroupBox3.Controls.Add(Me.Label46)
         Me.GroupBox3.Controls.Add(Me.Label47)
         Me.GroupBox3.Controls.Add(Me.Label48)
         Me.GroupBox3.Controls.Add(Me.Label49)
-        Me.GroupBox3.Controls.Add(Me.txtPesoResid)
-        Me.GroupBox3.Controls.Add(Me.txtPesoMusc)
-        Me.GroupBox3.Controls.Add(Me.txtPesoGordura)
+        Me.GroupBox3.Controls.Add(Me.TxtPesoResid)
+        Me.GroupBox3.Controls.Add(Me.TxtPesoMusc)
+        Me.GroupBox3.Controls.Add(Me.TxtPesoGordura)
         Me.GroupBox3.Controls.Add(Me.Label50)
         Me.GroupBox3.Controls.Add(Me.Label51)
         Me.GroupBox3.Controls.Add(Me.Label52)
@@ -1080,16 +1078,16 @@ Partial Class frm_AvaliacaoFisica
         Me.Label55.TabIndex = 79
         Me.Label55.Text = "Kg"
         '
-        'txtPorcGordura
+        'TxtPorcGordura
         '
-        Me.txtPorcGordura.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.txtPorcGordura.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
-        Me.txtPorcGordura.Location = New System.Drawing.Point(111, 19)
-        Me.txtPorcGordura.Name = "txtPorcGordura"
-        Me.txtPorcGordura.ReadOnly = True
-        Me.txtPorcGordura.Size = New System.Drawing.Size(63, 21)
-        Me.txtPorcGordura.TabIndex = 80
-        Me.txtPorcGordura.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TxtPorcGordura.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.TxtPorcGordura.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
+        Me.TxtPorcGordura.Location = New System.Drawing.Point(111, 19)
+        Me.TxtPorcGordura.Name = "TxtPorcGordura"
+        Me.TxtPorcGordura.ReadOnly = True
+        Me.TxtPorcGordura.Size = New System.Drawing.Size(63, 21)
+        Me.TxtPorcGordura.TabIndex = 80
+        Me.TxtPorcGordura.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label43
         '
@@ -1118,27 +1116,27 @@ Partial Class frm_AvaliacaoFisica
         Me.Label42.TabIndex = 76
         Me.Label42.Text = "Peso Ósseo"
         '
-        'txtPesoOsseo
+        'TxtPesoOsseo
         '
-        Me.txtPesoOsseo.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.txtPesoOsseo.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
-        Me.txtPesoOsseo.Location = New System.Drawing.Point(111, 95)
-        Me.txtPesoOsseo.Name = "txtPesoOsseo"
-        Me.txtPesoOsseo.ReadOnly = True
-        Me.txtPesoOsseo.Size = New System.Drawing.Size(63, 21)
-        Me.txtPesoOsseo.TabIndex = 74
-        Me.txtPesoOsseo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TxtPesoOsseo.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.TxtPesoOsseo.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
+        Me.TxtPesoOsseo.Location = New System.Drawing.Point(111, 95)
+        Me.TxtPesoOsseo.Name = "TxtPesoOsseo"
+        Me.TxtPesoOsseo.ReadOnly = True
+        Me.TxtPesoOsseo.Size = New System.Drawing.Size(63, 21)
+        Me.TxtPesoOsseo.TabIndex = 74
+        Me.TxtPesoOsseo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'txtMcm
+        'TxtMcm
         '
-        Me.txtMcm.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.txtMcm.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
-        Me.txtMcm.Location = New System.Drawing.Point(111, 114)
-        Me.txtMcm.Name = "txtMcm"
-        Me.txtMcm.ReadOnly = True
-        Me.txtMcm.Size = New System.Drawing.Size(63, 21)
-        Me.txtMcm.TabIndex = 73
-        Me.txtMcm.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TxtMcm.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.TxtMcm.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
+        Me.TxtMcm.Location = New System.Drawing.Point(111, 114)
+        Me.TxtMcm.Name = "TxtMcm"
+        Me.TxtMcm.ReadOnly = True
+        Me.TxtMcm.Size = New System.Drawing.Size(63, 21)
+        Me.TxtMcm.TabIndex = 73
+        Me.TxtMcm.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label46
         '
@@ -1176,38 +1174,38 @@ Partial Class frm_AvaliacaoFisica
         Me.Label49.TabIndex = 64
         Me.Label49.Text = "%"
         '
-        'txtPesoResid
+        'TxtPesoResid
         '
-        Me.txtPesoResid.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.txtPesoResid.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
-        Me.txtPesoResid.Location = New System.Drawing.Point(111, 76)
-        Me.txtPesoResid.Name = "txtPesoResid"
-        Me.txtPesoResid.ReadOnly = True
-        Me.txtPesoResid.Size = New System.Drawing.Size(63, 21)
-        Me.txtPesoResid.TabIndex = 63
-        Me.txtPesoResid.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TxtPesoResid.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.TxtPesoResid.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
+        Me.TxtPesoResid.Location = New System.Drawing.Point(111, 76)
+        Me.TxtPesoResid.Name = "TxtPesoResid"
+        Me.TxtPesoResid.ReadOnly = True
+        Me.TxtPesoResid.Size = New System.Drawing.Size(63, 21)
+        Me.TxtPesoResid.TabIndex = 63
+        Me.TxtPesoResid.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'txtPesoMusc
+        'TxtPesoMusc
         '
-        Me.txtPesoMusc.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.txtPesoMusc.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
-        Me.txtPesoMusc.Location = New System.Drawing.Point(111, 57)
-        Me.txtPesoMusc.Name = "txtPesoMusc"
-        Me.txtPesoMusc.ReadOnly = True
-        Me.txtPesoMusc.Size = New System.Drawing.Size(63, 21)
-        Me.txtPesoMusc.TabIndex = 62
-        Me.txtPesoMusc.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TxtPesoMusc.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.TxtPesoMusc.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
+        Me.TxtPesoMusc.Location = New System.Drawing.Point(111, 57)
+        Me.TxtPesoMusc.Name = "TxtPesoMusc"
+        Me.TxtPesoMusc.ReadOnly = True
+        Me.TxtPesoMusc.Size = New System.Drawing.Size(63, 21)
+        Me.TxtPesoMusc.TabIndex = 62
+        Me.TxtPesoMusc.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'txtPesoGordura
+        'TxtPesoGordura
         '
-        Me.txtPesoGordura.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.txtPesoGordura.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
-        Me.txtPesoGordura.Location = New System.Drawing.Point(111, 38)
-        Me.txtPesoGordura.Name = "txtPesoGordura"
-        Me.txtPesoGordura.ReadOnly = True
-        Me.txtPesoGordura.Size = New System.Drawing.Size(63, 21)
-        Me.txtPesoGordura.TabIndex = 61
-        Me.txtPesoGordura.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TxtPesoGordura.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.TxtPesoGordura.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
+        Me.TxtPesoGordura.Location = New System.Drawing.Point(111, 38)
+        Me.TxtPesoGordura.Name = "TxtPesoGordura"
+        Me.TxtPesoGordura.ReadOnly = True
+        Me.TxtPesoGordura.Size = New System.Drawing.Size(63, 21)
+        Me.TxtPesoGordura.TabIndex = 61
+        Me.TxtPesoGordura.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label50
         '
@@ -1247,17 +1245,17 @@ Partial Class frm_AvaliacaoFisica
         '
         'GroupBox7
         '
-        Me.GroupBox7.Controls.Add(Me.txtAtividade)
+        Me.GroupBox7.Controls.Add(Me.TxtAtividade)
         Me.GroupBox7.Controls.Add(Me.Label91)
         Me.GroupBox7.Controls.Add(Me.Label90)
         Me.GroupBox7.Controls.Add(Me.Label83)
         Me.GroupBox7.Controls.Add(Me.Label89)
         Me.GroupBox7.Controls.Add(Me.Label88)
-        Me.GroupBox7.Controls.Add(Me.txtRepouso)
+        Me.GroupBox7.Controls.Add(Me.TxtRepouso)
         Me.GroupBox7.Controls.Add(Me.Label85)
-        Me.GroupBox7.Controls.Add(Me.txtDiario)
+        Me.GroupBox7.Controls.Add(Me.TxtDiario)
         Me.GroupBox7.Controls.Add(Me.Label86)
-        Me.GroupBox7.Controls.Add(Me.txtTotal)
+        Me.GroupBox7.Controls.Add(Me.TxtTotal)
         Me.GroupBox7.Controls.Add(Me.Label87)
         Me.GroupBox7.Location = New System.Drawing.Point(577, 6)
         Me.GroupBox7.Name = "GroupBox7"
@@ -1266,16 +1264,16 @@ Partial Class frm_AvaliacaoFisica
         Me.GroupBox7.TabStop = False
         Me.GroupBox7.Text = "Gasto Calórico"
         '
-        'txtAtividade
+        'TxtAtividade
         '
-        Me.txtAtividade.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.txtAtividade.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
-        Me.txtAtividade.Location = New System.Drawing.Point(131, 29)
-        Me.txtAtividade.Name = "txtAtividade"
-        Me.txtAtividade.ReadOnly = True
-        Me.txtAtividade.Size = New System.Drawing.Size(63, 21)
-        Me.txtAtividade.TabIndex = 95
-        Me.txtAtividade.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TxtAtividade.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.TxtAtividade.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
+        Me.TxtAtividade.Location = New System.Drawing.Point(131, 29)
+        Me.TxtAtividade.Name = "TxtAtividade"
+        Me.TxtAtividade.ReadOnly = True
+        Me.TxtAtividade.Size = New System.Drawing.Size(63, 21)
+        Me.TxtAtividade.TabIndex = 95
+        Me.TxtAtividade.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label91
         '
@@ -1322,16 +1320,16 @@ Partial Class frm_AvaliacaoFisica
         Me.Label88.TabIndex = 84
         Me.Label88.Text = "Total (dia+ativ)"
         '
-        'txtRepouso
+        'TxtRepouso
         '
-        Me.txtRepouso.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.txtRepouso.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
-        Me.txtRepouso.Location = New System.Drawing.Point(131, 49)
-        Me.txtRepouso.Name = "txtRepouso"
-        Me.txtRepouso.ReadOnly = True
-        Me.txtRepouso.Size = New System.Drawing.Size(63, 21)
-        Me.txtRepouso.TabIndex = 85
-        Me.txtRepouso.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TxtRepouso.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.TxtRepouso.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
+        Me.TxtRepouso.Location = New System.Drawing.Point(131, 49)
+        Me.TxtRepouso.Name = "TxtRepouso"
+        Me.TxtRepouso.ReadOnly = True
+        Me.TxtRepouso.Size = New System.Drawing.Size(63, 21)
+        Me.TxtRepouso.TabIndex = 85
+        Me.TxtRepouso.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label85
         '
@@ -1342,16 +1340,16 @@ Partial Class frm_AvaliacaoFisica
         Me.Label85.TabIndex = 90
         Me.Label85.Text = "Kcal"
         '
-        'txtDiario
+        'TxtDiario
         '
-        Me.txtDiario.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.txtDiario.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
-        Me.txtDiario.Location = New System.Drawing.Point(131, 67)
-        Me.txtDiario.Name = "txtDiario"
-        Me.txtDiario.ReadOnly = True
-        Me.txtDiario.Size = New System.Drawing.Size(63, 21)
-        Me.txtDiario.TabIndex = 86
-        Me.txtDiario.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TxtDiario.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.TxtDiario.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
+        Me.TxtDiario.Location = New System.Drawing.Point(131, 67)
+        Me.TxtDiario.Name = "TxtDiario"
+        Me.TxtDiario.ReadOnly = True
+        Me.TxtDiario.Size = New System.Drawing.Size(63, 21)
+        Me.TxtDiario.TabIndex = 86
+        Me.TxtDiario.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label86
         '
@@ -1362,16 +1360,16 @@ Partial Class frm_AvaliacaoFisica
         Me.Label86.TabIndex = 89
         Me.Label86.Text = "Kcal"
         '
-        'txtTotal
+        'TxtTotal
         '
-        Me.txtTotal.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.txtTotal.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
-        Me.txtTotal.Location = New System.Drawing.Point(131, 86)
-        Me.txtTotal.Name = "txtTotal"
-        Me.txtTotal.ReadOnly = True
-        Me.txtTotal.Size = New System.Drawing.Size(63, 21)
-        Me.txtTotal.TabIndex = 87
-        Me.txtTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TxtTotal.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.TxtTotal.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
+        Me.TxtTotal.Location = New System.Drawing.Point(131, 86)
+        Me.TxtTotal.Name = "TxtTotal"
+        Me.TxtTotal.ReadOnly = True
+        Me.TxtTotal.Size = New System.Drawing.Size(63, 21)
+        Me.TxtTotal.TabIndex = 87
+        Me.TxtTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label87
         '
@@ -1385,17 +1383,17 @@ Partial Class frm_AvaliacaoFisica
         'GroupBox4
         '
         Me.GroupBox4.Controls.Add(Me.Label54)
-        Me.GroupBox4.Controls.Add(Me.txtPerna)
-        Me.GroupBox4.Controls.Add(Me.txtPe)
+        Me.GroupBox4.Controls.Add(Me.TxtPerna)
+        Me.GroupBox4.Controls.Add(Me.TxtPe)
         Me.GroupBox4.Controls.Add(Me.Label56)
-        Me.GroupBox4.Controls.Add(Me.txtCabeca)
+        Me.GroupBox4.Controls.Add(Me.TxtCabeca)
         Me.GroupBox4.Controls.Add(Me.Label58)
-        Me.GroupBox4.Controls.Add(Me.txtMao)
-        Me.GroupBox4.Controls.Add(Me.txtCoxa)
+        Me.GroupBox4.Controls.Add(Me.TxtMao)
+        Me.GroupBox4.Controls.Add(Me.TxtCoxa)
         Me.GroupBox4.Controls.Add(Me.Label59)
-        Me.GroupBox4.Controls.Add(Me.txtAntebraco)
-        Me.GroupBox4.Controls.Add(Me.txtBraco)
-        Me.GroupBox4.Controls.Add(Me.txtTronco)
+        Me.GroupBox4.Controls.Add(Me.TxtAntebraco)
+        Me.GroupBox4.Controls.Add(Me.TxtBraco)
+        Me.GroupBox4.Controls.Add(Me.TxtTronco)
         Me.GroupBox4.Controls.Add(Me.Label63)
         Me.GroupBox4.Controls.Add(Me.Label64)
         Me.GroupBox4.Controls.Add(Me.Label65)
@@ -1416,27 +1414,27 @@ Partial Class frm_AvaliacaoFisica
         Me.Label54.TabIndex = 84
         Me.Label54.Text = "Perna"
         '
-        'txtPerna
+        'TxtPerna
         '
-        Me.txtPerna.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.txtPerna.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
-        Me.txtPerna.Location = New System.Drawing.Point(212, 69)
-        Me.txtPerna.Name = "txtPerna"
-        Me.txtPerna.ReadOnly = True
-        Me.txtPerna.Size = New System.Drawing.Size(63, 21)
-        Me.txtPerna.TabIndex = 83
-        Me.txtPerna.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TxtPerna.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.TxtPerna.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
+        Me.TxtPerna.Location = New System.Drawing.Point(212, 69)
+        Me.TxtPerna.Name = "TxtPerna"
+        Me.TxtPerna.ReadOnly = True
+        Me.TxtPerna.Size = New System.Drawing.Size(63, 21)
+        Me.TxtPerna.TabIndex = 83
+        Me.TxtPerna.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'txtPe
+        'TxtPe
         '
-        Me.txtPe.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.txtPe.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
-        Me.txtPe.Location = New System.Drawing.Point(212, 88)
-        Me.txtPe.Name = "txtPe"
-        Me.txtPe.ReadOnly = True
-        Me.txtPe.Size = New System.Drawing.Size(63, 21)
-        Me.txtPe.TabIndex = 82
-        Me.txtPe.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TxtPe.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.TxtPe.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
+        Me.TxtPe.Location = New System.Drawing.Point(212, 88)
+        Me.TxtPe.Name = "TxtPe"
+        Me.TxtPe.ReadOnly = True
+        Me.TxtPe.Size = New System.Drawing.Size(63, 21)
+        Me.TxtPe.TabIndex = 82
+        Me.TxtPe.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label56
         '
@@ -1447,16 +1445,16 @@ Partial Class frm_AvaliacaoFisica
         Me.Label56.TabIndex = 81
         Me.Label56.Text = "Pé"
         '
-        'txtCabeca
+        'TxtCabeca
         '
-        Me.txtCabeca.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.txtCabeca.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
-        Me.txtCabeca.Location = New System.Drawing.Point(86, 30)
-        Me.txtCabeca.Name = "txtCabeca"
-        Me.txtCabeca.ReadOnly = True
-        Me.txtCabeca.Size = New System.Drawing.Size(63, 21)
-        Me.txtCabeca.TabIndex = 80
-        Me.txtCabeca.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TxtCabeca.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.TxtCabeca.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
+        Me.TxtCabeca.Location = New System.Drawing.Point(86, 30)
+        Me.TxtCabeca.Name = "TxtCabeca"
+        Me.TxtCabeca.ReadOnly = True
+        Me.TxtCabeca.Size = New System.Drawing.Size(63, 21)
+        Me.TxtCabeca.TabIndex = 80
+        Me.TxtCabeca.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label58
         '
@@ -1467,27 +1465,27 @@ Partial Class frm_AvaliacaoFisica
         Me.Label58.TabIndex = 76
         Me.Label58.Text = "Mão"
         '
-        'txtMao
+        'TxtMao
         '
-        Me.txtMao.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.txtMao.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
-        Me.txtMao.Location = New System.Drawing.Point(212, 30)
-        Me.txtMao.Name = "txtMao"
-        Me.txtMao.ReadOnly = True
-        Me.txtMao.Size = New System.Drawing.Size(63, 21)
-        Me.txtMao.TabIndex = 74
-        Me.txtMao.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TxtMao.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.TxtMao.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
+        Me.TxtMao.Location = New System.Drawing.Point(212, 30)
+        Me.TxtMao.Name = "TxtMao"
+        Me.TxtMao.ReadOnly = True
+        Me.TxtMao.Size = New System.Drawing.Size(63, 21)
+        Me.TxtMao.TabIndex = 74
+        Me.TxtMao.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'txtCoxa
+        'TxtCoxa
         '
-        Me.txtCoxa.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.txtCoxa.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
-        Me.txtCoxa.Location = New System.Drawing.Point(212, 49)
-        Me.txtCoxa.Name = "txtCoxa"
-        Me.txtCoxa.ReadOnly = True
-        Me.txtCoxa.Size = New System.Drawing.Size(63, 21)
-        Me.txtCoxa.TabIndex = 73
-        Me.txtCoxa.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TxtCoxa.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.TxtCoxa.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
+        Me.TxtCoxa.Location = New System.Drawing.Point(212, 49)
+        Me.TxtCoxa.Name = "TxtCoxa"
+        Me.TxtCoxa.ReadOnly = True
+        Me.TxtCoxa.Size = New System.Drawing.Size(63, 21)
+        Me.TxtCoxa.TabIndex = 73
+        Me.TxtCoxa.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label59
         '
@@ -1498,38 +1496,38 @@ Partial Class frm_AvaliacaoFisica
         Me.Label59.TabIndex = 67
         Me.Label59.Text = "Coxa"
         '
-        'txtAntebraco
+        'TxtAntebraco
         '
-        Me.txtAntebraco.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.txtAntebraco.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
-        Me.txtAntebraco.Location = New System.Drawing.Point(86, 87)
-        Me.txtAntebraco.Name = "txtAntebraco"
-        Me.txtAntebraco.ReadOnly = True
-        Me.txtAntebraco.Size = New System.Drawing.Size(63, 21)
-        Me.txtAntebraco.TabIndex = 63
-        Me.txtAntebraco.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TxtAntebraco.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.TxtAntebraco.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
+        Me.TxtAntebraco.Location = New System.Drawing.Point(86, 87)
+        Me.TxtAntebraco.Name = "TxtAntebraco"
+        Me.TxtAntebraco.ReadOnly = True
+        Me.TxtAntebraco.Size = New System.Drawing.Size(63, 21)
+        Me.TxtAntebraco.TabIndex = 63
+        Me.TxtAntebraco.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'txtBraco
+        'TxtBraco
         '
-        Me.txtBraco.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.txtBraco.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
-        Me.txtBraco.Location = New System.Drawing.Point(86, 68)
-        Me.txtBraco.Name = "txtBraco"
-        Me.txtBraco.ReadOnly = True
-        Me.txtBraco.Size = New System.Drawing.Size(63, 21)
-        Me.txtBraco.TabIndex = 62
-        Me.txtBraco.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TxtBraco.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.TxtBraco.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
+        Me.TxtBraco.Location = New System.Drawing.Point(86, 68)
+        Me.TxtBraco.Name = "TxtBraco"
+        Me.TxtBraco.ReadOnly = True
+        Me.TxtBraco.Size = New System.Drawing.Size(63, 21)
+        Me.TxtBraco.TabIndex = 62
+        Me.TxtBraco.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'txtTronco
+        'TxtTronco
         '
-        Me.txtTronco.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.txtTronco.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
-        Me.txtTronco.Location = New System.Drawing.Point(86, 49)
-        Me.txtTronco.Name = "txtTronco"
-        Me.txtTronco.ReadOnly = True
-        Me.txtTronco.Size = New System.Drawing.Size(63, 21)
-        Me.txtTronco.TabIndex = 61
-        Me.txtTronco.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TxtTronco.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.TxtTronco.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
+        Me.TxtTronco.Location = New System.Drawing.Point(86, 49)
+        Me.TxtTronco.Name = "TxtTronco"
+        Me.TxtTronco.ReadOnly = True
+        Me.TxtTronco.Size = New System.Drawing.Size(63, 21)
+        Me.TxtTronco.TabIndex = 61
+        Me.TxtTronco.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label63
         '
@@ -1567,15 +1565,15 @@ Partial Class frm_AvaliacaoFisica
         Me.Label66.TabIndex = 0
         Me.Label66.Text = "Cabeça"
         '
-        'cbxAtivFisDia
+        'CbxAtivFisDia
         '
-        Me.cbxAtivFisDia.FormattingEnabled = True
-        Me.cbxAtivFisDia.Items.AddRange(New Object() {"Leve", "Moderada", "Intensa"})
-        Me.cbxAtivFisDia.Location = New System.Drawing.Point(787, 69)
-        Me.cbxAtivFisDia.Name = "cbxAtivFisDia"
-        Me.cbxAtivFisDia.Size = New System.Drawing.Size(79, 21)
-        Me.cbxAtivFisDia.TabIndex = 162
-        Me.cbxAtivFisDia.Text = "Leve"
+        Me.CbxAtivFisDia.FormattingEnabled = True
+        Me.CbxAtivFisDia.Items.AddRange(New Object() {"Leve", "Moderada", "Intensa"})
+        Me.CbxAtivFisDia.Location = New System.Drawing.Point(787, 69)
+        Me.CbxAtivFisDia.Name = "CbxAtivFisDia"
+        Me.CbxAtivFisDia.Size = New System.Drawing.Size(79, 21)
+        Me.CbxAtivFisDia.TabIndex = 162
+        Me.CbxAtivFisDia.Text = "Leve"
         '
         'Label82
         '
@@ -1586,24 +1584,24 @@ Partial Class frm_AvaliacaoFisica
         Me.Label82.TabIndex = 161
         Me.Label82.Text = "Ativ. Física Diária"
         '
-        'lblRelCinQua
+        'LblRelCinQua
         '
-        Me.lblRelCinQua.AutoSize = True
-        Me.lblRelCinQua.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
-        Me.lblRelCinQua.Location = New System.Drawing.Point(721, 140)
-        Me.lblRelCinQua.Name = "lblRelCinQua"
-        Me.lblRelCinQua.Size = New System.Drawing.Size(39, 14)
-        Me.lblRelCinQua.TabIndex = 160
-        Me.lblRelCinQua.Text = "Label"
+        Me.LblRelCinQua.AutoSize = True
+        Me.LblRelCinQua.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
+        Me.LblRelCinQua.Location = New System.Drawing.Point(721, 140)
+        Me.LblRelCinQua.Name = "LblRelCinQua"
+        Me.LblRelCinQua.Size = New System.Drawing.Size(39, 14)
+        Me.LblRelCinQua.TabIndex = 160
+        Me.LblRelCinQua.Text = "Label"
         '
-        'btnProcessar
+        'BtnProcessar
         '
-        Me.btnProcessar.Location = New System.Drawing.Point(775, 190)
-        Me.btnProcessar.Name = "btnProcessar"
-        Me.btnProcessar.Size = New System.Drawing.Size(85, 27)
-        Me.btnProcessar.TabIndex = 158
-        Me.btnProcessar.Text = "Processar"
-        Me.btnProcessar.UseVisualStyleBackColor = True
+        Me.BtnProcessar.Location = New System.Drawing.Point(775, 190)
+        Me.BtnProcessar.Name = "BtnProcessar"
+        Me.BtnProcessar.Size = New System.Drawing.Size(85, 27)
+        Me.BtnProcessar.TabIndex = 158
+        Me.BtnProcessar.Text = "Processar"
+        Me.BtnProcessar.UseVisualStyleBackColor = True
         '
         'Label45
         '
@@ -1614,16 +1612,16 @@ Partial Class frm_AvaliacaoFisica
         Me.Label45.TabIndex = 157
         Me.Label45.Text = "Anos"
         '
-        'txtRelCinQua
+        'TxtRelCinQua
         '
-        Me.txtRelCinQua.BackColor = System.Drawing.SystemColors.MenuBar
-        Me.txtRelCinQua.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
-        Me.txtRelCinQua.Location = New System.Drawing.Point(721, 116)
-        Me.txtRelCinQua.MaxLength = 10
-        Me.txtRelCinQua.Name = "txtRelCinQua"
-        Me.txtRelCinQua.Size = New System.Drawing.Size(62, 21)
-        Me.txtRelCinQua.TabIndex = 156
-        Me.txtRelCinQua.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TxtRelCinQua.BackColor = System.Drawing.SystemColors.MenuBar
+        Me.TxtRelCinQua.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.0!)
+        Me.TxtRelCinQua.Location = New System.Drawing.Point(721, 116)
+        Me.TxtRelCinQua.MaxLength = 10
+        Me.TxtRelCinQua.Name = "TxtRelCinQua"
+        Me.TxtRelCinQua.Size = New System.Drawing.Size(62, 21)
+        Me.TxtRelCinQua.TabIndex = 156
+        Me.TxtRelCinQua.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label41
         '
@@ -1634,24 +1632,24 @@ Partial Class frm_AvaliacaoFisica
         Me.Label41.TabIndex = 155
         Me.Label41.Text = "Relação Cintura ao Quadril"
         '
-        'dtpDataNasc
+        'DtpDataNasc
         '
-        Me.dtpDataNasc.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.dtpDataNasc.Location = New System.Drawing.Point(449, 69)
-        Me.dtpDataNasc.Name = "dtpDataNasc"
-        Me.dtpDataNasc.Size = New System.Drawing.Size(95, 20)
-        Me.dtpDataNasc.TabIndex = 154
+        Me.DtpDataNasc.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.DtpDataNasc.Location = New System.Drawing.Point(449, 69)
+        Me.DtpDataNasc.Name = "DtpDataNasc"
+        Me.DtpDataNasc.Size = New System.Drawing.Size(95, 20)
+        Me.DtpDataNasc.TabIndex = 154
         '
-        'txtIdade
+        'TxtIdade
         '
-        Me.txtIdade.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.txtIdade.Location = New System.Drawing.Point(597, 69)
-        Me.txtIdade.MaxLength = 3
-        Me.txtIdade.Name = "txtIdade"
-        Me.txtIdade.ReadOnly = True
-        Me.txtIdade.Size = New System.Drawing.Size(35, 20)
-        Me.txtIdade.TabIndex = 153
-        Me.txtIdade.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TxtIdade.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.TxtIdade.Location = New System.Drawing.Point(597, 69)
+        Me.TxtIdade.MaxLength = 3
+        Me.TxtIdade.Name = "TxtIdade"
+        Me.TxtIdade.ReadOnly = True
+        Me.TxtIdade.Size = New System.Drawing.Size(35, 20)
+        Me.TxtIdade.TabIndex = 153
+        Me.TxtIdade.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label28
         '
@@ -1662,23 +1660,23 @@ Partial Class frm_AvaliacaoFisica
         Me.Label28.TabIndex = 152
         Me.Label28.Text = "Idade"
         '
-        'cbxSexo
+        'CbxSexo
         '
-        Me.cbxSexo.FormattingEnabled = True
-        Me.cbxSexo.Items.AddRange(New Object() {"Masculino", "Feminino"})
-        Me.cbxSexo.Location = New System.Drawing.Point(101, 107)
-        Me.cbxSexo.Name = "cbxSexo"
-        Me.cbxSexo.Size = New System.Drawing.Size(95, 21)
-        Me.cbxSexo.TabIndex = 151
+        Me.CbxSexo.FormattingEnabled = True
+        Me.CbxSexo.Items.AddRange(New Object() {"Masculino", "Feminino"})
+        Me.CbxSexo.Location = New System.Drawing.Point(101, 107)
+        Me.CbxSexo.Name = "CbxSexo"
+        Me.CbxSexo.Size = New System.Drawing.Size(95, 21)
+        Me.CbxSexo.TabIndex = 151
         '
-        'txtRadio
+        'TxtRadio
         '
-        Me.txtRadio.Location = New System.Drawing.Point(568, 183)
-        Me.txtRadio.MaxLength = 6
-        Me.txtRadio.Name = "txtRadio"
-        Me.txtRadio.Size = New System.Drawing.Size(38, 20)
-        Me.txtRadio.TabIndex = 150
-        Me.txtRadio.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TxtRadio.Location = New System.Drawing.Point(568, 183)
+        Me.TxtRadio.MaxLength = 6
+        Me.TxtRadio.Name = "TxtRadio"
+        Me.TxtRadio.Size = New System.Drawing.Size(38, 20)
+        Me.TxtRadio.TabIndex = 150
+        Me.TxtRadio.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label24
         '
@@ -1689,14 +1687,14 @@ Partial Class frm_AvaliacaoFisica
         Me.Label24.TabIndex = 149
         Me.Label24.Text = "Fêmur"
         '
-        'txtFemur
+        'TxtFemur
         '
-        Me.txtFemur.Location = New System.Drawing.Point(568, 164)
-        Me.txtFemur.MaxLength = 6
-        Me.txtFemur.Name = "txtFemur"
-        Me.txtFemur.Size = New System.Drawing.Size(38, 20)
-        Me.txtFemur.TabIndex = 148
-        Me.txtFemur.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TxtFemur.Location = New System.Drawing.Point(568, 164)
+        Me.TxtFemur.MaxLength = 6
+        Me.TxtFemur.Name = "TxtFemur"
+        Me.TxtFemur.Size = New System.Drawing.Size(38, 20)
+        Me.TxtFemur.TabIndex = 148
+        Me.TxtFemur.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label25
         '
@@ -1707,14 +1705,14 @@ Partial Class frm_AvaliacaoFisica
         Me.Label25.TabIndex = 147
         Me.Label25.Text = "Rádio"
         '
-        'txtQuadril
+        'TxtQuadril
         '
-        Me.txtQuadril.Location = New System.Drawing.Point(677, 126)
-        Me.txtQuadril.MaxLength = 6
-        Me.txtQuadril.Name = "txtQuadril"
-        Me.txtQuadril.Size = New System.Drawing.Size(38, 20)
-        Me.txtQuadril.TabIndex = 146
-        Me.txtQuadril.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TxtQuadril.Location = New System.Drawing.Point(677, 126)
+        Me.TxtQuadril.MaxLength = 6
+        Me.TxtQuadril.Name = "TxtQuadril"
+        Me.TxtQuadril.Size = New System.Drawing.Size(38, 20)
+        Me.TxtQuadril.TabIndex = 146
+        Me.TxtQuadril.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label26
         '
@@ -1725,14 +1723,14 @@ Partial Class frm_AvaliacaoFisica
         Me.Label26.TabIndex = 145
         Me.Label26.Text = "Quadril"
         '
-        'txtCintura
+        'TxtCintura
         '
-        Me.txtCintura.Location = New System.Drawing.Point(677, 107)
-        Me.txtCintura.MaxLength = 6
-        Me.txtCintura.Name = "txtCintura"
-        Me.txtCintura.Size = New System.Drawing.Size(38, 20)
-        Me.txtCintura.TabIndex = 144
-        Me.txtCintura.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TxtCintura.Location = New System.Drawing.Point(677, 107)
+        Me.TxtCintura.MaxLength = 6
+        Me.TxtCintura.Name = "TxtCintura"
+        Me.TxtCintura.Size = New System.Drawing.Size(38, 20)
+        Me.TxtCintura.TabIndex = 144
+        Me.TxtCintura.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label27
         '
@@ -1743,14 +1741,14 @@ Partial Class frm_AvaliacaoFisica
         Me.Label27.TabIndex = 143
         Me.Label27.Text = "Cintura"
         '
-        'txtPunho
+        'TxtPunho
         '
-        Me.txtPunho.Location = New System.Drawing.Point(568, 145)
-        Me.txtPunho.MaxLength = 6
-        Me.txtPunho.Name = "txtPunho"
-        Me.txtPunho.Size = New System.Drawing.Size(38, 20)
-        Me.txtPunho.TabIndex = 142
-        Me.txtPunho.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TxtPunho.Location = New System.Drawing.Point(568, 145)
+        Me.TxtPunho.MaxLength = 6
+        Me.TxtPunho.Name = "TxtPunho"
+        Me.TxtPunho.Size = New System.Drawing.Size(38, 20)
+        Me.TxtPunho.TabIndex = 142
+        Me.TxtPunho.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label21
         '
@@ -1761,14 +1759,14 @@ Partial Class frm_AvaliacaoFisica
         Me.Label21.TabIndex = 141
         Me.Label21.Text = "Joelho"
         '
-        'txtJoelho
+        'TxtJoelho
         '
-        Me.txtJoelho.Location = New System.Drawing.Point(568, 126)
-        Me.txtJoelho.MaxLength = 6
-        Me.txtJoelho.Name = "txtJoelho"
-        Me.txtJoelho.Size = New System.Drawing.Size(38, 20)
-        Me.txtJoelho.TabIndex = 140
-        Me.txtJoelho.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TxtJoelho.Location = New System.Drawing.Point(568, 126)
+        Me.TxtJoelho.MaxLength = 6
+        Me.TxtJoelho.Name = "TxtJoelho"
+        Me.TxtJoelho.Size = New System.Drawing.Size(38, 20)
+        Me.TxtJoelho.TabIndex = 140
+        Me.TxtJoelho.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label22
         '
@@ -1797,14 +1795,14 @@ Partial Class frm_AvaliacaoFisica
         Me.Label23.TabIndex = 137
         Me.Label23.Text = "Tornozelo"
         '
-        'txtPernaEsquerda
+        'TxtPernaEsquerda
         '
-        Me.txtPernaEsquerda.Location = New System.Drawing.Point(440, 184)
-        Me.txtPernaEsquerda.MaxLength = 6
-        Me.txtPernaEsquerda.Name = "txtPernaEsquerda"
-        Me.txtPernaEsquerda.Size = New System.Drawing.Size(38, 20)
-        Me.txtPernaEsquerda.TabIndex = 136
-        Me.txtPernaEsquerda.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TxtPernaEsquerda.Location = New System.Drawing.Point(440, 184)
+        Me.TxtPernaEsquerda.MaxLength = 6
+        Me.TxtPernaEsquerda.Name = "TxtPernaEsquerda"
+        Me.TxtPernaEsquerda.Size = New System.Drawing.Size(38, 20)
+        Me.TxtPernaEsquerda.TabIndex = 136
+        Me.TxtPernaEsquerda.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label17
         '
@@ -1815,14 +1813,14 @@ Partial Class frm_AvaliacaoFisica
         Me.Label17.TabIndex = 135
         Me.Label17.Text = "Perna direita"
         '
-        'txtPernaDireita
+        'TxtPernaDireita
         '
-        Me.txtPernaDireita.Location = New System.Drawing.Point(440, 165)
-        Me.txtPernaDireita.MaxLength = 6
-        Me.txtPernaDireita.Name = "txtPernaDireita"
-        Me.txtPernaDireita.Size = New System.Drawing.Size(38, 20)
-        Me.txtPernaDireita.TabIndex = 134
-        Me.txtPernaDireita.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TxtPernaDireita.Location = New System.Drawing.Point(440, 165)
+        Me.TxtPernaDireita.MaxLength = 6
+        Me.TxtPernaDireita.Name = "TxtPernaDireita"
+        Me.TxtPernaDireita.Size = New System.Drawing.Size(38, 20)
+        Me.TxtPernaDireita.TabIndex = 134
+        Me.TxtPernaDireita.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label18
         '
@@ -1833,14 +1831,14 @@ Partial Class frm_AvaliacaoFisica
         Me.Label18.TabIndex = 133
         Me.Label18.Text = "Perna esquerda"
         '
-        'txtCoxaEsquerda
+        'TxtCoxaEsquerda
         '
-        Me.txtCoxaEsquerda.Location = New System.Drawing.Point(440, 146)
-        Me.txtCoxaEsquerda.MaxLength = 6
-        Me.txtCoxaEsquerda.Name = "txtCoxaEsquerda"
-        Me.txtCoxaEsquerda.Size = New System.Drawing.Size(38, 20)
-        Me.txtCoxaEsquerda.TabIndex = 132
-        Me.txtCoxaEsquerda.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TxtCoxaEsquerda.Location = New System.Drawing.Point(440, 146)
+        Me.TxtCoxaEsquerda.MaxLength = 6
+        Me.TxtCoxaEsquerda.Name = "TxtCoxaEsquerda"
+        Me.TxtCoxaEsquerda.Size = New System.Drawing.Size(38, 20)
+        Me.TxtCoxaEsquerda.TabIndex = 132
+        Me.TxtCoxaEsquerda.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label19
         '
@@ -1851,14 +1849,14 @@ Partial Class frm_AvaliacaoFisica
         Me.Label19.TabIndex = 131
         Me.Label19.Text = "Coxa esquerda"
         '
-        'txtCoxaDireita
+        'TxtCoxaDireita
         '
-        Me.txtCoxaDireita.Location = New System.Drawing.Point(440, 127)
-        Me.txtCoxaDireita.MaxLength = 6
-        Me.txtCoxaDireita.Name = "txtCoxaDireita"
-        Me.txtCoxaDireita.Size = New System.Drawing.Size(38, 20)
-        Me.txtCoxaDireita.TabIndex = 130
-        Me.txtCoxaDireita.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TxtCoxaDireita.Location = New System.Drawing.Point(440, 127)
+        Me.TxtCoxaDireita.MaxLength = 6
+        Me.TxtCoxaDireita.Name = "TxtCoxaDireita"
+        Me.TxtCoxaDireita.Size = New System.Drawing.Size(38, 20)
+        Me.TxtCoxaDireita.TabIndex = 130
+        Me.TxtCoxaDireita.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label20
         '
@@ -1869,14 +1867,14 @@ Partial Class frm_AvaliacaoFisica
         Me.Label20.TabIndex = 129
         Me.Label20.Text = "Coxa direita"
         '
-        'txtAbdomen
+        'TxtAbdomen
         '
-        Me.txtAbdomen.Location = New System.Drawing.Point(440, 108)
-        Me.txtAbdomen.MaxLength = 6
-        Me.txtAbdomen.Name = "txtAbdomen"
-        Me.txtAbdomen.Size = New System.Drawing.Size(38, 20)
-        Me.txtAbdomen.TabIndex = 128
-        Me.txtAbdomen.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TxtAbdomen.Location = New System.Drawing.Point(440, 108)
+        Me.TxtAbdomen.MaxLength = 6
+        Me.TxtAbdomen.Name = "TxtAbdomen"
+        Me.TxtAbdomen.Size = New System.Drawing.Size(38, 20)
+        Me.TxtAbdomen.TabIndex = 128
+        Me.TxtAbdomen.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label14
         '
@@ -1887,14 +1885,14 @@ Partial Class frm_AvaliacaoFisica
         Me.Label14.TabIndex = 127
         Me.Label14.Text = "Abdômen"
         '
-        'txtTorax
+        'TxtTorax
         '
-        Me.txtTorax.Location = New System.Drawing.Point(302, 184)
-        Me.txtTorax.MaxLength = 6
-        Me.txtTorax.Name = "txtTorax"
-        Me.txtTorax.Size = New System.Drawing.Size(38, 20)
-        Me.txtTorax.TabIndex = 126
-        Me.txtTorax.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TxtTorax.Location = New System.Drawing.Point(302, 184)
+        Me.TxtTorax.MaxLength = 6
+        Me.TxtTorax.Name = "TxtTorax"
+        Me.TxtTorax.Size = New System.Drawing.Size(38, 20)
+        Me.TxtTorax.TabIndex = 126
+        Me.TxtTorax.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label15
         '
@@ -1905,14 +1903,14 @@ Partial Class frm_AvaliacaoFisica
         Me.Label15.TabIndex = 125
         Me.Label15.Text = "Torax"
         '
-        'txtAnteEsquerdo
+        'TxtAnteEsquerdo
         '
-        Me.txtAnteEsquerdo.Location = New System.Drawing.Point(302, 165)
-        Me.txtAnteEsquerdo.MaxLength = 6
-        Me.txtAnteEsquerdo.Name = "txtAnteEsquerdo"
-        Me.txtAnteEsquerdo.Size = New System.Drawing.Size(38, 20)
-        Me.txtAnteEsquerdo.TabIndex = 124
-        Me.txtAnteEsquerdo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TxtAnteEsquerdo.Location = New System.Drawing.Point(302, 165)
+        Me.TxtAnteEsquerdo.MaxLength = 6
+        Me.TxtAnteEsquerdo.Name = "TxtAnteEsquerdo"
+        Me.TxtAnteEsquerdo.Size = New System.Drawing.Size(38, 20)
+        Me.TxtAnteEsquerdo.TabIndex = 124
+        Me.TxtAnteEsquerdo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label16
         '
@@ -1923,14 +1921,14 @@ Partial Class frm_AvaliacaoFisica
         Me.Label16.TabIndex = 123
         Me.Label16.Text = "Antebraço E"
         '
-        'txtAnteDireito
+        'TxtAnteDireito
         '
-        Me.txtAnteDireito.Location = New System.Drawing.Point(302, 146)
-        Me.txtAnteDireito.MaxLength = 6
-        Me.txtAnteDireito.Name = "txtAnteDireito"
-        Me.txtAnteDireito.Size = New System.Drawing.Size(38, 20)
-        Me.txtAnteDireito.TabIndex = 122
-        Me.txtAnteDireito.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TxtAnteDireito.Location = New System.Drawing.Point(302, 146)
+        Me.TxtAnteDireito.MaxLength = 6
+        Me.TxtAnteDireito.Name = "TxtAnteDireito"
+        Me.TxtAnteDireito.Size = New System.Drawing.Size(38, 20)
+        Me.TxtAnteDireito.TabIndex = 122
+        Me.TxtAnteDireito.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label13
         '
@@ -1941,14 +1939,14 @@ Partial Class frm_AvaliacaoFisica
         Me.Label13.TabIndex = 121
         Me.Label13.Text = "Antebraço D"
         '
-        'txtBraEsquerdo
+        'TxtBraEsquerdo
         '
-        Me.txtBraEsquerdo.Location = New System.Drawing.Point(302, 127)
-        Me.txtBraEsquerdo.MaxLength = 6
-        Me.txtBraEsquerdo.Name = "txtBraEsquerdo"
-        Me.txtBraEsquerdo.Size = New System.Drawing.Size(38, 20)
-        Me.txtBraEsquerdo.TabIndex = 120
-        Me.txtBraEsquerdo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TxtBraEsquerdo.Location = New System.Drawing.Point(302, 127)
+        Me.TxtBraEsquerdo.MaxLength = 6
+        Me.TxtBraEsquerdo.Name = "TxtBraEsquerdo"
+        Me.TxtBraEsquerdo.Size = New System.Drawing.Size(38, 20)
+        Me.TxtBraEsquerdo.TabIndex = 120
+        Me.TxtBraEsquerdo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label12
         '
@@ -1959,14 +1957,14 @@ Partial Class frm_AvaliacaoFisica
         Me.Label12.TabIndex = 119
         Me.Label12.Text = "Braço Esquerdo"
         '
-        'txtBraDireito
+        'TxtBraDireito
         '
-        Me.txtBraDireito.Location = New System.Drawing.Point(302, 108)
-        Me.txtBraDireito.MaxLength = 6
-        Me.txtBraDireito.Name = "txtBraDireito"
-        Me.txtBraDireito.Size = New System.Drawing.Size(38, 20)
-        Me.txtBraDireito.TabIndex = 118
-        Me.txtBraDireito.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TxtBraDireito.Location = New System.Drawing.Point(302, 108)
+        Me.TxtBraDireito.MaxLength = 6
+        Me.TxtBraDireito.Name = "TxtBraDireito"
+        Me.TxtBraDireito.Size = New System.Drawing.Size(38, 20)
+        Me.TxtBraDireito.TabIndex = 118
+        Me.TxtBraDireito.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label9
         '
@@ -1977,14 +1975,14 @@ Partial Class frm_AvaliacaoFisica
         Me.Label9.TabIndex = 117
         Me.Label9.Text = "Braço Direito"
         '
-        'txtFCmaxima
+        'TxtFCmaxima
         '
-        Me.txtFCmaxima.Location = New System.Drawing.Point(101, 184)
-        Me.txtFCmaxima.MaxLength = 6
-        Me.txtFCmaxima.Name = "txtFCmaxima"
-        Me.txtFCmaxima.Size = New System.Drawing.Size(38, 20)
-        Me.txtFCmaxima.TabIndex = 116
-        Me.txtFCmaxima.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TxtFCmaxima.Location = New System.Drawing.Point(101, 184)
+        Me.TxtFCmaxima.MaxLength = 6
+        Me.TxtFCmaxima.Name = "TxtFCmaxima"
+        Me.TxtFCmaxima.Size = New System.Drawing.Size(38, 20)
+        Me.TxtFCmaxima.TabIndex = 116
+        Me.TxtFCmaxima.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label10
         '
@@ -1995,14 +1993,14 @@ Partial Class frm_AvaliacaoFisica
         Me.Label10.TabIndex = 115
         Me.Label10.Text = "FC máxima"
         '
-        'txtFCrepouso
+        'TxtFCrepouso
         '
-        Me.txtFCrepouso.Location = New System.Drawing.Point(101, 165)
-        Me.txtFCrepouso.MaxLength = 6
-        Me.txtFCrepouso.Name = "txtFCrepouso"
-        Me.txtFCrepouso.Size = New System.Drawing.Size(38, 20)
-        Me.txtFCrepouso.TabIndex = 114
-        Me.txtFCrepouso.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TxtFCrepouso.Location = New System.Drawing.Point(101, 165)
+        Me.TxtFCrepouso.MaxLength = 6
+        Me.TxtFCrepouso.Name = "TxtFCrepouso"
+        Me.TxtFCrepouso.Size = New System.Drawing.Size(38, 20)
+        Me.TxtFCrepouso.TabIndex = 114
+        Me.TxtFCrepouso.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label11
         '
@@ -2013,14 +2011,14 @@ Partial Class frm_AvaliacaoFisica
         Me.Label11.TabIndex = 113
         Me.Label11.Text = "FC repouso"
         '
-        'txtAltura
+        'TxtAltura
         '
-        Me.txtAltura.Location = New System.Drawing.Point(101, 146)
-        Me.txtAltura.MaxLength = 6
-        Me.txtAltura.Name = "txtAltura"
-        Me.txtAltura.Size = New System.Drawing.Size(38, 20)
-        Me.txtAltura.TabIndex = 112
-        Me.txtAltura.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TxtAltura.Location = New System.Drawing.Point(101, 146)
+        Me.TxtAltura.MaxLength = 6
+        Me.TxtAltura.Name = "TxtAltura"
+        Me.TxtAltura.Size = New System.Drawing.Size(38, 20)
+        Me.TxtAltura.TabIndex = 112
+        Me.TxtAltura.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label8
         '
@@ -2031,14 +2029,14 @@ Partial Class frm_AvaliacaoFisica
         Me.Label8.TabIndex = 111
         Me.Label8.Text = "Altura"
         '
-        'txtPeso
+        'TxtPeso
         '
-        Me.txtPeso.Location = New System.Drawing.Point(101, 127)
-        Me.txtPeso.MaxLength = 6
-        Me.txtPeso.Name = "txtPeso"
-        Me.txtPeso.Size = New System.Drawing.Size(38, 20)
-        Me.txtPeso.TabIndex = 110
-        Me.txtPeso.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TxtPeso.Location = New System.Drawing.Point(101, 127)
+        Me.TxtPeso.MaxLength = 6
+        Me.TxtPeso.Name = "TxtPeso"
+        Me.TxtPeso.Size = New System.Drawing.Size(38, 20)
+        Me.TxtPeso.TabIndex = 110
+        Me.TxtPeso.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label7
         '
@@ -2067,14 +2065,14 @@ Partial Class frm_AvaliacaoFisica
         Me.Label5.TabIndex = 107
         Me.Label5.Text = "Sexo"
         '
-        'txtNome
+        'TxtNome
         '
-        Me.txtNome.Location = New System.Drawing.Point(48, 69)
-        Me.txtNome.MaxLength = 30
-        Me.txtNome.Name = "txtNome"
-        Me.txtNome.Size = New System.Drawing.Size(315, 20)
-        Me.txtNome.TabIndex = 106
-        Me.txtNome.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TxtNome.Location = New System.Drawing.Point(48, 69)
+        Me.TxtNome.MaxLength = 30
+        Me.TxtNome.Name = "TxtNome"
+        Me.TxtNome.Size = New System.Drawing.Size(315, 20)
+        Me.TxtNome.TabIndex = 106
+        Me.TxtNome.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label4
         '
@@ -2085,13 +2083,13 @@ Partial Class frm_AvaliacaoFisica
         Me.Label4.TabIndex = 105
         Me.Label4.Text = "Nome"
         '
-        'txtLocal
+        'TxtLocal
         '
-        Me.txtLocal.Location = New System.Drawing.Point(524, 38)
-        Me.txtLocal.MaxLength = 40
-        Me.txtLocal.Name = "txtLocal"
-        Me.txtLocal.Size = New System.Drawing.Size(342, 20)
-        Me.txtLocal.TabIndex = 104
+        Me.TxtLocal.Location = New System.Drawing.Point(524, 38)
+        Me.TxtLocal.MaxLength = 40
+        Me.TxtLocal.Name = "TxtLocal"
+        Me.TxtLocal.Size = New System.Drawing.Size(342, 20)
+        Me.TxtLocal.TabIndex = 104
         '
         'Label3
         '
@@ -2102,13 +2100,13 @@ Partial Class frm_AvaliacaoFisica
         Me.Label3.TabIndex = 103
         Me.Label3.Text = "Local"
         '
-        'txtProf
+        'TxtProf
         '
-        Me.txtProf.Location = New System.Drawing.Point(216, 39)
-        Me.txtProf.MaxLength = 40
-        Me.txtProf.Name = "txtProf"
-        Me.txtProf.Size = New System.Drawing.Size(255, 20)
-        Me.txtProf.TabIndex = 102
+        Me.TxtProf.Location = New System.Drawing.Point(216, 39)
+        Me.TxtProf.MaxLength = 40
+        Me.TxtProf.Name = "TxtProf"
+        Me.TxtProf.Size = New System.Drawing.Size(255, 20)
+        Me.TxtProf.TabIndex = 102
         '
         'Label2
         '
@@ -2119,13 +2117,13 @@ Partial Class frm_AvaliacaoFisica
         Me.Label2.TabIndex = 101
         Me.Label2.Text = "Professor"
         '
-        'dtpHoje
+        'DtpHoje
         '
-        Me.dtpHoje.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.dtpHoje.Location = New System.Drawing.Point(48, 39)
-        Me.dtpHoje.Name = "dtpHoje"
-        Me.dtpHoje.Size = New System.Drawing.Size(83, 20)
-        Me.dtpHoje.TabIndex = 100
+        Me.DtpHoje.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.DtpHoje.Location = New System.Drawing.Point(48, 39)
+        Me.DtpHoje.Name = "DtpHoje"
+        Me.DtpHoje.Size = New System.Drawing.Size(83, 20)
+        Me.DtpHoje.TabIndex = 100
         '
         'Label1
         '
@@ -2138,25 +2136,12 @@ Partial Class frm_AvaliacaoFisica
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TécnicoToolStripMenuItem, Me.ImpressãoToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ImpressãoToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(887, 24)
         Me.MenuStrip1.TabIndex = 159
         Me.MenuStrip1.Text = "MenuStrip1"
-        '
-        'TécnicoToolStripMenuItem
-        '
-        Me.TécnicoToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SerialToolStripMenuItem})
-        Me.TécnicoToolStripMenuItem.Name = "TécnicoToolStripMenuItem"
-        Me.TécnicoToolStripMenuItem.Size = New System.Drawing.Size(60, 20)
-        Me.TécnicoToolStripMenuItem.Text = "Técnico"
-        '
-        'SerialToolStripMenuItem
-        '
-        Me.SerialToolStripMenuItem.Name = "SerialToolStripMenuItem"
-        Me.SerialToolStripMenuItem.Size = New System.Drawing.Size(102, 22)
-        Me.SerialToolStripMenuItem.Text = "Serial"
         '
         'ImpressãoToolStripMenuItem
         '
@@ -2206,71 +2191,72 @@ Partial Class frm_AvaliacaoFisica
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(887, 420)
         Me.Controls.Add(Me.TabControl1)
-        Me.Controls.Add(Me.cbxAtivFisDia)
+        Me.Controls.Add(Me.CbxAtivFisDia)
         Me.Controls.Add(Me.Label82)
-        Me.Controls.Add(Me.lblRelCinQua)
-        Me.Controls.Add(Me.btnProcessar)
+        Me.Controls.Add(Me.LblRelCinQua)
+        Me.Controls.Add(Me.BtnProcessar)
         Me.Controls.Add(Me.Label45)
-        Me.Controls.Add(Me.txtRelCinQua)
+        Me.Controls.Add(Me.TxtRelCinQua)
         Me.Controls.Add(Me.Label41)
-        Me.Controls.Add(Me.dtpDataNasc)
-        Me.Controls.Add(Me.txtIdade)
+        Me.Controls.Add(Me.DtpDataNasc)
+        Me.Controls.Add(Me.TxtIdade)
         Me.Controls.Add(Me.Label28)
-        Me.Controls.Add(Me.cbxSexo)
-        Me.Controls.Add(Me.txtRadio)
+        Me.Controls.Add(Me.CbxSexo)
+        Me.Controls.Add(Me.TxtRadio)
         Me.Controls.Add(Me.Label24)
-        Me.Controls.Add(Me.txtFemur)
+        Me.Controls.Add(Me.TxtFemur)
         Me.Controls.Add(Me.Label25)
-        Me.Controls.Add(Me.txtQuadril)
+        Me.Controls.Add(Me.TxtQuadril)
         Me.Controls.Add(Me.Label26)
-        Me.Controls.Add(Me.txtCintura)
+        Me.Controls.Add(Me.TxtCintura)
         Me.Controls.Add(Me.Label27)
-        Me.Controls.Add(Me.txtPunho)
+        Me.Controls.Add(Me.TxtPunho)
         Me.Controls.Add(Me.Label21)
-        Me.Controls.Add(Me.txtJoelho)
+        Me.Controls.Add(Me.TxtJoelho)
         Me.Controls.Add(Me.Label22)
         Me.Controls.Add(Me.txtTornozelo)
         Me.Controls.Add(Me.Label23)
-        Me.Controls.Add(Me.txtPernaEsquerda)
+        Me.Controls.Add(Me.TxtPernaEsquerda)
         Me.Controls.Add(Me.Label17)
-        Me.Controls.Add(Me.txtPernaDireita)
+        Me.Controls.Add(Me.TxtPernaDireita)
         Me.Controls.Add(Me.Label18)
-        Me.Controls.Add(Me.txtCoxaEsquerda)
+        Me.Controls.Add(Me.TxtCoxaEsquerda)
         Me.Controls.Add(Me.Label19)
-        Me.Controls.Add(Me.txtCoxaDireita)
+        Me.Controls.Add(Me.TxtCoxaDireita)
         Me.Controls.Add(Me.Label20)
-        Me.Controls.Add(Me.txtAbdomen)
+        Me.Controls.Add(Me.TxtAbdomen)
         Me.Controls.Add(Me.Label14)
-        Me.Controls.Add(Me.txtTorax)
+        Me.Controls.Add(Me.TxtTorax)
         Me.Controls.Add(Me.Label15)
-        Me.Controls.Add(Me.txtAnteEsquerdo)
+        Me.Controls.Add(Me.TxtAnteEsquerdo)
         Me.Controls.Add(Me.Label16)
-        Me.Controls.Add(Me.txtAnteDireito)
+        Me.Controls.Add(Me.TxtAnteDireito)
         Me.Controls.Add(Me.Label13)
-        Me.Controls.Add(Me.txtBraEsquerdo)
+        Me.Controls.Add(Me.TxtBraEsquerdo)
         Me.Controls.Add(Me.Label12)
-        Me.Controls.Add(Me.txtBraDireito)
+        Me.Controls.Add(Me.TxtBraDireito)
         Me.Controls.Add(Me.Label9)
-        Me.Controls.Add(Me.txtFCmaxima)
+        Me.Controls.Add(Me.TxtFCmaxima)
         Me.Controls.Add(Me.Label10)
-        Me.Controls.Add(Me.txtFCrepouso)
+        Me.Controls.Add(Me.TxtFCrepouso)
         Me.Controls.Add(Me.Label11)
-        Me.Controls.Add(Me.txtAltura)
+        Me.Controls.Add(Me.TxtAltura)
         Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.txtPeso)
+        Me.Controls.Add(Me.TxtPeso)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.txtNome)
+        Me.Controls.Add(Me.TxtNome)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.txtLocal)
+        Me.Controls.Add(Me.TxtLocal)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.txtProf)
+        Me.Controls.Add(Me.TxtProf)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.dtpHoje)
+        Me.Controls.Add(Me.DtpHoje)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "frm_AvaliacaoFisica"
@@ -2305,8 +2291,8 @@ Partial Class frm_AvaliacaoFisica
     Friend WithEvents TabControl1 As System.Windows.Forms.TabControl
     Friend WithEvents TabPage1 As System.Windows.Forms.TabPage
     Friend WithEvents GroupBox6 As System.Windows.Forms.GroupBox
-    Friend WithEvents txtQuantSeman As System.Windows.Forms.TextBox
-    Friend WithEvents txtTempoAtiv As System.Windows.Forms.TextBox
+    Friend WithEvents TxtQuantSeman As System.Windows.Forms.TextBox
+    Friend WithEvents TxtTempoAtiv As System.Windows.Forms.TextBox
     Friend WithEvents Label77 As System.Windows.Forms.Label
     Friend WithEvents Label78 As System.Windows.Forms.Label
     Friend WithEvents Label79 As System.Windows.Forms.Label
@@ -2314,184 +2300,182 @@ Partial Class frm_AvaliacaoFisica
     Friend WithEvents Label81 As System.Windows.Forms.Label
     Friend WithEvents Label62 As System.Windows.Forms.Label
     Friend WithEvents Label67 As System.Windows.Forms.Label
-    Friend WithEvents txtDistanciaAtiv As System.Windows.Forms.TextBox
+    Friend WithEvents TxtDistanciaAtiv As System.Windows.Forms.TextBox
     Friend WithEvents Label71 As System.Windows.Forms.Label
     Friend WithEvents Label75 As System.Windows.Forms.Label
-    Friend WithEvents txtVo2Trab As System.Windows.Forms.TextBox
-    Friend WithEvents txtRitmoAtiv As System.Windows.Forms.TextBox
+    Friend WithEvents TxtVo2Trab As System.Windows.Forms.TextBox
+    Friend WithEvents TxtRitmoAtiv As System.Windows.Forms.TextBox
     Friend WithEvents Label76 As System.Windows.Forms.Label
     Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
     Friend WithEvents Label40 As System.Windows.Forms.Label
     Friend WithEvents Label39 As System.Windows.Forms.Label
-    Friend WithEvents txtVO2 As System.Windows.Forms.TextBox
-    Friend WithEvents txtClaCoo As System.Windows.Forms.TextBox
-    Friend WithEvents txtClaFle As System.Windows.Forms.TextBox
-    Friend WithEvents txtClaAbd As System.Windows.Forms.TextBox
-    Friend WithEvents txtClasv As System.Windows.Forms.TextBox
+    Friend WithEvents TxtVO2 As System.Windows.Forms.TextBox
+    Friend WithEvents TxtClaCoo As System.Windows.Forms.TextBox
+    Friend WithEvents TxtClaFle As System.Windows.Forms.TextBox
+    Friend WithEvents TxtClaAbd As System.Windows.Forms.TextBox
+    Friend WithEvents TxtClasv As System.Windows.Forms.TextBox
     Friend WithEvents Label38 As System.Windows.Forms.Label
     Friend WithEvents Label37 As System.Windows.Forms.Label
     Friend WithEvents Label36 As System.Windows.Forms.Label
     Friend WithEvents Label35 As System.Windows.Forms.Label
     Friend WithEvents Label34 As System.Windows.Forms.Label
     Friend WithEvents Label33 As System.Windows.Forms.Label
-    Friend WithEvents txtCooper As System.Windows.Forms.TextBox
-    Friend WithEvents txtFlexaoBraco As System.Windows.Forms.TextBox
-    Friend WithEvents txtAbdominais As System.Windows.Forms.TextBox
-    Friend WithEvents txtSaltoVert As System.Windows.Forms.TextBox
+    Friend WithEvents TxtCooper As System.Windows.Forms.TextBox
+    Friend WithEvents TxtFlexaoBraco As System.Windows.Forms.TextBox
+    Friend WithEvents TxtAbdominais As System.Windows.Forms.TextBox
+    Friend WithEvents TxtSaltoVert As System.Windows.Forms.TextBox
     Friend WithEvents Label32 As System.Windows.Forms.Label
     Friend WithEvents Label31 As System.Windows.Forms.Label
     Friend WithEvents Label30 As System.Windows.Forms.Label
     Friend WithEvents Label29 As System.Windows.Forms.Label
     Friend WithEvents TabPage2 As System.Windows.Forms.TabPage
     Friend WithEvents GroupBox5 As System.Windows.Forms.GroupBox
-    Friend WithEvents txtResIMC As System.Windows.Forms.TextBox
+    Friend WithEvents TxtResIMC As System.Windows.Forms.TextBox
     Friend WithEvents Label57 As System.Windows.Forms.Label
-    Friend WithEvents txtResCFisico As System.Windows.Forms.TextBox
-    Friend WithEvents txtPesoNormal As System.Windows.Forms.TextBox
-    Friend WithEvents txtResOssatura As System.Windows.Forms.TextBox
+    Friend WithEvents TxtResCFisico As System.Windows.Forms.TextBox
+    Friend WithEvents TxtPesoNormal As System.Windows.Forms.TextBox
+    Friend WithEvents TxtResOssatura As System.Windows.Forms.TextBox
     Friend WithEvents Label60 As System.Windows.Forms.Label
     Friend WithEvents Label74 As System.Windows.Forms.Label
-    Friend WithEvents txtIMC As System.Windows.Forms.TextBox
-    Friend WithEvents txtPesoMaximo As System.Windows.Forms.TextBox
+    Friend WithEvents TxtIMC As System.Windows.Forms.TextBox
+    Friend WithEvents TxtPesoMaximo As System.Windows.Forms.TextBox
     Friend WithEvents Label73 As System.Windows.Forms.Label
     Friend WithEvents Label61 As System.Windows.Forms.Label
     Friend WithEvents Label72 As System.Windows.Forms.Label
-    Friend WithEvents txtPesoMinimo As System.Windows.Forms.TextBox
-    Friend WithEvents txtCFisico As System.Windows.Forms.TextBox
+    Friend WithEvents TxtPesoMinimo As System.Windows.Forms.TextBox
+    Friend WithEvents TxtCFisico As System.Windows.Forms.TextBox
     Friend WithEvents Label68 As System.Windows.Forms.Label
-    Friend WithEvents txtOssatura As System.Windows.Forms.TextBox
+    Friend WithEvents TxtOssatura As System.Windows.Forms.TextBox
     Friend WithEvents Label69 As System.Windows.Forms.Label
     Friend WithEvents Label70 As System.Windows.Forms.Label
     Friend WithEvents GroupBox8 As System.Windows.Forms.GroupBox
-    Friend WithEvents txtPerdaDesGord As System.Windows.Forms.TextBox
+    Friend WithEvents TxtPerdaDesGord As System.Windows.Forms.TextBox
     Friend WithEvents Label84 As System.Windows.Forms.Label
     Friend WithEvents Label92 As System.Windows.Forms.Label
     Friend WithEvents Label94 As System.Windows.Forms.Label
-    Friend WithEvents txtDiasNeces As System.Windows.Forms.TextBox
-    Friend WithEvents txtMesesNecess As System.Windows.Forms.TextBox
+    Friend WithEvents TxtDiasNeces As System.Windows.Forms.TextBox
+    Friend WithEvents TxtMesesNecess As System.Windows.Forms.TextBox
     Friend WithEvents GroupBox9 As System.Windows.Forms.GroupBox
-    Friend WithEvents txtPesoDia As System.Windows.Forms.TextBox
+    Friend WithEvents TxtPesoDia As System.Windows.Forms.TextBox
     Friend WithEvents Label93 As System.Windows.Forms.Label
     Friend WithEvents Label95 As System.Windows.Forms.Label
     Friend WithEvents Label96 As System.Windows.Forms.Label
-    Friend WithEvents txtPesoSemana As System.Windows.Forms.TextBox
-    Friend WithEvents txtPesoMes As System.Windows.Forms.TextBox
+    Friend WithEvents TxtPesoSemana As System.Windows.Forms.TextBox
+    Friend WithEvents TxtPesoMes As System.Windows.Forms.TextBox
     Friend WithEvents TabPage4 As System.Windows.Forms.TabPage
     Friend WithEvents GroupBox3 As System.Windows.Forms.GroupBox
     Friend WithEvents Label55 As System.Windows.Forms.Label
-    Friend WithEvents txtPorcGordura As System.Windows.Forms.TextBox
+    Friend WithEvents TxtPorcGordura As System.Windows.Forms.TextBox
     Friend WithEvents Label43 As System.Windows.Forms.Label
     Friend WithEvents Label44 As System.Windows.Forms.Label
     Friend WithEvents Label42 As System.Windows.Forms.Label
-    Friend WithEvents txtPesoOsseo As System.Windows.Forms.TextBox
-    Friend WithEvents txtMcm As System.Windows.Forms.TextBox
+    Friend WithEvents TxtPesoOsseo As System.Windows.Forms.TextBox
+    Friend WithEvents TxtMcm As System.Windows.Forms.TextBox
     Friend WithEvents Label46 As System.Windows.Forms.Label
     Friend WithEvents Label47 As System.Windows.Forms.Label
     Friend WithEvents Label48 As System.Windows.Forms.Label
     Friend WithEvents Label49 As System.Windows.Forms.Label
-    Friend WithEvents txtPesoResid As System.Windows.Forms.TextBox
-    Friend WithEvents txtPesoMusc As System.Windows.Forms.TextBox
-    Friend WithEvents txtPesoGordura As System.Windows.Forms.TextBox
+    Friend WithEvents TxtPesoResid As System.Windows.Forms.TextBox
+    Friend WithEvents TxtPesoMusc As System.Windows.Forms.TextBox
+    Friend WithEvents TxtPesoGordura As System.Windows.Forms.TextBox
     Friend WithEvents Label50 As System.Windows.Forms.Label
     Friend WithEvents Label51 As System.Windows.Forms.Label
     Friend WithEvents Label52 As System.Windows.Forms.Label
     Friend WithEvents Label53 As System.Windows.Forms.Label
     Friend WithEvents GroupBox7 As System.Windows.Forms.GroupBox
-    Friend WithEvents txtAtividade As System.Windows.Forms.TextBox
+    Friend WithEvents TxtAtividade As System.Windows.Forms.TextBox
     Friend WithEvents Label91 As System.Windows.Forms.Label
     Friend WithEvents Label90 As System.Windows.Forms.Label
     Friend WithEvents Label83 As System.Windows.Forms.Label
     Friend WithEvents Label89 As System.Windows.Forms.Label
     Friend WithEvents Label88 As System.Windows.Forms.Label
-    Friend WithEvents txtRepouso As System.Windows.Forms.TextBox
+    Friend WithEvents TxtRepouso As System.Windows.Forms.TextBox
     Friend WithEvents Label85 As System.Windows.Forms.Label
-    Friend WithEvents txtDiario As System.Windows.Forms.TextBox
+    Friend WithEvents TxtDiario As System.Windows.Forms.TextBox
     Friend WithEvents Label86 As System.Windows.Forms.Label
-    Friend WithEvents txtTotal As System.Windows.Forms.TextBox
+    Friend WithEvents TxtTotal As System.Windows.Forms.TextBox
     Friend WithEvents Label87 As System.Windows.Forms.Label
     Friend WithEvents GroupBox4 As System.Windows.Forms.GroupBox
     Friend WithEvents Label54 As System.Windows.Forms.Label
-    Friend WithEvents txtPerna As System.Windows.Forms.TextBox
-    Friend WithEvents txtPe As System.Windows.Forms.TextBox
+    Friend WithEvents TxtPerna As System.Windows.Forms.TextBox
+    Friend WithEvents TxtPe As System.Windows.Forms.TextBox
     Friend WithEvents Label56 As System.Windows.Forms.Label
-    Friend WithEvents txtCabeca As System.Windows.Forms.TextBox
+    Friend WithEvents TxtCabeca As System.Windows.Forms.TextBox
     Friend WithEvents Label58 As System.Windows.Forms.Label
-    Friend WithEvents txtMao As System.Windows.Forms.TextBox
-    Friend WithEvents txtCoxa As System.Windows.Forms.TextBox
+    Friend WithEvents TxtMao As System.Windows.Forms.TextBox
+    Friend WithEvents TxtCoxa As System.Windows.Forms.TextBox
     Friend WithEvents Label59 As System.Windows.Forms.Label
-    Friend WithEvents txtAntebraco As System.Windows.Forms.TextBox
-    Friend WithEvents txtBraco As System.Windows.Forms.TextBox
-    Friend WithEvents txtTronco As System.Windows.Forms.TextBox
+    Friend WithEvents TxtAntebraco As System.Windows.Forms.TextBox
+    Friend WithEvents TxtBraco As System.Windows.Forms.TextBox
+    Friend WithEvents TxtTronco As System.Windows.Forms.TextBox
     Friend WithEvents Label63 As System.Windows.Forms.Label
     Friend WithEvents Label64 As System.Windows.Forms.Label
     Friend WithEvents Label65 As System.Windows.Forms.Label
     Friend WithEvents Label66 As System.Windows.Forms.Label
-    Friend WithEvents cbxAtivFisDia As System.Windows.Forms.ComboBox
+    Friend WithEvents CbxAtivFisDia As System.Windows.Forms.ComboBox
     Friend WithEvents Label82 As System.Windows.Forms.Label
-    Friend WithEvents lblRelCinQua As System.Windows.Forms.Label
-    Friend WithEvents btnProcessar As System.Windows.Forms.Button
+    Friend WithEvents LblRelCinQua As System.Windows.Forms.Label
+    Friend WithEvents BtnProcessar As System.Windows.Forms.Button
     Friend WithEvents Label45 As System.Windows.Forms.Label
-    Friend WithEvents txtRelCinQua As System.Windows.Forms.TextBox
+    Friend WithEvents TxtRelCinQua As System.Windows.Forms.TextBox
     Friend WithEvents Label41 As System.Windows.Forms.Label
-    Friend WithEvents dtpDataNasc As System.Windows.Forms.DateTimePicker
-    Friend WithEvents txtIdade As System.Windows.Forms.TextBox
+    Friend WithEvents DtpDataNasc As System.Windows.Forms.DateTimePicker
+    Friend WithEvents TxtIdade As System.Windows.Forms.TextBox
     Friend WithEvents Label28 As System.Windows.Forms.Label
-    Friend WithEvents cbxSexo As System.Windows.Forms.ComboBox
-    Friend WithEvents txtRadio As System.Windows.Forms.TextBox
+    Friend WithEvents CbxSexo As System.Windows.Forms.ComboBox
+    Friend WithEvents TxtRadio As System.Windows.Forms.TextBox
     Friend WithEvents Label24 As System.Windows.Forms.Label
-    Friend WithEvents txtFemur As System.Windows.Forms.TextBox
+    Friend WithEvents TxtFemur As System.Windows.Forms.TextBox
     Friend WithEvents Label25 As System.Windows.Forms.Label
-    Friend WithEvents txtQuadril As System.Windows.Forms.TextBox
+    Friend WithEvents TxtQuadril As System.Windows.Forms.TextBox
     Friend WithEvents Label26 As System.Windows.Forms.Label
-    Friend WithEvents txtCintura As System.Windows.Forms.TextBox
+    Friend WithEvents TxtCintura As System.Windows.Forms.TextBox
     Friend WithEvents Label27 As System.Windows.Forms.Label
-    Friend WithEvents txtPunho As System.Windows.Forms.TextBox
+    Friend WithEvents TxtPunho As System.Windows.Forms.TextBox
     Friend WithEvents Label21 As System.Windows.Forms.Label
-    Friend WithEvents txtJoelho As System.Windows.Forms.TextBox
+    Friend WithEvents TxtJoelho As System.Windows.Forms.TextBox
     Friend WithEvents Label22 As System.Windows.Forms.Label
     Friend WithEvents txtTornozelo As System.Windows.Forms.TextBox
     Friend WithEvents Label23 As System.Windows.Forms.Label
-    Friend WithEvents txtPernaEsquerda As System.Windows.Forms.TextBox
+    Friend WithEvents TxtPernaEsquerda As System.Windows.Forms.TextBox
     Friend WithEvents Label17 As System.Windows.Forms.Label
-    Friend WithEvents txtPernaDireita As System.Windows.Forms.TextBox
+    Friend WithEvents TxtPernaDireita As System.Windows.Forms.TextBox
     Friend WithEvents Label18 As System.Windows.Forms.Label
-    Friend WithEvents txtCoxaEsquerda As System.Windows.Forms.TextBox
+    Friend WithEvents TxtCoxaEsquerda As System.Windows.Forms.TextBox
     Friend WithEvents Label19 As System.Windows.Forms.Label
-    Friend WithEvents txtCoxaDireita As System.Windows.Forms.TextBox
+    Friend WithEvents TxtCoxaDireita As System.Windows.Forms.TextBox
     Friend WithEvents Label20 As System.Windows.Forms.Label
-    Friend WithEvents txtAbdomen As System.Windows.Forms.TextBox
+    Friend WithEvents TxtAbdomen As System.Windows.Forms.TextBox
     Friend WithEvents Label14 As System.Windows.Forms.Label
-    Friend WithEvents txtTorax As System.Windows.Forms.TextBox
+    Friend WithEvents TxtTorax As System.Windows.Forms.TextBox
     Friend WithEvents Label15 As System.Windows.Forms.Label
-    Friend WithEvents txtAnteEsquerdo As System.Windows.Forms.TextBox
+    Friend WithEvents TxtAnteEsquerdo As System.Windows.Forms.TextBox
     Friend WithEvents Label16 As System.Windows.Forms.Label
-    Friend WithEvents txtAnteDireito As System.Windows.Forms.TextBox
+    Friend WithEvents TxtAnteDireito As System.Windows.Forms.TextBox
     Friend WithEvents Label13 As System.Windows.Forms.Label
-    Friend WithEvents txtBraEsquerdo As System.Windows.Forms.TextBox
+    Friend WithEvents TxtBraEsquerdo As System.Windows.Forms.TextBox
     Friend WithEvents Label12 As System.Windows.Forms.Label
-    Friend WithEvents txtBraDireito As System.Windows.Forms.TextBox
+    Friend WithEvents TxtBraDireito As System.Windows.Forms.TextBox
     Friend WithEvents Label9 As System.Windows.Forms.Label
-    Friend WithEvents txtFCmaxima As System.Windows.Forms.TextBox
+    Friend WithEvents TxtFCmaxima As System.Windows.Forms.TextBox
     Friend WithEvents Label10 As System.Windows.Forms.Label
-    Friend WithEvents txtFCrepouso As System.Windows.Forms.TextBox
+    Friend WithEvents TxtFCrepouso As System.Windows.Forms.TextBox
     Friend WithEvents Label11 As System.Windows.Forms.Label
-    Friend WithEvents txtAltura As System.Windows.Forms.TextBox
+    Friend WithEvents TxtAltura As System.Windows.Forms.TextBox
     Friend WithEvents Label8 As System.Windows.Forms.Label
-    Friend WithEvents txtPeso As System.Windows.Forms.TextBox
+    Friend WithEvents TxtPeso As System.Windows.Forms.TextBox
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents Label5 As System.Windows.Forms.Label
-    Friend WithEvents txtNome As System.Windows.Forms.TextBox
+    Friend WithEvents TxtNome As System.Windows.Forms.TextBox
     Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents txtLocal As System.Windows.Forms.TextBox
+    Friend WithEvents TxtLocal As System.Windows.Forms.TextBox
     Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents txtProf As System.Windows.Forms.TextBox
+    Friend WithEvents TxtProf As System.Windows.Forms.TextBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents dtpHoje As System.Windows.Forms.DateTimePicker
+    Friend WithEvents DtpHoje As System.Windows.Forms.DateTimePicker
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents MenuStrip1 As System.Windows.Forms.MenuStrip
-    Friend WithEvents TécnicoToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents SerialToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ImpressãoToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents FitaMétricaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents AdipômetroToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem

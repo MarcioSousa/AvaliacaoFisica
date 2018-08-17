@@ -1,5 +1,6 @@
 ﻿Imports System.Drawing.Printing
 Imports System.IO
+
 Public Class frm_AvaliacaoFisica
     Dim vPerseteInic As Integer = 0
     Dim vProcessar As Boolean = True
@@ -16,12 +17,12 @@ Public Class frm_AvaliacaoFisica
     ''' Idade do Aluno
     ''' </summary>
     ''' <remarks>Calcula a Idade do Aluno</remarks>
-    Private Sub dtpDataNasc_ValueChanged(sender As System.Object, e As System.EventArgs) Handles dtpDataNasc.ValueChanged
+    Private Sub DtpDataNasc_ValueChanged(sender As System.Object, e As System.EventArgs) Handles DtpDataNasc.ValueChanged
         Dim vAno As Double
-        Dim vDataNasc As Date = dtpDataNasc.Text
+        Dim vDataNasc As Date = DtpDataNasc.Text
 
         vAno = Now.Date.Year - vDataNasc.Date.Year
-        txtIdade.Text = vAno
+        TxtIdade.Text = vAno
     End Sub
 
 
@@ -31,2106 +32,2106 @@ Public Class frm_AvaliacaoFisica
     ''' <remarks>Testes Físicos</remarks>
     Private Sub Salto_Vertical()
 
-        If cbxSexo.Text = "Masculino" Then
-            If CDec(CDec(txtIdade.Text)) > 6 Then
+        If CbxSexo.Text = "Masculino" Then
+            If CDec(CDec(TxtIdade.Text)) > 6 Then
                 '=======================================================================================
                 '===================================IDADE DE 7 A 10 ANOS================================
                 '=======================================================================================
-                If CDec(CDec(txtIdade.Text)) <= 10 Then
-                    If CDec(txtSaltoVert.Text) <= 16 Then
-                        txtClasv.Text = "Abaixo da Média"
-                    ElseIf CDec(txtSaltoVert.Text) <= 20 Then
-                        If CDec(CDec(txtIdade.Text)) <= 8 Then
-                            txtClasv.Text = "Média"
+                If CDec(CDec(TxtIdade.Text)) <= 10 Then
+                    If CDec(TxtSaltoVert.Text) <= 16 Then
+                        TxtClasv.Text = "Abaixo da Média"
+                    ElseIf CDec(TxtSaltoVert.Text) <= 20 Then
+                        If CDec(CDec(TxtIdade.Text)) <= 8 Then
+                            TxtClasv.Text = "Média"
                         Else
-                            txtClasv.Text = "Abaixo da Média"
+                            TxtClasv.Text = "Abaixo da Média"
                         End If
-                    ElseIf CDec(txtSaltoVert.Text) <= 27 Then
-                        txtClasv.Text = "Média"
-                    ElseIf CDec(txtSaltoVert.Text) <= 30 Then
-                        If CDec(CDec(txtIdade.Text)) <= 8 Then
-                            txtClasv.Text = "Acima da Média"
+                    ElseIf CDec(TxtSaltoVert.Text) <= 27 Then
+                        TxtClasv.Text = "Média"
+                    ElseIf CDec(TxtSaltoVert.Text) <= 30 Then
+                        If CDec(CDec(TxtIdade.Text)) <= 8 Then
+                            TxtClasv.Text = "Acima da Média"
                         Else
-                            txtClasv.Text = "Média"
+                            TxtClasv.Text = "Média"
                         End If
                     Else
-                        txtClasv.Text = "Acima da Média"
+                        TxtClasv.Text = "Acima da Média"
                     End If
 
                     '=======================================================================================
                     '===================================IDADE DE 7 A 16 ANOS================================
                     '=======================================================================================
-                ElseIf CDec(CDec(txtIdade.Text)) <= 16 Then
-                    If CDec(txtSaltoVert.Text) <= 33 Then
-                        txtClasv.Text = "Fraco"
-                    ElseIf CDec(txtSaltoVert.Text) <= 36 Then
-                        If CDec(CDec(txtIdade.Text)) <= 12 Then
-                            txtClasv.Text = "Regular"
+                ElseIf CDec(CDec(TxtIdade.Text)) <= 16 Then
+                    If CDec(TxtSaltoVert.Text) <= 33 Then
+                        TxtClasv.Text = "Fraco"
+                    ElseIf CDec(TxtSaltoVert.Text) <= 36 Then
+                        If CDec(CDec(TxtIdade.Text)) <= 12 Then
+                            TxtClasv.Text = "Regular"
                         Else
-                            txtClasv.Text = "Fraco"
+                            TxtClasv.Text = "Fraco"
                         End If
-                    ElseIf CDec(txtSaltoVert.Text) = 37 Then
-                        If CDec(CDec(txtIdade.Text)) <= 12 Then
-                            txtClasv.Text = "Bom"
+                    ElseIf CDec(TxtSaltoVert.Text) = 37 Then
+                        If CDec(CDec(TxtIdade.Text)) <= 12 Then
+                            TxtClasv.Text = "Bom"
                         Else
-                            txtClasv.Text = "Fraco"
+                            TxtClasv.Text = "Fraco"
                         End If
-                    ElseIf CDec(txtSaltoVert.Text) <= 40 Then
-                        If CDec(CDec(txtIdade.Text)) <= 12 Then
-                            txtClasv.Text = "Bom"
-                        ElseIf CDec(CDec(txtIdade.Text)) <= 14 Then
-                            txtClasv.Text = "Regular"
+                    ElseIf CDec(TxtSaltoVert.Text) <= 40 Then
+                        If CDec(CDec(TxtIdade.Text)) <= 12 Then
+                            TxtClasv.Text = "Bom"
+                        ElseIf CDec(CDec(TxtIdade.Text)) <= 14 Then
+                            TxtClasv.Text = "Regular"
                         Else
-                            txtClasv.Text = "Fraco"
+                            TxtClasv.Text = "Fraco"
                         End If
-                    ElseIf CDec(txtSaltoVert.Text) <= 43 Then
-                        If CDec(CDec(txtIdade.Text)) <= 12 Then
-                            txtClasv.Text = "Muito Bom"
-                        ElseIf CDec(CDec(txtIdade.Text)) <= 14 Then
-                            txtClasv.Text = "Regular"
+                    ElseIf CDec(TxtSaltoVert.Text) <= 43 Then
+                        If CDec(CDec(TxtIdade.Text)) <= 12 Then
+                            TxtClasv.Text = "Muito Bom"
+                        ElseIf CDec(CDec(TxtIdade.Text)) <= 14 Then
+                            TxtClasv.Text = "Regular"
                         Else
-                            txtClasv.Text = "Fraco"
+                            TxtClasv.Text = "Fraco"
                         End If
-                    ElseIf CDec(txtSaltoVert.Text) = 44 Then
-                        If CDec(CDec(txtIdade.Text)) <= 12 Then
-                            txtClasv.Text = "Excelente"
-                        ElseIf CDec(CDec(txtIdade.Text)) <= 14 Then
-                            txtClasv.Text = "Bom"
+                    ElseIf CDec(TxtSaltoVert.Text) = 44 Then
+                        If CDec(CDec(TxtIdade.Text)) <= 12 Then
+                            TxtClasv.Text = "Excelente"
+                        ElseIf CDec(CDec(TxtIdade.Text)) <= 14 Then
+                            TxtClasv.Text = "Bom"
                         Else
-                            txtClasv.Text = "Fraco"
+                            TxtClasv.Text = "Fraco"
                         End If
-                    ElseIf CDec(txtSaltoVert.Text) <= 49 Then
-                        If CDec(CDec(txtIdade.Text)) <= 12 Then
-                            txtClasv.Text = "Excelente"
-                        ElseIf CDec(CDec(txtIdade.Text)) <= 14 Then
-                            txtClasv.Text = "Bom"
+                    ElseIf CDec(TxtSaltoVert.Text) <= 49 Then
+                        If CDec(CDec(TxtIdade.Text)) <= 12 Then
+                            TxtClasv.Text = "Excelente"
+                        ElseIf CDec(CDec(TxtIdade.Text)) <= 14 Then
+                            TxtClasv.Text = "Bom"
                         Else
-                            txtClasv.Text = "Regular"
+                            TxtClasv.Text = "Regular"
                         End If
-                    ElseIf CDec(txtSaltoVert.Text) <= 54 Then
-                        If CDec(CDec(txtIdade.Text)) <= 12 Then
-                            txtClasv.Text = "Excelente"
-                        ElseIf CDec(CDec(txtIdade.Text)) <= 14 Then
-                            txtClasv.Text = "Muito Bom"
+                    ElseIf CDec(TxtSaltoVert.Text) <= 54 Then
+                        If CDec(CDec(TxtIdade.Text)) <= 12 Then
+                            TxtClasv.Text = "Excelente"
+                        ElseIf CDec(CDec(TxtIdade.Text)) <= 14 Then
+                            TxtClasv.Text = "Muito Bom"
                         Else
-                            txtClasv.Text = "Bom"
+                            TxtClasv.Text = "Bom"
                         End If
-                    ElseIf CDec(txtSaltoVert.Text) = 55 Then
-                        If CDec(CDec(txtIdade.Text)) <= 12 Then
-                            txtClasv.Text = "Excelente"
+                    ElseIf CDec(TxtSaltoVert.Text) = 55 Then
+                        If CDec(CDec(TxtIdade.Text)) <= 12 Then
+                            TxtClasv.Text = "Excelente"
                         Else
-                            txtClasv.Text = "Muito Bom"
+                            TxtClasv.Text = "Muito Bom"
                         End If
-                    ElseIf CDec(txtSaltoVert.Text) = 59 Then
-                        If CDec(CDec(txtIdade.Text)) <= 14 Then
-                            txtClasv.Text = "Excelente"
+                    ElseIf CDec(TxtSaltoVert.Text) = 59 Then
+                        If CDec(CDec(TxtIdade.Text)) <= 14 Then
+                            TxtClasv.Text = "Excelente"
                         Else
-                            txtClasv.Text = "Muito Bom"
+                            TxtClasv.Text = "Muito Bom"
                         End If
                     Else
-                        txtClasv.Text = "Excelente"
+                        TxtClasv.Text = "Excelente"
                     End If
                     '=======================================================================================
                     '===================================IDADE DE 17 A 70 ANOS================================
                     '=======================================================================================
                 Else
-                    If CDec(txtSaltoVert.Text) <= 23 Then
-                        txtClasv.Text = "Abaixo da Média"
-                    ElseIf CDec(txtSaltoVert.Text) <= 30 Then
-                        If CDec(CDec(txtIdade.Text)) <= 50 Then
-                            txtClasv.Text = "Abaixo da Média"
+                    If CDec(TxtSaltoVert.Text) <= 23 Then
+                        TxtClasv.Text = "Abaixo da Média"
+                    ElseIf CDec(TxtSaltoVert.Text) <= 30 Then
+                        If CDec(CDec(TxtIdade.Text)) <= 50 Then
+                            TxtClasv.Text = "Abaixo da Média"
                         Else
-                            txtClasv.Text = "Média"
+                            TxtClasv.Text = "Média"
                         End If
-                    ElseIf CDec(txtSaltoVert.Text) <= 32 Then
-                        If CDec(CDec(txtIdade.Text)) <= 40 Then
-                            txtClasv.Text = "Abaixo da Média"
+                    ElseIf CDec(TxtSaltoVert.Text) <= 32 Then
+                        If CDec(CDec(TxtIdade.Text)) <= 40 Then
+                            TxtClasv.Text = "Abaixo da Média"
                         Else
-                            txtClasv.Text = "Média"
+                            TxtClasv.Text = "Média"
                         End If
-                    ElseIf CDec(txtSaltoVert.Text) <= 36 Then
-                        If CDec(CDec(txtIdade.Text)) <= 30 Then
-                            txtClasv.Text = "Abaixo da Média"
+                    ElseIf CDec(TxtSaltoVert.Text) <= 36 Then
+                        If CDec(CDec(TxtIdade.Text)) <= 30 Then
+                            TxtClasv.Text = "Abaixo da Média"
                         Else
-                            txtClasv.Text = "Média"
+                            TxtClasv.Text = "Média"
                         End If
-                    ElseIf CDec(txtSaltoVert.Text) = 37 Then
-                        If CDec(CDec(txtIdade.Text)) <= 20 Then
-                            txtClasv.Text = "Média"
-                        ElseIf CDec(CDec(txtIdade.Text)) <= 30 Then
-                            txtClasv.Text = "Abaixo da Média"
+                    ElseIf CDec(TxtSaltoVert.Text) = 37 Then
+                        If CDec(CDec(TxtIdade.Text)) <= 20 Then
+                            TxtClasv.Text = "Média"
+                        ElseIf CDec(CDec(TxtIdade.Text)) <= 30 Then
+                            TxtClasv.Text = "Abaixo da Média"
                         Else
-                            txtClasv.Text = "Média"
+                            TxtClasv.Text = "Média"
                         End If
-                    ElseIf CDec(txtSaltoVert.Text) = 38 Then
-                        If CDec(CDec(txtIdade.Text)) <= 20 Then
-                            txtClasv.Text = "Média"
-                        ElseIf CDec(CDec(txtIdade.Text)) <= 30 Then
-                            txtClasv.Text = "Abaixo da Média"
-                        ElseIf CDec(CDec(txtIdade.Text)) <= 50 Then
-                            txtClasv.Text = "Média"
+                    ElseIf CDec(TxtSaltoVert.Text) = 38 Then
+                        If CDec(CDec(TxtIdade.Text)) <= 20 Then
+                            TxtClasv.Text = "Média"
+                        ElseIf CDec(CDec(TxtIdade.Text)) <= 30 Then
+                            TxtClasv.Text = "Abaixo da Média"
+                        ElseIf CDec(CDec(TxtIdade.Text)) <= 50 Then
+                            TxtClasv.Text = "Média"
                         Else
-                            txtClasv.Text = "Acima da Média"
+                            TxtClasv.Text = "Acima da Média"
                         End If
-                    ElseIf CDec(txtSaltoVert.Text) <= 44 Then
-                        If CDec(CDec(txtIdade.Text)) <= 50 Then
-                            txtClasv.Text = "Média"
+                    ElseIf CDec(TxtSaltoVert.Text) <= 44 Then
+                        If CDec(CDec(TxtIdade.Text)) <= 50 Then
+                            TxtClasv.Text = "Média"
                         Else
-                            txtClasv.Text = "Acima da Média"
+                            TxtClasv.Text = "Acima da Média"
                         End If
-                    ElseIf CDec(txtSaltoVert.Text) <= 47 Then
-                        If CDec(CDec(txtIdade.Text)) <= 40 Then
-                            txtClasv.Text = "Média"
+                    ElseIf CDec(TxtSaltoVert.Text) <= 47 Then
+                        If CDec(CDec(TxtIdade.Text)) <= 40 Then
+                            TxtClasv.Text = "Média"
                         Else
-                            txtClasv.Text = "Acima da Média"
+                            TxtClasv.Text = "Acima da Média"
                         End If
-                    ElseIf CDec(txtSaltoVert.Text) = 48 Then
-                        If CDec(CDec(txtIdade.Text)) <= 30 Then
-                            txtClasv.Text = "Média"
+                    ElseIf CDec(TxtSaltoVert.Text) = 48 Then
+                        If CDec(CDec(TxtIdade.Text)) <= 30 Then
+                            TxtClasv.Text = "Média"
                         Else
-                            txtClasv.Text = "Acima da Média"
+                            TxtClasv.Text = "Acima da Média"
                         End If
-                    ElseIf CDec(txtSaltoVert.Text) = 52 Then
-                        If CDec(CDec(txtIdade.Text)) <= 20 Then
-                            txtClasv.Text = "Acima da Média"
-                        ElseIf CDec(CDec(txtIdade.Text)) <= 30 Then
-                            txtClasv.Text = "Média"
+                    ElseIf CDec(TxtSaltoVert.Text) = 52 Then
+                        If CDec(CDec(TxtIdade.Text)) <= 20 Then
+                            TxtClasv.Text = "Acima da Média"
+                        ElseIf CDec(CDec(TxtIdade.Text)) <= 30 Then
+                            TxtClasv.Text = "Média"
                         Else
-                            txtClasv.Text = "Acima da Média"
+                            TxtClasv.Text = "Acima da Média"
                         End If
                     Else
-                        txtClasv.Text = "Acima da Média"
+                        TxtClasv.Text = "Acima da Média"
                     End If
                 End If
             Else
-                txtClasv.Text = "Não Avaliar"
+                TxtClasv.Text = "Não Avaliar"
             End If
         Else
 
-            If CDec(CDec(txtIdade.Text)) > 6 Then
+            If CDec(CDec(TxtIdade.Text)) > 6 Then
                 '=======================================================================================
                 '===================================IDADE DE 7 A 10 ANOS================================
                 '=======================================================================================
-                If CDec(CDec(txtIdade.Text)) <= 10 Then
-                    If CDec(txtSaltoVert.Text) <= 17 Then
-                        txtClasv.Text = "Abaixo da Média"
-                    ElseIf CDec(txtSaltoVert.Text) <= 20 Then
-                        If CDec(CDec(txtIdade.Text)) <= 8 Then
-                            txtClasv.Text = "Média"
+                If CDec(CDec(TxtIdade.Text)) <= 10 Then
+                    If CDec(TxtSaltoVert.Text) <= 17 Then
+                        TxtClasv.Text = "Abaixo da Média"
+                    ElseIf CDec(TxtSaltoVert.Text) <= 20 Then
+                        If CDec(CDec(TxtIdade.Text)) <= 8 Then
+                            TxtClasv.Text = "Média"
                         Else
-                            txtClasv.Text = "Abaixo da Média"
+                            TxtClasv.Text = "Abaixo da Média"
                         End If
-                    ElseIf CDec(txtSaltoVert.Text) <= 23 Then
-                        If CDec(CDec(txtIdade.Text)) = 9 Then
-                            txtClasv.Text = "Abaixo da Média"
+                    ElseIf CDec(TxtSaltoVert.Text) <= 23 Then
+                        If CDec(CDec(TxtIdade.Text)) = 9 Then
+                            TxtClasv.Text = "Abaixo da Média"
                         Else
-                            txtClasv.Text = "Média"
+                            TxtClasv.Text = "Média"
                         End If
-                    ElseIf CDec(txtSaltoVert.Text) <= 25 Then
-                        txtClasv.Text = "Média"
-                    ElseIf CDec(txtSaltoVert.Text) <= 28 Then
-                        If CDec(CDec(txtIdade.Text)) = 7 Then
-                            txtClasv.Text = "Acima da Média"
+                    ElseIf CDec(TxtSaltoVert.Text) <= 25 Then
+                        TxtClasv.Text = "Média"
+                    ElseIf CDec(TxtSaltoVert.Text) <= 28 Then
+                        If CDec(CDec(TxtIdade.Text)) = 7 Then
+                            TxtClasv.Text = "Acima da Média"
                         Else
-                            txtClasv.Text = "Média"
+                            TxtClasv.Text = "Média"
                         End If
-                    ElseIf CDec(txtSaltoVert.Text) = 29 Then
-                        If CDec(CDec(txtIdade.Text)) <= 8 Then
-                            txtClasv.Text = "Acima da Média"
+                    ElseIf CDec(TxtSaltoVert.Text) = 29 Then
+                        If CDec(CDec(TxtIdade.Text)) <= 8 Then
+                            TxtClasv.Text = "Acima da Média"
                         Else
-                            txtClasv.Text = "Média"
+                            TxtClasv.Text = "Média"
                         End If
-                    ElseIf CDec(txtSaltoVert.Text) = 30 Then
-                        If CDec(CDec(txtIdade.Text)) = 10 Then
-                            txtClasv.Text = "Média"
+                    ElseIf CDec(TxtSaltoVert.Text) = 30 Then
+                        If CDec(CDec(TxtIdade.Text)) = 10 Then
+                            TxtClasv.Text = "Média"
                         Else
-                            txtClasv.Text = "Acima da Média"
+                            TxtClasv.Text = "Acima da Média"
                         End If
                     Else
-                        txtClasv.Text = "Acima da Média"
+                        TxtClasv.Text = "Acima da Média"
                     End If
 
                     '=======================================================================================
                     '===================================IDADE DE 7 A 16 ANOS================================
                     '=======================================================================================
-                ElseIf CDec(CDec(txtIdade.Text)) <= 16 Then
-                    If CDec(txtSaltoVert.Text) <= 28 Then
-                        txtClasv.Text = "Fraco"
-                    ElseIf CDec(txtSaltoVert.Text) <= 32 Then
-                        If CDec(CDec(txtIdade.Text)) <= 12 Then
-                            txtClasv.Text = "Regular"
+                ElseIf CDec(CDec(TxtIdade.Text)) <= 16 Then
+                    If CDec(TxtSaltoVert.Text) <= 28 Then
+                        TxtClasv.Text = "Fraco"
+                    ElseIf CDec(TxtSaltoVert.Text) <= 32 Then
+                        If CDec(CDec(TxtIdade.Text)) <= 12 Then
+                            TxtClasv.Text = "Regular"
                         Else
-                            txtClasv.Text = "Fraco"
+                            TxtClasv.Text = "Fraco"
                         End If
-                    ElseIf CDec(txtSaltoVert.Text) <= 34 Then
-                        If CDec(CDec(txtIdade.Text)) <= 12 Then
-                            txtClasv.Text = "Bom"
+                    ElseIf CDec(TxtSaltoVert.Text) <= 34 Then
+                        If CDec(CDec(TxtIdade.Text)) <= 12 Then
+                            TxtClasv.Text = "Bom"
                         Else
-                            txtClasv.Text = "Fraco"
+                            TxtClasv.Text = "Fraco"
                         End If
-                    ElseIf CDec(txtSaltoVert.Text) <= 36 Then
-                        If CDec(CDec(txtIdade.Text)) <= 12 Then
-                            txtClasv.Text = "Bom"
-                        ElseIf CDec(CDec(txtIdade.Text)) <= 14 Then
-                            txtClasv.Text = "Regular"
+                    ElseIf CDec(TxtSaltoVert.Text) <= 36 Then
+                        If CDec(CDec(TxtIdade.Text)) <= 12 Then
+                            TxtClasv.Text = "Bom"
+                        ElseIf CDec(CDec(TxtIdade.Text)) <= 14 Then
+                            TxtClasv.Text = "Regular"
                         Else
-                            txtClasv.Text = "Fraco"
+                            TxtClasv.Text = "Fraco"
                         End If
-                    ElseIf CDec(txtSaltoVert.Text) <= 38 Then
-                        If CDec(CDec(txtIdade.Text)) <= 12 Then
-                            txtClasv.Text = "Muito Bom"
-                        ElseIf CDec(CDec(txtIdade.Text)) <= 14 Then
-                            txtClasv.Text = "Regular"
+                    ElseIf CDec(TxtSaltoVert.Text) <= 38 Then
+                        If CDec(CDec(TxtIdade.Text)) <= 12 Then
+                            TxtClasv.Text = "Muito Bom"
+                        ElseIf CDec(CDec(TxtIdade.Text)) <= 14 Then
+                            TxtClasv.Text = "Regular"
                         Else
-                            txtClasv.Text = "Fraco"
+                            TxtClasv.Text = "Fraco"
                         End If
-                    ElseIf CDec(txtSaltoVert.Text) = 39 Then
-                        If CDec(CDec(txtIdade.Text)) <= 12 Then
-                            txtClasv.Text = "Muito Bom"
+                    ElseIf CDec(TxtSaltoVert.Text) = 39 Then
+                        If CDec(CDec(TxtIdade.Text)) <= 12 Then
+                            TxtClasv.Text = "Muito Bom"
                         Else
-                            txtClasv.Text = "Regular"
+                            TxtClasv.Text = "Regular"
                         End If
-                    ElseIf CDec(txtSaltoVert.Text) = 40 Then
-                        If CDec(CDec(txtIdade.Text)) <= 12 Then
-                            txtClasv.Text = "Muito Bom"
-                        ElseIf CDec(CDec(txtIdade.Text)) <= 14 Then
-                            txtClasv.Text = "Bom"
+                    ElseIf CDec(TxtSaltoVert.Text) = 40 Then
+                        If CDec(CDec(TxtIdade.Text)) <= 12 Then
+                            TxtClasv.Text = "Muito Bom"
+                        ElseIf CDec(CDec(TxtIdade.Text)) <= 14 Then
+                            TxtClasv.Text = "Bom"
                         Else
-                            txtClasv.Text = "Regular"
+                            TxtClasv.Text = "Regular"
                         End If
-                    ElseIf CDec(txtSaltoVert.Text) <= 42 Then
-                        If CDec(CDec(txtIdade.Text)) <= 12 Then
-                            txtClasv.Text = "Excelente"
-                        ElseIf CDec(CDec(txtIdade.Text)) <= 14 Then
-                            txtClasv.Text = "Bom"
+                    ElseIf CDec(TxtSaltoVert.Text) <= 42 Then
+                        If CDec(CDec(TxtIdade.Text)) <= 12 Then
+                            TxtClasv.Text = "Excelente"
+                        ElseIf CDec(CDec(TxtIdade.Text)) <= 14 Then
+                            TxtClasv.Text = "Bom"
                         Else
-                            txtClasv.Text = "Regular"
+                            TxtClasv.Text = "Regular"
                         End If
-                    ElseIf CDec(txtSaltoVert.Text) <= 44 Then
-                        If CDec(CDec(txtIdade.Text)) <= 12 Then
-                            txtClasv.Text = "Excelente"
+                    ElseIf CDec(TxtSaltoVert.Text) <= 44 Then
+                        If CDec(CDec(TxtIdade.Text)) <= 12 Then
+                            TxtClasv.Text = "Excelente"
                         Else
-                            txtClasv.Text = "Bom"
+                            TxtClasv.Text = "Bom"
                         End If
-                    ElseIf CDec(txtSaltoVert.Text) <= 46 Then
-                        If CDec(CDec(txtIdade.Text)) <= 12 Then
-                            txtClasv.Text = "Excelente"
-                        ElseIf CDec(CDec(txtIdade.Text)) <= 14 Then
-                            txtClasv.Text = "Muito Bom"
+                    ElseIf CDec(TxtSaltoVert.Text) <= 46 Then
+                        If CDec(CDec(TxtIdade.Text)) <= 12 Then
+                            TxtClasv.Text = "Excelente"
+                        ElseIf CDec(CDec(TxtIdade.Text)) <= 14 Then
+                            TxtClasv.Text = "Muito Bom"
                         Else
-                            txtClasv.Text = "Bom"
+                            TxtClasv.Text = "Bom"
                         End If
-                    ElseIf CDec(txtSaltoVert.Text) <= 49 Then
-                        If CDec(CDec(txtIdade.Text)) <= 12 Then
-                            txtClasv.Text = "Excelente"
+                    ElseIf CDec(TxtSaltoVert.Text) <= 49 Then
+                        If CDec(CDec(TxtIdade.Text)) <= 12 Then
+                            TxtClasv.Text = "Excelente"
                         Else
-                            txtClasv.Text = "Muito Bom"
+                            TxtClasv.Text = "Muito Bom"
                         End If
-                    ElseIf CDec(txtSaltoVert.Text) = 50 Then
-                        If CDec(CDec(txtIdade.Text)) <= 14 Then
-                            txtClasv.Text = "Excelente"
+                    ElseIf CDec(TxtSaltoVert.Text) = 50 Then
+                        If CDec(CDec(TxtIdade.Text)) <= 14 Then
+                            TxtClasv.Text = "Excelente"
                         Else
-                            txtClasv.Text = "Muito Bom"
+                            TxtClasv.Text = "Muito Bom"
                         End If
                     Else
-                        txtClasv.Text = "Excelente"
+                        TxtClasv.Text = "Excelente"
                     End If
                     '=======================================================================================
                     '===================================IDADE DE 17 A 70 ANOS================================
                     '=======================================================================================
                 Else
-                    If CDec(txtSaltoVert.Text) <= 16 Then
-                        txtClasv.Text = "Abaixo da Média"
-                    ElseIf CDec(txtSaltoVert.Text) <= 21 Then
-                        If CDec(CDec(txtIdade.Text)) <= 50 Then
-                            txtClasv.Text = "Abaixo da Média"
+                    If CDec(TxtSaltoVert.Text) <= 16 Then
+                        TxtClasv.Text = "Abaixo da Média"
+                    ElseIf CDec(TxtSaltoVert.Text) <= 21 Then
+                        If CDec(CDec(TxtIdade.Text)) <= 50 Then
+                            TxtClasv.Text = "Abaixo da Média"
                         Else
-                            txtClasv.Text = "Média"
+                            TxtClasv.Text = "Média"
                         End If
-                    ElseIf CDec(txtSaltoVert.Text) <= 23 Then
-                        If CDec(CDec(txtIdade.Text)) <= 40 Then
-                            txtClasv.Text = "Abaixo da Média"
+                    ElseIf CDec(TxtSaltoVert.Text) <= 23 Then
+                        If CDec(CDec(TxtIdade.Text)) <= 40 Then
+                            TxtClasv.Text = "Abaixo da Média"
                         Else
-                            txtClasv.Text = "Média"
+                            TxtClasv.Text = "Média"
                         End If
-                    ElseIf CDec(txtSaltoVert.Text) <= 26 Then
-                        If CDec(CDec(txtIdade.Text)) <= 30 Then
-                            txtClasv.Text = "Abaixo da Média"
+                    ElseIf CDec(TxtSaltoVert.Text) <= 26 Then
+                        If CDec(CDec(TxtIdade.Text)) <= 30 Then
+                            TxtClasv.Text = "Abaixo da Média"
                         Else
-                            txtClasv.Text = "Média"
+                            TxtClasv.Text = "Média"
                         End If
-                    ElseIf CDec(txtSaltoVert.Text) = 27 Then
-                        If CDec(CDec(txtIdade.Text)) <= 20 Then
-                            txtClasv.Text = "Abaixo da Média"
-                        ElseIf CDec(CDec(txtIdade.Text)) <= 50 Then
-                            txtClasv.Text = "Média"
+                    ElseIf CDec(TxtSaltoVert.Text) = 27 Then
+                        If CDec(CDec(TxtIdade.Text)) <= 20 Then
+                            TxtClasv.Text = "Abaixo da Média"
+                        ElseIf CDec(CDec(TxtIdade.Text)) <= 50 Then
+                            TxtClasv.Text = "Média"
                         Else
-                            txtClasv.Text = "Acima da Média"
+                            TxtClasv.Text = "Acima da Média"
                         End If
-                    ElseIf CDec(txtSaltoVert.Text) <= 34 Then
-                        If CDec(CDec(txtIdade.Text)) <= 40 Then
-                            txtClasv.Text = "Média"
+                    ElseIf CDec(TxtSaltoVert.Text) <= 34 Then
+                        If CDec(CDec(TxtIdade.Text)) <= 40 Then
+                            TxtClasv.Text = "Média"
                         Else
-                            txtClasv.Text = "Acima da Média"
+                            TxtClasv.Text = "Acima da Média"
                         End If
-                    ElseIf CDec(txtSaltoVert.Text) <= 38 Then
-                        If CDec(CDec(txtIdade.Text)) <= 30 Then
-                            txtClasv.Text = "Média"
+                    ElseIf CDec(TxtSaltoVert.Text) <= 38 Then
+                        If CDec(CDec(TxtIdade.Text)) <= 30 Then
+                            TxtClasv.Text = "Média"
                         Else
-                            txtClasv.Text = "Acima da Média"
+                            TxtClasv.Text = "Acima da Média"
                         End If
-                    ElseIf CDec(txtSaltoVert.Text) = 39 Then
-                        If CDec(CDec(txtIdade.Text)) <= 20 Then
-                            txtClasv.Text = "Média"
+                    ElseIf CDec(TxtSaltoVert.Text) = 39 Then
+                        If CDec(CDec(TxtIdade.Text)) <= 20 Then
+                            TxtClasv.Text = "Média"
                         Else
-                            txtClasv.Text = "Acima da Média"
+                            TxtClasv.Text = "Acima da Média"
                         End If
                     Else
-                        txtClasv.Text = "Acima da Média"
+                        TxtClasv.Text = "Acima da Média"
                     End If
                 End If
             Else
-                txtClasv.Text = "Não Avaliar"
+                TxtClasv.Text = "Não Avaliar"
             End If
         End If
     End Sub
     Private Sub Abdominais()
-        If cbxSexo.Text = "Masculino" Then
-            If CDec(CDec(txtIdade.Text)) < 10 Then
-                txtClaAbd.Text = "Deficiente"
+        If CbxSexo.Text = "Masculino" Then
+            If CDec(CDec(TxtIdade.Text)) < 10 Then
+                TxtClaAbd.Text = "Deficiente"
             Else
-                If CDec(txtAbdominais.Text) = 8 Then
-                    txtClaAbd.Text = "Deficientes"
-                ElseIf CDec(txtAbdominais.Text) <= 11 Then
-                    If CDec(CDec(txtIdade.Text)) <= 59 Then
-                        txtClaAbd.Text = "Deficientes"
+                If CDec(TxtAbdominais.Text) = 8 Then
+                    TxtClaAbd.Text = "Deficientes"
+                ElseIf CDec(TxtAbdominais.Text) <= 11 Then
+                    If CDec(CDec(TxtIdade.Text)) <= 59 Then
+                        TxtClaAbd.Text = "Deficientes"
                     Else
-                        txtClaAbd.Text = "Fraco"
+                        TxtClaAbd.Text = "Fraco"
                     End If
-                ElseIf CDec(txtAbdominais.Text) = 12 Then
-                    If CDec(CDec(txtIdade.Text)) <= 49 Then
-                        txtClaAbd.Text = "Deficientes"
+                ElseIf CDec(TxtAbdominais.Text) = 12 Then
+                    If CDec(CDec(TxtIdade.Text)) <= 49 Then
+                        TxtClaAbd.Text = "Deficientes"
                     Else
-                        txtClaAbd.Text = "Fraco"
+                        TxtClaAbd.Text = "Fraco"
                     End If
-                ElseIf CDec(txtAbdominais.Text) <= 16 Then
-                    If CDec(CDec(txtIdade.Text)) <= 49 Then
-                        txtClaAbd.Text = "Deficientes"
-                    ElseIf CDec(CDec(txtIdade.Text)) <= 59 Then
-                        txtClaAbd.Text = "Fraco"
+                ElseIf CDec(TxtAbdominais.Text) <= 16 Then
+                    If CDec(CDec(TxtIdade.Text)) <= 49 Then
+                        TxtClaAbd.Text = "Deficientes"
+                    ElseIf CDec(CDec(TxtIdade.Text)) <= 59 Then
+                        TxtClaAbd.Text = "Fraco"
                     Else
-                        txtClaAbd.Text = "Regular"
+                        TxtClaAbd.Text = "Regular"
                     End If
-                ElseIf CDec(txtAbdominais.Text) <= 18 Then
-                    If CDec(CDec(txtIdade.Text)) <= 39 Then
-                        txtClaAbd.Text = "Deficiente"
-                    ElseIf CDec(CDec(txtIdade.Text)) <= 49 Then
-                        txtClaAbd.Text = "Fraco"
+                ElseIf CDec(TxtAbdominais.Text) <= 18 Then
+                    If CDec(CDec(TxtIdade.Text)) <= 39 Then
+                        TxtClaAbd.Text = "Deficiente"
+                    ElseIf CDec(CDec(TxtIdade.Text)) <= 49 Then
+                        TxtClaAbd.Text = "Fraco"
                     Else
-                        txtClaAbd.Text = "Regular"
+                        TxtClaAbd.Text = "Regular"
                     End If
-                ElseIf CDec(txtAbdominais.Text) <= 20 Then
-                    If CDec(CDec(txtIdade.Text)) <= 39 Then
-                        txtClaAbd.Text = "Deficiente"
-                    ElseIf CDec(CDec(txtIdade.Text)) <= 49 Then
-                        txtClaAbd.Text = "Fraco"
-                    ElseIf CDec(CDec(txtIdade.Text)) <= 59 Then
-                        txtClaAbd.Text = "Regular"
+                ElseIf CDec(TxtAbdominais.Text) <= 20 Then
+                    If CDec(CDec(TxtIdade.Text)) <= 39 Then
+                        TxtClaAbd.Text = "Deficiente"
+                    ElseIf CDec(CDec(TxtIdade.Text)) <= 49 Then
+                        TxtClaAbd.Text = "Fraco"
+                    ElseIf CDec(CDec(TxtIdade.Text)) <= 59 Then
+                        TxtClaAbd.Text = "Regular"
                     Else
-                        txtClaAbd.Text = "Bom"
+                        TxtClaAbd.Text = "Bom"
                     End If
-                ElseIf CDec(txtAbdominais.Text) = 21 Then
-                    If CDec(CDec(txtIdade.Text)) <= 39 Then
-                        txtClaAbd.Text = "Deficiente"
-                    ElseIf CDec(CDec(txtIdade.Text)) <= 59 Then
-                        txtClaAbd.Text = "Regular"
+                ElseIf CDec(TxtAbdominais.Text) = 21 Then
+                    If CDec(CDec(TxtIdade.Text)) <= 39 Then
+                        TxtClaAbd.Text = "Deficiente"
+                    ElseIf CDec(CDec(TxtIdade.Text)) <= 59 Then
+                        TxtClaAbd.Text = "Regular"
                     Else
-                        txtClaAbd.Text = "Bom"
+                        TxtClaAbd.Text = "Bom"
                     End If
-                ElseIf CDec(txtAbdominais.Text) = 22 Then
-                    If CDec(CDec(txtIdade.Text)) <= 29 Then
-                        txtClaAbd.Text = "Deficiente"
-                    ElseIf CDec(CDec(txtIdade.Text)) <= 39 Then
-                        txtClaAbd.Text = "Fraco"
+                ElseIf CDec(TxtAbdominais.Text) = 22 Then
+                    If CDec(CDec(TxtIdade.Text)) <= 29 Then
+                        TxtClaAbd.Text = "Deficiente"
+                    ElseIf CDec(CDec(TxtIdade.Text)) <= 39 Then
+                        TxtClaAbd.Text = "Fraco"
                     Else
-                        txtClaAbd.Text = "Regular"
+                        TxtClaAbd.Text = "Regular"
                     End If
-                ElseIf CDec(txtAbdominais.Text) <= 24 Then
-                    If CDec(CDec(txtIdade.Text)) <= 29 Then
-                        txtClaAbd.Text = "Deficiente"
-                    ElseIf CDec(CDec(txtIdade.Text)) <= 39 Then
-                        txtClaAbd.Text = "Fraco"
-                    ElseIf CDec(CDec(txtIdade.Text)) <= 49 Then
-                        txtClaAbd.Text = "Regular"
+                ElseIf CDec(TxtAbdominais.Text) <= 24 Then
+                    If CDec(CDec(TxtIdade.Text)) <= 29 Then
+                        TxtClaAbd.Text = "Deficiente"
+                    ElseIf CDec(CDec(TxtIdade.Text)) <= 39 Then
+                        TxtClaAbd.Text = "Fraco"
+                    ElseIf CDec(CDec(TxtIdade.Text)) <= 49 Then
+                        TxtClaAbd.Text = "Regular"
                     Else
-                        txtClaAbd.Text = "Bom"
+                        TxtClaAbd.Text = "Bom"
                     End If
-                ElseIf CDec(txtAbdominais.Text) = 25 Then
-                    If CDec(CDec(txtIdade.Text)) <= 29 Then
-                        txtClaAbd.Text = "Deficiente"
-                    ElseIf CDec(CDec(txtIdade.Text)) <= 39 Then
-                        txtClaAbd.Text = "Fraco"
-                    ElseIf CDec(CDec(txtIdade.Text)) <= 49 Then
-                        txtClaAbd.Text = "Regular"
-                    ElseIf CDec(CDec(txtIdade.Text)) <= 59 Then
-                        txtClaAbd.Text = "Bom"
+                ElseIf CDec(TxtAbdominais.Text) = 25 Then
+                    If CDec(CDec(TxtIdade.Text)) <= 29 Then
+                        TxtClaAbd.Text = "Deficiente"
+                    ElseIf CDec(CDec(TxtIdade.Text)) <= 39 Then
+                        TxtClaAbd.Text = "Fraco"
+                    ElseIf CDec(CDec(TxtIdade.Text)) <= 49 Then
+                        TxtClaAbd.Text = "Regular"
+                    ElseIf CDec(CDec(TxtIdade.Text)) <= 59 Then
+                        TxtClaAbd.Text = "Bom"
                     Else
-                        txtClaAbd.Text = "Excelente"
+                        TxtClaAbd.Text = "Excelente"
                     End If
-                ElseIf CDec(txtAbdominais.Text) = 26 Then
-                    If CDec(CDec(txtIdade.Text)) <= 29 Then
-                        txtClaAbd.Text = "Deficiente"
-                    ElseIf CDec(CDec(txtIdade.Text)) <= 39 Then
-                        txtClaAbd.Text = "Fraco"
-                    ElseIf CDec(CDec(txtIdade.Text)) <= 59 Then
-                        txtClaAbd.Text = "Bom"
+                ElseIf CDec(TxtAbdominais.Text) = 26 Then
+                    If CDec(CDec(TxtIdade.Text)) <= 29 Then
+                        TxtClaAbd.Text = "Deficiente"
+                    ElseIf CDec(CDec(TxtIdade.Text)) <= 39 Then
+                        TxtClaAbd.Text = "Fraco"
+                    ElseIf CDec(CDec(TxtIdade.Text)) <= 59 Then
+                        TxtClaAbd.Text = "Bom"
                     Else
-                        txtClaAbd.Text = "Excelente"
+                        TxtClaAbd.Text = "Excelente"
                     End If
-                ElseIf CDec(txtAbdominais.Text) <= 28 Then
-                    If CDec(CDec(txtIdade.Text)) <= 29 Then
-                        txtClaAbd.Text = "Deficiente"
-                    ElseIf CDec(CDec(txtIdade.Text)) <= 39 Then
-                        txtClaAbd.Text = "Regular"
-                    ElseIf CDec(CDec(txtIdade.Text)) <= 59 Then
-                        txtClaAbd.Text = "Bom"
+                ElseIf CDec(TxtAbdominais.Text) <= 28 Then
+                    If CDec(CDec(TxtIdade.Text)) <= 29 Then
+                        TxtClaAbd.Text = "Deficiente"
+                    ElseIf CDec(CDec(TxtIdade.Text)) <= 39 Then
+                        TxtClaAbd.Text = "Regular"
+                    ElseIf CDec(CDec(TxtIdade.Text)) <= 59 Then
+                        TxtClaAbd.Text = "Bom"
                     Else
-                        txtClaAbd.Text = "Excelente"
+                        TxtClaAbd.Text = "Excelente"
                     End If
-                ElseIf CDec(txtAbdominais.Text) = 29 Then
-                    If CDec(CDec(txtIdade.Text)) <= 29 Then
-                        txtClaAbd.Text = "Deficiente"
-                    ElseIf CDec(CDec(txtIdade.Text)) <= 39 Then
-                        txtClaAbd.Text = "Regular"
-                    ElseIf CDec(CDec(txtIdade.Text)) <= 49 Then
-                        txtClaAbd.Text = "Bom"
+                ElseIf CDec(TxtAbdominais.Text) = 29 Then
+                    If CDec(CDec(TxtIdade.Text)) <= 29 Then
+                        TxtClaAbd.Text = "Deficiente"
+                    ElseIf CDec(CDec(TxtIdade.Text)) <= 39 Then
+                        TxtClaAbd.Text = "Regular"
+                    ElseIf CDec(CDec(TxtIdade.Text)) <= 49 Then
+                        TxtClaAbd.Text = "Bom"
                     Else
-                        txtClaAbd.Text = "Excelente"
+                        TxtClaAbd.Text = "Excelente"
                     End If
-                ElseIf CDec(txtAbdominais.Text) <= 31 Then
-                    If CDec(CDec(txtIdade.Text)) <= 19 Then
-                        txtClaAbd.Text = "Deficiente"
-                    ElseIf CDec(CDec(txtIdade.Text)) <= 29 Then
-                        txtClaAbd.Text = "Fraco"
-                    ElseIf CDec(CDec(txtIdade.Text)) <= 39 Then
-                        txtClaAbd.Text = "Regular"
-                    ElseIf CDec(CDec(txtIdade.Text)) <= 49 Then
-                        txtClaAbd.Text = "Bom"
+                ElseIf CDec(TxtAbdominais.Text) <= 31 Then
+                    If CDec(CDec(TxtIdade.Text)) <= 19 Then
+                        TxtClaAbd.Text = "Deficiente"
+                    ElseIf CDec(CDec(TxtIdade.Text)) <= 29 Then
+                        TxtClaAbd.Text = "Fraco"
+                    ElseIf CDec(CDec(TxtIdade.Text)) <= 39 Then
+                        TxtClaAbd.Text = "Regular"
+                    ElseIf CDec(CDec(TxtIdade.Text)) <= 49 Then
+                        TxtClaAbd.Text = "Bom"
                     Else
-                        txtClaAbd.Text = "Excelente"
+                        TxtClaAbd.Text = "Excelente"
                     End If
-                ElseIf CDec(txtAbdominais.Text) <= 34 Then
-                    If CDec(CDec(txtIdade.Text)) <= 19 Then
-                        txtClaAbd.Text = "Deficiente"
-                    ElseIf CDec(CDec(txtIdade.Text)) <= 29 Then
-                        txtClaAbd.Text = "Fraco"
-                    ElseIf CDec(CDec(txtIdade.Text)) <= 39 Then
-                        txtClaAbd.Text = "Bom"
+                ElseIf CDec(TxtAbdominais.Text) <= 34 Then
+                    If CDec(CDec(TxtIdade.Text)) <= 19 Then
+                        TxtClaAbd.Text = "Deficiente"
+                    ElseIf CDec(CDec(TxtIdade.Text)) <= 29 Then
+                        TxtClaAbd.Text = "Fraco"
+                    ElseIf CDec(CDec(TxtIdade.Text)) <= 39 Then
+                        TxtClaAbd.Text = "Bom"
                     Else
-                        txtClaAbd.Text = "Excelente"
+                        TxtClaAbd.Text = "Excelente"
                     End If
-                ElseIf CDec(txtAbdominais.Text) <= 36 Then
-                    If CDec(CDec(txtIdade.Text)) <= 19 Then
-                        txtClaAbd.Text = "Deficiente"
-                    ElseIf CDec(CDec(txtIdade.Text)) <= 29 Then
-                        txtClaAbd.Text = "Regular"
-                    ElseIf CDec(CDec(txtIdade.Text)) <= 39 Then
-                        txtClaAbd.Text = "Bom"
+                ElseIf CDec(TxtAbdominais.Text) <= 36 Then
+                    If CDec(CDec(TxtIdade.Text)) <= 19 Then
+                        TxtClaAbd.Text = "Deficiente"
+                    ElseIf CDec(CDec(TxtIdade.Text)) <= 29 Then
+                        TxtClaAbd.Text = "Regular"
+                    ElseIf CDec(CDec(TxtIdade.Text)) <= 39 Then
+                        TxtClaAbd.Text = "Bom"
                     Else
-                        txtClaAbd.Text = "Excelente"
+                        TxtClaAbd.Text = "Excelente"
                     End If
-                ElseIf CDec(txtAbdominais.Text) = 37 Then
-                    If CDec(CDec(txtIdade.Text)) <= 19 Then
-                        txtClaAbd.Text = "Deficiente"
-                    ElseIf CDec(CDec(txtIdade.Text)) <= 29 Then
-                        txtClaAbd.Text = "Regular"
+                ElseIf CDec(TxtAbdominais.Text) = 37 Then
+                    If CDec(CDec(TxtIdade.Text)) <= 19 Then
+                        TxtClaAbd.Text = "Deficiente"
+                    ElseIf CDec(CDec(TxtIdade.Text)) <= 29 Then
+                        TxtClaAbd.Text = "Regular"
                     Else
-                        txtClaAbd.Text = "Excelente"
+                        TxtClaAbd.Text = "Excelente"
                     End If
-                ElseIf CDec(txtAbdominais.Text) <= 39 Then
-                    If CDec(CDec(txtIdade.Text)) <= 19 Then
-                        txtClaAbd.Text = "Fraco"
-                    ElseIf CDec(CDec(txtIdade.Text)) <= 29 Then
-                        txtClaAbd.Text = "Regular"
+                ElseIf CDec(TxtAbdominais.Text) <= 39 Then
+                    If CDec(CDec(TxtIdade.Text)) <= 19 Then
+                        TxtClaAbd.Text = "Fraco"
+                    ElseIf CDec(CDec(TxtIdade.Text)) <= 29 Then
+                        TxtClaAbd.Text = "Regular"
                     Else
-                        txtClaAbd.Text = "Excelente"
+                        TxtClaAbd.Text = "Excelente"
                     End If
-                ElseIf CDec(txtAbdominais.Text) <= 42 Then
-                    If CDec(CDec(txtIdade.Text)) <= 19 Then
-                        txtClaAbd.Text = "Fraco"
-                    ElseIf CDec(CDec(txtIdade.Text)) <= 29 Then
-                        txtClaAbd.Text = "Bom"
+                ElseIf CDec(TxtAbdominais.Text) <= 42 Then
+                    If CDec(CDec(TxtIdade.Text)) <= 19 Then
+                        TxtClaAbd.Text = "Fraco"
+                    ElseIf CDec(CDec(TxtIdade.Text)) <= 29 Then
+                        TxtClaAbd.Text = "Bom"
                     Else
-                        txtClaAbd.Text = "Excelente"
+                        TxtClaAbd.Text = "Excelente"
                     End If
-                ElseIf CDec(txtAbdominais.Text) <= 44 Then
-                    If CDec(CDec(txtIdade.Text)) <= 19 Then
-                        txtClaAbd.Text = "Regular"
-                    ElseIf CDec(CDec(txtIdade.Text)) <= 29 Then
-                        txtClaAbd.Text = "Bom"
+                ElseIf CDec(TxtAbdominais.Text) <= 44 Then
+                    If CDec(CDec(TxtIdade.Text)) <= 19 Then
+                        TxtClaAbd.Text = "Regular"
+                    ElseIf CDec(CDec(TxtIdade.Text)) <= 29 Then
+                        TxtClaAbd.Text = "Bom"
                     Else
-                        txtClaAbd.Text = "Excelente"
+                        TxtClaAbd.Text = "Excelente"
                     End If
-                ElseIf CDec(txtAbdominais.Text) <= 47 Then
-                    If CDec(CDec(txtIdade.Text)) <= 19 Then
-                        txtClaAbd.Text = "Regular"
+                ElseIf CDec(TxtAbdominais.Text) <= 47 Then
+                    If CDec(CDec(TxtIdade.Text)) <= 19 Then
+                        TxtClaAbd.Text = "Regular"
                     Else
-                        txtClaAbd.Text = "Excelente"
+                        TxtClaAbd.Text = "Excelente"
                     End If
-                ElseIf CDec(txtAbdominais.Text) <= 52 Then
-                    If CDec(CDec(txtIdade.Text)) <= 19 Then
-                        txtClaAbd.Text = "Bom"
+                ElseIf CDec(TxtAbdominais.Text) <= 52 Then
+                    If CDec(CDec(TxtIdade.Text)) <= 19 Then
+                        TxtClaAbd.Text = "Bom"
                     Else
-                        txtClaAbd.Text = "Excelente"
+                        TxtClaAbd.Text = "Excelente"
                     End If
                 Else
-                    txtClaAbd.Text = "Excelente"
+                    TxtClaAbd.Text = "Excelente"
                 End If
             End If
         Else
-            If CDec(txtAbdominais.Text) <= 9 Then
-                If CDec(CDec(txtIdade.Text)) <= 59 Then
-                    txtClaAbd.Text = "Deficiente"
+            If CDec(TxtAbdominais.Text) <= 9 Then
+                If CDec(CDec(TxtIdade.Text)) <= 59 Then
+                    TxtClaAbd.Text = "Deficiente"
                 Else
-                    txtClaAbd.Text = "Fraco"
+                    TxtClaAbd.Text = "Fraco"
                 End If
-            ElseIf CDec(txtAbdominais.Text) = 10 Then
-                If CDec(CDec(txtIdade.Text)) <= 59 Then
-                    txtClaAbd.Text = "Deficiente"
+            ElseIf CDec(TxtAbdominais.Text) = 10 Then
+                If CDec(CDec(TxtIdade.Text)) <= 59 Then
+                    TxtClaAbd.Text = "Deficiente"
                 Else
-                    txtClaAbd.Text = "Regular"
+                    TxtClaAbd.Text = "Regular"
                 End If
-            ElseIf CDec(txtAbdominais.Text) <= 14 Then
-                If CDec(CDec(txtIdade.Text)) <= 49 Then
-                    txtClaAbd.Text = "Deficiente"
-                ElseIf CDec(CDec(txtIdade.Text)) <= 59 Then
-                    txtClaAbd.Text = "Fraco"
+            ElseIf CDec(TxtAbdominais.Text) <= 14 Then
+                If CDec(CDec(TxtIdade.Text)) <= 49 Then
+                    TxtClaAbd.Text = "Deficiente"
+                ElseIf CDec(CDec(TxtIdade.Text)) <= 59 Then
+                    TxtClaAbd.Text = "Fraco"
                 Else
-                    txtClaAbd.Text = "Regular"
+                    TxtClaAbd.Text = "Regular"
                 End If
-            ElseIf CDec(txtAbdominais.Text) = 15 Then
-                If CDec(CDec(txtIdade.Text)) <= 49 Then
-                    txtClaAbd.Text = "Deficiente"
-                ElseIf CDec(CDec(txtIdade.Text)) <= 59 Then
-                    txtClaAbd.Text = "Regular"
+            ElseIf CDec(TxtAbdominais.Text) = 15 Then
+                If CDec(CDec(TxtIdade.Text)) <= 49 Then
+                    TxtClaAbd.Text = "Deficiente"
+                ElseIf CDec(CDec(TxtIdade.Text)) <= 59 Then
+                    TxtClaAbd.Text = "Regular"
                 Else
-                    txtClaAbd.Text = "Bom"
+                    TxtClaAbd.Text = "Bom"
                 End If
-            ElseIf CDec(txtAbdominais.Text) <= 19 Then
-                If CDec(CDec(txtIdade.Text)) <= 39 Then
-                    txtClaAbd.Text = "Deficiente"
-                ElseIf CDec(CDec(txtIdade.Text)) <= 49 Then
-                    txtClaAbd.Text = "Fraco"
-                ElseIf CDec(CDec(txtIdade.Text)) <= 59 Then
-                    txtClaAbd.Text = "Regular"
+            ElseIf CDec(TxtAbdominais.Text) <= 19 Then
+                If CDec(CDec(TxtIdade.Text)) <= 39 Then
+                    TxtClaAbd.Text = "Deficiente"
+                ElseIf CDec(CDec(TxtIdade.Text)) <= 49 Then
+                    TxtClaAbd.Text = "Fraco"
+                ElseIf CDec(CDec(TxtIdade.Text)) <= 59 Then
+                    TxtClaAbd.Text = "Regular"
                 Else
-                    txtClaAbd.Text = "Bom"
+                    TxtClaAbd.Text = "Bom"
                 End If
-            ElseIf CDec(txtAbdominais.Text) = 20 Then
-                If CDec(CDec(txtIdade.Text)) <= 39 Then
-                    txtClaAbd.Text = "Deficiente"
-                ElseIf CDec(CDec(txtIdade.Text)) <= 49 Then
-                    txtClaAbd.Text = "Regular"
-                ElseIf CDec(CDec(txtIdade.Text)) <= 59 Then
-                    txtClaAbd.Text = "Bom"
+            ElseIf CDec(TxtAbdominais.Text) = 20 Then
+                If CDec(CDec(TxtIdade.Text)) <= 39 Then
+                    TxtClaAbd.Text = "Deficiente"
+                ElseIf CDec(CDec(TxtIdade.Text)) <= 49 Then
+                    TxtClaAbd.Text = "Regular"
+                ElseIf CDec(CDec(TxtIdade.Text)) <= 59 Then
+                    TxtClaAbd.Text = "Bom"
                 Else
-                    txtClaAbd.Text = "Excelente"
+                    TxtClaAbd.Text = "Excelente"
                 End If
-            ElseIf CDec(txtAbdominais.Text) <= 24 Then
-                If CDec(CDec(txtIdade.Text)) <= 29 Then
-                    txtClaAbd.Text = "Deficiente"
-                ElseIf CDec(CDec(txtIdade.Text)) <= 39 Then
-                    txtClaAbd.Text = "Fraco"
-                ElseIf CDec(CDec(txtIdade.Text)) <= 49 Then
-                    txtClaAbd.Text = "Regular"
-                ElseIf CDec(CDec(txtIdade.Text)) <= 59 Then
-                    txtClaAbd.Text = "Bom"
+            ElseIf CDec(TxtAbdominais.Text) <= 24 Then
+                If CDec(CDec(TxtIdade.Text)) <= 29 Then
+                    TxtClaAbd.Text = "Deficiente"
+                ElseIf CDec(CDec(TxtIdade.Text)) <= 39 Then
+                    TxtClaAbd.Text = "Fraco"
+                ElseIf CDec(CDec(TxtIdade.Text)) <= 49 Then
+                    TxtClaAbd.Text = "Regular"
+                ElseIf CDec(CDec(TxtIdade.Text)) <= 59 Then
+                    TxtClaAbd.Text = "Bom"
                 Else
-                    txtClaAbd.Text = "Excelente"
+                    TxtClaAbd.Text = "Excelente"
                 End If
-            ElseIf CDec(txtAbdominais.Text) = 25 Then
-                If CDec(CDec(txtIdade.Text)) <= 29 Then
-                    txtClaAbd.Text = "Deficiente"
-                ElseIf CDec(CDec(txtIdade.Text)) <= 39 Then
-                    txtClaAbd.Text = "Regular"
-                ElseIf CDec(CDec(txtIdade.Text)) <= 49 Then
-                    txtClaAbd.Text = "Bom"
+            ElseIf CDec(TxtAbdominais.Text) = 25 Then
+                If CDec(CDec(TxtIdade.Text)) <= 29 Then
+                    TxtClaAbd.Text = "Deficiente"
+                ElseIf CDec(CDec(TxtIdade.Text)) <= 39 Then
+                    TxtClaAbd.Text = "Regular"
+                ElseIf CDec(CDec(TxtIdade.Text)) <= 49 Then
+                    TxtClaAbd.Text = "Bom"
                 Else
-                    txtClaAbd.Text = "Excelente"
+                    TxtClaAbd.Text = "Excelente"
                 End If
-            ElseIf CDec(txtAbdominais.Text) <= 29 Then
-                If CDec(CDec(txtIdade.Text)) <= 29 Then
-                    txtClaAbd.Text = "Deficiente"
-                ElseIf CDec(CDec(txtIdade.Text)) <= 29 Then
-                    txtClaAbd.Text = "Fraco"
-                ElseIf CDec(CDec(txtIdade.Text)) <= 39 Then
-                    txtClaAbd.Text = "Regular"
-                ElseIf CDec(CDec(txtIdade.Text)) <= 49 Then
-                    txtClaAbd.Text = "Bom"
+            ElseIf CDec(TxtAbdominais.Text) <= 29 Then
+                If CDec(CDec(TxtIdade.Text)) <= 29 Then
+                    TxtClaAbd.Text = "Deficiente"
+                ElseIf CDec(CDec(TxtIdade.Text)) <= 29 Then
+                    TxtClaAbd.Text = "Fraco"
+                ElseIf CDec(CDec(TxtIdade.Text)) <= 39 Then
+                    TxtClaAbd.Text = "Regular"
+                ElseIf CDec(CDec(TxtIdade.Text)) <= 49 Then
+                    TxtClaAbd.Text = "Bom"
                 Else
-                    txtClaAbd.Text = "Excelente"
+                    TxtClaAbd.Text = "Excelente"
                 End If
-            ElseIf CDec(txtAbdominais.Text) = 26 Then
-                If CDec(CDec(txtIdade.Text)) <= 29 Then
-                    txtClaAbd.Text = "Deficiente"
-                ElseIf CDec(CDec(txtIdade.Text)) <= 39 Then
-                    txtClaAbd.Text = "Fraco"
-                ElseIf CDec(CDec(txtIdade.Text)) <= 59 Then
-                    txtClaAbd.Text = "Bom"
+            ElseIf CDec(TxtAbdominais.Text) = 26 Then
+                If CDec(CDec(TxtIdade.Text)) <= 29 Then
+                    TxtClaAbd.Text = "Deficiente"
+                ElseIf CDec(CDec(TxtIdade.Text)) <= 39 Then
+                    TxtClaAbd.Text = "Fraco"
+                ElseIf CDec(CDec(TxtIdade.Text)) <= 59 Then
+                    TxtClaAbd.Text = "Bom"
                 Else
-                    txtClaAbd.Text = "Excelente"
+                    TxtClaAbd.Text = "Excelente"
                 End If
-            ElseIf CDec(txtAbdominais.Text) <= 34 Then
-                If CDec(CDec(txtIdade.Text)) <= 19 Then
-                    txtClaAbd.Text = "Fraco"
-                ElseIf CDec(CDec(txtIdade.Text)) <= 29 Then
-                    txtClaAbd.Text = "Regular"
-                ElseIf CDec(CDec(txtIdade.Text)) <= 39 Then
-                    txtClaAbd.Text = "Bom"
+            ElseIf CDec(TxtAbdominais.Text) <= 34 Then
+                If CDec(CDec(TxtIdade.Text)) <= 19 Then
+                    TxtClaAbd.Text = "Fraco"
+                ElseIf CDec(CDec(TxtIdade.Text)) <= 29 Then
+                    TxtClaAbd.Text = "Regular"
+                ElseIf CDec(CDec(TxtIdade.Text)) <= 39 Then
+                    TxtClaAbd.Text = "Bom"
                 Else
-                    txtClaAbd.Text = "Excelente"
+                    TxtClaAbd.Text = "Excelente"
                 End If
-            ElseIf CDec(txtAbdominais.Text) <= 39 Then
-                If CDec(CDec(txtIdade.Text)) <= 19 Then
-                    txtClaAbd.Text = "Regular"
-                ElseIf CDec(CDec(txtIdade.Text)) <= 29 Then
-                    txtClaAbd.Text = "Bom"
+            ElseIf CDec(TxtAbdominais.Text) <= 39 Then
+                If CDec(CDec(TxtIdade.Text)) <= 19 Then
+                    TxtClaAbd.Text = "Regular"
+                ElseIf CDec(CDec(TxtIdade.Text)) <= 29 Then
+                    TxtClaAbd.Text = "Bom"
                 Else
-                    txtClaAbd.Text = "Excelente"
+                    TxtClaAbd.Text = "Excelente"
                 End If
-            ElseIf CDec(txtAbdominais.Text) <= 44 Then
-                If CDec(CDec(txtIdade.Text)) <= 19 Then
-                    txtClaAbd.Text = "Bom"
+            ElseIf CDec(TxtAbdominais.Text) <= 44 Then
+                If CDec(CDec(TxtIdade.Text)) <= 19 Then
+                    TxtClaAbd.Text = "Bom"
                 Else
-                    txtClaAbd.Text = "Excelente"
+                    TxtClaAbd.Text = "Excelente"
                 End If
             Else
-                txtClaAbd.Text = "Excelente"
+                TxtClaAbd.Text = "Excelente"
             End If
         End If
     End Sub
     Private Sub Flexao_Braco()
 
         'Aluno do Sexo Masculino
-        If cbxSexo.Text = "Masculino" Then
-            If CDec(txtFlexaoBraco.Text) <= 4 Then
-                txtClaFle.Text = "Deficiente"
+        If CbxSexo.Text = "Masculino" Then
+            If CDec(TxtFlexaoBraco.Text) <= 4 Then
+                TxtClaFle.Text = "Deficiente"
             Else
-                If CDec(txtFlexaoBraco.Text) <= 7 Then
-                    If CDec(txtIdade.Text) < 60 Then
-                        txtClaFle.Text = "Deficiente"
+                If CDec(TxtFlexaoBraco.Text) <= 7 Then
+                    If CDec(TxtIdade.Text) < 60 Then
+                        TxtClaFle.Text = "Deficiente"
                     Else
-                        txtClaFle.Text = "Fraco"
+                        TxtClaFle.Text = "Fraco"
                     End If
-                ElseIf CDec(txtFlexaoBraco.Text) <= 9 Then
-                    If CDec(txtIdade.Text) < 50 Then
-                        txtClaFle.Text = "Deficiente"
+                ElseIf CDec(TxtFlexaoBraco.Text) <= 9 Then
+                    If CDec(TxtIdade.Text) < 50 Then
+                        TxtClaFle.Text = "Deficiente"
                     Else
-                        txtClaFle.Text = "Fraco"
+                        TxtClaFle.Text = "Fraco"
                     End If
-                ElseIf CDec(txtFlexaoBraco.Text) = 10 Then
-                    If CDec(txtIdade.Text) < 50 Then
-                        txtClaFle.Text = "Deficiente"
-                    ElseIf CDec(txtIdade.Text) < 60 Then
-                        txtClaFle.Text = "Fraco"
+                ElseIf CDec(TxtFlexaoBraco.Text) = 10 Then
+                    If CDec(TxtIdade.Text) < 50 Then
+                        TxtClaFle.Text = "Deficiente"
+                    ElseIf CDec(TxtIdade.Text) < 60 Then
+                        TxtClaFle.Text = "Fraco"
                     Else
-                        txtClaFle.Text = "Regular"
+                        TxtClaFle.Text = "Regular"
                     End If
-                ElseIf CDec(txtFlexaoBraco.Text) <= 13 Then
-                    If CDec(txtIdade.Text) < 40 Then
-                        txtClaFle.Text = "Deficiente"
-                    ElseIf CDec(txtIdade.Text) < 60 Then
-                        txtClaFle.Text = "Fraco"
+                ElseIf CDec(TxtFlexaoBraco.Text) <= 13 Then
+                    If CDec(TxtIdade.Text) < 40 Then
+                        TxtClaFle.Text = "Deficiente"
+                    ElseIf CDec(TxtIdade.Text) < 60 Then
+                        TxtClaFle.Text = "Fraco"
                     Else
-                        txtClaFle.Text = "Regular"
+                        TxtClaFle.Text = "Regular"
                     End If
-                ElseIf CDec(txtFlexaoBraco.Text) = 14 Then
-                    If CDec(txtIdade.Text) < 30 Then
-                        txtClaFle.Text = "Deficiente"
-                    ElseIf CDec(txtIdade.Text) < 60 Then
-                        txtClaFle.Text = "Fraco"
+                ElseIf CDec(TxtFlexaoBraco.Text) = 14 Then
+                    If CDec(TxtIdade.Text) < 30 Then
+                        TxtClaFle.Text = "Deficiente"
+                    ElseIf CDec(TxtIdade.Text) < 60 Then
+                        TxtClaFle.Text = "Fraco"
                     Else
-                        txtClaFle.Text = "Regular"
+                        TxtClaFle.Text = "Regular"
                     End If
-                ElseIf CDec(txtFlexaoBraco.Text) <= 16 Then
-                    If CDec(txtIdade.Text) < 30 Then
-                        txtClaFle.Text = "Deficiente"
-                    ElseIf CDec(txtIdade.Text) < 50 Then
-                        txtClaFle.Text = "Fraco"
+                ElseIf CDec(TxtFlexaoBraco.Text) <= 16 Then
+                    If CDec(TxtIdade.Text) < 30 Then
+                        TxtClaFle.Text = "Deficiente"
+                    ElseIf CDec(TxtIdade.Text) < 50 Then
+                        TxtClaFle.Text = "Fraco"
                     Else
-                        txtClaFle.Text = "Regular"
+                        TxtClaFle.Text = "Regular"
                     End If
-                ElseIf CDec(txtFlexaoBraco.Text) = 17 Then
-                    If CDec(txtIdade.Text) < 20 Then
-                        txtClaFle.Text = "Deficiente"
-                    ElseIf CDec(txtIdade.Text) < 50 Then
-                        txtClaFle.Text = "Fraco"
-                    ElseIf CDec(txtIdade.Text) < 60 Then
-                        txtClaFle.Text = "Regular"
+                ElseIf CDec(TxtFlexaoBraco.Text) = 17 Then
+                    If CDec(TxtIdade.Text) < 20 Then
+                        TxtClaFle.Text = "Deficiente"
+                    ElseIf CDec(TxtIdade.Text) < 50 Then
+                        TxtClaFle.Text = "Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 60 Then
+                        TxtClaFle.Text = "Regular"
                     Else
-                        txtClaFle.Text = "Bom"
+                        TxtClaFle.Text = "Bom"
                     End If
-                ElseIf CDec(txtFlexaoBraco.Text) <= 21 Then
-                    If CDec(txtIdade.Text) < 20 Then
-                        txtClaFle.Text = "Deficiente"
-                    ElseIf CDec(txtIdade.Text) < 40 Then
-                        txtClaFle.Text = "Fraco"
-                    ElseIf CDec(txtIdade.Text) < 60 Then
-                        txtClaFle.Text = "Regular"
+                ElseIf CDec(TxtFlexaoBraco.Text) <= 21 Then
+                    If CDec(TxtIdade.Text) < 20 Then
+                        TxtClaFle.Text = "Deficiente"
+                    ElseIf CDec(TxtIdade.Text) < 40 Then
+                        TxtClaFle.Text = "Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 60 Then
+                        TxtClaFle.Text = "Regular"
                     Else
-                        txtClaFle.Text = "Bom"
+                        TxtClaFle.Text = "Bom"
                     End If
-                ElseIf CDec(txtFlexaoBraco.Text) <= 23 Then
-                    If CDec(txtIdade.Text) < 20 Then
-                        txtClaFle.Text = "Deficiente"
-                    ElseIf CDec(txtIdade.Text) < 30 Then
-                        txtClaFle.Text = "Fraco"
-                    ElseIf CDec(txtIdade.Text) < 60 Then
-                        txtClaFle.Text = "Regular"
+                ElseIf CDec(TxtFlexaoBraco.Text) <= 23 Then
+                    If CDec(TxtIdade.Text) < 20 Then
+                        TxtClaFle.Text = "Deficiente"
+                    ElseIf CDec(TxtIdade.Text) < 30 Then
+                        TxtClaFle.Text = "Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 60 Then
+                        TxtClaFle.Text = "Regular"
                     Else
-                        txtClaFle.Text = "Bom"
+                        TxtClaFle.Text = "Bom"
                     End If
-                ElseIf CDec(txtFlexaoBraco.Text) = 24 Then
-                    If CDec(txtIdade.Text) < 20 Then
-                        txtClaFle.Text = "Deficiente"
-                    ElseIf CDec(txtIdade.Text) < 30 Then
-                        txtClaFle.Text = "Fraco"
-                    ElseIf CDec(txtIdade.Text) < 50 Then
-                        txtClaFle.Text = "Regular"
+                ElseIf CDec(TxtFlexaoBraco.Text) = 24 Then
+                    If CDec(TxtIdade.Text) < 20 Then
+                        TxtClaFle.Text = "Deficiente"
+                    ElseIf CDec(TxtIdade.Text) < 30 Then
+                        TxtClaFle.Text = "Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 50 Then
+                        TxtClaFle.Text = "Regular"
                     Else
-                        txtClaFle.Text = "Bom"
+                        TxtClaFle.Text = "Bom"
                     End If
-                ElseIf CDec(txtFlexaoBraco.Text) <= 26 Then
-                    If CDec(txtIdade.Text) < 20 Then
-                        txtClaFle.Text = "Deficiente"
-                    ElseIf CDec(txtIdade.Text) < 30 Then
-                        txtClaFle.Text = "Fraco"
-                    ElseIf CDec(txtIdade.Text) < 50 Then
-                        txtClaFle.Text = "Regular"
-                    ElseIf CDec(txtIdade.Text) < 60 Then
-                        txtClaFle.Text = "Bom"
+                ElseIf CDec(TxtFlexaoBraco.Text) <= 26 Then
+                    If CDec(TxtIdade.Text) < 20 Then
+                        TxtClaFle.Text = "Deficiente"
+                    ElseIf CDec(TxtIdade.Text) < 30 Then
+                        TxtClaFle.Text = "Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 50 Then
+                        TxtClaFle.Text = "Regular"
+                    ElseIf CDec(TxtIdade.Text) < 60 Then
+                        TxtClaFle.Text = "Bom"
                     Else
-                        txtClaFle.Text = "Excelente"
+                        TxtClaFle.Text = "Excelente"
                     End If
-                ElseIf CDec(txtFlexaoBraco.Text) <= 29 Then
-                    If CDec(txtIdade.Text) < 20 Then
-                        txtClaFle.Text = "Deficiente"
-                    ElseIf CDec(txtIdade.Text) < 30 Then
-                        txtClaFle.Text = "Fraco"
-                    ElseIf CDec(txtIdade.Text) < 40 Then
-                        txtClaFle.Text = "Regular"
-                    ElseIf CDec(txtIdade.Text) < 60 Then
-                        txtClaFle.Text = "Bom"
+                ElseIf CDec(TxtFlexaoBraco.Text) <= 29 Then
+                    If CDec(TxtIdade.Text) < 20 Then
+                        TxtClaFle.Text = "Deficiente"
+                    ElseIf CDec(TxtIdade.Text) < 30 Then
+                        TxtClaFle.Text = "Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 40 Then
+                        TxtClaFle.Text = "Regular"
+                    ElseIf CDec(TxtIdade.Text) < 60 Then
+                        TxtClaFle.Text = "Bom"
                     Else
-                        txtClaFle.Text = "Excelente"
+                        TxtClaFle.Text = "Excelente"
                     End If
-                ElseIf CDec(txtFlexaoBraco.Text) = 30 Then
-                    If CDec(txtIdade.Text) < 20 Then
-                        txtClaFle.Text = "Fraco"
-                    ElseIf CDec(txtIdade.Text) < 40 Then
-                        txtClaFle.Text = "Regular"
-                    ElseIf CDec(txtIdade.Text) < 50 Then
-                        txtClaFle.Text = "Bom"
+                ElseIf CDec(TxtFlexaoBraco.Text) = 30 Then
+                    If CDec(TxtIdade.Text) < 20 Then
+                        TxtClaFle.Text = "Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 40 Then
+                        TxtClaFle.Text = "Regular"
+                    ElseIf CDec(TxtIdade.Text) < 50 Then
+                        TxtClaFle.Text = "Bom"
                     Else
-                        txtClaFle.Text = "Excelente"
+                        TxtClaFle.Text = "Excelente"
                     End If
-                ElseIf CDec(txtFlexaoBraco.Text) <= 34 Then
-                    If CDec(txtIdade.Text) < 20 Then
-                        txtClaFle.Text = "Fraco"
-                    ElseIf CDec(txtIdade.Text) < 30 Then
-                        txtClaFle.Text = "Regular"
-                    ElseIf CDec(txtIdade.Text) < 50 Then
-                        txtClaFle.Text = "Bom"
+                ElseIf CDec(TxtFlexaoBraco.Text) <= 34 Then
+                    If CDec(TxtIdade.Text) < 20 Then
+                        TxtClaFle.Text = "Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 30 Then
+                        TxtClaFle.Text = "Regular"
+                    ElseIf CDec(TxtIdade.Text) < 50 Then
+                        TxtClaFle.Text = "Bom"
                     Else
-                        txtClaFle.Text = "Excelente"
+                        TxtClaFle.Text = "Excelente"
                     End If
-                ElseIf CDec(txtFlexaoBraco.Text) <= 39 Then
-                    If CDec(txtIdade.Text) < 20 Then
-                        txtClaFle.Text = "Fraco"
-                    ElseIf CDec(txtIdade.Text) < 30 Then
-                        txtClaFle.Text = "Regular"
-                    ElseIf CDec(txtIdade.Text) < 40 Then
-                        txtClaFle.Text = "Bom"
+                ElseIf CDec(TxtFlexaoBraco.Text) <= 39 Then
+                    If CDec(TxtIdade.Text) < 20 Then
+                        TxtClaFle.Text = "Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 30 Then
+                        TxtClaFle.Text = "Regular"
+                    ElseIf CDec(TxtIdade.Text) < 40 Then
+                        TxtClaFle.Text = "Bom"
                     Else
-                        txtClaFle.Text = "Excelente"
+                        TxtClaFle.Text = "Excelente"
                     End If
-                ElseIf CDec(txtFlexaoBraco.Text) <= 49 Then
-                    If CDec(txtIdade.Text) < 20 Then
-                        txtClaFle.Text = "Regular"
-                    ElseIf CDec(txtIdade.Text) < 30 Then
-                        txtClaFle.Text = "Bom"
+                ElseIf CDec(TxtFlexaoBraco.Text) <= 49 Then
+                    If CDec(TxtIdade.Text) < 20 Then
+                        TxtClaFle.Text = "Regular"
+                    ElseIf CDec(TxtIdade.Text) < 30 Then
+                        TxtClaFle.Text = "Bom"
                     Else
-                        txtClaFle.Text = "Excelente"
+                        TxtClaFle.Text = "Excelente"
                     End If
-                ElseIf CDec(txtFlexaoBraco.Text) <= 49 Then
-                    If CDec(txtIdade.Text) < 20 Then
-                        txtClaFle.Text = "Regular"
-                    ElseIf CDec(txtIdade.Text) < 30 Then
-                        txtClaFle.Text = "Bom"
+                ElseIf CDec(TxtFlexaoBraco.Text) <= 49 Then
+                    If CDec(TxtIdade.Text) < 20 Then
+                        TxtClaFle.Text = "Regular"
+                    ElseIf CDec(TxtIdade.Text) < 30 Then
+                        TxtClaFle.Text = "Bom"
                     Else
-                        txtClaFle.Text = "Excelente"
+                        TxtClaFle.Text = "Excelente"
                     End If
-                ElseIf CDec(txtFlexaoBraco.Text) <= 59 Then
-                    If CDec(txtIdade.Text) < 20 Then
-                        txtClaFle.Text = "Bom"
+                ElseIf CDec(TxtFlexaoBraco.Text) <= 59 Then
+                    If CDec(TxtIdade.Text) < 20 Then
+                        TxtClaFle.Text = "Bom"
                     Else
-                        txtClaFle.Text = "Excelente"
+                        TxtClaFle.Text = "Excelente"
                     End If
                 Else
-                    txtClaFle.Text = "Excelente"
+                    TxtClaFle.Text = "Excelente"
                 End If
             End If
         Else
             'Aluno do Sexo Feminino
-            If CDec(txtFlexaoBraco.Text) <= 1 Then
-                txtClaFle.Text = "Deficiente"
+            If CDec(TxtFlexaoBraco.Text) <= 1 Then
+                TxtClaFle.Text = "Deficiente"
             Else
-                If CDec(txtFlexaoBraco.Text) = 2 Then
-                    If CDec(txtIdade.Text) < 60 Then
-                        txtClaFle.Text = "Deficiente"
+                If CDec(TxtFlexaoBraco.Text) = 2 Then
+                    If CDec(TxtIdade.Text) < 60 Then
+                        TxtClaFle.Text = "Deficiente"
                     Else
-                        txtClaFle.Text = "Fraco"
+                        TxtClaFle.Text = "Fraco"
                     End If
-                ElseIf CDec(txtFlexaoBraco.Text) = 3 Then
-                    If CDec(txtIdade.Text) < 50 Then
-                        txtClaFle.Text = "Deficiente"
+                ElseIf CDec(TxtFlexaoBraco.Text) = 3 Then
+                    If CDec(TxtIdade.Text) < 50 Then
+                        TxtClaFle.Text = "Deficiente"
                     Else
-                        txtClaFle.Text = "Fraco"
+                        TxtClaFle.Text = "Fraco"
                     End If
-                ElseIf CDec(txtFlexaoBraco.Text) = 4 Then
-                    If CDec(txtIdade.Text) < 40 Then
-                        txtClaFle.Text = "Deficiente"
+                ElseIf CDec(TxtFlexaoBraco.Text) = 4 Then
+                    If CDec(TxtIdade.Text) < 40 Then
+                        TxtClaFle.Text = "Deficiente"
                     Else
-                        txtClaFle.Text = "Fraco"
+                        TxtClaFle.Text = "Fraco"
                     End If
-                ElseIf CDec(txtFlexaoBraco.Text) = 5 Then
-                    If CDec(txtIdade.Text) < 30 Then
-                        txtClaFle.Text = "Deficiente"
+                ElseIf CDec(TxtFlexaoBraco.Text) = 5 Then
+                    If CDec(TxtIdade.Text) < 30 Then
+                        TxtClaFle.Text = "Deficiente"
                     Else
-                        txtClaFle.Text = "Fraco"
+                        TxtClaFle.Text = "Fraco"
                     End If
-                ElseIf CDec(txtFlexaoBraco.Text) = 6 Then
-                    If CDec(txtIdade.Text) < 30 Then
-                        txtClaFle.Text = "Deficiente"
-                    ElseIf CDec(txtIdade.Text) < 60 Then
-                        txtClaFle.Text = "Fraco"
+                ElseIf CDec(TxtFlexaoBraco.Text) = 6 Then
+                    If CDec(TxtIdade.Text) < 30 Then
+                        TxtClaFle.Text = "Deficiente"
+                    ElseIf CDec(TxtIdade.Text) < 60 Then
+                        TxtClaFle.Text = "Fraco"
                     Else
-                        txtClaFle.Text = "Regular"
+                        TxtClaFle.Text = "Regular"
                     End If
-                ElseIf CDec(txtFlexaoBraco.Text) = 7 Then
-                    If CDec(txtIdade.Text) < 20 Then
-                        txtClaFle.Text = "Deficiente"
-                    ElseIf CDec(txtIdade.Text) < 60 Then
-                        txtClaFle.Text = "Fraco"
+                ElseIf CDec(TxtFlexaoBraco.Text) = 7 Then
+                    If CDec(TxtIdade.Text) < 20 Then
+                        TxtClaFle.Text = "Deficiente"
+                    ElseIf CDec(TxtIdade.Text) < 60 Then
+                        TxtClaFle.Text = "Fraco"
                     Else
-                        txtClaFle.Text = "Regular"
+                        TxtClaFle.Text = "Regular"
                     End If
-                ElseIf CDec(txtFlexaoBraco.Text) <= 9 Then
-                    If CDec(txtIdade.Text) < 20 Then
-                        txtClaFle.Text = "Deficiente"
-                    ElseIf CDec(txtIdade.Text) < 50 Then
-                        txtClaFle.Text = "Fraco"
+                ElseIf CDec(TxtFlexaoBraco.Text) <= 9 Then
+                    If CDec(TxtIdade.Text) < 20 Then
+                        TxtClaFle.Text = "Deficiente"
+                    ElseIf CDec(TxtIdade.Text) < 50 Then
+                        TxtClaFle.Text = "Fraco"
                     Else
-                        txtClaFle.Text = "Regular"
+                        TxtClaFle.Text = "Regular"
                     End If
-                ElseIf CDec(txtFlexaoBraco.Text) <= 12 Then
-                    If CDec(txtIdade.Text) < 40 Then
-                        txtClaFle.Text = "Fraco"
+                ElseIf CDec(TxtFlexaoBraco.Text) <= 12 Then
+                    If CDec(TxtIdade.Text) < 40 Then
+                        TxtClaFle.Text = "Fraco"
                     Else
-                        txtClaFle.Text = "Regular"
+                        TxtClaFle.Text = "Regular"
                     End If
-                ElseIf CDec(txtFlexaoBraco.Text) <= 15 Then
-                    If CDec(txtIdade.Text) < 30 Then
-                        txtClaFle.Text = "Fraco"
-                    ElseIf CDec(txtIdade.Text) < 60 Then
-                        txtClaFle.Text = "Regular"
+                ElseIf CDec(TxtFlexaoBraco.Text) <= 15 Then
+                    If CDec(TxtIdade.Text) < 30 Then
+                        TxtClaFle.Text = "Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 60 Then
+                        TxtClaFle.Text = "Regular"
                     Else
-                        txtClaFle.Text = "Bom"
+                        TxtClaFle.Text = "Bom"
                     End If
-                ElseIf CDec(txtFlexaoBraco.Text) <= 17 Then
-                    If CDec(txtIdade.Text) < 20 Then
-                        txtClaFle.Text = "Fraco"
-                    ElseIf CDec(txtIdade.Text) < 60 Then
-                        txtClaFle.Text = "Regular"
+                ElseIf CDec(TxtFlexaoBraco.Text) <= 17 Then
+                    If CDec(TxtIdade.Text) < 20 Then
+                        TxtClaFle.Text = "Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 60 Then
+                        TxtClaFle.Text = "Regular"
                     Else
-                        txtClaFle.Text = "Bom"
+                        TxtClaFle.Text = "Bom"
                     End If
-                ElseIf CDec(txtFlexaoBraco.Text) <= 19 Then
-                    If CDec(txtIdade.Text) < 20 Then
-                        txtClaFle.Text = "Fraco"
-                    ElseIf CDec(txtIdade.Text) < 50 Then
-                        txtClaFle.Text = "Regular"
+                ElseIf CDec(TxtFlexaoBraco.Text) <= 19 Then
+                    If CDec(TxtIdade.Text) < 20 Then
+                        TxtClaFle.Text = "Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 50 Then
+                        TxtClaFle.Text = "Regular"
                     Else
-                        txtClaFle.Text = "Bom"
+                        TxtClaFle.Text = "Bom"
                     End If
-                ElseIf CDec(txtFlexaoBraco.Text) = 20 Then
-                    If CDec(txtIdade.Text) < 50 Then
-                        txtClaFle.Text = "Regular"
-                    ElseIf CDec(txtIdade.Text) < 60 Then
-                        txtClaFle.Text = "Bom"
+                ElseIf CDec(TxtFlexaoBraco.Text) = 20 Then
+                    If CDec(TxtIdade.Text) < 50 Then
+                        TxtClaFle.Text = "Regular"
+                    ElseIf CDec(TxtIdade.Text) < 60 Then
+                        TxtClaFle.Text = "Bom"
                     Else
-                        txtClaFle.Text = "Excelente"
+                        TxtClaFle.Text = "Excelente"
                     End If
-                ElseIf CDec(txtFlexaoBraco.Text) <= 23 Then
-                    If CDec(txtIdade.Text) < 40 Then
-                        txtClaFle.Text = "Regular"
-                    ElseIf CDec(txtIdade.Text) < 60 Then
-                        txtClaFle.Text = "Bom"
+                ElseIf CDec(TxtFlexaoBraco.Text) <= 23 Then
+                    If CDec(TxtIdade.Text) < 40 Then
+                        TxtClaFle.Text = "Regular"
+                    ElseIf CDec(TxtIdade.Text) < 60 Then
+                        TxtClaFle.Text = "Bom"
                     Else
-                        txtClaFle.Text = "Excelente"
+                        TxtClaFle.Text = "Excelente"
                     End If
-                ElseIf CDec(txtFlexaoBraco.Text) <= 26 Then
-                    If CDec(txtIdade.Text) < 30 Then
-                        txtClaFle.Text = "Regular"
-                    ElseIf CDec(txtIdade.Text) < 60 Then
-                        txtClaFle.Text = "Bom"
+                ElseIf CDec(TxtFlexaoBraco.Text) <= 26 Then
+                    If CDec(TxtIdade.Text) < 30 Then
+                        TxtClaFle.Text = "Regular"
+                    ElseIf CDec(TxtIdade.Text) < 60 Then
+                        TxtClaFle.Text = "Bom"
                     Else
-                        txtClaFle.Text = "Excelente"
+                        TxtClaFle.Text = "Excelente"
                     End If
-                ElseIf CDec(txtFlexaoBraco.Text) <= 28 Then
-                    If CDec(txtIdade.Text) < 20 Then
-                        txtClaFle.Text = "Regular"
-                    ElseIf CDec(txtIdade.Text) < 60 Then
-                        txtClaFle.Text = "Bom"
+                ElseIf CDec(TxtFlexaoBraco.Text) <= 28 Then
+                    If CDec(TxtIdade.Text) < 20 Then
+                        TxtClaFle.Text = "Regular"
+                    ElseIf CDec(TxtIdade.Text) < 60 Then
+                        TxtClaFle.Text = "Bom"
                     Else
-                        txtClaFle.Text = "Excelente"
+                        TxtClaFle.Text = "Excelente"
                     End If
-                ElseIf CDec(txtFlexaoBraco.Text) = 29 Then
-                    If CDec(txtIdade.Text) < 20 Then
-                        txtClaFle.Text = "Regular"
-                    ElseIf CDec(txtIdade.Text) < 50 Then
-                        txtClaFle.Text = "Bom"
+                ElseIf CDec(TxtFlexaoBraco.Text) = 29 Then
+                    If CDec(TxtIdade.Text) < 20 Then
+                        TxtClaFle.Text = "Regular"
+                    ElseIf CDec(TxtIdade.Text) < 50 Then
+                        TxtClaFle.Text = "Bom"
                     Else
-                        txtClaFle.Text = "Excelente"
+                        TxtClaFle.Text = "Excelente"
                     End If
-                ElseIf CDec(txtFlexaoBraco.Text) <= 31 Then
-                    If CDec(txtIdade.Text) < 50 Then
-                        txtClaFle.Text = "Bom"
+                ElseIf CDec(TxtFlexaoBraco.Text) <= 31 Then
+                    If CDec(TxtIdade.Text) < 50 Then
+                        TxtClaFle.Text = "Bom"
                     Else
-                        txtClaFle.Text = "Excelente"
+                        TxtClaFle.Text = "Excelente"
                     End If
-                ElseIf CDec(txtFlexaoBraco.Text) <= 34 Then
-                    If CDec(txtIdade.Text) < 40 Then
-                        txtClaFle.Text = "Bom"
+                ElseIf CDec(TxtFlexaoBraco.Text) <= 34 Then
+                    If CDec(TxtIdade.Text) < 40 Then
+                        TxtClaFle.Text = "Bom"
                     Else
-                        txtClaFle.Text = "Excelente"
+                        TxtClaFle.Text = "Excelente"
                     End If
-                ElseIf CDec(txtFlexaoBraco.Text) <= 37 Then
-                    If CDec(txtIdade.Text) < 30 Then
-                        txtClaFle.Text = "Bom"
+                ElseIf CDec(TxtFlexaoBraco.Text) <= 37 Then
+                    If CDec(TxtIdade.Text) < 30 Then
+                        TxtClaFle.Text = "Bom"
                     Else
-                        txtClaFle.Text = "Excelente"
+                        TxtClaFle.Text = "Excelente"
                     End If
-                ElseIf CDec(txtFlexaoBraco.Text) <= 40 Then
-                    If CDec(txtIdade.Text) < 20 Then
-                        txtClaFle.Text = "Bom"
+                ElseIf CDec(TxtFlexaoBraco.Text) <= 40 Then
+                    If CDec(TxtIdade.Text) < 20 Then
+                        TxtClaFle.Text = "Bom"
                     Else
-                        txtClaFle.Text = "Excelente"
+                        TxtClaFle.Text = "Excelente"
                     End If
                 Else
-                    txtClaFle.Text = "Excelente"
+                    TxtClaFle.Text = "Excelente"
                 End If
             End If
         End If
     End Sub
     Private Sub Cooper()
-        If CDec(txtCooper.Text) < 860 Then
-            txtClaCoo.Text = "Muito Fraco"
+        If CDec(TxtCooper.Text) < 860 Then
+            TxtClaCoo.Text = "Muito Fraco"
         Else
-            If cbxSexo.Text = "Masculino" Then
-                If CDec(txtCooper.Text) < 1260 Then
-                    txtClaCoo.Text = "Muito Fraco"
-                ElseIf CDec(txtIdade.Text) < 7 Then
-                    txtClaCoo.Text = "Não Avaliar"
-                ElseIf CDec(txtCooper.Text) <= 1340 Then
-                    If CDec(txtIdade.Text) = 7 Then
-                        txtClaCoo.Text = "Fraco"
+            If CbxSexo.Text = "Masculino" Then
+                If CDec(TxtCooper.Text) < 1260 Then
+                    TxtClaCoo.Text = "Muito Fraco"
+                ElseIf CDec(TxtIdade.Text) < 7 Then
+                    TxtClaCoo.Text = "Não Avaliar"
+                ElseIf CDec(TxtCooper.Text) <= 1340 Then
+                    If CDec(TxtIdade.Text) = 7 Then
+                        TxtClaCoo.Text = "Fraco"
                     Else
-                        txtClaCoo.Text = "Muito Fraco"
+                        TxtClaCoo.Text = "Muito Fraco"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 1360 Then
-                    If CDec(txtIdade.Text) < 9 Then
-                        txtClaCoo.Text = "Fraco"
+                ElseIf CDec(TxtCooper.Text) <= 1360 Then
+                    If CDec(TxtIdade.Text) < 9 Then
+                        TxtClaCoo.Text = "Fraco"
                     Else
-                        txtClaCoo.Text = "Muito Fraco"
+                        TxtClaCoo.Text = "Muito Fraco"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 1370 Then
-                    If CDec(txtIdade.Text) = 7 Then
-                        txtClaCoo.Text = "Média"
-                    ElseIf CDec(txtIdade.Text) = 8 Then
-                        txtClaCoo.Text = "Fraco"
+                ElseIf CDec(TxtCooper.Text) <= 1370 Then
+                    If CDec(TxtIdade.Text) = 7 Then
+                        TxtClaCoo.Text = "Média"
+                    ElseIf CDec(TxtIdade.Text) = 8 Then
+                        TxtClaCoo.Text = "Fraco"
                     Else
-                        txtClaCoo.Text = "Muito Fraco"
+                        TxtClaCoo.Text = "Muito Fraco"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 1400 Then
-                    If CDec(txtIdade.Text) = 7 Then
-                        txtClaCoo.Text = "Média"
-                    ElseIf CDec(txtIdade.Text) < 10 Then
-                        txtClaCoo.Text = "Fraco"
+                ElseIf CDec(TxtCooper.Text) <= 1400 Then
+                    If CDec(TxtIdade.Text) = 7 Then
+                        TxtClaCoo.Text = "Média"
+                    ElseIf CDec(TxtIdade.Text) < 10 Then
+                        TxtClaCoo.Text = "Fraco"
                     Else
-                        txtClaCoo.Text = "Muito Fraco"
+                        TxtClaCoo.Text = "Muito Fraco"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 1420 Then
-                    If CDec(txtIdade.Text) = 7 Then
-                        txtClaCoo.Text = "Média"
-                    ElseIf CDec(txtIdade.Text) < 10 Then
-                        txtClaCoo.Text = "Fraco"
-                    ElseIf CDec(txtIdade.Text) < 60 Then
-                        txtClaCoo.Text = "Muito Fraco"
+                ElseIf CDec(TxtCooper.Text) <= 1420 Then
+                    If CDec(TxtIdade.Text) = 7 Then
+                        TxtClaCoo.Text = "Média"
+                    ElseIf CDec(TxtIdade.Text) < 10 Then
+                        TxtClaCoo.Text = "Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 60 Then
+                        TxtClaCoo.Text = "Muito Fraco"
                     Else
-                        txtClaCoo.Text = "Fraco"
+                        TxtClaCoo.Text = "Fraco"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 1440 Then
-                    If CDec(txtIdade.Text) = 7 Then
-                        txtClaCoo.Text = "Média"
-                    ElseIf CDec(txtIdade.Text) < 11 Then
-                        txtClaCoo.Text = "Fraco"
-                    ElseIf CDec(txtIdade.Text) < 60 Then
-                        txtClaCoo.Text = "Muito Fraco"
+                ElseIf CDec(TxtCooper.Text) <= 1440 Then
+                    If CDec(TxtIdade.Text) = 7 Then
+                        TxtClaCoo.Text = "Média"
+                    ElseIf CDec(TxtIdade.Text) < 11 Then
+                        TxtClaCoo.Text = "Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 60 Then
+                        TxtClaCoo.Text = "Muito Fraco"
                     Else
-                        txtClaCoo.Text = "Fraco"
+                        TxtClaCoo.Text = "Fraco"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 1500 Then
-                    If CDec(txtIdade.Text) = 7 Then
-                        txtClaCoo.Text = "Média"
-                    ElseIf CDec(txtIdade.Text) < 13 Then
-                        txtClaCoo.Text = "Fraco"
-                    ElseIf CDec(txtIdade.Text) < 60 Then
-                        txtClaCoo.Text = "Muito Fraco"
+                ElseIf CDec(TxtCooper.Text) <= 1500 Then
+                    If CDec(TxtIdade.Text) = 7 Then
+                        TxtClaCoo.Text = "Média"
+                    ElseIf CDec(TxtIdade.Text) < 13 Then
+                        TxtClaCoo.Text = "Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 60 Then
+                        TxtClaCoo.Text = "Muito Fraco"
                     Else
-                        txtClaCoo.Text = "Fraco"
+                        TxtClaCoo.Text = "Fraco"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 1540 Then
-                    If CDec(txtIdade.Text) < 9 Then
-                        txtClaCoo.Text = "Média"
-                    ElseIf CDec(txtIdade.Text) < 13 Then
-                        txtClaCoo.Text = "Fraco"
-                    ElseIf CDec(txtIdade.Text) < 60 Then
-                        txtClaCoo.Text = "Muito Fraco"
+                ElseIf CDec(TxtCooper.Text) <= 1540 Then
+                    If CDec(TxtIdade.Text) < 9 Then
+                        TxtClaCoo.Text = "Média"
+                    ElseIf CDec(TxtIdade.Text) < 13 Then
+                        TxtClaCoo.Text = "Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 60 Then
+                        TxtClaCoo.Text = "Muito Fraco"
                     Else
-                        txtClaCoo.Text = "Fraco"
+                        TxtClaCoo.Text = "Fraco"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 1600 Then
-                    If CDec(txtIdade.Text) = 7 Then
-                        txtClaCoo.Text = "Boa"
-                    ElseIf CDec(txtIdade.Text) = 8 Then
-                        txtClaCoo.Text = "Média"
-                    ElseIf CDec(txtIdade.Text) < 13 Then
-                        txtClaCoo.Text = "Fraco"
-                    ElseIf CDec(txtIdade.Text) < 60 Then
-                        txtClaCoo.Text = "Muito Fraco"
+                ElseIf CDec(TxtCooper.Text) <= 1600 Then
+                    If CDec(TxtIdade.Text) = 7 Then
+                        TxtClaCoo.Text = "Boa"
+                    ElseIf CDec(TxtIdade.Text) = 8 Then
+                        TxtClaCoo.Text = "Média"
+                    ElseIf CDec(TxtIdade.Text) < 13 Then
+                        TxtClaCoo.Text = "Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 60 Then
+                        TxtClaCoo.Text = "Muito Fraco"
                     Else
-                        txtClaCoo.Text = "Fraco"
+                        TxtClaCoo.Text = "Fraco"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 1640 Then
-                    If CDec(txtIdade.Text) = 7 Then
-                        txtClaCoo.Text = "Boa"
-                    ElseIf CDec(txtIdade.Text) < 11 Then
-                        txtClaCoo.Text = "Média"
-                    ElseIf CDec(txtIdade.Text) < 13 Then
-                        txtClaCoo.Text = "Fraco"
-                    ElseIf CDec(txtIdade.Text) < 60 Then
-                        txtClaCoo.Text = "Muito Fraco"
+                ElseIf CDec(TxtCooper.Text) <= 1640 Then
+                    If CDec(TxtIdade.Text) = 7 Then
+                        TxtClaCoo.Text = "Boa"
+                    ElseIf CDec(TxtIdade.Text) < 11 Then
+                        TxtClaCoo.Text = "Média"
+                    ElseIf CDec(TxtIdade.Text) < 13 Then
+                        TxtClaCoo.Text = "Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 60 Then
+                        TxtClaCoo.Text = "Muito Fraco"
                     Else
-                        txtClaCoo.Text = "Fraco"
+                        TxtClaCoo.Text = "Fraco"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 1660 Then
-                    If CDec(txtIdade.Text) = 7 Then
-                        txtClaCoo.Text = "Boa"
-                    ElseIf CDec(txtIdade.Text) < 11 Then
-                        txtClaCoo.Text = "Média"
-                    ElseIf CDec(txtIdade.Text) < 13 Then
-                        txtClaCoo.Text = "Fraco"
-                    ElseIf CDec(txtIdade.Text) < 60 Then
-                        txtClaCoo.Text = "Muito Fraco"
+                ElseIf CDec(TxtCooper.Text) <= 1660 Then
+                    If CDec(TxtIdade.Text) = 7 Then
+                        TxtClaCoo.Text = "Boa"
+                    ElseIf CDec(TxtIdade.Text) < 11 Then
+                        TxtClaCoo.Text = "Média"
+                    ElseIf CDec(TxtIdade.Text) < 13 Then
+                        TxtClaCoo.Text = "Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 60 Then
+                        TxtClaCoo.Text = "Muito Fraco"
                     Else
-                        txtClaCoo.Text = "Média"
+                        TxtClaCoo.Text = "Média"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 1680 Then
-                    If CDec(txtIdade.Text) = 7 Then
-                        txtClaCoo.Text = "Boa"
-                    ElseIf CDec(txtIdade.Text) < 11 Then
-                        txtClaCoo.Text = "Média"
-                    ElseIf CDec(txtIdade.Text) < 13 Then
-                        txtClaCoo.Text = "Fraco"
-                    ElseIf CDec(txtIdade.Text) < 50 Then
-                        txtClaCoo.Text = "Muito Fraco"
-                    ElseIf CDec(txtIdade.Text) < 60 Then
-                        txtClaCoo.Text = "Fraco"
+                ElseIf CDec(TxtCooper.Text) <= 1680 Then
+                    If CDec(TxtIdade.Text) = 7 Then
+                        TxtClaCoo.Text = "Boa"
+                    ElseIf CDec(TxtIdade.Text) < 11 Then
+                        TxtClaCoo.Text = "Média"
+                    ElseIf CDec(TxtIdade.Text) < 13 Then
+                        TxtClaCoo.Text = "Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 50 Then
+                        TxtClaCoo.Text = "Muito Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 60 Then
+                        TxtClaCoo.Text = "Fraco"
                     Else
-                        txtClaCoo.Text = "Média"
+                        TxtClaCoo.Text = "Média"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 1690 Then
-                    If CDec(txtIdade.Text) = 7 Then
-                        txtClaCoo.Text = "Boa"
-                    ElseIf CDec(txtIdade.Text) < 13 Then
-                        txtClaCoo.Text = "Média"
-                    ElseIf CDec(txtIdade.Text) < 50 Then
-                        txtClaCoo.Text = "Muito Fraco"
-                    ElseIf CDec(txtIdade.Text) < 60 Then
-                        txtClaCoo.Text = "Fraco"
+                ElseIf CDec(TxtCooper.Text) <= 1690 Then
+                    If CDec(TxtIdade.Text) = 7 Then
+                        TxtClaCoo.Text = "Boa"
+                    ElseIf CDec(TxtIdade.Text) < 13 Then
+                        TxtClaCoo.Text = "Média"
+                    ElseIf CDec(TxtIdade.Text) < 50 Then
+                        TxtClaCoo.Text = "Muito Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 60 Then
+                        TxtClaCoo.Text = "Fraco"
                     Else
-                        txtClaCoo.Text = "Média"
+                        TxtClaCoo.Text = "Média"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 1730 Then
-                    If CDec(txtIdade.Text) < 9 Then
-                        txtClaCoo.Text = "Boa"
-                    ElseIf CDec(txtIdade.Text) < 13 Then
-                        txtClaCoo.Text = "Média"
-                    ElseIf CDec(txtIdade.Text) < 50 Then
-                        txtClaCoo.Text = "Muito Fraco"
-                    ElseIf CDec(txtIdade.Text) < 60 Then
-                        txtClaCoo.Text = "Fraco"
+                ElseIf CDec(TxtCooper.Text) <= 1730 Then
+                    If CDec(TxtIdade.Text) < 9 Then
+                        TxtClaCoo.Text = "Boa"
+                    ElseIf CDec(TxtIdade.Text) < 13 Then
+                        TxtClaCoo.Text = "Média"
+                    ElseIf CDec(TxtIdade.Text) < 50 Then
+                        TxtClaCoo.Text = "Muito Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 60 Then
+                        TxtClaCoo.Text = "Fraco"
                     Else
-                        txtClaCoo.Text = "Média"
+                        TxtClaCoo.Text = "Média"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 1740 Then
-                    If CDec(txtIdade.Text) = 7 Then
-                        txtClaCoo.Text = "Excelente"
-                    ElseIf CDec(txtIdade.Text) = 8 Then
-                        txtClaCoo.Text = "Boa"
-                    ElseIf CDec(txtIdade.Text) < 13 Then
-                        txtClaCoo.Text = "Média"
-                    ElseIf CDec(txtIdade.Text) < 50 Then
-                        txtClaCoo.Text = "Muito Fraco"
-                    ElseIf CDec(txtIdade.Text) < 60 Then
-                        txtClaCoo.Text = "Fraco"
+                ElseIf CDec(TxtCooper.Text) <= 1740 Then
+                    If CDec(TxtIdade.Text) = 7 Then
+                        TxtClaCoo.Text = "Excelente"
+                    ElseIf CDec(TxtIdade.Text) = 8 Then
+                        TxtClaCoo.Text = "Boa"
+                    ElseIf CDec(TxtIdade.Text) < 13 Then
+                        TxtClaCoo.Text = "Média"
+                    ElseIf CDec(TxtIdade.Text) < 50 Then
+                        TxtClaCoo.Text = "Muito Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 60 Then
+                        TxtClaCoo.Text = "Fraco"
                     Else
-                        txtClaCoo.Text = "Média"
+                        TxtClaCoo.Text = "Média"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 1780 Then
-                    If CDec(txtIdade.Text) = 7 Then
-                        txtClaCoo.Text = "Excelente"
-                    ElseIf CDec(txtIdade.Text) < 10 Then
-                        txtClaCoo.Text = "Boa"
-                    ElseIf CDec(txtIdade.Text) < 13 Then
-                        txtClaCoo.Text = "Média"
-                    ElseIf CDec(txtIdade.Text) < 50 Then
-                        txtClaCoo.Text = "Muito Fraco"
-                    ElseIf CDec(txtIdade.Text) < 60 Then
-                        txtClaCoo.Text = "Fraco"
+                ElseIf CDec(TxtCooper.Text) <= 1780 Then
+                    If CDec(TxtIdade.Text) = 7 Then
+                        TxtClaCoo.Text = "Excelente"
+                    ElseIf CDec(TxtIdade.Text) < 10 Then
+                        TxtClaCoo.Text = "Boa"
+                    ElseIf CDec(TxtIdade.Text) < 13 Then
+                        TxtClaCoo.Text = "Média"
+                    ElseIf CDec(TxtIdade.Text) < 50 Then
+                        TxtClaCoo.Text = "Muito Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 60 Then
+                        TxtClaCoo.Text = "Fraco"
                     Else
-                        txtClaCoo.Text = "Média"
+                        TxtClaCoo.Text = "Média"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 1810 Then
-                    If CDec(txtIdade.Text) = 7 Then
-                        txtClaCoo.Text = "Excelente"
-                    ElseIf CDec(txtIdade.Text) < 11 Then
-                        txtClaCoo.Text = "Boa"
-                    ElseIf CDec(txtIdade.Text) < 13 Then
-                        txtClaCoo.Text = "Média"
-                    ElseIf CDec(txtIdade.Text) < 50 Then
-                        txtClaCoo.Text = "Muito Fraco"
-                    ElseIf CDec(txtIdade.Text) < 60 Then
-                        txtClaCoo.Text = "Fraco"
+                ElseIf CDec(TxtCooper.Text) <= 1810 Then
+                    If CDec(TxtIdade.Text) = 7 Then
+                        TxtClaCoo.Text = "Excelente"
+                    ElseIf CDec(TxtIdade.Text) < 11 Then
+                        TxtClaCoo.Text = "Boa"
+                    ElseIf CDec(TxtIdade.Text) < 13 Then
+                        TxtClaCoo.Text = "Média"
+                    ElseIf CDec(TxtIdade.Text) < 50 Then
+                        TxtClaCoo.Text = "Muito Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 60 Then
+                        TxtClaCoo.Text = "Fraco"
                     Else
-                        txtClaCoo.Text = "Média"
+                        TxtClaCoo.Text = "Média"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 1820 Then
-                    If CDec(txtIdade.Text) = 7 Then
-                        txtClaCoo.Text = "Excelente"
-                    ElseIf CDec(txtIdade.Text) < 13 Then
-                        txtClaCoo.Text = "Boa"
-                    ElseIf CDec(txtIdade.Text) < 50 Then
-                        txtClaCoo.Text = "Muito Fraco"
-                    ElseIf CDec(txtIdade.Text) < 60 Then
-                        txtClaCoo.Text = "Fraco"
+                ElseIf CDec(TxtCooper.Text) <= 1820 Then
+                    If CDec(TxtIdade.Text) = 7 Then
+                        TxtClaCoo.Text = "Excelente"
+                    ElseIf CDec(TxtIdade.Text) < 13 Then
+                        TxtClaCoo.Text = "Boa"
+                    ElseIf CDec(TxtIdade.Text) < 50 Then
+                        TxtClaCoo.Text = "Muito Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 60 Then
+                        TxtClaCoo.Text = "Fraco"
                     Else
-                        txtClaCoo.Text = "Média"
+                        TxtClaCoo.Text = "Média"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 1870 Then
-                    If CDec(txtIdade.Text) = 7 Then
-                        txtClaCoo.Text = "Excelente"
-                    ElseIf CDec(txtIdade.Text) < 13 Then
-                        txtClaCoo.Text = "Boa"
-                    ElseIf CDec(txtIdade.Text) < 40 Then
-                        txtClaCoo.Text = "Muito Fraco"
-                    ElseIf CDec(txtIdade.Text) < 60 Then
-                        txtClaCoo.Text = "Fraco"
+                ElseIf CDec(TxtCooper.Text) <= 1870 Then
+                    If CDec(TxtIdade.Text) = 7 Then
+                        TxtClaCoo.Text = "Excelente"
+                    ElseIf CDec(TxtIdade.Text) < 13 Then
+                        TxtClaCoo.Text = "Boa"
+                    ElseIf CDec(TxtIdade.Text) < 40 Then
+                        TxtClaCoo.Text = "Muito Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 60 Then
+                        TxtClaCoo.Text = "Fraco"
                     Else
-                        txtClaCoo.Text = "Média"
+                        TxtClaCoo.Text = "Média"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 1880 Then
-                    If CDec(txtIdade.Text) < 9 Then
-                        txtClaCoo.Text = "Excelente"
-                    ElseIf CDec(txtIdade.Text) < 13 Then
-                        txtClaCoo.Text = "Boa"
-                    ElseIf CDec(txtIdade.Text) < 40 Then
-                        txtClaCoo.Text = "Muito Fraco"
-                    ElseIf CDec(txtIdade.Text) < 50 Then
-                        txtClaCoo.Text = "Fraco"
+                ElseIf CDec(TxtCooper.Text) <= 1880 Then
+                    If CDec(TxtIdade.Text) < 9 Then
+                        TxtClaCoo.Text = "Excelente"
+                    ElseIf CDec(TxtIdade.Text) < 13 Then
+                        TxtClaCoo.Text = "Boa"
+                    ElseIf CDec(TxtIdade.Text) < 40 Then
+                        TxtClaCoo.Text = "Muito Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 50 Then
+                        TxtClaCoo.Text = "Fraco"
                     Else
-                        txtClaCoo.Text = "Média"
+                        TxtClaCoo.Text = "Média"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 1900 Then
-                    If CDec(txtIdade.Text) < 10 Then
-                        txtClaCoo.Text = "Excelente"
-                    ElseIf CDec(txtIdade.Text) < 13 Then
-                        txtClaCoo.Text = "Boa"
-                    ElseIf CDec(txtIdade.Text) < 40 Then
-                        txtClaCoo.Text = "Muito Fraco"
-                    ElseIf CDec(txtIdade.Text) < 50 Then
-                        txtClaCoo.Text = "Fraco"
+                ElseIf CDec(TxtCooper.Text) <= 1900 Then
+                    If CDec(TxtIdade.Text) < 10 Then
+                        TxtClaCoo.Text = "Excelente"
+                    ElseIf CDec(TxtIdade.Text) < 13 Then
+                        TxtClaCoo.Text = "Boa"
+                    ElseIf CDec(TxtIdade.Text) < 40 Then
+                        TxtClaCoo.Text = "Muito Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 50 Then
+                        TxtClaCoo.Text = "Fraco"
                     Else
-                        txtClaCoo.Text = "Média"
+                        TxtClaCoo.Text = "Média"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 1930 Then
-                    If CDec(txtIdade.Text) < 10 Then
-                        txtClaCoo.Text = "Excelente"
-                    ElseIf CDec(txtIdade.Text) < 13 Then
-                        txtClaCoo.Text = "Boa"
-                    ElseIf CDec(txtIdade.Text) < 30 Then
-                        txtClaCoo.Text = "Muito Fraco"
-                    ElseIf CDec(txtIdade.Text) < 50 Then
-                        txtClaCoo.Text = "Fraco"
+                ElseIf CDec(TxtCooper.Text) <= 1930 Then
+                    If CDec(TxtIdade.Text) < 10 Then
+                        TxtClaCoo.Text = "Excelente"
+                    ElseIf CDec(TxtIdade.Text) < 13 Then
+                        TxtClaCoo.Text = "Boa"
+                    ElseIf CDec(TxtIdade.Text) < 30 Then
+                        TxtClaCoo.Text = "Muito Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 50 Then
+                        TxtClaCoo.Text = "Fraco"
                     Else
-                        txtClaCoo.Text = "Média"
+                        TxtClaCoo.Text = "Média"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 1950 Then
-                    If CDec(txtIdade.Text) < 10 Then
-                        txtClaCoo.Text = "Excelente"
-                    ElseIf CDec(txtIdade.Text) < 13 Then
-                        txtClaCoo.Text = "Boa"
-                    ElseIf CDec(txtIdade.Text) < 30 Then
-                        txtClaCoo.Text = "Muito Fraco"
-                    ElseIf CDec(txtIdade.Text) < 50 Then
-                        txtClaCoo.Text = "Fraco"
-                    ElseIf CDec(txtIdade.Text) < 60 Then
-                        txtClaCoo.Text = "Média"
+                ElseIf CDec(TxtCooper.Text) <= 1950 Then
+                    If CDec(TxtIdade.Text) < 10 Then
+                        TxtClaCoo.Text = "Excelente"
+                    ElseIf CDec(TxtIdade.Text) < 13 Then
+                        TxtClaCoo.Text = "Boa"
+                    ElseIf CDec(TxtIdade.Text) < 30 Then
+                        TxtClaCoo.Text = "Muito Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 50 Then
+                        TxtClaCoo.Text = "Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 60 Then
+                        TxtClaCoo.Text = "Média"
                     Else
-                        txtClaCoo.Text = "Boa"
+                        TxtClaCoo.Text = "Boa"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 1970 Then
-                    If CDec(txtIdade.Text) < 11 Then
-                        txtClaCoo.Text = "Excelente"
-                    ElseIf CDec(txtIdade.Text) < 13 Then
-                        txtClaCoo.Text = "Boa"
-                    ElseIf CDec(txtIdade.Text) < 20 Then
-                        txtClaCoo.Text = "Muito Fraco"
-                    ElseIf CDec(txtIdade.Text) < 50 Then
-                        txtClaCoo.Text = "Fraco"
-                    ElseIf CDec(txtIdade.Text) < 60 Then
-                        txtClaCoo.Text = "Média"
+                ElseIf CDec(TxtCooper.Text) <= 1970 Then
+                    If CDec(TxtIdade.Text) < 11 Then
+                        TxtClaCoo.Text = "Excelente"
+                    ElseIf CDec(TxtIdade.Text) < 13 Then
+                        TxtClaCoo.Text = "Boa"
+                    ElseIf CDec(TxtIdade.Text) < 20 Then
+                        TxtClaCoo.Text = "Muito Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 50 Then
+                        TxtClaCoo.Text = "Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 60 Then
+                        TxtClaCoo.Text = "Média"
                     Else
-                        txtClaCoo.Text = "Boa"
+                        TxtClaCoo.Text = "Boa"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 1990 Then
-                    If CDec(txtIdade.Text) < 12 Then
-                        txtClaCoo.Text = "Excelente"
-                    ElseIf CDec(txtIdade.Text) = 12 Then
-                        txtClaCoo.Text = "Boa"
-                    ElseIf CDec(txtIdade.Text) < 20 Then
-                        txtClaCoo.Text = "Muito Fraco"
-                    ElseIf CDec(txtIdade.Text) < 50 Then
-                        txtClaCoo.Text = "Fraco"
-                    ElseIf CDec(txtIdade.Text) < 60 Then
-                        txtClaCoo.Text = "Média"
+                ElseIf CDec(TxtCooper.Text) <= 1990 Then
+                    If CDec(TxtIdade.Text) < 12 Then
+                        TxtClaCoo.Text = "Excelente"
+                    ElseIf CDec(TxtIdade.Text) = 12 Then
+                        TxtClaCoo.Text = "Boa"
+                    ElseIf CDec(TxtIdade.Text) < 20 Then
+                        TxtClaCoo.Text = "Muito Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 50 Then
+                        TxtClaCoo.Text = "Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 60 Then
+                        TxtClaCoo.Text = "Média"
                     Else
-                        txtClaCoo.Text = "Boa"
+                        TxtClaCoo.Text = "Boa"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 2000 Then
-                    If CDec(txtIdade.Text) < 12 Then
-                        txtClaCoo.Text = "Excelente"
-                    ElseIf CDec(txtIdade.Text) = 12 Then
-                        txtClaCoo.Text = "Boa"
-                    ElseIf CDec(txtIdade.Text) < 20 Then
-                        txtClaCoo.Text = "Muito Fraco"
-                    ElseIf CDec(txtIdade.Text) < 40 Then
-                        txtClaCoo.Text = "Fraco"
-                    ElseIf CDec(txtIdade.Text) < 60 Then
-                        txtClaCoo.Text = "Média"
+                ElseIf CDec(TxtCooper.Text) <= 2000 Then
+                    If CDec(TxtIdade.Text) < 12 Then
+                        TxtClaCoo.Text = "Excelente"
+                    ElseIf CDec(TxtIdade.Text) = 12 Then
+                        TxtClaCoo.Text = "Boa"
+                    ElseIf CDec(TxtIdade.Text) < 20 Then
+                        TxtClaCoo.Text = "Muito Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 40 Then
+                        TxtClaCoo.Text = "Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 60 Then
+                        TxtClaCoo.Text = "Média"
                     Else
-                        txtClaCoo.Text = "Boa"
+                        TxtClaCoo.Text = "Boa"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 2090 Then
-                    If CDec(txtIdade.Text) < 13 Then
-                        txtClaCoo.Text = "Excelente"
-                    ElseIf CDec(txtIdade.Text) < 20 Then
-                        txtClaCoo.Text = "Muito Fraco"
-                    ElseIf CDec(txtIdade.Text) < 40 Then
-                        txtClaCoo.Text = "Fraco"
-                    ElseIf CDec(txtIdade.Text) < 60 Then
-                        txtClaCoo.Text = "Média"
+                ElseIf CDec(TxtCooper.Text) <= 2090 Then
+                    If CDec(TxtIdade.Text) < 13 Then
+                        TxtClaCoo.Text = "Excelente"
+                    ElseIf CDec(TxtIdade.Text) < 20 Then
+                        TxtClaCoo.Text = "Muito Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 40 Then
+                        TxtClaCoo.Text = "Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 60 Then
+                        TxtClaCoo.Text = "Média"
                     Else
-                        txtClaCoo.Text = "Boa"
+                        TxtClaCoo.Text = "Boa"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 2110 Then
-                    If CDec(txtIdade.Text) < 13 Then
-                        txtClaCoo.Text = "Excelente"
-                    ElseIf CDec(txtIdade.Text) < 30 Then
-                        txtClaCoo.Text = "Fraco"
-                    ElseIf CDec(txtIdade.Text) < 50 Then
-                        txtClaCoo.Text = "Média"
+                ElseIf CDec(TxtCooper.Text) <= 2110 Then
+                    If CDec(TxtIdade.Text) < 13 Then
+                        TxtClaCoo.Text = "Excelente"
+                    ElseIf CDec(TxtIdade.Text) < 30 Then
+                        TxtClaCoo.Text = "Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 50 Then
+                        TxtClaCoo.Text = "Média"
                     Else
-                        txtClaCoo.Text = "Boa"
+                        TxtClaCoo.Text = "Boa"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 2120 Then
-                    If CDec(txtIdade.Text) < 13 Then
-                        txtClaCoo.Text = "Excelente"
-                    ElseIf CDec(txtIdade.Text) < 20 Then
-                        txtClaCoo.Text = "Fraco"
-                    ElseIf CDec(txtIdade.Text) < 50 Then
-                        txtClaCoo.Text = "Média"
+                ElseIf CDec(TxtCooper.Text) <= 2120 Then
+                    If CDec(TxtIdade.Text) < 13 Then
+                        TxtClaCoo.Text = "Excelente"
+                    ElseIf CDec(TxtIdade.Text) < 20 Then
+                        TxtClaCoo.Text = "Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 50 Then
+                        TxtClaCoo.Text = "Média"
                     Else
-                        txtClaCoo.Text = "Boa"
+                        TxtClaCoo.Text = "Boa"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 2200 Then
-                    If CDec(txtIdade.Text) < 13 Then
-                        txtClaCoo.Text = "Excelente"
-                    ElseIf CDec(txtIdade.Text) < 20 Then
-                        txtClaCoo.Text = "Fraco"
-                    ElseIf CDec(txtIdade.Text) < 50 Then
-                        txtClaCoo.Text = "Média"
-                    ElseIf CDec(txtIdade.Text) < 60 Then
-                        txtClaCoo.Text = "Boa"
+                ElseIf CDec(TxtCooper.Text) <= 2200 Then
+                    If CDec(TxtIdade.Text) < 13 Then
+                        TxtClaCoo.Text = "Excelente"
+                    ElseIf CDec(TxtIdade.Text) < 20 Then
+                        TxtClaCoo.Text = "Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 50 Then
+                        TxtClaCoo.Text = "Média"
+                    ElseIf CDec(TxtIdade.Text) < 60 Then
+                        TxtClaCoo.Text = "Boa"
                     Else
-                        txtClaCoo.Text = "Excelente"
+                        TxtClaCoo.Text = "Excelente"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 2240 Then
-                    If CDec(txtIdade.Text) < 13 Then
-                        txtClaCoo.Text = "Excelente"
-                    ElseIf CDec(txtIdade.Text) < 50 Then
-                        txtClaCoo.Text = "Média"
-                    ElseIf CDec(txtIdade.Text) < 60 Then
-                        txtClaCoo.Text = "Boa"
+                ElseIf CDec(TxtCooper.Text) <= 2240 Then
+                    If CDec(TxtIdade.Text) < 13 Then
+                        TxtClaCoo.Text = "Excelente"
+                    ElseIf CDec(TxtIdade.Text) < 50 Then
+                        TxtClaCoo.Text = "Média"
+                    ElseIf CDec(TxtIdade.Text) < 60 Then
+                        TxtClaCoo.Text = "Boa"
                     Else
-                        txtClaCoo.Text = "Excelente"
+                        TxtClaCoo.Text = "Excelente"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 2320 Then
-                    If CDec(txtIdade.Text) < 13 Then
-                        txtClaCoo.Text = "Excelente"
-                    ElseIf CDec(txtIdade.Text) < 40 Then
-                        txtClaCoo.Text = "Média"
-                    ElseIf CDec(txtIdade.Text) < 60 Then
-                        txtClaCoo.Text = "Boa"
+                ElseIf CDec(TxtCooper.Text) <= 2320 Then
+                    If CDec(TxtIdade.Text) < 13 Then
+                        TxtClaCoo.Text = "Excelente"
+                    ElseIf CDec(TxtIdade.Text) < 40 Then
+                        TxtClaCoo.Text = "Média"
+                    ElseIf CDec(TxtIdade.Text) < 60 Then
+                        TxtClaCoo.Text = "Boa"
                     Else
-                        txtClaCoo.Text = "Excelente"
+                        TxtClaCoo.Text = "Excelente"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 2390 Then
-                    If CDec(txtIdade.Text) < 13 Then
-                        txtClaCoo.Text = "Excelente"
-                    ElseIf CDec(txtIdade.Text) < 40 Then
-                        txtClaCoo.Text = "Média"
-                    ElseIf CDec(txtIdade.Text) < 50 Then
-                        txtClaCoo.Text = "Boa"
+                ElseIf CDec(TxtCooper.Text) <= 2390 Then
+                    If CDec(TxtIdade.Text) < 13 Then
+                        TxtClaCoo.Text = "Excelente"
+                    ElseIf CDec(TxtIdade.Text) < 40 Then
+                        TxtClaCoo.Text = "Média"
+                    ElseIf CDec(TxtIdade.Text) < 50 Then
+                        TxtClaCoo.Text = "Boa"
                     Else
-                        txtClaCoo.Text = "Excelente"
+                        TxtClaCoo.Text = "Excelente"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 2400 Then
-                    If CDec(txtIdade.Text) = 7 Then
-                        txtClaCoo.Text = "Superior"
-                    ElseIf CDec(txtIdade.Text) < 13 Then
-                        txtClaCoo.Text = "Excelente"
-                    ElseIf CDec(txtIdade.Text) < 40 Then
-                        txtClaCoo.Text = "Média"
-                    ElseIf CDec(txtIdade.Text) < 50 Then
-                        txtClaCoo.Text = "Boa"
+                ElseIf CDec(TxtCooper.Text) <= 2400 Then
+                    If CDec(TxtIdade.Text) = 7 Then
+                        TxtClaCoo.Text = "Superior"
+                    ElseIf CDec(TxtIdade.Text) < 13 Then
+                        TxtClaCoo.Text = "Excelente"
+                    ElseIf CDec(TxtIdade.Text) < 40 Then
+                        TxtClaCoo.Text = "Média"
+                    ElseIf CDec(TxtIdade.Text) < 50 Then
+                        TxtClaCoo.Text = "Boa"
                     Else
-                        txtClaCoo.Text = "Excelente"
+                        TxtClaCoo.Text = "Excelente"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 2450 Then
-                    If CDec(txtIdade.Text) = 7 Then
-                        txtClaCoo.Text = "Superior"
-                    ElseIf CDec(txtIdade.Text) < 13 Then
-                        txtClaCoo.Text = "Excelente"
-                    ElseIf CDec(txtIdade.Text) < 20 Then
-                        txtClaCoo.Text = "Média"
-                    ElseIf CDec(txtIdade.Text) < 50 Then
-                        txtClaCoo.Text = "Boa"
+                ElseIf CDec(TxtCooper.Text) <= 2450 Then
+                    If CDec(TxtIdade.Text) = 7 Then
+                        TxtClaCoo.Text = "Superior"
+                    ElseIf CDec(TxtIdade.Text) < 13 Then
+                        TxtClaCoo.Text = "Excelente"
+                    ElseIf CDec(TxtIdade.Text) < 20 Then
+                        TxtClaCoo.Text = "Média"
+                    ElseIf CDec(TxtIdade.Text) < 50 Then
+                        TxtClaCoo.Text = "Boa"
                     Else
-                        txtClaCoo.Text = "Excelente"
+                        TxtClaCoo.Text = "Excelente"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 2460 Then
-                    If CDec(txtIdade.Text) = 7 Then
-                        txtClaCoo.Text = "Superior"
-                    ElseIf CDec(txtIdade.Text) = 9 Then
-                        txtClaCoo.Text = "Superior"
-                    ElseIf CDec(txtIdade.Text) < 13 Then
-                        txtClaCoo.Text = "Excelente"
-                    ElseIf CDec(txtIdade.Text) < 20 Then
-                        txtClaCoo.Text = "Média"
-                    ElseIf CDec(txtIdade.Text) < 50 Then
-                        txtClaCoo.Text = "Boa"
+                ElseIf CDec(TxtCooper.Text) <= 2460 Then
+                    If CDec(TxtIdade.Text) = 7 Then
+                        TxtClaCoo.Text = "Superior"
+                    ElseIf CDec(TxtIdade.Text) = 9 Then
+                        TxtClaCoo.Text = "Superior"
+                    ElseIf CDec(TxtIdade.Text) < 13 Then
+                        TxtClaCoo.Text = "Excelente"
+                    ElseIf CDec(TxtIdade.Text) < 20 Then
+                        TxtClaCoo.Text = "Média"
+                    ElseIf CDec(TxtIdade.Text) < 50 Then
+                        TxtClaCoo.Text = "Boa"
                     Else
-                        txtClaCoo.Text = "Excelente"
+                        TxtClaCoo.Text = "Excelente"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 2480 Then
-                    If CDec(txtIdade.Text) = 7 Then
-                        txtClaCoo.Text = "Superior"
-                    ElseIf CDec(txtIdade.Text) = 9 Then
-                        txtClaCoo.Text = "Superior"
-                    ElseIf CDec(txtIdade.Text) < 13 Then
-                        txtClaCoo.Text = "Excelente"
-                    ElseIf CDec(txtIdade.Text) < 20 Then
-                        txtClaCoo.Text = "Média"
-                    ElseIf CDec(txtIdade.Text) < 40 Then
-                        txtClaCoo.Text = "Boa"
+                ElseIf CDec(TxtCooper.Text) <= 2480 Then
+                    If CDec(TxtIdade.Text) = 7 Then
+                        TxtClaCoo.Text = "Superior"
+                    ElseIf CDec(TxtIdade.Text) = 9 Then
+                        TxtClaCoo.Text = "Superior"
+                    ElseIf CDec(TxtIdade.Text) < 13 Then
+                        TxtClaCoo.Text = "Excelente"
+                    ElseIf CDec(TxtIdade.Text) < 20 Then
+                        TxtClaCoo.Text = "Média"
+                    ElseIf CDec(TxtIdade.Text) < 40 Then
+                        TxtClaCoo.Text = "Boa"
                     Else
-                        txtClaCoo.Text = "Excelente"
+                        TxtClaCoo.Text = "Excelente"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 2510 Then
-                    If CDec(txtIdade.Text) = 7 Then
-                        txtClaCoo.Text = "Superior"
-                    ElseIf CDec(txtIdade.Text) = 9 Then
-                        txtClaCoo.Text = "Superior"
-                    ElseIf CDec(txtIdade.Text) < 13 Then
-                        txtClaCoo.Text = "Excelente"
-                    ElseIf CDec(txtIdade.Text) < 20 Then
-                        txtClaCoo.Text = "Média"
-                    ElseIf CDec(txtIdade.Text) < 40 Then
-                        txtClaCoo.Text = "Boa"
-                    ElseIf CDec(txtIdade.Text) < 60 Then
-                        txtClaCoo.Text = "Excelente"
+                ElseIf CDec(TxtCooper.Text) <= 2510 Then
+                    If CDec(TxtIdade.Text) = 7 Then
+                        TxtClaCoo.Text = "Superior"
+                    ElseIf CDec(TxtIdade.Text) = 9 Then
+                        TxtClaCoo.Text = "Superior"
+                    ElseIf CDec(TxtIdade.Text) < 13 Then
+                        TxtClaCoo.Text = "Excelente"
+                    ElseIf CDec(TxtIdade.Text) < 20 Then
+                        TxtClaCoo.Text = "Média"
+                    ElseIf CDec(TxtIdade.Text) < 40 Then
+                        TxtClaCoo.Text = "Boa"
+                    ElseIf CDec(TxtIdade.Text) < 60 Then
+                        TxtClaCoo.Text = "Excelente"
                     Else
-                        txtClaCoo.Text = "Superior"
+                        TxtClaCoo.Text = "Superior"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 2520 Then
-                    If CDec(txtIdade.Text) = 7 Then
-                        txtClaCoo.Text = "Superior"
-                    ElseIf CDec(txtIdade.Text) = 9 Then
-                        txtClaCoo.Text = "Superior"
-                    ElseIf CDec(txtIdade.Text) < 13 Then
-                        txtClaCoo.Text = "Excelente"
-                    ElseIf CDec(txtIdade.Text) < 30 Then
-                        txtClaCoo.Text = "Boa"
-                    ElseIf CDec(txtIdade.Text) < 60 Then
-                        txtClaCoo.Text = "Excelente"
+                ElseIf CDec(TxtCooper.Text) <= 2520 Then
+                    If CDec(TxtIdade.Text) = 7 Then
+                        TxtClaCoo.Text = "Superior"
+                    ElseIf CDec(TxtIdade.Text) = 9 Then
+                        TxtClaCoo.Text = "Superior"
+                    ElseIf CDec(TxtIdade.Text) < 13 Then
+                        TxtClaCoo.Text = "Excelente"
+                    ElseIf CDec(TxtIdade.Text) < 30 Then
+                        TxtClaCoo.Text = "Boa"
+                    ElseIf CDec(TxtIdade.Text) < 60 Then
+                        TxtClaCoo.Text = "Excelente"
                     Else
-                        txtClaCoo.Text = "Superior"
+                        TxtClaCoo.Text = "Superior"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 2540 Then
-                    If CDec(txtIdade.Text) < 12 Then
-                        txtClaCoo.Text = "Superior"
-                    ElseIf CDec(txtIdade.Text) = 12 Then
-                        txtClaCoo.Text = "Excelente"
-                    ElseIf CDec(txtIdade.Text) < 30 Then
-                        txtClaCoo.Text = "Boa"
-                    ElseIf CDec(txtIdade.Text) < 60 Then
-                        txtClaCoo.Text = "Excelente"
+                ElseIf CDec(TxtCooper.Text) <= 2540 Then
+                    If CDec(TxtIdade.Text) < 12 Then
+                        TxtClaCoo.Text = "Superior"
+                    ElseIf CDec(TxtIdade.Text) = 12 Then
+                        TxtClaCoo.Text = "Excelente"
+                    ElseIf CDec(TxtIdade.Text) < 30 Then
+                        TxtClaCoo.Text = "Boa"
+                    ElseIf CDec(TxtIdade.Text) < 60 Then
+                        TxtClaCoo.Text = "Excelente"
                     Else
-                        txtClaCoo.Text = "Superior"
+                        TxtClaCoo.Text = "Superior"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 2640 Then
-                    If CDec(txtIdade.Text) < 12 Then
-                        txtClaCoo.Text = "Superior"
-                    ElseIf CDec(txtIdade.Text) = 12 Then
-                        txtClaCoo.Text = "Excelente"
-                    ElseIf CDec(txtIdade.Text) < 30 Then
-                        txtClaCoo.Text = "Boa"
-                    ElseIf CDec(txtIdade.Text) < 50 Then
-                        txtClaCoo.Text = "Excelente"
+                ElseIf CDec(TxtCooper.Text) <= 2640 Then
+                    If CDec(TxtIdade.Text) < 12 Then
+                        TxtClaCoo.Text = "Superior"
+                    ElseIf CDec(TxtIdade.Text) = 12 Then
+                        TxtClaCoo.Text = "Excelente"
+                    ElseIf CDec(TxtIdade.Text) < 30 Then
+                        TxtClaCoo.Text = "Boa"
+                    ElseIf CDec(TxtIdade.Text) < 50 Then
+                        TxtClaCoo.Text = "Excelente"
                     Else
-                        txtClaCoo.Text = "Superior"
+                        TxtClaCoo.Text = "Superior"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 2650 Then
-                    If CDec(txtIdade.Text) < 12 Then
-                        txtClaCoo.Text = "Superior"
-                    ElseIf CDec(txtIdade.Text) = 12 Then
-                        txtClaCoo.Text = "Excelente"
-                    ElseIf CDec(txtIdade.Text) < 20 Then
-                        txtClaCoo.Text = "Boa"
-                    ElseIf CDec(txtIdade.Text) < 50 Then
-                        txtClaCoo.Text = "Excelente"
+                ElseIf CDec(TxtCooper.Text) <= 2650 Then
+                    If CDec(TxtIdade.Text) < 12 Then
+                        TxtClaCoo.Text = "Superior"
+                    ElseIf CDec(TxtIdade.Text) = 12 Then
+                        TxtClaCoo.Text = "Excelente"
+                    ElseIf CDec(TxtIdade.Text) < 20 Then
+                        TxtClaCoo.Text = "Boa"
+                    ElseIf CDec(TxtIdade.Text) < 50 Then
+                        TxtClaCoo.Text = "Excelente"
                     Else
-                        txtClaCoo.Text = "Superior"
+                        TxtClaCoo.Text = "Superior"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 2710 Then
-                    If CDec(txtIdade.Text) < 12 Then
-                        txtClaCoo.Text = "Superior"
-                    ElseIf CDec(txtIdade.Text) = 12 Then
-                        txtClaCoo.Text = "Excelente"
-                    ElseIf CDec(txtIdade.Text) < 20 Then
-                        txtClaCoo.Text = "Boa"
-                    ElseIf CDec(txtIdade.Text) < 40 Then
-                        txtClaCoo.Text = "Excelente"
+                ElseIf CDec(TxtCooper.Text) <= 2710 Then
+                    If CDec(TxtIdade.Text) < 12 Then
+                        TxtClaCoo.Text = "Superior"
+                    ElseIf CDec(TxtIdade.Text) = 12 Then
+                        TxtClaCoo.Text = "Excelente"
+                    ElseIf CDec(TxtIdade.Text) < 20 Then
+                        TxtClaCoo.Text = "Boa"
+                    ElseIf CDec(TxtIdade.Text) < 40 Then
+                        TxtClaCoo.Text = "Excelente"
                     Else
-                        txtClaCoo.Text = "Superior"
+                        TxtClaCoo.Text = "Superior"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 2770 Then
-                    If CDec(txtIdade.Text) < 12 Then
-                        txtClaCoo.Text = "Superior"
-                    ElseIf CDec(txtIdade.Text) = 12 Then
-                        txtClaCoo.Text = "Excelente"
-                    ElseIf CDec(txtIdade.Text) < 20 Then
-                        txtClaCoo.Text = "Boa"
-                    ElseIf CDec(txtIdade.Text) < 30 Then
-                        txtClaCoo.Text = "Excelente"
+                ElseIf CDec(TxtCooper.Text) <= 2770 Then
+                    If CDec(TxtIdade.Text) < 12 Then
+                        TxtClaCoo.Text = "Superior"
+                    ElseIf CDec(TxtIdade.Text) = 12 Then
+                        TxtClaCoo.Text = "Excelente"
+                    ElseIf CDec(TxtIdade.Text) < 20 Then
+                        TxtClaCoo.Text = "Boa"
+                    ElseIf CDec(TxtIdade.Text) < 30 Then
+                        TxtClaCoo.Text = "Excelente"
                     Else
-                        txtClaCoo.Text = "Superior"
+                        TxtClaCoo.Text = "Superior"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 2830 Then
-                    If CDec(txtIdade.Text) < 12 Then
-                        txtClaCoo.Text = "Superior"
-                    ElseIf CDec(txtIdade.Text) < 30 Then
-                        txtClaCoo.Text = "Excelente"
+                ElseIf CDec(TxtCooper.Text) <= 2830 Then
+                    If CDec(TxtIdade.Text) < 12 Then
+                        TxtClaCoo.Text = "Superior"
+                    ElseIf CDec(TxtIdade.Text) < 30 Then
+                        TxtClaCoo.Text = "Excelente"
                     Else
-                        txtClaCoo.Text = "Superior"
+                        TxtClaCoo.Text = "Superior"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 3000 Then
-                    If CDec(txtIdade.Text) < 12 Then
-                        txtClaCoo.Text = "Superior"
-                    ElseIf CDec(txtIdade.Text) < 20 Then
-                        txtClaCoo.Text = "Excelente"
+                ElseIf CDec(TxtCooper.Text) <= 3000 Then
+                    If CDec(TxtIdade.Text) < 12 Then
+                        TxtClaCoo.Text = "Superior"
+                    ElseIf CDec(TxtIdade.Text) < 20 Then
+                        TxtClaCoo.Text = "Excelente"
                     Else
-                        txtClaCoo.Text = "Superior"
+                        TxtClaCoo.Text = "Superior"
                     End If
                 Else
-                    txtClaCoo.Text = "Superior"
+                    TxtClaCoo.Text = "Superior"
                 End If
             Else
                 'Feminino
-                If CDec(txtIdade.Text) < 7 Then
-                    txtClaCoo.Text = "Não Avaliar"
-                ElseIf CDec(txtCooper.Text) <= 1110 Then
-                    txtClaCoo.Text = "Muito Fraco"
-                ElseIf CDec(txtCooper.Text) <= 1180 Then
-                    If CDec(txtIdade.Text) = 7 Then
-                        txtClaCoo.Text = "Fraco"
+                If CDec(TxtIdade.Text) < 7 Then
+                    TxtClaCoo.Text = "Não Avaliar"
+                ElseIf CDec(TxtCooper.Text) <= 1110 Then
+                    TxtClaCoo.Text = "Muito Fraco"
+                ElseIf CDec(TxtCooper.Text) <= 1180 Then
+                    If CDec(TxtIdade.Text) = 7 Then
+                        TxtClaCoo.Text = "Fraco"
                     Else
-                        txtClaCoo.Text = "Muito Fraco"
+                        TxtClaCoo.Text = "Muito Fraco"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 1230 Then
-                    If CDec(txtIdade.Text) < 9 Then
-                        txtClaCoo.Text = "Fraco"
+                ElseIf CDec(TxtCooper.Text) <= 1230 Then
+                    If CDec(TxtIdade.Text) < 9 Then
+                        TxtClaCoo.Text = "Fraco"
                     Else
-                        txtClaCoo.Text = "Muito Fraco"
+                        TxtClaCoo.Text = "Muito Fraco"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 1260 Then
-                    If CDec(txtIdade.Text) < 11 Then
-                        txtClaCoo.Text = "Fraco"
+                ElseIf CDec(TxtCooper.Text) <= 1260 Then
+                    If CDec(TxtIdade.Text) < 11 Then
+                        TxtClaCoo.Text = "Fraco"
                     Else
-                        txtClaCoo.Text = "Muito Fraco"
+                        TxtClaCoo.Text = "Muito Fraco"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 1280 Then
-                    If CDec(txtIdade.Text) < 11 Then
-                        txtClaCoo.Text = "Fraco"
-                    ElseIf CDec(txtIdade.Text) < 60 Then
-                        txtClaCoo.Text = "Muito Fraco"
+                ElseIf CDec(TxtCooper.Text) <= 1280 Then
+                    If CDec(TxtIdade.Text) < 11 Then
+                        TxtClaCoo.Text = "Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 60 Then
+                        TxtClaCoo.Text = "Muito Fraco"
                     Else
-                        txtClaCoo.Text = "Fraco"
+                        TxtClaCoo.Text = "Fraco"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 1300 Then
-                    If CDec(txtIdade.Text) = 7 Then
-                        txtClaCoo.Text = "Média"
-                    ElseIf CDec(txtIdade.Text) <= 11 Then
-                        txtClaCoo.Text = "Fraco"
-                    ElseIf CDec(txtIdade.Text) < 60 Then
-                        txtClaCoo.Text = "Muito Fraco"
+                ElseIf CDec(TxtCooper.Text) <= 1300 Then
+                    If CDec(TxtIdade.Text) = 7 Then
+                        TxtClaCoo.Text = "Média"
+                    ElseIf CDec(TxtIdade.Text) <= 11 Then
+                        TxtClaCoo.Text = "Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 60 Then
+                        TxtClaCoo.Text = "Muito Fraco"
                     Else
-                        txtClaCoo.Text = "Fraco"
+                        TxtClaCoo.Text = "Fraco"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 1320 Then
-                    If CDec(txtIdade.Text) = 7 Then
-                        txtClaCoo.Text = "Média"
-                    ElseIf CDec(txtIdade.Text) <= 12 Then
-                        txtClaCoo.Text = "Fraco"
-                    ElseIf CDec(txtIdade.Text) < 60 Then
-                        txtClaCoo.Text = "Muito Fraco"
+                ElseIf CDec(TxtCooper.Text) <= 1320 Then
+                    If CDec(TxtIdade.Text) = 7 Then
+                        TxtClaCoo.Text = "Média"
+                    ElseIf CDec(TxtIdade.Text) <= 12 Then
+                        TxtClaCoo.Text = "Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 60 Then
+                        TxtClaCoo.Text = "Muito Fraco"
                     Else
-                        txtClaCoo.Text = "Fraco"
+                        TxtClaCoo.Text = "Fraco"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 1350 Then
-                    If CDec(txtIdade.Text) < 9 Then
-                        txtClaCoo.Text = "Média"
-                    ElseIf CDec(txtIdade.Text) < 12 Then
-                        txtClaCoo.Text = "Fraco"
-                    ElseIf CDec(txtIdade.Text) < 60 Then
-                        txtClaCoo.Text = "Muito Fraco"
+                ElseIf CDec(TxtCooper.Text) <= 1350 Then
+                    If CDec(TxtIdade.Text) < 9 Then
+                        TxtClaCoo.Text = "Média"
+                    ElseIf CDec(TxtIdade.Text) < 12 Then
+                        TxtClaCoo.Text = "Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 60 Then
+                        TxtClaCoo.Text = "Muito Fraco"
                     Else
-                        txtClaCoo.Text = "Fraco"
+                        TxtClaCoo.Text = "Fraco"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 1380 Then
-                    If CDec(txtIdade.Text) < 10 Then
-                        txtClaCoo.Text = "Média"
-                    ElseIf CDec(txtIdade.Text) < 13 Then
-                        txtClaCoo.Text = "Fraco"
-                    ElseIf CDec(txtIdade.Text) < 50 Then
-                        txtClaCoo.Text = "Muito Fraco"
+                ElseIf CDec(TxtCooper.Text) <= 1380 Then
+                    If CDec(TxtIdade.Text) < 10 Then
+                        TxtClaCoo.Text = "Média"
+                    ElseIf CDec(TxtIdade.Text) < 13 Then
+                        TxtClaCoo.Text = "Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 50 Then
+                        TxtClaCoo.Text = "Muito Fraco"
                     Else
-                        txtClaCoo.Text = "Fraco"
+                        TxtClaCoo.Text = "Fraco"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 1390 Then
-                    If CDec(txtIdade.Text) < 11 Then
-                        txtClaCoo.Text = "Média"
-                    ElseIf CDec(txtIdade.Text) < 13 Then
-                        txtClaCoo.Text = "Fraco"
-                    ElseIf CDec(txtIdade.Text) < 50 Then
-                        txtClaCoo.Text = "Muito Fraco"
+                ElseIf CDec(TxtCooper.Text) <= 1390 Then
+                    If CDec(TxtIdade.Text) < 11 Then
+                        TxtClaCoo.Text = "Média"
+                    ElseIf CDec(TxtIdade.Text) < 13 Then
+                        TxtClaCoo.Text = "Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 50 Then
+                        TxtClaCoo.Text = "Muito Fraco"
                     Else
-                        txtClaCoo.Text = "Fraco"
+                        TxtClaCoo.Text = "Fraco"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 1410 Then
-                    If CDec(txtIdade.Text) < 11 Then
-                        txtClaCoo.Text = "Média"
-                    ElseIf CDec(txtIdade.Text) < 13 Then
-                        txtClaCoo.Text = "Fraco"
-                    ElseIf CDec(txtIdade.Text) < 50 Then
-                        txtClaCoo.Text = "Muito Fraco"
-                    ElseIf CDec(txtIdade.Text) < 60 Then
-                        txtClaCoo.Text = "Fraco"
+                ElseIf CDec(TxtCooper.Text) <= 1410 Then
+                    If CDec(TxtIdade.Text) < 11 Then
+                        TxtClaCoo.Text = "Média"
+                    ElseIf CDec(TxtIdade.Text) < 13 Then
+                        TxtClaCoo.Text = "Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 50 Then
+                        TxtClaCoo.Text = "Muito Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 60 Then
+                        TxtClaCoo.Text = "Fraco"
                     Else
-                        txtClaCoo.Text = "Média"
+                        TxtClaCoo.Text = "Média"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 1420 Then
-                    If CDec(txtIdade.Text) = 7 Then
-                        txtClaCoo.Text = "Boa"
-                    ElseIf CDec(txtIdade.Text) < 11 Then
-                        txtClaCoo.Text = "Média"
-                    ElseIf CDec(txtIdade.Text) < 13 Then
-                        txtClaCoo.Text = "Fraco"
-                    ElseIf CDec(txtIdade.Text) < 50 Then
-                        txtClaCoo.Text = "Muito Fraco"
-                    ElseIf CDec(txtIdade.Text) < 60 Then
-                        txtClaCoo.Text = "Fraco"
+                ElseIf CDec(TxtCooper.Text) <= 1420 Then
+                    If CDec(TxtIdade.Text) = 7 Then
+                        TxtClaCoo.Text = "Boa"
+                    ElseIf CDec(TxtIdade.Text) < 11 Then
+                        TxtClaCoo.Text = "Média"
+                    ElseIf CDec(TxtIdade.Text) < 13 Then
+                        TxtClaCoo.Text = "Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 50 Then
+                        TxtClaCoo.Text = "Muito Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 60 Then
+                        TxtClaCoo.Text = "Fraco"
                     Else
-                        txtClaCoo.Text = "Média"
+                        TxtClaCoo.Text = "Média"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 1440 Then
-                    If CDec(txtIdade.Text) = 7 Then
-                        txtClaCoo.Text = "Boa"
-                    ElseIf CDec(txtIdade.Text) < 11 Then
-                        txtClaCoo.Text = "Média"
-                    ElseIf CDec(txtIdade.Text) < 13 Then
-                        txtClaCoo.Text = "Fraco"
-                    ElseIf CDec(txtIdade.Text) < 40 Then
-                        txtClaCoo.Text = "Muito Fraco"
-                    ElseIf CDec(txtIdade.Text) < 60 Then
-                        txtClaCoo.Text = "Fraco"
+                ElseIf CDec(TxtCooper.Text) <= 1440 Then
+                    If CDec(TxtIdade.Text) = 7 Then
+                        TxtClaCoo.Text = "Boa"
+                    ElseIf CDec(TxtIdade.Text) < 11 Then
+                        TxtClaCoo.Text = "Média"
+                    ElseIf CDec(TxtIdade.Text) < 13 Then
+                        TxtClaCoo.Text = "Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 40 Then
+                        TxtClaCoo.Text = "Muito Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 60 Then
+                        TxtClaCoo.Text = "Fraco"
                     Else
-                        txtClaCoo.Text = "Média"
+                        TxtClaCoo.Text = "Média"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 1450 Then
-                    If CDec(txtIdade.Text) < 9 Then
-                        txtClaCoo.Text = "Boa"
-                    ElseIf CDec(txtIdade.Text) < 11 Then
-                        txtClaCoo.Text = "Média"
-                    ElseIf CDec(txtIdade.Text) < 13 Then
-                        txtClaCoo.Text = "Fraco"
-                    ElseIf CDec(txtIdade.Text) < 40 Then
-                        txtClaCoo.Text = "Muito Fraco"
-                    ElseIf CDec(txtIdade.Text) < 60 Then
-                        txtClaCoo.Text = "Fraco"
+                ElseIf CDec(TxtCooper.Text) <= 1450 Then
+                    If CDec(TxtIdade.Text) < 9 Then
+                        TxtClaCoo.Text = "Boa"
+                    ElseIf CDec(TxtIdade.Text) < 11 Then
+                        TxtClaCoo.Text = "Média"
+                    ElseIf CDec(TxtIdade.Text) < 13 Then
+                        TxtClaCoo.Text = "Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 40 Then
+                        TxtClaCoo.Text = "Muito Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 60 Then
+                        TxtClaCoo.Text = "Fraco"
                     Else
-                        txtClaCoo.Text = "Média"
+                        TxtClaCoo.Text = "Média"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 1500 Then
-                    If CDec(txtIdade.Text) < 9 Then
-                        txtClaCoo.Text = "Boa"
-                    ElseIf CDec(txtIdade.Text) < 12 Then
-                        txtClaCoo.Text = "Média"
-                    ElseIf CDec(txtIdade.Text) = 12 Then
-                        txtClaCoo.Text = "Fraco"
-                    ElseIf CDec(txtIdade.Text) < 40 Then
-                        txtClaCoo.Text = "Muito Fraco"
-                    ElseIf CDec(txtIdade.Text) < 60 Then
-                        txtClaCoo.Text = "Fraco"
+                ElseIf CDec(TxtCooper.Text) <= 1500 Then
+                    If CDec(TxtIdade.Text) < 9 Then
+                        TxtClaCoo.Text = "Boa"
+                    ElseIf CDec(TxtIdade.Text) < 12 Then
+                        TxtClaCoo.Text = "Média"
+                    ElseIf CDec(TxtIdade.Text) = 12 Then
+                        TxtClaCoo.Text = "Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 40 Then
+                        TxtClaCoo.Text = "Muito Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 60 Then
+                        TxtClaCoo.Text = "Fraco"
                     Else
-                        txtClaCoo.Text = "Média"
+                        TxtClaCoo.Text = "Média"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 1510 Then
-                    If CDec(txtIdade.Text) < 9 Then
-                        txtClaCoo.Text = "Boa"
-                    ElseIf CDec(txtIdade.Text) < 12 Then
-                        txtClaCoo.Text = "Média"
-                    ElseIf CDec(txtIdade.Text) = 12 Then
-                        txtClaCoo.Text = "Fraco"
-                    ElseIf CDec(txtIdade.Text) < 40 Then
-                        txtClaCoo.Text = "Muito Fraco"
-                    ElseIf CDec(txtIdade.Text) < 50 Then
-                        txtClaCoo.Text = "Fraco"
+                ElseIf CDec(TxtCooper.Text) <= 1510 Then
+                    If CDec(TxtIdade.Text) < 9 Then
+                        TxtClaCoo.Text = "Boa"
+                    ElseIf CDec(TxtIdade.Text) < 12 Then
+                        TxtClaCoo.Text = "Média"
+                    ElseIf CDec(TxtIdade.Text) = 12 Then
+                        TxtClaCoo.Text = "Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 40 Then
+                        TxtClaCoo.Text = "Muito Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 50 Then
+                        TxtClaCoo.Text = "Fraco"
                     Else
-                        txtClaCoo.Text = "Média"
+                        TxtClaCoo.Text = "Média"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 1530 Then
-                    If CDec(txtIdade.Text) < 9 Then
-                        txtClaCoo.Text = "Boa"
-                    ElseIf CDec(txtIdade.Text) < 12 Then
-                        txtClaCoo.Text = "Média"
-                    ElseIf CDec(txtIdade.Text) = 12 Then
-                        txtClaCoo.Text = "Fraco"
-                    ElseIf CDec(txtIdade.Text) < 30 Then
-                        txtClaCoo.Text = "Muito Fraco"
-                    ElseIf CDec(txtIdade.Text) < 50 Then
-                        txtClaCoo.Text = "Fraco"
+                ElseIf CDec(TxtCooper.Text) <= 1530 Then
+                    If CDec(TxtIdade.Text) < 9 Then
+                        TxtClaCoo.Text = "Boa"
+                    ElseIf CDec(TxtIdade.Text) < 12 Then
+                        TxtClaCoo.Text = "Média"
+                    ElseIf CDec(TxtIdade.Text) = 12 Then
+                        TxtClaCoo.Text = "Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 30 Then
+                        TxtClaCoo.Text = "Muito Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 50 Then
+                        TxtClaCoo.Text = "Fraco"
                     Else
-                        txtClaCoo.Text = "Média"
+                        TxtClaCoo.Text = "Média"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 1540 Then
-                    If CDec(txtIdade.Text) < 10 Then
-                        txtClaCoo.Text = "Boa"
-                    ElseIf CDec(txtIdade.Text) < 12 Then
-                        txtClaCoo.Text = "Média"
-                    ElseIf CDec(txtIdade.Text) = 12 Then
-                        txtClaCoo.Text = "Fraco"
-                    ElseIf CDec(txtIdade.Text) < 30 Then
-                        txtClaCoo.Text = "Muito Fraco"
-                    ElseIf CDec(txtIdade.Text) < 50 Then
-                        txtClaCoo.Text = "Fraco"
+                ElseIf CDec(TxtCooper.Text) <= 1540 Then
+                    If CDec(TxtIdade.Text) < 10 Then
+                        TxtClaCoo.Text = "Boa"
+                    ElseIf CDec(TxtIdade.Text) < 12 Then
+                        TxtClaCoo.Text = "Média"
+                    ElseIf CDec(TxtIdade.Text) = 12 Then
+                        TxtClaCoo.Text = "Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 30 Then
+                        TxtClaCoo.Text = "Muito Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 50 Then
+                        TxtClaCoo.Text = "Fraco"
                     Else
-                        txtClaCoo.Text = "Média"
+                        TxtClaCoo.Text = "Média"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 1550 Then
-                    If CDec(txtIdade.Text) < 10 Then
-                        txtClaCoo.Text = "Boa"
-                    ElseIf CDec(txtIdade.Text) < 13 Then
-                        txtClaCoo.Text = "Média"
-                    ElseIf CDec(txtIdade.Text) < 30 Then
-                        txtClaCoo.Text = "Muito Fraco"
-                    ElseIf CDec(txtIdade.Text) < 50 Then
-                        txtClaCoo.Text = "Fraco"
+                ElseIf CDec(TxtCooper.Text) <= 1550 Then
+                    If CDec(TxtIdade.Text) < 10 Then
+                        TxtClaCoo.Text = "Boa"
+                    ElseIf CDec(TxtIdade.Text) < 13 Then
+                        TxtClaCoo.Text = "Média"
+                    ElseIf CDec(TxtIdade.Text) < 30 Then
+                        TxtClaCoo.Text = "Muito Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 50 Then
+                        TxtClaCoo.Text = "Fraco"
                     Else
-                        txtClaCoo.Text = "Média"
+                        TxtClaCoo.Text = "Média"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 1560 Then
-                    If CDec(txtIdade.Text) < 10 Then
-                        txtClaCoo.Text = "Boa"
-                    ElseIf CDec(txtIdade.Text) < 13 Then
-                        txtClaCoo.Text = "Média"
-                    ElseIf CDec(txtIdade.Text) < 20 Then
-                        txtClaCoo.Text = "Muito Fraco"
-                    ElseIf CDec(txtIdade.Text) < 50 Then
-                        txtClaCoo.Text = "Fraco"
+                ElseIf CDec(TxtCooper.Text) <= 1560 Then
+                    If CDec(TxtIdade.Text) < 10 Then
+                        TxtClaCoo.Text = "Boa"
+                    ElseIf CDec(TxtIdade.Text) < 13 Then
+                        TxtClaCoo.Text = "Média"
+                    ElseIf CDec(TxtIdade.Text) < 20 Then
+                        TxtClaCoo.Text = "Muito Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 50 Then
+                        TxtClaCoo.Text = "Fraco"
                     Else
-                        txtClaCoo.Text = "Média"
+                        TxtClaCoo.Text = "Média"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 1580 Then
-                    If CDec(txtIdade.Text) < 11 Then
-                        txtClaCoo.Text = "Boa"
-                    ElseIf CDec(txtIdade.Text) < 13 Then
-                        txtClaCoo.Text = "Média"
-                    ElseIf CDec(txtIdade.Text) < 20 Then
-                        txtClaCoo.Text = "Muito Fraco"
-                    ElseIf CDec(txtIdade.Text) < 50 Then
-                        txtClaCoo.Text = "Fraco"
+                ElseIf CDec(TxtCooper.Text) <= 1580 Then
+                    If CDec(TxtIdade.Text) < 11 Then
+                        TxtClaCoo.Text = "Boa"
+                    ElseIf CDec(TxtIdade.Text) < 13 Then
+                        TxtClaCoo.Text = "Média"
+                    ElseIf CDec(TxtIdade.Text) < 20 Then
+                        TxtClaCoo.Text = "Muito Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 50 Then
+                        TxtClaCoo.Text = "Fraco"
                     Else
-                        txtClaCoo.Text = "Média"
+                        TxtClaCoo.Text = "Média"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 1590 Then
-                    If CDec(txtIdade.Text) < 11 Then
-                        txtClaCoo.Text = "Boa"
-                    ElseIf CDec(txtIdade.Text) < 13 Then
-                        txtClaCoo.Text = "Média"
-                    ElseIf CDec(txtIdade.Text) < 20 Then
-                        txtClaCoo.Text = "Muito Fraco"
-                    ElseIf CDec(txtIdade.Text) < 40 Then
-                        txtClaCoo.Text = "Fraco"
+                ElseIf CDec(TxtCooper.Text) <= 1590 Then
+                    If CDec(TxtIdade.Text) < 11 Then
+                        TxtClaCoo.Text = "Boa"
+                    ElseIf CDec(TxtIdade.Text) < 13 Then
+                        TxtClaCoo.Text = "Média"
+                    ElseIf CDec(TxtIdade.Text) < 20 Then
+                        TxtClaCoo.Text = "Muito Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 40 Then
+                        TxtClaCoo.Text = "Fraco"
                     Else
-                        txtClaCoo.Text = "Média"
+                        TxtClaCoo.Text = "Média"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 1600 Then
-                    If CDec(txtIdade.Text) < 11 Then
-                        txtClaCoo.Text = "Boa"
-                    ElseIf CDec(txtIdade.Text) < 13 Then
-                        txtClaCoo.Text = "Média"
-                    ElseIf CDec(txtIdade.Text) < 20 Then
-                        txtClaCoo.Text = "Muito Fraco"
-                    ElseIf CDec(txtIdade.Text) < 40 Then
-                        txtClaCoo.Text = "Fraco"
-                    ElseIf CDec(txtIdade.Text) < 60 Then
-                        txtClaCoo.Text = "Média"
+                ElseIf CDec(TxtCooper.Text) <= 1600 Then
+                    If CDec(TxtIdade.Text) < 11 Then
+                        TxtClaCoo.Text = "Boa"
+                    ElseIf CDec(TxtIdade.Text) < 13 Then
+                        TxtClaCoo.Text = "Média"
+                    ElseIf CDec(TxtIdade.Text) < 20 Then
+                        TxtClaCoo.Text = "Muito Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 40 Then
+                        TxtClaCoo.Text = "Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 60 Then
+                        TxtClaCoo.Text = "Média"
                     Else
-                        txtClaCoo.Text = "Boa"
+                        TxtClaCoo.Text = "Boa"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 1610 Then
-                    If CDec(txtIdade.Text) = 7 Then
-                        txtClaCoo.Text = "Boa"
-                    ElseIf CDec(txtIdade.Text) = 8 Then
-                        txtClaCoo.Text = "Excelente"
-                    ElseIf CDec(txtIdade.Text) < 11 Then
-                        txtClaCoo.Text = "Boa"
-                    ElseIf CDec(txtIdade.Text) < 13 Then
-                        txtClaCoo.Text = "Média"
-                    ElseIf CDec(txtIdade.Text) < 20 Then
-                        txtClaCoo.Text = "Muito Fraco"
-                    ElseIf CDec(txtIdade.Text) < 40 Then
-                        txtClaCoo.Text = "Fraco"
-                    ElseIf CDec(txtIdade.Text) < 60 Then
-                        txtClaCoo.Text = "Média"
+                ElseIf CDec(TxtCooper.Text) <= 1610 Then
+                    If CDec(TxtIdade.Text) = 7 Then
+                        TxtClaCoo.Text = "Boa"
+                    ElseIf CDec(TxtIdade.Text) = 8 Then
+                        TxtClaCoo.Text = "Excelente"
+                    ElseIf CDec(TxtIdade.Text) < 11 Then
+                        TxtClaCoo.Text = "Boa"
+                    ElseIf CDec(TxtIdade.Text) < 13 Then
+                        TxtClaCoo.Text = "Média"
+                    ElseIf CDec(TxtIdade.Text) < 20 Then
+                        TxtClaCoo.Text = "Muito Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 40 Then
+                        TxtClaCoo.Text = "Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 60 Then
+                        TxtClaCoo.Text = "Média"
                     Else
-                        txtClaCoo.Text = "Boa"
+                        TxtClaCoo.Text = "Boa"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 1640 Then
-                    If CDec(txtIdade.Text) = 7 Then
-                        txtClaCoo.Text = "Boa"
-                    ElseIf CDec(txtIdade.Text) = 8 Then
-                        txtClaCoo.Text = "Excelente"
-                    ElseIf CDec(txtIdade.Text) < 12 Then
-                        txtClaCoo.Text = "Boa"
-                    ElseIf CDec(txtIdade.Text) = 12 Then
-                        txtClaCoo.Text = "Média"
-                    ElseIf CDec(txtIdade.Text) < 40 Then
-                        txtClaCoo.Text = "Fraco"
-                    ElseIf CDec(txtIdade.Text) < 60 Then
-                        txtClaCoo.Text = "Média"
+                ElseIf CDec(TxtCooper.Text) <= 1640 Then
+                    If CDec(TxtIdade.Text) = 7 Then
+                        TxtClaCoo.Text = "Boa"
+                    ElseIf CDec(TxtIdade.Text) = 8 Then
+                        TxtClaCoo.Text = "Excelente"
+                    ElseIf CDec(TxtIdade.Text) < 12 Then
+                        TxtClaCoo.Text = "Boa"
+                    ElseIf CDec(TxtIdade.Text) = 12 Then
+                        TxtClaCoo.Text = "Média"
+                    ElseIf CDec(TxtIdade.Text) < 40 Then
+                        TxtClaCoo.Text = "Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 60 Then
+                        TxtClaCoo.Text = "Média"
                     Else
-                        txtClaCoo.Text = "Boa"
+                        TxtClaCoo.Text = "Boa"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 1690 Then
-                    If CDec(txtIdade.Text) < 9 Then
-                        txtClaCoo.Text = "Excelente"
-                    ElseIf CDec(txtIdade.Text) < 12 Then
-                        txtClaCoo.Text = "Boa"
-                    ElseIf CDec(txtIdade.Text) = 12 Then
-                        txtClaCoo.Text = "Média"
-                    ElseIf CDec(txtIdade.Text) < 40 Then
-                        txtClaCoo.Text = "Fraco"
-                    ElseIf CDec(txtIdade.Text) < 60 Then
-                        txtClaCoo.Text = "Média"
+                ElseIf CDec(TxtCooper.Text) <= 1690 Then
+                    If CDec(TxtIdade.Text) < 9 Then
+                        TxtClaCoo.Text = "Excelente"
+                    ElseIf CDec(TxtIdade.Text) < 12 Then
+                        TxtClaCoo.Text = "Boa"
+                    ElseIf CDec(TxtIdade.Text) = 12 Then
+                        TxtClaCoo.Text = "Média"
+                    ElseIf CDec(TxtIdade.Text) < 40 Then
+                        TxtClaCoo.Text = "Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 60 Then
+                        TxtClaCoo.Text = "Média"
                     Else
-                        txtClaCoo.Text = "Boa"
+                        TxtClaCoo.Text = "Boa"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 1700 Then
-                    If CDec(txtIdade.Text) < 9 Then
-                        txtClaCoo.Text = "Excelente"
-                    ElseIf CDec(txtIdade.Text) < 13 Then
-                        txtClaCoo.Text = "Boa"
-                    ElseIf CDec(txtIdade.Text) < 30 Then
-                        txtClaCoo.Text = "Fraco"
-                    ElseIf CDec(txtIdade.Text) < 50 Then
-                        txtClaCoo.Text = "Média"
+                ElseIf CDec(TxtCooper.Text) <= 1700 Then
+                    If CDec(TxtIdade.Text) < 9 Then
+                        TxtClaCoo.Text = "Excelente"
+                    ElseIf CDec(TxtIdade.Text) < 13 Then
+                        TxtClaCoo.Text = "Boa"
+                    ElseIf CDec(TxtIdade.Text) < 30 Then
+                        TxtClaCoo.Text = "Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 50 Then
+                        TxtClaCoo.Text = "Média"
                     Else
-                        txtClaCoo.Text = "Boa"
+                        TxtClaCoo.Text = "Boa"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 1750 Then
-                    If CDec(txtIdade.Text) < 10 Then
-                        txtClaCoo.Text = "Excelente"
-                    ElseIf CDec(txtIdade.Text) < 13 Then
-                        txtClaCoo.Text = "Boa"
-                    ElseIf CDec(txtIdade.Text) < 30 Then
-                        txtClaCoo.Text = "Fraco"
-                    ElseIf CDec(txtIdade.Text) < 50 Then
-                        txtClaCoo.Text = "Média"
+                ElseIf CDec(TxtCooper.Text) <= 1750 Then
+                    If CDec(TxtIdade.Text) < 10 Then
+                        TxtClaCoo.Text = "Excelente"
+                    ElseIf CDec(TxtIdade.Text) < 13 Then
+                        TxtClaCoo.Text = "Boa"
+                    ElseIf CDec(TxtIdade.Text) < 30 Then
+                        TxtClaCoo.Text = "Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 50 Then
+                        TxtClaCoo.Text = "Média"
                     Else
-                        txtClaCoo.Text = "Boa"
+                        TxtClaCoo.Text = "Boa"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 1780 Then
-                    If CDec(txtIdade.Text) < 10 Then
-                        txtClaCoo.Text = "Excelente"
-                    ElseIf CDec(txtIdade.Text) < 13 Then
-                        txtClaCoo.Text = "Boa"
-                    ElseIf CDec(txtIdade.Text) < 30 Then
-                        txtClaCoo.Text = "Fraco"
-                    ElseIf CDec(txtIdade.Text) < 50 Then
-                        txtClaCoo.Text = "Média"
-                    ElseIf CDec(txtIdade.Text) < 60 Then
-                        txtClaCoo.Text = "Boa"
+                ElseIf CDec(TxtCooper.Text) <= 1780 Then
+                    If CDec(TxtIdade.Text) < 10 Then
+                        TxtClaCoo.Text = "Excelente"
+                    ElseIf CDec(TxtIdade.Text) < 13 Then
+                        TxtClaCoo.Text = "Boa"
+                    ElseIf CDec(TxtIdade.Text) < 30 Then
+                        TxtClaCoo.Text = "Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 50 Then
+                        TxtClaCoo.Text = "Média"
+                    ElseIf CDec(TxtIdade.Text) < 60 Then
+                        TxtClaCoo.Text = "Boa"
                     Else
-                        txtClaCoo.Text = "Excelente"
+                        TxtClaCoo.Text = "Excelente"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 1790 Then
-                    If CDec(txtIdade.Text) < 11 Then
-                        txtClaCoo.Text = "Excelente"
-                    ElseIf CDec(txtIdade.Text) < 13 Then
-                        txtClaCoo.Text = "Boa"
-                    ElseIf CDec(txtIdade.Text) < 30 Then
-                        txtClaCoo.Text = "Fraco"
-                    ElseIf CDec(txtIdade.Text) < 50 Then
-                        txtClaCoo.Text = "Média"
-                    ElseIf CDec(txtIdade.Text) < 60 Then
-                        txtClaCoo.Text = "Boa"
+                ElseIf CDec(TxtCooper.Text) <= 1790 Then
+                    If CDec(TxtIdade.Text) < 11 Then
+                        TxtClaCoo.Text = "Excelente"
+                    ElseIf CDec(TxtIdade.Text) < 13 Then
+                        TxtClaCoo.Text = "Boa"
+                    ElseIf CDec(TxtIdade.Text) < 30 Then
+                        TxtClaCoo.Text = "Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 50 Then
+                        TxtClaCoo.Text = "Média"
+                    ElseIf CDec(TxtIdade.Text) < 60 Then
+                        TxtClaCoo.Text = "Boa"
                     Else
-                        txtClaCoo.Text = "Excelente"
+                        TxtClaCoo.Text = "Excelente"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 1830 Then
-                    If CDec(txtIdade.Text) < 11 Then
-                        txtClaCoo.Text = "Excelente"
-                    ElseIf CDec(txtIdade.Text) < 13 Then
-                        txtClaCoo.Text = "Boa"
-                    ElseIf CDec(txtIdade.Text) < 20 Then
-                        txtClaCoo.Text = "Fraco"
-                    ElseIf CDec(txtIdade.Text) < 40 Then
-                        txtClaCoo.Text = "Média"
-                    ElseIf CDec(txtIdade.Text) < 60 Then
-                        txtClaCoo.Text = "Boa"
+                ElseIf CDec(TxtCooper.Text) <= 1830 Then
+                    If CDec(TxtIdade.Text) < 11 Then
+                        TxtClaCoo.Text = "Excelente"
+                    ElseIf CDec(TxtIdade.Text) < 13 Then
+                        TxtClaCoo.Text = "Boa"
+                    ElseIf CDec(TxtIdade.Text) < 20 Then
+                        TxtClaCoo.Text = "Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 40 Then
+                        TxtClaCoo.Text = "Média"
+                    ElseIf CDec(TxtIdade.Text) < 60 Then
+                        TxtClaCoo.Text = "Boa"
                     Else
-                        txtClaCoo.Text = "Excelente"
+                        TxtClaCoo.Text = "Excelente"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 1900 Then
-                    If CDec(txtIdade.Text) < 12 Then
-                        txtClaCoo.Text = "Excelente"
-                    ElseIf CDec(txtIdade.Text) = 12 Then
-                        txtClaCoo.Text = "Boa"
-                    ElseIf CDec(txtIdade.Text) < 20 Then
-                        txtClaCoo.Text = "Fraco"
-                    ElseIf CDec(txtIdade.Text) < 40 Then
-                        txtClaCoo.Text = "Média"
-                    ElseIf CDec(txtIdade.Text) < 60 Then
-                        txtClaCoo.Text = "Boa"
+                ElseIf CDec(TxtCooper.Text) <= 1900 Then
+                    If CDec(TxtIdade.Text) < 12 Then
+                        TxtClaCoo.Text = "Excelente"
+                    ElseIf CDec(TxtIdade.Text) = 12 Then
+                        TxtClaCoo.Text = "Boa"
+                    ElseIf CDec(TxtIdade.Text) < 20 Then
+                        TxtClaCoo.Text = "Fraco"
+                    ElseIf CDec(TxtIdade.Text) < 40 Then
+                        TxtClaCoo.Text = "Média"
+                    ElseIf CDec(TxtIdade.Text) < 60 Then
+                        TxtClaCoo.Text = "Boa"
                     Else
-                        txtClaCoo.Text = "Excelente"
+                        TxtClaCoo.Text = "Excelente"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 1930 Then
-                    If CDec(txtIdade.Text) < 12 Then
-                        txtClaCoo.Text = "Excelente"
-                    ElseIf CDec(txtIdade.Text) = 12 Then
-                        txtClaCoo.Text = "Boa"
-                    ElseIf CDec(txtIdade.Text) < 40 Then
-                        txtClaCoo.Text = "Média"
-                    ElseIf CDec(txtIdade.Text) < 50 Then
-                        txtClaCoo.Text = "Boa"
-                    ElseIf CDec(txtIdade.Text) < 60 Then
-                        txtClaCoo.Text = "Excelente"
+                ElseIf CDec(TxtCooper.Text) <= 1930 Then
+                    If CDec(TxtIdade.Text) < 12 Then
+                        TxtClaCoo.Text = "Excelente"
+                    ElseIf CDec(TxtIdade.Text) = 12 Then
+                        TxtClaCoo.Text = "Boa"
+                    ElseIf CDec(TxtIdade.Text) < 40 Then
+                        TxtClaCoo.Text = "Média"
+                    ElseIf CDec(TxtIdade.Text) < 50 Then
+                        TxtClaCoo.Text = "Boa"
+                    ElseIf CDec(TxtIdade.Text) < 60 Then
+                        TxtClaCoo.Text = "Excelente"
                     Else
-                        txtClaCoo.Text = "Superior"
+                        TxtClaCoo.Text = "Superior"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 1960 Then
-                    If CDec(txtIdade.Text) < 13 Then
-                        txtClaCoo.Text = "Excelente"
-                    ElseIf CDec(txtIdade.Text) < 40 Then
-                        txtClaCoo.Text = "Média"
-                    ElseIf CDec(txtIdade.Text) < 50 Then
-                        txtClaCoo.Text = "Boa"
-                    ElseIf CDec(txtIdade.Text) < 60 Then
-                        txtClaCoo.Text = "Excelente"
+                ElseIf CDec(TxtCooper.Text) <= 1960 Then
+                    If CDec(TxtIdade.Text) < 13 Then
+                        TxtClaCoo.Text = "Excelente"
+                    ElseIf CDec(TxtIdade.Text) < 40 Then
+                        TxtClaCoo.Text = "Média"
+                    ElseIf CDec(TxtIdade.Text) < 50 Then
+                        TxtClaCoo.Text = "Boa"
+                    ElseIf CDec(TxtIdade.Text) < 60 Then
+                        TxtClaCoo.Text = "Excelente"
                     Else
-                        txtClaCoo.Text = "Superior"
+                        TxtClaCoo.Text = "Superior"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 1970 Then
-                    If CDec(txtIdade.Text) < 13 Then
-                        txtClaCoo.Text = "Excelente"
-                    ElseIf CDec(txtIdade.Text) < 30 Then
-                        txtClaCoo.Text = "Média"
-                    ElseIf CDec(txtIdade.Text) < 50 Then
-                        txtClaCoo.Text = "Boa"
-                    ElseIf CDec(txtIdade.Text) < 60 Then
-                        txtClaCoo.Text = "Excelente"
+                ElseIf CDec(TxtCooper.Text) <= 1970 Then
+                    If CDec(TxtIdade.Text) < 13 Then
+                        TxtClaCoo.Text = "Excelente"
+                    ElseIf CDec(TxtIdade.Text) < 30 Then
+                        TxtClaCoo.Text = "Média"
+                    ElseIf CDec(TxtIdade.Text) < 50 Then
+                        TxtClaCoo.Text = "Boa"
+                    ElseIf CDec(TxtIdade.Text) < 60 Then
+                        TxtClaCoo.Text = "Excelente"
                     Else
-                        txtClaCoo.Text = "Superior"
+                        TxtClaCoo.Text = "Superior"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 2000 Then
-                    If CDec(txtIdade.Text) < 13 Then
-                        txtClaCoo.Text = "Excelente"
-                    ElseIf CDec(txtIdade.Text) < 20 Then
-                        txtClaCoo.Text = "Média"
-                    ElseIf CDec(txtIdade.Text) < 50 Then
-                        txtClaCoo.Text = "Boa"
-                    ElseIf CDec(txtIdade.Text) < 60 Then
-                        txtClaCoo.Text = "Excelente"
+                ElseIf CDec(TxtCooper.Text) <= 2000 Then
+                    If CDec(TxtIdade.Text) < 13 Then
+                        TxtClaCoo.Text = "Excelente"
+                    ElseIf CDec(TxtIdade.Text) < 20 Then
+                        TxtClaCoo.Text = "Média"
+                    ElseIf CDec(TxtIdade.Text) < 50 Then
+                        TxtClaCoo.Text = "Boa"
+                    ElseIf CDec(TxtIdade.Text) < 60 Then
+                        TxtClaCoo.Text = "Excelente"
                     Else
-                        txtClaCoo.Text = "Superior"
+                        TxtClaCoo.Text = "Superior"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 2080 Then
-                    If CDec(txtIdade.Text) < 13 Then
-                        txtClaCoo.Text = "Excelente"
-                    ElseIf CDec(txtIdade.Text) < 20 Then
-                        txtClaCoo.Text = "Média"
-                    ElseIf CDec(txtIdade.Text) < 40 Then
-                        txtClaCoo.Text = "Boa"
-                    ElseIf CDec(txtIdade.Text) < 60 Then
-                        txtClaCoo.Text = "Excelente"
+                ElseIf CDec(TxtCooper.Text) <= 2080 Then
+                    If CDec(TxtIdade.Text) < 13 Then
+                        TxtClaCoo.Text = "Excelente"
+                    ElseIf CDec(TxtIdade.Text) < 20 Then
+                        TxtClaCoo.Text = "Média"
+                    ElseIf CDec(TxtIdade.Text) < 40 Then
+                        TxtClaCoo.Text = "Boa"
+                    ElseIf CDec(TxtIdade.Text) < 60 Then
+                        TxtClaCoo.Text = "Excelente"
                     Else
-                        txtClaCoo.Text = "Superior"
+                        TxtClaCoo.Text = "Superior"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 2090 Then
-                    If CDec(txtIdade.Text) < 13 Then
-                        txtClaCoo.Text = "Excelente"
-                    ElseIf CDec(txtIdade.Text) < 30 Then
-                        txtClaCoo.Text = "Boa"
-                    ElseIf CDec(txtIdade.Text) < 60 Then
-                        txtClaCoo.Text = "Excelente"
+                ElseIf CDec(TxtCooper.Text) <= 2090 Then
+                    If CDec(TxtIdade.Text) < 13 Then
+                        TxtClaCoo.Text = "Excelente"
+                    ElseIf CDec(TxtIdade.Text) < 30 Then
+                        TxtClaCoo.Text = "Boa"
+                    ElseIf CDec(TxtIdade.Text) < 60 Then
+                        TxtClaCoo.Text = "Excelente"
                     Else
-                        txtClaCoo.Text = "Superior"
+                        TxtClaCoo.Text = "Superior"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 2160 Then
-                    If CDec(txtIdade.Text) < 13 Then
-                        txtClaCoo.Text = "Excelente"
-                    ElseIf CDec(txtIdade.Text) < 30 Then
-                        txtClaCoo.Text = "Boa"
-                    ElseIf CDec(txtIdade.Text) < 50 Then
-                        txtClaCoo.Text = "Excelente"
+                ElseIf CDec(TxtCooper.Text) <= 2160 Then
+                    If CDec(TxtIdade.Text) < 13 Then
+                        TxtClaCoo.Text = "Excelente"
+                    ElseIf CDec(TxtIdade.Text) < 30 Then
+                        TxtClaCoo.Text = "Boa"
+                    ElseIf CDec(TxtIdade.Text) < 50 Then
+                        TxtClaCoo.Text = "Excelente"
                     Else
-                        txtClaCoo.Text = "Superior"
+                        TxtClaCoo.Text = "Superior"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 2180 Then
-                    If CDec(txtIdade.Text) < 13 Then
-                        txtClaCoo.Text = "Excelente"
-                    ElseIf CDec(txtIdade.Text) < 20 Then
-                        txtClaCoo.Text = "Boa"
-                    ElseIf CDec(txtIdade.Text) < 40 Then
-                        txtClaCoo.Text = "Excelente"
+                ElseIf CDec(TxtCooper.Text) <= 2180 Then
+                    If CDec(TxtIdade.Text) < 13 Then
+                        TxtClaCoo.Text = "Excelente"
+                    ElseIf CDec(TxtIdade.Text) < 20 Then
+                        TxtClaCoo.Text = "Boa"
+                    ElseIf CDec(TxtIdade.Text) < 40 Then
+                        TxtClaCoo.Text = "Excelente"
                     Else
-                        txtClaCoo.Text = "Superior"
+                        TxtClaCoo.Text = "Superior"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 2240 Then
-                    If CDec(txtIdade.Text) = 11 Then
-                        txtClaCoo.Text = "Superior"
-                    ElseIf CDec(txtIdade.Text) < 13 Then
-                        txtClaCoo.Text = "Excelente"
-                    ElseIf CDec(txtIdade.Text) < 20 Then
-                        txtClaCoo.Text = "Boa"
-                    ElseIf CDec(txtIdade.Text) < 40 Then
-                        txtClaCoo.Text = "Excelente"
+                ElseIf CDec(TxtCooper.Text) <= 2240 Then
+                    If CDec(TxtIdade.Text) = 11 Then
+                        TxtClaCoo.Text = "Superior"
+                    ElseIf CDec(TxtIdade.Text) < 13 Then
+                        TxtClaCoo.Text = "Excelente"
+                    ElseIf CDec(TxtIdade.Text) < 20 Then
+                        TxtClaCoo.Text = "Boa"
+                    ElseIf CDec(TxtIdade.Text) < 40 Then
+                        TxtClaCoo.Text = "Excelente"
                     Else
-                        txtClaCoo.Text = "Superior"
+                        TxtClaCoo.Text = "Superior"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 2260 Then
-                    If CDec(txtIdade.Text) = 10 Then
-                        txtClaCoo.Text = "Superior"
-                    ElseIf CDec(txtIdade.Text) = 11 Then
-                        txtClaCoo.Text = "Superior"
-                    ElseIf CDec(txtIdade.Text) < 13 Then
-                        txtClaCoo.Text = "Excelente"
-                    ElseIf CDec(txtIdade.Text) < 20 Then
-                        txtClaCoo.Text = "Boa"
-                    ElseIf CDec(txtIdade.Text) < 30 Then
-                        txtClaCoo.Text = "Excelente"
+                ElseIf CDec(TxtCooper.Text) <= 2260 Then
+                    If CDec(TxtIdade.Text) = 10 Then
+                        TxtClaCoo.Text = "Superior"
+                    ElseIf CDec(TxtIdade.Text) = 11 Then
+                        TxtClaCoo.Text = "Superior"
+                    ElseIf CDec(TxtIdade.Text) < 13 Then
+                        TxtClaCoo.Text = "Excelente"
+                    ElseIf CDec(TxtIdade.Text) < 20 Then
+                        TxtClaCoo.Text = "Boa"
+                    ElseIf CDec(TxtIdade.Text) < 30 Then
+                        TxtClaCoo.Text = "Excelente"
                     Else
-                        txtClaCoo.Text = "Superior"
+                        TxtClaCoo.Text = "Superior"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 2300 Then
-                    If CDec(txtIdade.Text) = 8 Then
-                        txtClaCoo.Text = "Superior"
-                    ElseIf CDec(txtIdade.Text) = 10 Then
-                        txtClaCoo.Text = "Superior"
-                    ElseIf CDec(txtIdade.Text) = 11 Then
-                        txtClaCoo.Text = "Superior"
-                    ElseIf CDec(txtIdade.Text) < 13 Then
-                        txtClaCoo.Text = "Excelente"
-                    ElseIf CDec(txtIdade.Text) < 20 Then
-                        txtClaCoo.Text = "Boa"
-                    ElseIf CDec(txtIdade.Text) < 30 Then
-                        txtClaCoo.Text = "Excelente"
+                ElseIf CDec(TxtCooper.Text) <= 2300 Then
+                    If CDec(TxtIdade.Text) = 8 Then
+                        TxtClaCoo.Text = "Superior"
+                    ElseIf CDec(TxtIdade.Text) = 10 Then
+                        TxtClaCoo.Text = "Superior"
+                    ElseIf CDec(TxtIdade.Text) = 11 Then
+                        TxtClaCoo.Text = "Superior"
+                    ElseIf CDec(TxtIdade.Text) < 13 Then
+                        TxtClaCoo.Text = "Excelente"
+                    ElseIf CDec(TxtIdade.Text) < 20 Then
+                        TxtClaCoo.Text = "Boa"
+                    ElseIf CDec(TxtIdade.Text) < 30 Then
+                        TxtClaCoo.Text = "Excelente"
                     Else
-                        txtClaCoo.Text = "Superior"
+                        TxtClaCoo.Text = "Superior"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 2330 Then
-                    If CDec(txtIdade.Text) = 7 Then
-                        txtClaCoo.Text = "Excelente"
-                    ElseIf CDec(txtIdade.Text) < 12 Then
-                        txtClaCoo.Text = "Superior"
-                    ElseIf CDec(txtIdade.Text) < 30 Then
-                        txtClaCoo.Text = "Excelente"
+                ElseIf CDec(TxtCooper.Text) <= 2330 Then
+                    If CDec(TxtIdade.Text) = 7 Then
+                        TxtClaCoo.Text = "Excelente"
+                    ElseIf CDec(TxtIdade.Text) < 12 Then
+                        TxtClaCoo.Text = "Superior"
+                    ElseIf CDec(TxtIdade.Text) < 30 Then
+                        TxtClaCoo.Text = "Excelente"
                     Else
-                        txtClaCoo.Text = "Superior"
+                        TxtClaCoo.Text = "Superior"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 2340 Then
-                    If CDec(txtIdade.Text) = 7 Then
-                        txtClaCoo.Text = "Excelente"
-                    ElseIf CDec(txtIdade.Text) < 12 Then
-                        txtClaCoo.Text = "Superior"
-                    ElseIf CDec(txtIdade.Text) < 20 Then
-                        txtClaCoo.Text = "Excelente"
+                ElseIf CDec(TxtCooper.Text) <= 2340 Then
+                    If CDec(TxtIdade.Text) = 7 Then
+                        TxtClaCoo.Text = "Excelente"
+                    ElseIf CDec(TxtIdade.Text) < 12 Then
+                        TxtClaCoo.Text = "Superior"
+                    ElseIf CDec(TxtIdade.Text) < 20 Then
+                        TxtClaCoo.Text = "Excelente"
                     Else
-                        txtClaCoo.Text = "Superior"
+                        TxtClaCoo.Text = "Superior"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 2370 Then
-                    If CDec(txtIdade.Text) < 12 Then
-                        txtClaCoo.Text = "Superior"
-                    ElseIf CDec(txtIdade.Text) < 20 Then
-                        txtClaCoo.Text = "Excelente"
+                ElseIf CDec(TxtCooper.Text) <= 2370 Then
+                    If CDec(TxtIdade.Text) < 12 Then
+                        TxtClaCoo.Text = "Superior"
+                    ElseIf CDec(TxtIdade.Text) < 20 Then
+                        TxtClaCoo.Text = "Excelente"
                     Else
-                        txtClaCoo.Text = "Superior"
+                        TxtClaCoo.Text = "Superior"
                     End If
-                ElseIf CDec(txtCooper.Text) <= 2430 Then
-                    If CDec(txtIdade.Text) < 13 Then
-                        txtClaCoo.Text = "Superior"
-                    ElseIf CDec(txtIdade.Text) < 20 Then
-                        txtClaCoo.Text = "Excelente"
+                ElseIf CDec(TxtCooper.Text) <= 2430 Then
+                    If CDec(TxtIdade.Text) < 13 Then
+                        TxtClaCoo.Text = "Superior"
+                    ElseIf CDec(TxtIdade.Text) < 20 Then
+                        TxtClaCoo.Text = "Excelente"
                     Else
-                        txtClaCoo.Text = "Superior"
+                        TxtClaCoo.Text = "Superior"
                     End If
                 Else
-                    txtClaCoo.Text = "Superior"
+                    TxtClaCoo.Text = "Superior"
                 End If
 
             End If
@@ -2138,7 +2139,7 @@ Public Class frm_AvaliacaoFisica
 
     End Sub
     Private Sub VO2Max()
-        txtVO2.Text = String.Format("{0:N2}", (CDec(txtCooper.Text) - 504) / 45)
+        TxtVO2.Text = String.Format("{0:N2}", (CDec(TxtCooper.Text) - 504) / 45)
     End Sub
 
 
@@ -2152,112 +2153,112 @@ Public Class frm_AvaliacaoFisica
         '=========================================================================================================
         Dim vPorGordura As Double
 
-        If CDec(txtPunho.Text) < 11 Then
+        If CDec(TxtPunho.Text) < 11 Then
             vPunho = 4
-        ElseIf CDec(txtPunho.Text) = 11 Then
-            If CDec(txtAltura.Text) * 100 <= 150 Then
+        ElseIf CDec(TxtPunho.Text) = 11 Then
+            If CDec(TxtAltura.Text) * 100 <= 150 Then
                 vPunho = 3.5
             Else
                 vPunho = 4
             End If
-        ElseIf CDec(txtPunho.Text) = 12 Then
-            If CDec(txtAltura.Text) * 100 <= 150 Then
+        ElseIf CDec(TxtPunho.Text) = 12 Then
+            If CDec(TxtAltura.Text) * 100 <= 150 Then
                 vPunho = 3
-            ElseIf CDec(txtAltura.Text) * 100 <= 160 Then
+            ElseIf CDec(TxtAltura.Text) * 100 <= 160 Then
                 vPunho = 3.5
             Else
                 vPunho = 4
             End If
-        ElseIf CDec(txtPunho.Text) = 13 Then
-            If CDec(txtAltura.Text) * 100 <= 150 Then
+        ElseIf CDec(TxtPunho.Text) = 13 Then
+            If CDec(TxtAltura.Text) * 100 <= 150 Then
                 vPunho = 2.5
-            ElseIf CDec(txtAltura.Text) * 100 <= 160 Then
+            ElseIf CDec(TxtAltura.Text) * 100 <= 160 Then
                 vPunho = 3
-            ElseIf CDec(txtAltura.Text) * 100 <= 170 Then
+            ElseIf CDec(TxtAltura.Text) * 100 <= 170 Then
                 vPunho = 3.5
             Else
                 vPunho = 4
             End If
-        ElseIf CDec(txtPunho.Text) = 14 Then
-            If CDec(txtAltura.Text) * 100 <= 150 Then
+        ElseIf CDec(TxtPunho.Text) = 14 Then
+            If CDec(TxtAltura.Text) * 100 <= 150 Then
                 vPunho = 2
-            ElseIf CDec(txtAltura.Text) * 100 <= 160 Then
+            ElseIf CDec(TxtAltura.Text) * 100 <= 160 Then
                 vPunho = 2.5
-            ElseIf CDec(txtAltura.Text) * 100 <= 170 Then
+            ElseIf CDec(TxtAltura.Text) * 100 <= 170 Then
                 vPunho = 3
-            ElseIf CDec(txtAltura.Text) * 100 <= 180 Then
+            ElseIf CDec(TxtAltura.Text) * 100 <= 180 Then
                 vPunho = 3.5
             Else
                 vPunho = 4
             End If
-        ElseIf CDec(txtPunho.Text) = 15 Then
-            If CDec(txtAltura.Text) * 100 <= 150 Then
+        ElseIf CDec(TxtPunho.Text) = 15 Then
+            If CDec(TxtAltura.Text) * 100 <= 150 Then
                 vPunho = 1.5
-            ElseIf CDec(txtAltura.Text) * 100 <= 160 Then
+            ElseIf CDec(TxtAltura.Text) * 100 <= 160 Then
                 vPunho = 2
-            ElseIf CDec(txtAltura.Text) * 100 <= 170 Then
+            ElseIf CDec(TxtAltura.Text) * 100 <= 170 Then
                 vPunho = 2.5
-            ElseIf CDec(txtAltura.Text) * 100 <= 180 Then
+            ElseIf CDec(TxtAltura.Text) * 100 <= 180 Then
                 vPunho = 3
             Else
                 vPunho = 3.5
             End If
-        ElseIf CDec(txtPunho.Text) = 16 Then
-            If CDec(txtAltura.Text) * 100 <= 150 Then
+        ElseIf CDec(TxtPunho.Text) = 16 Then
+            If CDec(TxtAltura.Text) * 100 <= 150 Then
                 vPunho = 1
-            ElseIf CDec(txtAltura.Text) * 100 <= 160 Then
+            ElseIf CDec(TxtAltura.Text) * 100 <= 160 Then
                 vPunho = 1.5
-            ElseIf CDec(txtAltura.Text) * 100 <= 170 Then
+            ElseIf CDec(TxtAltura.Text) * 100 <= 170 Then
                 vPunho = 2
-            ElseIf CDec(txtAltura.Text) * 100 <= 180 Then
+            ElseIf CDec(TxtAltura.Text) * 100 <= 180 Then
                 vPunho = 2.5
             Else
                 vPunho = 3
             End If
-        ElseIf CDec(txtPunho.Text) = 17 Then
-            If CDec(txtAltura.Text) * 100 <= 150 Then
+        ElseIf CDec(TxtPunho.Text) = 17 Then
+            If CDec(TxtAltura.Text) * 100 <= 150 Then
                 vPunho = 0.5
-            ElseIf CDec(txtAltura.Text) * 100 <= 160 Then
+            ElseIf CDec(TxtAltura.Text) * 100 <= 160 Then
                 vPunho = 1
-            ElseIf CDec(txtAltura.Text) * 100 <= 170 Then
+            ElseIf CDec(TxtAltura.Text) * 100 <= 170 Then
                 vPunho = 1.5
-            ElseIf CDec(txtAltura.Text) * 100 <= 180 Then
+            ElseIf CDec(TxtAltura.Text) * 100 <= 180 Then
                 vPunho = 2
             Else
                 vPunho = 2.5
             End If
-        ElseIf CDec(txtPunho.Text) = 18 Then
-            If CDec(txtAltura.Text) * 100 <= 150 Then
+        ElseIf CDec(TxtPunho.Text) = 18 Then
+            If CDec(TxtAltura.Text) * 100 <= 150 Then
                 vPunho = 0
-            ElseIf CDec(txtAltura.Text) * 100 <= 160 Then
+            ElseIf CDec(TxtAltura.Text) * 100 <= 160 Then
                 vPunho = 0.5
-            ElseIf CDec(txtAltura.Text) * 100 <= 170 Then
+            ElseIf CDec(TxtAltura.Text) * 100 <= 170 Then
                 vPunho = 1
-            ElseIf CDec(txtAltura.Text) * 100 <= 180 Then
+            ElseIf CDec(TxtAltura.Text) * 100 <= 180 Then
                 vPunho = 1.5
             Else
                 vPunho = 2
             End If
-        ElseIf CDec(txtPunho.Text) = 19 Then
-            If CDec(txtAltura.Text) * 100 <= 160 Then
+        ElseIf CDec(TxtPunho.Text) = 19 Then
+            If CDec(TxtAltura.Text) * 100 <= 160 Then
                 vPunho = 0
-            ElseIf CDec(txtAltura.Text) * 100 <= 170 Then
+            ElseIf CDec(TxtAltura.Text) * 100 <= 170 Then
                 vPunho = 0.5
-            ElseIf CDec(txtAltura.Text) * 100 <= 180 Then
+            ElseIf CDec(TxtAltura.Text) * 100 <= 180 Then
                 vPunho = 1
             Else
                 vPunho = 1.5
             End If
-        ElseIf CDec(txtPunho.Text) = 20 Then
-            If CDec(txtAltura.Text) * 100 <= 170 Then
+        ElseIf CDec(TxtPunho.Text) = 20 Then
+            If CDec(TxtAltura.Text) * 100 <= 170 Then
                 vPunho = 0
-            ElseIf CDec(txtAltura.Text) * 100 <= 180 Then
+            ElseIf CDec(TxtAltura.Text) * 100 <= 180 Then
                 vPunho = 0.5
             Else
                 vPunho = 1
             End If
-        ElseIf CDec(txtPunho.Text) = 21 Then
-            If CDec(txtAltura.Text) * 100 <= 180 Then
+        ElseIf CDec(TxtPunho.Text) = 21 Then
+            If CDec(TxtAltura.Text) * 100 <= 180 Then
                 vPunho = 0
             Else
                 vPunho = 0.5
@@ -2266,11 +2267,11 @@ Public Class frm_AvaliacaoFisica
             vPunho = 0
         End If
 
-        If cbxSexo.Text = "Masculino" Then
-            vPorGordura = ((vPunho + 115) + CDec(txtPeso.Text)) - (CDec(txtAltura.Text) * 100)
+        If CbxSexo.Text = "Masculino" Then
+            vPorGordura = ((vPunho + 115) + CDec(TxtPeso.Text)) - (CDec(TxtAltura.Text) * 100)
 
-        ElseIf cbxSexo.Text = "Feminino" Then
-            vPorGordura = ((vPunho + 125) + CDec(txtPeso.Text)) - (CDec(txtAltura.Text) * 100)
+        ElseIf CbxSexo.Text = "Feminino" Then
+            vPorGordura = ((vPunho + 125) + CDec(TxtPeso.Text)) - (CDec(TxtAltura.Text) * 100)
         Else
             vPorGordura = 6
         End If
@@ -2279,33 +2280,33 @@ Public Class frm_AvaliacaoFisica
             vPorGordura = 6
         End If
 
-        txtPorcGordura.Text = vPorGordura
+        TxtPorcGordura.Text = vPorGordura
         '=========================================================================================================
         '========================================PESO DA GORDURA==================================================
         '=========================================================================================================
-        txtPesoGordura.Text = String.Format("{0:N3}", vPorGordura / 100) * CDec(txtPeso.Text)
+        TxtPesoGordura.Text = String.Format("{0:N3}", vPorGordura / 100) * CDec(TxtPeso.Text)
         '=========================================================================================================
         '=========================================PESO RESIDUAL===================================================
         '=========================================================================================================
-        If cbxSexo.Text = "Masculino" Then
-            txtPesoResid.Text = String.Format("{0:N3}", CDec(txtPeso.Text) * 0.241)
-        ElseIf cbxSexo.Text = "Feminino" Then
-            txtPesoResid.Text = String.Format("{0:N3}", CDec(txtPeso.Text) * 0.209)
+        If CbxSexo.Text = "Masculino" Then
+            TxtPesoResid.Text = String.Format("{0:N3}", CDec(TxtPeso.Text) * 0.241)
+        ElseIf CbxSexo.Text = "Feminino" Then
+            TxtPesoResid.Text = String.Format("{0:N3}", CDec(TxtPeso.Text) * 0.209)
         Else
-            txtPesoResid.Text = 0
+            TxtPesoResid.Text = 0
         End If
         '=========================================================================================================
         '==========================================PESO ÓSSEO=====================================================
         '=========================================================================================================
-        txtPesoOsseo.Text = String.Format("{0:N3}", 3.02 * ((CDec(txtAltura.Text) * CDec(txtAltura.Text)) * (CDec(txtFemur.Text) * 0.001) * (CDec(txtRadio.Text) * 0.001) * 400) ^ 0.712)
+        TxtPesoOsseo.Text = String.Format("{0:N3}", 3.02 * ((CDec(TxtAltura.Text) * CDec(TxtAltura.Text)) * (CDec(TxtFemur.Text) * 0.001) * (CDec(TxtRadio.Text) * 0.001) * 400) ^ 0.712)
         '=========================================================================================================
         '=========================================PESO MUSCULAR===================================================
         '=========================================================================================================
-        txtPesoMusc.Text = CDec(txtPeso.Text) - (CDec(txtPesoGordura.Text) + CDec(txtPesoResid.Text) + CDec(txtPesoOsseo.Text))
+        TxtPesoMusc.Text = CDec(TxtPeso.Text) - (CDec(TxtPesoGordura.Text) + CDec(TxtPesoResid.Text) + CDec(TxtPesoOsseo.Text))
         '=========================================================================================================
         '=============================================M.C.M=======================================================
         '=========================================================================================================
-        txtMcm.Text = String.Format("{0:N1}", CDec(txtPeso.Text) - CDec(txtPesoGordura.Text))
+        TxtMcm.Text = String.Format("{0:N1}", CDec(TxtPeso.Text) - CDec(TxtPesoGordura.Text))
     End Sub
 
 
@@ -2315,21 +2316,21 @@ Public Class frm_AvaliacaoFisica
     ''' <remarks>Massa Partes do Corpo</remarks>
     Private Sub MassaPartesCorpo()
         'Cabeça
-        txtCabeca.Text = String.Format("{0:N3}", (CDec(txtPeso.Text) * 7.3) / 100)
+        TxtCabeca.Text = String.Format("{0:N3}", (CDec(TxtPeso.Text) * 7.3) / 100)
         'Tronto
-        txtTronco.Text = String.Format("{0:N3}", (CDec(txtPeso.Text) * 50.7) / 100)
+        TxtTronco.Text = String.Format("{0:N3}", (CDec(TxtPeso.Text) * 50.7) / 100)
         'Braço
-        txtBraco.Text = String.Format("{0:N3}", (CDec(txtPeso.Text) * 2.6) / 100)
+        TxtBraco.Text = String.Format("{0:N3}", (CDec(TxtPeso.Text) * 2.6) / 100)
         'Antebraço
-        txtAntebraco.Text = String.Format("{0:N3}", (CDec(txtPeso.Text) * 1.6) / 100)
+        TxtAntebraco.Text = String.Format("{0:N3}", (CDec(TxtPeso.Text) * 1.6) / 100)
         'Mão
-        txtMao.Text = String.Format("{0:N3}", (CDec(txtPeso.Text) * 0.7) / 100)
+        TxtMao.Text = String.Format("{0:N3}", (CDec(TxtPeso.Text) * 0.7) / 100)
         'Coxa
-        txtCoxa.Text = String.Format("{0:N3}", (CDec(txtPeso.Text) * 10.3) / 100)
+        TxtCoxa.Text = String.Format("{0:N3}", (CDec(TxtPeso.Text) * 10.3) / 100)
         'Perna
-        txtPerna.Text = String.Format("{0:N3}", (CDec(txtPeso.Text) * 4.3) / 100)
+        TxtPerna.Text = String.Format("{0:N3}", (CDec(TxtPeso.Text) * 4.3) / 100)
         'Pé
-        txtPe.Text = String.Format("{0:N3}", (CDec(txtPeso.Text) * 1.5) / 100)
+        TxtPe.Text = String.Format("{0:N3}", (CDec(TxtPeso.Text) * 1.5) / 100)
     End Sub
 
 
@@ -2343,79 +2344,79 @@ Public Class frm_AvaliacaoFisica
         Dim vComplFisico As Double
 
         'Normal
-        txtPesoNormal.Text = String.Format("{0:N2}", (((CDec(txtAltura.Text) * 100) - 100) + 4 * CDec(txtPunho.Text)) / 2)
+        TxtPesoNormal.Text = String.Format("{0:N2}", (((CDec(TxtAltura.Text) * 100) - 100) + 4 * CDec(TxtPunho.Text)) / 2)
 
         'Mínimo
-        txtPesoMinimo.Text = String.Format("{0:N2}", CDec(txtPesoNormal.Text) - ((CDec(txtPesoNormal.Text) / 100) * 10))
+        TxtPesoMinimo.Text = String.Format("{0:N2}", CDec(TxtPesoNormal.Text) - ((CDec(TxtPesoNormal.Text) / 100) * 10))
 
         'Máximo
-        txtPesoMaximo.Text = String.Format("{0:N2}", ((CDec(txtPesoNormal.Text) / 100) * 10) + CDec(txtPesoNormal.Text))
+        TxtPesoMaximo.Text = String.Format("{0:N2}", ((CDec(TxtPesoNormal.Text) / 100) * 10) + CDec(TxtPesoNormal.Text))
 
         'IMC
-        txtIMC.Text = String.Format("{0:N2}", CDec(txtPeso.Text) / (CDec(txtAltura.Text) * CDec(txtAltura.Text)))
-        vImc = String.Format("{0:N2}", CDec(txtPeso.Text) / (CDec(txtAltura.Text) * CDec(txtAltura.Text)))
+        TxtIMC.Text = String.Format("{0:N2}", CDec(TxtPeso.Text) / (CDec(TxtAltura.Text) * CDec(TxtAltura.Text)))
+        vImc = String.Format("{0:N2}", CDec(TxtPeso.Text) / (CDec(TxtAltura.Text) * CDec(TxtAltura.Text)))
 
-        If cbxSexo.Text = "Masculino" Then
-            If CDec(txtIMC.Text) = 22 Then
-                txtResIMC.Text = "IDEAL"
-            ElseIf CDec(txtIMC.Text) < 20 Then
-                txtResIMC.Text = "ABAIXO DO NORMAL"
-            ElseIf CDec(txtIMC.Text) <= 24.9 Then
-                txtResIMC.Text = "NORMAL"
-            ElseIf CDec(txtIMC.Text) = 29.9 Then
-                txtResIMC.Text = "OBESO -- 1"
-            ElseIf CDec(txtIMC.Text) <= 40 Then
-                txtResIMC.Text = "OBESO -- 2"
-            ElseIf CDec(txtIMC.Text) > 40 Then
-                txtResIMC.Text = "OBESO -- 3"
+        If CbxSexo.Text = "Masculino" Then
+            If CDec(TxtIMC.Text) = 22 Then
+                TxtResIMC.Text = "IDEAL"
+            ElseIf CDec(TxtIMC.Text) < 20 Then
+                TxtResIMC.Text = "ABAIXO DO NORMAL"
+            ElseIf CDec(TxtIMC.Text) <= 24.9 Then
+                TxtResIMC.Text = "NORMAL"
+            ElseIf CDec(TxtIMC.Text) = 29.9 Then
+                TxtResIMC.Text = "OBESO -- 1"
+            ElseIf CDec(TxtIMC.Text) <= 40 Then
+                TxtResIMC.Text = "OBESO -- 2"
+            ElseIf CDec(TxtIMC.Text) > 40 Then
+                TxtResIMC.Text = "OBESO -- 3"
             End If
         Else
-            If CDec(txtIMC.Text) = 21 Then
-                txtResIMC.Text = "IDEAL"
-            ElseIf CDec(txtIMC.Text) < 19 Then
-                txtResIMC.Text = "ABAIXO DO NORMAL"
-            ElseIf CDec(txtIMC.Text) <= 23.9 Then
-                txtResIMC.Text = "NORMAL"
-            ElseIf CDec(txtIMC.Text) = 28.9 Then
-                txtResIMC.Text = "OBESA -- 1"
-            ElseIf CDec(txtIMC.Text) <= 39 Then
-                txtResIMC.Text = "OBESA -- 2"
-            ElseIf CDec(txtIMC.Text) > 39 Then
-                txtResIMC.Text = "OBESA -- 3"
+            If CDec(TxtIMC.Text) = 21 Then
+                TxtResIMC.Text = "IDEAL"
+            ElseIf CDec(TxtIMC.Text) < 19 Then
+                TxtResIMC.Text = "ABAIXO DO NORMAL"
+            ElseIf CDec(TxtIMC.Text) <= 23.9 Then
+                TxtResIMC.Text = "NORMAL"
+            ElseIf CDec(TxtIMC.Text) = 28.9 Then
+                TxtResIMC.Text = "OBESA -- 1"
+            ElseIf CDec(TxtIMC.Text) <= 39 Then
+                TxtResIMC.Text = "OBESA -- 2"
+            ElseIf CDec(TxtIMC.Text) > 39 Then
+                TxtResIMC.Text = "OBESA -- 3"
             End If
         End If
 
         'Ossatura
-        txtOssatura.Text = String.Format("{0:N1}", (CDec(txtTornozelo.Text) + CDec(txtJoelho.Text) + CDec(txtPunho.Text)) / CDec(txtAltura.Text))
-        vOssatura = String.Format("{0:N2}", (CDec(txtTornozelo.Text) + CDec(txtJoelho.Text) + CDec(txtPunho.Text)) / CDec(txtAltura.Text))
+        TxtOssatura.Text = String.Format("{0:N1}", (CDec(txtTornozelo.Text) + CDec(TxtJoelho.Text) + CDec(TxtPunho.Text)) / CDec(TxtAltura.Text))
+        vOssatura = String.Format("{0:N2}", (CDec(txtTornozelo.Text) + CDec(TxtJoelho.Text) + CDec(TxtPunho.Text)) / CDec(TxtAltura.Text))
 
         If vOssatura < 43 Then
-            txtResOssatura.Text = "FRACA"
+            TxtResOssatura.Text = "FRACA"
         ElseIf vOssatura < 46 Then
-            txtResOssatura.Text = "MÉDIA"
+            TxtResOssatura.Text = "MÉDIA"
         Else
-            txtResOssatura.Text = "FORTE"
+            TxtResOssatura.Text = "FORTE"
         End If
 
         'Complemento Físico
-        txtCFisico.Text = String.Format("{0:N2}", (CDec(txtAltura.Text) * 100) / CDec(txtPunho.Text))
-        vComplFisico = String.Format("{0:N2}", (CDec(txtAltura.Text) * 100) / CDec(txtPunho.Text))
+        TxtCFisico.Text = String.Format("{0:N2}", (CDec(TxtAltura.Text) * 100) / CDec(TxtPunho.Text))
+        vComplFisico = String.Format("{0:N2}", (CDec(TxtAltura.Text) * 100) / CDec(TxtPunho.Text))
 
-        If cbxSexo.Text = "Masculino" Then
+        If CbxSexo.Text = "Masculino" Then
             If vComplFisico > 10.4 Then
-                txtResCFisico.Text = "PEQUENA"
+                TxtResCFisico.Text = "PEQUENA"
             ElseIf vComplFisico < 9.6 Then
-                txtResCFisico.Text = "GRANDE"
+                TxtResCFisico.Text = "GRANDE"
             Else
-                txtResCFisico.Text = "MÉDIA"
+                TxtResCFisico.Text = "MÉDIA"
             End If
         Else
             If vComplFisico > 11 Then
-                txtResCFisico.Text = "PEQUENA"
+                TxtResCFisico.Text = "PEQUENA"
             ElseIf vComplFisico < 10.1 Then
-                txtResCFisico.Text = "GRANDE"
+                TxtResCFisico.Text = "GRANDE"
             Else
-                txtResCFisico.Text = "MÉDIA"
+                TxtResCFisico.Text = "MÉDIA"
             End If
         End If
 
@@ -2429,217 +2430,217 @@ Public Class frm_AvaliacaoFisica
     Private Sub Calculo_Cintura_Quadril()
         Dim vResultado As Double
         'txtRelCinQua.Text = String.Format("{0:N2}", CDec(txtCintura.Text) / CDec(txtQuadril.Text))
-        vResultado = String.Format("{0:N2}", CDec(txtCintura.Text) / CDec(txtQuadril.Text))
+        vResultado = String.Format("{0:N2}", CDec(TxtCintura.Text) / CDec(TxtQuadril.Text))
 
-        If cbxSexo.Text = "Masculino" Then
+        If CbxSexo.Text = "Masculino" Then
             If vResultado < 0.83 Then
-                lblRelCinQua.Text = "Baixo"
+                LblRelCinQua.Text = "Baixo"
             ElseIf vResultado = 0.83 Then
-                If CDec(txtIdade.Text) < 30 Then
-                    lblRelCinQua.Text = "Moderado"
+                If CDec(TxtIdade.Text) < 30 Then
+                    LblRelCinQua.Text = "Moderado"
                 Else
-                    lblRelCinQua.Text = "Baixo"
+                    LblRelCinQua.Text = "Baixo"
                 End If
             ElseIf vResultado < 0.88 Then
-                If CDec(txtIdade.Text) < 40 Then
-                    lblRelCinQua.Text = "Moderado"
+                If CDec(TxtIdade.Text) < 40 Then
+                    LblRelCinQua.Text = "Moderado"
                 Else
-                    lblRelCinQua.Text = "Baixo"
+                    LblRelCinQua.Text = "Baixo"
                 End If
             ElseIf vResultado = 0.88 Then
-                If CDec(txtIdade.Text) < 50 Then
-                    lblRelCinQua.Text = "Moderado"
+                If CDec(TxtIdade.Text) < 50 Then
+                    LblRelCinQua.Text = "Moderado"
                 Else
-                    lblRelCinQua.Text = "Baixo"
+                    LblRelCinQua.Text = "Baixo"
                 End If
             ElseIf vResultado = 0.89 Then
-                If CDec(txtIdade.Text) < 30 Then
-                    lblRelCinQua.Text = "Elevado"
-                ElseIf CDec(txtIdade.Text) < 50 Then
-                    lblRelCinQua.Text = "Moderado"
+                If CDec(TxtIdade.Text) < 30 Then
+                    LblRelCinQua.Text = "Elevado"
+                ElseIf CDec(TxtIdade.Text) < 50 Then
+                    LblRelCinQua.Text = "Moderado"
                 Else
-                    lblRelCinQua.Text = "Baixo"
+                    LblRelCinQua.Text = "Baixo"
                 End If
             ElseIf vResultado = 0.9 Then
-                If CDec(txtIdade.Text) < 30 Then
-                    lblRelCinQua.Text = "Elevado"
-                ElseIf CDec(txtIdade.Text) < 60 Then
-                    lblRelCinQua.Text = "Moderado"
+                If CDec(TxtIdade.Text) < 30 Then
+                    LblRelCinQua.Text = "Elevado"
+                ElseIf CDec(TxtIdade.Text) < 60 Then
+                    LblRelCinQua.Text = "Moderado"
                 Else
-                    lblRelCinQua.Text = "Baixo"
+                    LblRelCinQua.Text = "Baixo"
                 End If
             ElseIf vResultado = 0.91 Then
-                If CDec(txtIdade.Text) < 30 Then
-                    lblRelCinQua.Text = "Elevado"
+                If CDec(TxtIdade.Text) < 30 Then
+                    LblRelCinQua.Text = "Elevado"
                 Else
-                    lblRelCinQua.Text = "Moderado"
+                    LblRelCinQua.Text = "Moderado"
                 End If
             ElseIf vResultado < 0.95 Then
-                If CDec(txtIdade.Text) < 40 Then
-                    lblRelCinQua.Text = "Elevado"
+                If CDec(TxtIdade.Text) < 40 Then
+                    LblRelCinQua.Text = "Elevado"
                 Else
-                    lblRelCinQua.Text = "Moderado"
+                    LblRelCinQua.Text = "Moderado"
                 End If
             ElseIf vResultado = 0.95 Then
-                If CDec(txtIdade.Text) < 30 Then
-                    lblRelCinQua.Text = "Muito Elevado"
-                ElseIf CDec(txtIdade.Text) < 40 Then
-                    lblRelCinQua.Text = "Elevado"
+                If CDec(TxtIdade.Text) < 30 Then
+                    LblRelCinQua.Text = "Muito Elevado"
+                ElseIf CDec(TxtIdade.Text) < 40 Then
+                    LblRelCinQua.Text = "Elevado"
                 Else
-                    lblRelCinQua.Text = "Moderado"
+                    LblRelCinQua.Text = "Moderado"
                 End If
             ElseIf vResultado = 0.96 Then
-                If CDec(txtIdade.Text) < 30 Then
-                    lblRelCinQua.Text = "Muito Elevado"
-                ElseIf CDec(txtIdade.Text) < 50 Then
-                    lblRelCinQua.Text = "Elevado"
+                If CDec(TxtIdade.Text) < 30 Then
+                    LblRelCinQua.Text = "Muito Elevado"
+                ElseIf CDec(TxtIdade.Text) < 50 Then
+                    LblRelCinQua.Text = "Elevado"
                 Else
-                    lblRelCinQua.Text = "Moderado"
+                    LblRelCinQua.Text = "Moderado"
                 End If
             ElseIf vResultado < 0.99 Then
-                If CDec(txtIdade.Text) < 40 Then
-                    lblRelCinQua.Text = "Muito Elevado"
-                ElseIf CDec(txtIdade.Text) < 60 Then
-                    lblRelCinQua.Text = "Elevado"
+                If CDec(TxtIdade.Text) < 40 Then
+                    LblRelCinQua.Text = "Muito Elevado"
+                ElseIf CDec(TxtIdade.Text) < 60 Then
+                    LblRelCinQua.Text = "Elevado"
                 Else
-                    lblRelCinQua.Text = "Moderado"
+                    LblRelCinQua.Text = "Moderado"
                 End If
             ElseIf vResultado < 1.01 Then
-                If CDec(txtIdade.Text) < 40 Then
-                    lblRelCinQua.Text = "Muito Elevado"
+                If CDec(TxtIdade.Text) < 40 Then
+                    LblRelCinQua.Text = "Muito Elevado"
                 Else
-                    lblRelCinQua.Text = "Elevado"
+                    LblRelCinQua.Text = "Elevado"
                 End If
             ElseIf vResultado < 1.03 Then
-                If CDec(txtIdade.Text) < 50 Then
-                    lblRelCinQua.Text = "Muito Elevado"
+                If CDec(TxtIdade.Text) < 50 Then
+                    LblRelCinQua.Text = "Muito Elevado"
                 Else
-                    lblRelCinQua.Text = "Elevado"
+                    LblRelCinQua.Text = "Elevado"
                 End If
             ElseIf vResultado = 1.03 Then
-                If CDec(txtIdade.Text) < 60 Then
-                    lblRelCinQua.Text = "Muito Elevado"
+                If CDec(TxtIdade.Text) < 60 Then
+                    LblRelCinQua.Text = "Muito Elevado"
                 Else
-                    lblRelCinQua.Text = "Elevado"
+                    LblRelCinQua.Text = "Elevado"
                 End If
             Else
-                lblRelCinQua.Text = "Muito Elevado"
+                LblRelCinQua.Text = "Muito Elevado"
             End If
         Else
             'Feminino
             If vResultado < 0.71 Then
-                lblRelCinQua.Text = "Baixo"
+                LblRelCinQua.Text = "Baixo"
             ElseIf vResultado = 0.71 Then
-                If CDec(txtIdade.Text) < 20 Then
-                    lblRelCinQua.Text = "Baixo"
-                ElseIf CDec(txtIdade.Text) < 30 Then
-                    lblRelCinQua.Text = "Moderado"
+                If CDec(TxtIdade.Text) < 20 Then
+                    LblRelCinQua.Text = "Baixo"
+                ElseIf CDec(TxtIdade.Text) < 30 Then
+                    LblRelCinQua.Text = "Moderado"
                 Else
-                    lblRelCinQua.Text = "Baixo"
+                    LblRelCinQua.Text = "Baixo"
                 End If
             ElseIf vResultado = 0.72 Then
-                If CDec(txtIdade.Text) < 20 Then
-                    lblRelCinQua.Text = "Baixo"
-                ElseIf CDec(txtIdade.Text) < 40 Then
-                    lblRelCinQua.Text = "Moderado"
+                If CDec(TxtIdade.Text) < 20 Then
+                    LblRelCinQua.Text = "Baixo"
+                ElseIf CDec(TxtIdade.Text) < 40 Then
+                    LblRelCinQua.Text = "Moderado"
                 Else
-                    lblRelCinQua.Text = "Baixo"
+                    LblRelCinQua.Text = "Baixo"
                 End If
             ElseIf vResultado = 0.73 Then
-                If CDec(txtIdade.Text) < 20 Then
-                    lblRelCinQua.Text = "Baixo"
-                ElseIf CDec(txtIdade.Text) < 50 Then
-                    lblRelCinQua.Text = "Moderado"
+                If CDec(TxtIdade.Text) < 20 Then
+                    LblRelCinQua.Text = "Baixo"
+                ElseIf CDec(TxtIdade.Text) < 50 Then
+                    LblRelCinQua.Text = "Moderado"
                 Else
-                    lblRelCinQua.Text = "Baixo"
+                    LblRelCinQua.Text = "Baixo"
                 End If
             ElseIf vResultado < 0.76 Then
-                If CDec(txtIdade.Text) < 20 Then
-                    lblRelCinQua.Text = "Baixo"
-                ElseIf CDec(txtIdade.Text) < 60 Then
-                    lblRelCinQua.Text = "Moderado"
+                If CDec(TxtIdade.Text) < 20 Then
+                    LblRelCinQua.Text = "Baixo"
+                ElseIf CDec(TxtIdade.Text) < 60 Then
+                    LblRelCinQua.Text = "Moderado"
                 Else
-                    lblRelCinQua.Text = "Baixo"
+                    LblRelCinQua.Text = "Baixo"
                 End If
             ElseIf vResultado < 0.78 Then
-                If CDec(txtIdade.Text) < 20 Then
-                    lblRelCinQua.Text = "Baixo"
+                If CDec(TxtIdade.Text) < 20 Then
+                    LblRelCinQua.Text = "Baixo"
                 Else
-                    lblRelCinQua.Text = "Moderado"
+                    LblRelCinQua.Text = "Moderado"
                 End If
             ElseIf vResultado = 0.8 Then
-                If CDec(txtIdade.Text) < 20 Then
-                    lblRelCinQua.Text = "Baixo"
-                ElseIf CDec(txtIdade.Text) < 40 Then
-                    lblRelCinQua.Text = "Elevado"
+                If CDec(TxtIdade.Text) < 20 Then
+                    LblRelCinQua.Text = "Baixo"
+                ElseIf CDec(TxtIdade.Text) < 40 Then
+                    LblRelCinQua.Text = "Elevado"
                 Else
-                    lblRelCinQua.Text = "Moderado"
+                    LblRelCinQua.Text = "Moderado"
                 End If
             ElseIf vResultado < 0.82 Then
-                If CDec(txtIdade.Text) < 20 Then
-                    lblRelCinQua.Text = "Baixo"
-                ElseIf CDec(txtIdade.Text) < 50 Then
-                    lblRelCinQua.Text = "Elevado"
+                If CDec(TxtIdade.Text) < 20 Then
+                    LblRelCinQua.Text = "Baixo"
+                ElseIf CDec(TxtIdade.Text) < 50 Then
+                    LblRelCinQua.Text = "Elevado"
                 Else
-                    lblRelCinQua.Text = "Moderado"
+                    LblRelCinQua.Text = "Moderado"
                 End If
             ElseIf vResultado = 0.82 Then
-                If CDec(txtIdade.Text) < 20 Then
-                    lblRelCinQua.Text = "Baixo"
-                ElseIf CDec(txtIdade.Text) < 60 Then
-                    lblRelCinQua.Text = "Elevado"
+                If CDec(TxtIdade.Text) < 20 Then
+                    LblRelCinQua.Text = "Baixo"
+                ElseIf CDec(TxtIdade.Text) < 60 Then
+                    LblRelCinQua.Text = "Elevado"
                 Else
-                    lblRelCinQua.Text = "Moderado"
+                    LblRelCinQua.Text = "Moderado"
                 End If
             ElseIf vResultado = 0.83 Then
-                If CDec(txtIdade.Text) < 20 Then
-                    lblRelCinQua.Text = "Moderado"
-                ElseIf CDec(txtIdade.Text) < 30 Then
-                    lblRelCinQua.Text = "Muito Elevado"
-                ElseIf CDec(txtIdade.Text) < 60 Then
-                    lblRelCinQua.Text = "Elevado"
+                If CDec(TxtIdade.Text) < 20 Then
+                    LblRelCinQua.Text = "Moderado"
+                ElseIf CDec(TxtIdade.Text) < 30 Then
+                    LblRelCinQua.Text = "Muito Elevado"
+                ElseIf CDec(TxtIdade.Text) < 60 Then
+                    LblRelCinQua.Text = "Elevado"
                 Else
-                    lblRelCinQua.Text = "Moderado"
+                    LblRelCinQua.Text = "Moderado"
                 End If
             ElseIf vResultado = 0.84 Then
-                If CDec(txtIdade.Text) < 20 Then
-                    lblRelCinQua.Text = "Moderado"
-                ElseIf CDec(txtIdade.Text) < 30 Then
-                    lblRelCinQua.Text = "Muito Elevado"
+                If CDec(TxtIdade.Text) < 20 Then
+                    LblRelCinQua.Text = "Moderado"
+                ElseIf CDec(TxtIdade.Text) < 30 Then
+                    LblRelCinQua.Text = "Muito Elevado"
                 Else
-                    lblRelCinQua.Text = "Elevado"
+                    LblRelCinQua.Text = "Elevado"
                 End If
             ElseIf vResultado < 0.88 Then
-                If CDec(txtIdade.Text) < 20 Then
-                    lblRelCinQua.Text = "Moderado"
-                ElseIf CDec(txtIdade.Text) < 40 Then
-                    lblRelCinQua.Text = "Muito Elevado"
+                If CDec(TxtIdade.Text) < 20 Then
+                    LblRelCinQua.Text = "Moderado"
+                ElseIf CDec(TxtIdade.Text) < 40 Then
+                    LblRelCinQua.Text = "Muito Elevado"
                 Else
-                    lblRelCinQua.Text = "Elevado"
+                    LblRelCinQua.Text = "Elevado"
                 End If
             ElseIf vResultado < 0.91 Then
-                If CDec(txtIdade.Text) < 20 Then
-                    lblRelCinQua.Text = "Elevado"
-                ElseIf CDec(txtIdade.Text) < 60 Then
-                    lblRelCinQua.Text = "Muito Elevado"
+                If CDec(TxtIdade.Text) < 20 Then
+                    LblRelCinQua.Text = "Elevado"
+                ElseIf CDec(TxtIdade.Text) < 60 Then
+                    LblRelCinQua.Text = "Muito Elevado"
                 Else
-                    lblRelCinQua.Text = "Elevado"
+                    LblRelCinQua.Text = "Elevado"
                 End If
             ElseIf vResultado < 0.95 Then
-                If CDec(txtIdade.Text) < 20 Then
-                    lblRelCinQua.Text = "Elevado"
+                If CDec(TxtIdade.Text) < 20 Then
+                    LblRelCinQua.Text = "Elevado"
                 Else
-                    lblRelCinQua.Text = "Muito Elevado"
+                    LblRelCinQua.Text = "Muito Elevado"
                 End If
             Else
-                lblRelCinQua.Text = "Muito Elevado"
+                LblRelCinQua.Text = "Muito Elevado"
             End If
 
         End If
 
 
 
-        txtRelCinQua.Text = vResultado
+        TxtRelCinQua.Text = vResultado
     End Sub
 
 
@@ -2652,94 +2653,94 @@ Public Class frm_AvaliacaoFisica
         Dim vRitmoAtiv As Double
         Dim vDistAtiv As Integer
 
-        vRitmoAtiv = String.Format("{0:N2}", ((CDec(txtCooper.Text) - 504) / 45) * CDec(txtVo2Trab.Text) / 100)
+        vRitmoAtiv = String.Format("{0:N2}", ((CDec(TxtCooper.Text) - 504) / 45) * CDec(TxtVo2Trab.Text) / 100)
 
         If vRitmoAtiv < 7 Then
-            txtRitmoAtiv.Text = "Sem Valor"
+            TxtRitmoAtiv.Text = "Sem Valor"
         ElseIf vRitmoAtiv < 7.76 Then
-            txtRitmoAtiv.Text = 50
+            TxtRitmoAtiv.Text = 50
         ElseIf vRitmoAtiv < 8.5 Then
-            txtRitmoAtiv.Text = 55.5
+            TxtRitmoAtiv.Text = 55.5
         ElseIf vRitmoAtiv < 9 Then
-            txtRitmoAtiv.Text = 60
+            TxtRitmoAtiv.Text = 60
         ElseIf vRitmoAtiv < 10.4 Then
-            txtRitmoAtiv.Text = 62.5
+            TxtRitmoAtiv.Text = 62.5
         ElseIf vRitmoAtiv < 10.7 Then
-            txtRitmoAtiv.Text = 70
+            TxtRitmoAtiv.Text = 70
         ElseIf vRitmoAtiv < 12.5 Then
-            txtRitmoAtiv.Text = 71.4
+            TxtRitmoAtiv.Text = 71.4
         ElseIf vRitmoAtiv < 13.3 Then
-            txtRitmoAtiv.Text = 80
+            TxtRitmoAtiv.Text = 80
         ElseIf vRitmoAtiv < 15 Then
-            txtRitmoAtiv.Text = 83.3
+            TxtRitmoAtiv.Text = 83.3
         ElseIf vRitmoAtiv < 15.14 Then
-            txtRitmoAtiv.Text = 95
+            TxtRitmoAtiv.Text = 95
         ElseIf vRitmoAtiv < 16.2 Then
-            txtRitmoAtiv.Text = 90.9
+            TxtRitmoAtiv.Text = 90.9
         ElseIf vRitmoAtiv < 17.6 Then
-            txtRitmoAtiv.Text = 95
+            TxtRitmoAtiv.Text = 95
         ElseIf vRitmoAtiv < 20.5 Then
-            txtRitmoAtiv.Text = 100
+            TxtRitmoAtiv.Text = 100
         ElseIf vRitmoAtiv < 20.88 Then
-            txtRitmoAtiv.Text = 110
+            TxtRitmoAtiv.Text = 110
         ElseIf vRitmoAtiv < 22.1 Then
-            txtRitmoAtiv.Text = 111.11
+            TxtRitmoAtiv.Text = 111.11
         ElseIf vRitmoAtiv < 23 Then
-            txtRitmoAtiv.Text = 115
+            TxtRitmoAtiv.Text = 115
         ElseIf vRitmoAtiv < 23.8 Then
-            txtRitmoAtiv.Text = 117.6
+            TxtRitmoAtiv.Text = 117.6
         ElseIf vRitmoAtiv < 25.5 Then
-            txtRitmoAtiv.Text = 120
+            TxtRitmoAtiv.Text = 120
         ElseIf vRitmoAtiv < 27.3 Then
-            txtRitmoAtiv.Text = 125
+            TxtRitmoAtiv.Text = 125
         ElseIf vRitmoAtiv < 30.5 Then
-            txtRitmoAtiv.Text = 130
+            TxtRitmoAtiv.Text = 130
         ElseIf vRitmoAtiv < 31.5 Then
-            txtRitmoAtiv.Text = 135
+            TxtRitmoAtiv.Text = 135
         ElseIf vRitmoAtiv < 32.07 Then
-            txtRitmoAtiv.Text = 140
+            TxtRitmoAtiv.Text = 140
         ElseIf vRitmoAtiv < 33.5 Then
-            txtRitmoAtiv.Text = 142.85
+            TxtRitmoAtiv.Text = 142.85
         ElseIf vRitmoAtiv < 34.26 Then
-            txtRitmoAtiv.Text = 150
+            TxtRitmoAtiv.Text = 150
         ElseIf vRitmoAtiv < 35.4 Then
-            txtRitmoAtiv.Text = 153.84
+            TxtRitmoAtiv.Text = 153.84
         ElseIf vRitmoAtiv < 36.83 Then
-            txtRitmoAtiv.Text = 160
+            TxtRitmoAtiv.Text = 160
         ElseIf vRitmoAtiv < 37.5 Then
-            txtRitmoAtiv.Text = 166.66
+            TxtRitmoAtiv.Text = 166.66
         ElseIf vRitmoAtiv < 39.5 Then
-            txtRitmoAtiv.Text = 170
+            TxtRitmoAtiv.Text = 170
         ElseIf vRitmoAtiv < 41.5 Then
-            txtRitmoAtiv.Text = 180
+            TxtRitmoAtiv.Text = 180
         ElseIf vRitmoAtiv < 43.5 Then
-            txtRitmoAtiv.Text = 190
+            TxtRitmoAtiv.Text = 190
         ElseIf vRitmoAtiv < 45.5 Then
-            txtRitmoAtiv.Text = 200
+            TxtRitmoAtiv.Text = 200
         ElseIf vRitmoAtiv < 47.5 Then
-            txtRitmoAtiv.Text = 210
+            TxtRitmoAtiv.Text = 210
         ElseIf vRitmoAtiv < 49.5 Then
-            txtRitmoAtiv.Text = 220
+            TxtRitmoAtiv.Text = 220
         ElseIf vRitmoAtiv < 51.5 Then
-            txtRitmoAtiv.Text = 230
+            TxtRitmoAtiv.Text = 230
         ElseIf vRitmoAtiv < 53.5 Then
-            txtRitmoAtiv.Text = 240
+            TxtRitmoAtiv.Text = 240
         ElseIf vRitmoAtiv < 55.5 Then
-            txtRitmoAtiv.Text = 250
+            TxtRitmoAtiv.Text = 250
         ElseIf vRitmoAtiv < 60.64 Then
-            txtRitmoAtiv.Text = 260
+            TxtRitmoAtiv.Text = 260
         ElseIf vRitmoAtiv < 69.5 Then
-            txtRitmoAtiv.Text = 285.7
+            TxtRitmoAtiv.Text = 285.7
         ElseIf vRitmoAtiv < 40.16 Then
-            txtRitmoAtiv.Text = 330
+            TxtRitmoAtiv.Text = 330
         ElseIf vRitmoAtiv < 71.05 Then
-            txtRitmoAtiv.Text = 333.3
+            TxtRitmoAtiv.Text = 333.3
         Else
-            txtRitmoAtiv.Text = 340
+            TxtRitmoAtiv.Text = 340
         End If
 
-        vDistAtiv = CDec(txtRitmoAtiv.Text) * CDec(txtTempoAtiv.Text)
-        txtDistanciaAtiv.Text = vDistAtiv
+        vDistAtiv = CDec(TxtRitmoAtiv.Text) * CDec(TxtTempoAtiv.Text)
+        TxtDistanciaAtiv.Text = vDistAtiv
 
     End Sub
 
@@ -2754,62 +2755,62 @@ Public Class frm_AvaliacaoFisica
         Dim vCalculoFinal As Integer
         Dim vCalculoPorcentagem As Double
 
-        vCalculadoInicio = ((((CDec(txtCooper.Text) - 504) / 45) / 3.5) * 1.25)
-        vCalculoFinal = ((vCalculadoInicio * CDec(txtPeso.Text)) / 60) * CDec(txtTempoAtiv.Text)
-        vCalculoPorcentagem = (CDec(txtVo2Trab.Text)) / 100
-        txtAtividade.Text = CInt(vCalculoFinal * vCalculoPorcentagem)
+        vCalculadoInicio = ((((CDec(TxtCooper.Text) - 504) / 45) / 3.5) * 1.25)
+        vCalculoFinal = ((vCalculadoInicio * CDec(TxtPeso.Text)) / 60) * CDec(TxtTempoAtiv.Text)
+        vCalculoPorcentagem = (CDec(TxtVo2Trab.Text)) / 100
+        TxtAtividade.Text = CInt(vCalculoFinal * vCalculoPorcentagem)
 
         '========== Calculandoo Repouso ==================
         ''=================== MASCULINO ==================
-        If cbxSexo.Text = "Masculino" Then
-            If CDec(txtIdade.Text) < 19 Then
-                txtRepouso.Text = CInt(16.6 * CDec(txtPeso.Text) + (77 * CDec(txtAltura.Text)) + 572)
-            ElseIf CDec(txtIdade.Text) < 31 Then
-                txtRepouso.Text = CInt(15.4 * CDec(txtPeso.Text) + (27 * CDec(txtAltura.Text)) + 717)
-            ElseIf CDec(txtIdade.Text) < 60 Then
-                txtRepouso.Text = CInt(11.3 * CDec(txtPeso.Text) + (16 * CDec(txtAltura.Text)) + 901)
+        If CbxSexo.Text = "Masculino" Then
+            If CDec(TxtIdade.Text) < 19 Then
+                TxtRepouso.Text = CInt(16.6 * CDec(TxtPeso.Text) + (77 * CDec(TxtAltura.Text)) + 572)
+            ElseIf CDec(TxtIdade.Text) < 31 Then
+                TxtRepouso.Text = CInt(15.4 * CDec(TxtPeso.Text) + (27 * CDec(TxtAltura.Text)) + 717)
+            ElseIf CDec(TxtIdade.Text) < 60 Then
+                TxtRepouso.Text = CInt(11.3 * CDec(TxtPeso.Text) + (16 * CDec(TxtAltura.Text)) + 901)
             Else
-                txtRepouso.Text = CInt(8.8 * CDec(txtPeso.Text) + (11 * CDec(txtAltura.Text)) + 1071)
+                TxtRepouso.Text = CInt(8.8 * CDec(TxtPeso.Text) + (11 * CDec(TxtAltura.Text)) + 1071)
             End If
         Else
-            If CDec(txtIdade.Text) < 19 Then
-                txtRepouso.Text = CInt(7.4 * CDec(txtPeso.Text) + (482 * CDec(txtAltura.Text)) + 217)
-            ElseIf CDec(txtIdade.Text) < 31 Then
-                txtRepouso.Text = CInt(13.3 * CDec(txtPeso.Text) + (334 * CDec(txtAltura.Text)) + 35)
-            ElseIf CDec(txtIdade.Text) < 60 Then
-                txtRepouso.Text = CInt(8.7 * CDec(txtPeso.Text) - (25 * CDec(txtAltura.Text)) + 862)
+            If CDec(TxtIdade.Text) < 19 Then
+                TxtRepouso.Text = CInt(7.4 * CDec(TxtPeso.Text) + (482 * CDec(TxtAltura.Text)) + 217)
+            ElseIf CDec(TxtIdade.Text) < 31 Then
+                TxtRepouso.Text = CInt(13.3 * CDec(TxtPeso.Text) + (334 * CDec(TxtAltura.Text)) + 35)
+            ElseIf CDec(TxtIdade.Text) < 60 Then
+                TxtRepouso.Text = CInt(8.7 * CDec(TxtPeso.Text) - (25 * CDec(TxtAltura.Text)) + 862)
             Else
-                txtRepouso.Text = CInt(9.2 * CDec(txtPeso.Text) + (637 * CDec(txtAltura.Text)) + 302)
+                TxtRepouso.Text = CInt(9.2 * CDec(TxtPeso.Text) + (637 * CDec(TxtAltura.Text)) + 302)
             End If
         End If
         '========== Calculando a Diário/Ativ =============
-        If cbxSexo.Text = "Masculino" Then
+        If CbxSexo.Text = "Masculino" Then
             '=SE(F10="leve";B46*1,55;SE(F10="moderada";B46*1,78;B46*2,1))
-            If cbxAtivFisDia.Text = "Leve" Then
+            If CbxAtivFisDia.Text = "Leve" Then
                 'A75 * 1,55
-                txtDiario.Text = CInt((txtRepouso.Text) * 1.55)
-            ElseIf cbxAtivFisDia.Text = "Moderada" Then
+                TxtDiario.Text = CInt((TxtRepouso.Text) * 1.55)
+            ElseIf CbxAtivFisDia.Text = "Moderada" Then
                 'A75 * 1,78
-                txtDiario.Text = CInt((txtRepouso.Text) * 1.78)
+                TxtDiario.Text = CInt((TxtRepouso.Text) * 1.78)
             Else
                 'A75 * 2,1
-                txtDiario.Text = CInt((txtRepouso.Text) * 2.1)
+                TxtDiario.Text = CInt((TxtRepouso.Text) * 2.1)
             End If
         Else
             '=SE(F10="LEVE";B46*1,56;SE(F10="MODERADA";B46*1,64;B46*1,82))
-            If cbxAtivFisDia.Text = "Leve" Then
+            If CbxAtivFisDia.Text = "Leve" Then
                 'A76 * 1,56
-                txtDiario.Text = CInt((txtRepouso.Text) * 1.56)
-            ElseIf cbxAtivFisDia.Text = "Moderada" Then
+                TxtDiario.Text = CInt((TxtRepouso.Text) * 1.56)
+            ElseIf CbxAtivFisDia.Text = "Moderada" Then
                 'A76 * 1,64
-                txtDiario.Text = CInt((txtRepouso.Text) * 1.64)
+                TxtDiario.Text = CInt((TxtRepouso.Text) * 1.64)
             Else
                 'A76 * 1,82
-                txtDiario.Text = CInt((txtRepouso.Text) * 1.82)
+                TxtDiario.Text = CInt((TxtRepouso.Text) * 1.82)
             End If
         End If
         '===========Calculando o Total ===================
-        txtTotal.Text = CInt(txtAtividade.Text) + CInt(txtDiario.Text)
+        TxtTotal.Text = CInt(TxtAtividade.Text) + CInt(TxtDiario.Text)
 
     End Sub
 
@@ -2821,87 +2822,87 @@ Public Class frm_AvaliacaoFisica
     Private Sub ReducaoPeso_PesoPerdido()
         Dim vConversao As Double
 
-        vConversao = CDec(txtPeso.Text) - CDec(txtPesoNormal.Text)
-        txtPerdaDesGord.Text = String.Format("{0:f3}", vConversao)
+        vConversao = CDec(TxtPeso.Text) - CDec(TxtPesoNormal.Text)
+        TxtPerdaDesGord.Text = String.Format("{0:f3}", vConversao)
 
-        vConversao = (CDec(txtAtividade.Text) * 0.453) / 3500
-        txtPesoDia.Text = String.Format("{0:f3}", vConversao)
+        vConversao = (CDec(TxtAtividade.Text) * 0.453) / 3500
+        TxtPesoDia.Text = String.Format("{0:f3}", vConversao)
 
-        vConversao = CInt(CDec(txtPerdaDesGord.Text) / CDec(txtPesoDia.Text))
-        txtDiasNeces.Text = vConversao
+        vConversao = CInt(CDec(TxtPerdaDesGord.Text) / CDec(TxtPesoDia.Text))
+        TxtDiasNeces.Text = vConversao
 
-        vConversao = CDec(txtDiasNeces.Text) / 30
-        txtMesesNecess.Text = String.Format("{0:f1}", vConversao)
+        vConversao = CDec(TxtDiasNeces.Text) / 30
+        TxtMesesNecess.Text = String.Format("{0:f1}", vConversao)
 
-        vConversao = CDec(txtPesoDia.Text) * CDec(txtQuantSeman.Text)
-        txtPesoSemana.Text = String.Format("{0:f3}", vConversao)
+        vConversao = CDec(TxtPesoDia.Text) * CDec(TxtQuantSeman.Text)
+        TxtPesoSemana.Text = String.Format("{0:f3}", vConversao)
 
-        vConversao = CDec(txtPesoSemana.Text) * 4
-        txtPesoMes.Text = String.Format("{0:f3}", vConversao)
+        vConversao = CDec(TxtPesoSemana.Text) * 4
+        TxtPesoMes.Text = String.Format("{0:f3}", vConversao)
     End Sub
-    Private Sub carrega_campos()
-        txtProf.Text = "Antenor José Augusto"
-        txtNome.Text = "Marcos José Antônio da Silva"
-        txtLocal.Text = "Academia Bastos de Musculação Ltda 123456"
-        dtpDataNasc.Text = "26/03/1967"
-        cbxSexo.Text = "Masculino"
-        txtPeso.Text = 84
-        txtAltura.Text = 1.77
-        txtFCrepouso.Text = 88
-        txtFCmaxima.Text = 172
-        txtBraDireito.Text = 13
-        txtBraEsquerdo.Text = 15
-        txtAnteDireito.Text = 20
-        txtAnteEsquerdo.Text = 30
-        txtTorax.Text = 30
-        txtAbdomen.Text = 20
-        txtCoxaDireita.Text = 10
-        txtCoxaEsquerda.Text = 50
-        txtPernaDireita.Text = 40
-        txtPernaEsquerda.Text = 10
+    Private Sub Carrega_campos()
+        TxtProf.Text = "Antenor José Augusto"
+        TxtNome.Text = "Marcos José Antônio da Silva"
+        TxtLocal.Text = "Academia Bastos de Musculação Ltda 123456"
+        DtpDataNasc.Text = "26/03/1967"
+        CbxSexo.Text = "Masculino"
+        TxtPeso.Text = 84
+        TxtAltura.Text = 1.77
+        TxtFCrepouso.Text = 88
+        TxtFCmaxima.Text = 172
+        TxtBraDireito.Text = 13
+        TxtBraEsquerdo.Text = 15
+        TxtAnteDireito.Text = 20
+        TxtAnteEsquerdo.Text = 30
+        TxtTorax.Text = 30
+        TxtAbdomen.Text = 20
+        TxtCoxaDireita.Text = 10
+        TxtCoxaEsquerda.Text = 50
+        TxtPernaDireita.Text = 40
+        TxtPernaEsquerda.Text = 10
         txtTornozelo.Text = 20
-        txtJoelho.Text = 35
-        txtPunho.Text = 18
-        txtCintura.Text = 120
-        txtQuadril.Text = 85
-        txtFemur.Text = 42
-        txtRadio.Text = 35
-        txtSaltoVert.Text = 45
-        txtAbdominais.Text = 48
-        txtFlexaoBraco.Text = 33
-        txtCooper.Text = 2000
-        txtVo2Trab.Text = 70
-        txtTempoAtiv.Text = 90
-        txtQuantSeman.Text = 5
+        TxtJoelho.Text = 35
+        TxtPunho.Text = 18
+        TxtCintura.Text = 120
+        TxtQuadril.Text = 85
+        TxtFemur.Text = 42
+        TxtRadio.Text = 35
+        TxtSaltoVert.Text = 45
+        TxtAbdominais.Text = 48
+        TxtFlexaoBraco.Text = 33
+        TxtCooper.Text = 2000
+        TxtVo2Trab.Text = 70
+        TxtTempoAtiv.Text = 90
+        TxtQuantSeman.Text = 5
     End Sub
-    Private Sub btnProcessar_Click(sender As System.Object, e As System.EventArgs) Handles btnProcessar.Click
+    Private Sub BtnProcessar_Click(sender As System.Object, e As System.EventArgs) Handles BtnProcessar.Click
         Try
-            If cbxSexo.Text <> "Masculino" And cbxSexo.Text <> "Feminino" Then
+            If CbxSexo.Text <> "Masculino" And CbxSexo.Text <> "Feminino" Then
                 MessageBox.Show("Escolha entre o sexo Masculino ou o sexo Feminino!", "Sexo não encontrado", MessageBoxButtons.OK, MessageBoxIcon.Error)
-                cbxSexo.Focus()
+                CbxSexo.Focus()
                 Exit Sub
             End If
 
-            If txtPunho.Text = "" Then
+            If TxtPunho.Text = "" Then
                 MessageBox.Show("Campo Punho Vazio", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 vProcessar = False
-                txtPunho.Focus()
-            ElseIf txtAltura.Text = "" Then
+                TxtPunho.Focus()
+            ElseIf TxtAltura.Text = "" Then
                 MessageBox.Show("Campo Altura Vazio", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 vProcessar = False
-                txtAltura.Focus()
-            ElseIf txtIdade.Text = "" Then
+                TxtAltura.Focus()
+            ElseIf TxtIdade.Text = "" Then
                 MessageBox.Show("Campo Idade Vazio", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 vProcessar = False
-                txtIdade.Focus()
-            ElseIf txtSaltoVert.Text = "" Then
+                TxtIdade.Focus()
+            ElseIf TxtSaltoVert.Text = "" Then
                 MessageBox.Show("Campo Salto Vertical Vazio", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 vProcessar = False
-                txtSaltoVert.Focus()
-            ElseIf cbxSexo.Text = "" Then
+                TxtSaltoVert.Focus()
+            ElseIf CbxSexo.Text = "" Then
                 MessageBox.Show("Campo Sexo Vazio", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 vProcessar = False
-                cbxSexo.Focus()
+                CbxSexo.Focus()
             End If
 
             If vProcessar = True Then
@@ -2927,30 +2928,8 @@ Public Class frm_AvaliacaoFisica
 
 
     End Sub
-    Private Sub frm_Principal_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
+    Private Sub Frm_Principal_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
         carrega_campos()
-    End Sub
-    Private Sub SerialToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles SerialToolStripMenuItem.Click
-
-        Try
-            Dim contador As Integer = 0
-            Dim leitor As StreamReader
-
-            leitor = My.Computer.FileSystem.OpenTextFileReader("C:\AvaliacaoFisica\avalfisica.txt")
-            Do Until leitor.EndOfStream  'lê linha do arquivo
-                If contador = 8 Then
-                    MessageBox.Show("SUA " & leitor.ReadLine, "SENHA", MessageBoxButtons.OK, MessageBoxIcon.Information)
-                    Exit Sub
-                Else
-                    leitor.ReadLine()
-                End If
-                contador += 1
-            Loop
-            leitor.Close()
-        Catch ex As Exception
-            MessageBox.Show("Erro de leitura !! " & ex.Message, "Erro!!", MessageBoxButtons.OK, MessageBoxIcon.Information)
-        End Try
-
     End Sub
 
 
@@ -2958,7 +2937,7 @@ Public Class frm_AvaliacaoFisica
     ''' Usando Keypress de todos os campos
     ''' </summary>
     ''' <remarks>Nessa parte é pressionado um botão e sempre aceitará número ou vírgula</remarks>
-    Private Sub txtPeso_KeyPress(sender As System.Object, e As System.Windows.Forms.KeyPressEventArgs) Handles txtPeso.KeyPress
+    Private Sub TxtPeso_KeyPress(sender As System.Object, e As System.Windows.Forms.KeyPressEventArgs) Handles TxtPeso.KeyPress
         If e.KeyChar = "," Then
             e.Handled = False
             Exit Sub
@@ -2968,7 +2947,7 @@ Public Class frm_AvaliacaoFisica
             e.Handled = True
         End If
     End Sub
-    Private Sub txtAltura_KeyPress(sender As System.Object, e As System.Windows.Forms.KeyPressEventArgs) Handles txtAltura.KeyPress
+    Private Sub TxtAltura_KeyPress(sender As System.Object, e As System.Windows.Forms.KeyPressEventArgs) Handles TxtAltura.KeyPress
         If e.KeyChar = "," Then
             e.Handled = False
             Exit Sub
@@ -2978,7 +2957,7 @@ Public Class frm_AvaliacaoFisica
             e.Handled = True
         End If
     End Sub
-    Private Sub txtFCrepouso_KeyPress(sender As System.Object, e As System.Windows.Forms.KeyPressEventArgs) Handles txtFCrepouso.KeyPress
+    Private Sub TxtFCrepouso_KeyPress(sender As System.Object, e As System.Windows.Forms.KeyPressEventArgs) Handles TxtFCrepouso.KeyPress
         If e.KeyChar = "," Then
             e.Handled = False
             Exit Sub
@@ -2988,7 +2967,7 @@ Public Class frm_AvaliacaoFisica
             e.Handled = True
         End If
     End Sub
-    Private Sub txtFCmaxima_KeyPress(sender As System.Object, e As System.Windows.Forms.KeyPressEventArgs) Handles txtFCmaxima.KeyPress
+    Private Sub TxtFCmaxima_KeyPress(sender As System.Object, e As System.Windows.Forms.KeyPressEventArgs) Handles TxtFCmaxima.KeyPress
         If e.KeyChar = "," Then
             e.Handled = False
             Exit Sub
@@ -2998,7 +2977,7 @@ Public Class frm_AvaliacaoFisica
             e.Handled = True
         End If
     End Sub
-    Private Sub txtBraDireito_KeyPress(sender As System.Object, e As System.Windows.Forms.KeyPressEventArgs) Handles txtBraDireito.KeyPress
+    Private Sub TxtBraDireito_KeyPress(sender As System.Object, e As System.Windows.Forms.KeyPressEventArgs) Handles TxtBraDireito.KeyPress
         If e.KeyChar = "," Then
             e.Handled = False
             Exit Sub
@@ -3008,7 +2987,7 @@ Public Class frm_AvaliacaoFisica
             e.Handled = True
         End If
     End Sub
-    Private Sub txtBraEsquerdo_KeyPress(sender As System.Object, e As System.Windows.Forms.KeyPressEventArgs) Handles txtBraEsquerdo.KeyPress
+    Private Sub TxtBraEsquerdo_KeyPress(sender As System.Object, e As System.Windows.Forms.KeyPressEventArgs) Handles TxtBraEsquerdo.KeyPress
         If e.KeyChar = "," Then
             e.Handled = False
             Exit Sub
@@ -3018,7 +2997,7 @@ Public Class frm_AvaliacaoFisica
             e.Handled = True
         End If
     End Sub
-    Private Sub txtAnteDireito_KeyPress(sender As System.Object, e As System.Windows.Forms.KeyPressEventArgs) Handles txtAnteDireito.KeyPress
+    Private Sub TxtAnteDireito_KeyPress(sender As System.Object, e As System.Windows.Forms.KeyPressEventArgs) Handles TxtAnteDireito.KeyPress
         If e.KeyChar = "," Then
             e.Handled = False
             Exit Sub
@@ -3028,7 +3007,7 @@ Public Class frm_AvaliacaoFisica
             e.Handled = True
         End If
     End Sub
-    Private Sub txtAnteEsquerdo_KeyPress(sender As System.Object, e As System.Windows.Forms.KeyPressEventArgs) Handles txtAnteEsquerdo.KeyPress
+    Private Sub TxtAnteEsquerdo_KeyPress(sender As System.Object, e As System.Windows.Forms.KeyPressEventArgs) Handles TxtAnteEsquerdo.KeyPress
         If e.KeyChar = "," Then
             e.Handled = False
             Exit Sub
@@ -3038,7 +3017,7 @@ Public Class frm_AvaliacaoFisica
             e.Handled = True
         End If
     End Sub
-    Private Sub txtTorax_KeyPress(sender As System.Object, e As System.Windows.Forms.KeyPressEventArgs) Handles txtTorax.KeyPress
+    Private Sub TxtTorax_KeyPress(sender As System.Object, e As System.Windows.Forms.KeyPressEventArgs) Handles TxtTorax.KeyPress
         If e.KeyChar = "," Then
             e.Handled = False
             Exit Sub
@@ -3048,7 +3027,7 @@ Public Class frm_AvaliacaoFisica
             e.Handled = True
         End If
     End Sub
-    Private Sub txtAbdomen_KeyPress(sender As System.Object, e As System.Windows.Forms.KeyPressEventArgs) Handles txtAbdomen.KeyPress
+    Private Sub TxtAbdomen_KeyPress(sender As System.Object, e As System.Windows.Forms.KeyPressEventArgs) Handles TxtAbdomen.KeyPress
         If e.KeyChar = "," Then
             e.Handled = False
             Exit Sub
@@ -3058,7 +3037,7 @@ Public Class frm_AvaliacaoFisica
             e.Handled = True
         End If
     End Sub
-    Private Sub txtCoxaDireita_KeyPress(sender As System.Object, e As System.Windows.Forms.KeyPressEventArgs) Handles txtCoxaDireita.KeyPress
+    Private Sub TxtCoxaDireita_KeyPress(sender As System.Object, e As System.Windows.Forms.KeyPressEventArgs) Handles TxtCoxaDireita.KeyPress
         If e.KeyChar = "," Then
             e.Handled = False
             Exit Sub
@@ -3068,7 +3047,7 @@ Public Class frm_AvaliacaoFisica
             e.Handled = True
         End If
     End Sub
-    Private Sub txtCoxaEsquerda_KeyPress(sender As System.Object, e As System.Windows.Forms.KeyPressEventArgs) Handles txtCoxaEsquerda.KeyPress
+    Private Sub TxtCoxaEsquerda_KeyPress(sender As System.Object, e As System.Windows.Forms.KeyPressEventArgs) Handles TxtCoxaEsquerda.KeyPress
         If e.KeyChar = "," Then
             e.Handled = False
             Exit Sub
@@ -3078,7 +3057,7 @@ Public Class frm_AvaliacaoFisica
             e.Handled = True
         End If
     End Sub
-    Private Sub txtPernaDireita_KeyPress(sender As System.Object, e As System.Windows.Forms.KeyPressEventArgs) Handles txtPernaDireita.KeyPress
+    Private Sub TxtPernaDireita_KeyPress(sender As System.Object, e As System.Windows.Forms.KeyPressEventArgs) Handles TxtPernaDireita.KeyPress
         If e.KeyChar = "," Then
             e.Handled = False
             Exit Sub
@@ -3088,7 +3067,7 @@ Public Class frm_AvaliacaoFisica
             e.Handled = True
         End If
     End Sub
-    Private Sub txtPernaEsquerda_KeyPress(sender As System.Object, e As System.Windows.Forms.KeyPressEventArgs) Handles txtPernaEsquerda.KeyPress
+    Private Sub TxtPernaEsquerda_KeyPress(sender As System.Object, e As System.Windows.Forms.KeyPressEventArgs) Handles TxtPernaEsquerda.KeyPress
         If e.KeyChar = "," Then
             e.Handled = False
             Exit Sub
@@ -3098,7 +3077,7 @@ Public Class frm_AvaliacaoFisica
             e.Handled = True
         End If
     End Sub
-    Private Sub txtTornozelo_KeyPress(sender As System.Object, e As System.Windows.Forms.KeyPressEventArgs) Handles txtTornozelo.KeyPress
+    Private Sub TxtTornozelo_KeyPress(sender As System.Object, e As System.Windows.Forms.KeyPressEventArgs) Handles txtTornozelo.KeyPress
         If e.KeyChar = "," Then
             e.Handled = False
             Exit Sub
@@ -3108,7 +3087,7 @@ Public Class frm_AvaliacaoFisica
             e.Handled = True
         End If
     End Sub
-    Private Sub txtJoelho_KeyPress(sender As System.Object, e As System.Windows.Forms.KeyPressEventArgs) Handles txtJoelho.KeyPress
+    Private Sub TxtJoelho_KeyPress(sender As System.Object, e As System.Windows.Forms.KeyPressEventArgs) Handles TxtJoelho.KeyPress
         If e.KeyChar = "," Then
             e.Handled = False
             Exit Sub
@@ -3118,7 +3097,7 @@ Public Class frm_AvaliacaoFisica
             e.Handled = True
         End If
     End Sub
-    Private Sub txtPunho_KeyPress(sender As System.Object, e As System.Windows.Forms.KeyPressEventArgs) Handles txtPunho.KeyPress
+    Private Sub TxtPunho_KeyPress(sender As System.Object, e As System.Windows.Forms.KeyPressEventArgs) Handles TxtPunho.KeyPress
         If e.KeyChar = "," Then
             e.Handled = False
             Exit Sub
@@ -3128,7 +3107,7 @@ Public Class frm_AvaliacaoFisica
             e.Handled = True
         End If
     End Sub
-    Private Sub txtFemur_KeyPress(sender As System.Object, e As System.Windows.Forms.KeyPressEventArgs) Handles txtFemur.KeyPress
+    Private Sub TxtFemur_KeyPress(sender As System.Object, e As System.Windows.Forms.KeyPressEventArgs) Handles TxtFemur.KeyPress
         If e.KeyChar = "," Then
             e.Handled = False
             Exit Sub
@@ -3138,7 +3117,7 @@ Public Class frm_AvaliacaoFisica
             e.Handled = True
         End If
     End Sub
-    Private Sub txtRadio_KeyPress(sender As System.Object, e As System.Windows.Forms.KeyPressEventArgs) Handles txtRadio.KeyPress
+    Private Sub TxtRadio_KeyPress(sender As System.Object, e As System.Windows.Forms.KeyPressEventArgs) Handles TxtRadio.KeyPress
         If e.KeyChar = "," Then
             e.Handled = False
             Exit Sub
@@ -3148,7 +3127,7 @@ Public Class frm_AvaliacaoFisica
             e.Handled = True
         End If
     End Sub
-    Private Sub txtCintura_KeyPress(sender As System.Object, e As System.Windows.Forms.KeyPressEventArgs) Handles txtCintura.KeyPress
+    Private Sub TxtCintura_KeyPress(sender As System.Object, e As System.Windows.Forms.KeyPressEventArgs) Handles TxtCintura.KeyPress
         If e.KeyChar = "," Then
             e.Handled = False
             Exit Sub
@@ -3158,7 +3137,7 @@ Public Class frm_AvaliacaoFisica
             e.Handled = True
         End If
     End Sub
-    Private Sub txtQuadril_KeyPress(sender As System.Object, e As System.Windows.Forms.KeyPressEventArgs) Handles txtQuadril.KeyPress
+    Private Sub TxtQuadril_KeyPress(sender As System.Object, e As System.Windows.Forms.KeyPressEventArgs) Handles TxtQuadril.KeyPress
         If e.KeyChar = "," Then
             e.Handled = False
             Exit Sub
@@ -3168,7 +3147,7 @@ Public Class frm_AvaliacaoFisica
             e.Handled = True
         End If
     End Sub
-    Private Sub txtSaltoVert_KeyPress(sender As System.Object, e As System.Windows.Forms.KeyPressEventArgs) Handles txtSaltoVert.KeyPress
+    Private Sub TxtSaltoVert_KeyPress(sender As System.Object, e As System.Windows.Forms.KeyPressEventArgs) Handles TxtSaltoVert.KeyPress
         If e.KeyChar = "," Then
             e.Handled = False
             Exit Sub
@@ -3178,7 +3157,7 @@ Public Class frm_AvaliacaoFisica
             e.Handled = True
         End If
     End Sub
-    Private Sub txtAbdominais_KeyPress(sender As System.Object, e As System.Windows.Forms.KeyPressEventArgs) Handles txtAbdominais.KeyPress
+    Private Sub TxtAbdominais_KeyPress(sender As System.Object, e As System.Windows.Forms.KeyPressEventArgs) Handles TxtAbdominais.KeyPress
         If e.KeyChar = "," Then
             e.Handled = False
             Exit Sub
@@ -3188,7 +3167,7 @@ Public Class frm_AvaliacaoFisica
             e.Handled = True
         End If
     End Sub
-    Private Sub txtFlexaoBraco_KeyPress(sender As System.Object, e As System.Windows.Forms.KeyPressEventArgs) Handles txtFlexaoBraco.KeyPress
+    Private Sub TxtFlexaoBraco_KeyPress(sender As System.Object, e As System.Windows.Forms.KeyPressEventArgs) Handles TxtFlexaoBraco.KeyPress
         If e.KeyChar = "," Then
             e.Handled = False
             Exit Sub
@@ -3198,7 +3177,7 @@ Public Class frm_AvaliacaoFisica
             e.Handled = True
         End If
     End Sub
-    Private Sub txtCooper_KeyPress(sender As System.Object, e As System.Windows.Forms.KeyPressEventArgs) Handles txtCooper.KeyPress
+    Private Sub TxtCooper_KeyPress(sender As System.Object, e As System.Windows.Forms.KeyPressEventArgs) Handles TxtCooper.KeyPress
         If e.KeyChar = "," Then
             e.Handled = False
             Exit Sub
@@ -3208,7 +3187,7 @@ Public Class frm_AvaliacaoFisica
             e.Handled = True
         End If
     End Sub
-    Private Sub txtVo2Trab_KeyPress(sender As System.Object, e As System.Windows.Forms.KeyPressEventArgs) Handles txtVo2Trab.KeyPress
+    Private Sub TxtVo2Trab_KeyPress(sender As System.Object, e As System.Windows.Forms.KeyPressEventArgs) Handles TxtVo2Trab.KeyPress
         If e.KeyChar = "," Then
             e.Handled = False
             Exit Sub
@@ -3218,7 +3197,7 @@ Public Class frm_AvaliacaoFisica
             e.Handled = True
         End If
     End Sub
-    Private Sub txtTempoAtiv_KeyPress(sender As System.Object, e As System.Windows.Forms.KeyPressEventArgs) Handles txtTempoAtiv.KeyPress
+    Private Sub TxtTempoAtiv_KeyPress(sender As System.Object, e As System.Windows.Forms.KeyPressEventArgs) Handles TxtTempoAtiv.KeyPress
         If e.KeyChar = "," Then
             e.Handled = False
             Exit Sub
@@ -3228,7 +3207,7 @@ Public Class frm_AvaliacaoFisica
             e.Handled = True
         End If
     End Sub
-    Private Sub txtQuantSeman_KeyPress(sender As System.Object, e As System.Windows.Forms.KeyPressEventArgs) Handles txtQuantSeman.KeyPress
+    Private Sub TxtQuantSeman_KeyPress(sender As System.Object, e As System.Windows.Forms.KeyPressEventArgs) Handles TxtQuantSeman.KeyPress
         If e.KeyChar = "," Then
             e.Handled = False
             Exit Sub
@@ -3238,7 +3217,7 @@ Public Class frm_AvaliacaoFisica
             e.Handled = True
         End If
     End Sub
-    Private Sub txtIdade_KeyPress(sender As System.Object, e As System.Windows.Forms.KeyPressEventArgs) Handles txtIdade.KeyPress
+    Private Sub TxtIdade_KeyPress(sender As System.Object, e As System.Windows.Forms.KeyPressEventArgs) Handles TxtIdade.KeyPress
         If Not (Char.IsDigit(e.KeyChar) OrElse Char.IsControl(e.KeyChar)) Then
             e.Handled = True
         End If
@@ -3326,34 +3305,34 @@ Public Class frm_AvaliacaoFisica
             sLeitura = "                                                                                   " & Date.Now & vbCrLf
             sLeitura = sLeitura & "                              AVALIAÇÃO FÍSICA - FITA MÉTRICA" & vbCrLf
             '=============================================102 ESPAÇOS============================================
-            sLeitura = sLeitura & "Professor: " & (txtProf.Text.Trim & Space(40)).Substring(0, 40) & Space(10) & (txtLocal.Text & Space(40)).Substring(0, 40) & vbCrLf
+            sLeitura = sLeitura & "Professor: " & (TxtProf.Text.Trim & Space(40)).Substring(0, 40) & Space(10) & (TxtLocal.Text & Space(40)).Substring(0, 40) & vbCrLf
             sLeitura = sLeitura & "======================================================================================================" & vbCrLf
-            sLeitura = sLeitura & " NOME:" & (txtNome.Text.Trim & Space(30)).Substring(0, 30) & Space(2) & "IDADE:" & txtIdade.Text & Space(2) & "SEXO:" & cbxSexo.Text & Space(2) & "PESO:" & txtPeso.Text & Space(2) & "ALTURA:" & txtAltura.Text & Space(2) & "DN:" & dtpDataNasc.Value & vbCrLf
+            sLeitura = sLeitura & " NOME:" & (TxtNome.Text.Trim & Space(30)).Substring(0, 30) & Space(2) & "IDADE:" & TxtIdade.Text & Space(2) & "SEXO:" & CbxSexo.Text & Space(2) & "PESO:" & TxtPeso.Text & Space(2) & "ALTURA:" & TxtAltura.Text & Space(2) & "DN:" & DtpDataNasc.Value & vbCrLf
             sLeitura = sLeitura & "------------------------------------------------------------------------------------------------------" & vbCrLf
             sLeitura = sLeitura & "CIRCUNFERÊNCIAS CORPORAIS                  DIÂMETROS ÓSSEOS(mm)" & vbCrLf
-            sLeitura = sLeitura & "Tornozelo: " & (txtTornozelo.Text.Trim & Space(6)).Substring(0, 6) & Space(26) & "Fêmur: " & txtFemur.Text & Space(10) & vbCrLf
-            sLeitura = sLeitura & "Joelho:    " & (txtJoelho.Text.Trim & Space(6)).Substring(0, 6) & Space(26) & "Rádio: " & txtRadio.Text & Space(10) & vbCrLf
-            sLeitura = sLeitura & "Punho:     " & (txtPunho.Text.Trim & Space(6)).Substring(0, 6) & Space(26) & vbCrLf & vbCrLf
+            sLeitura = sLeitura & "Tornozelo: " & (txtTornozelo.Text.Trim & Space(6)).Substring(0, 6) & Space(26) & "Fêmur: " & TxtFemur.Text & Space(10) & vbCrLf
+            sLeitura = sLeitura & "Joelho:    " & (TxtJoelho.Text.Trim & Space(6)).Substring(0, 6) & Space(26) & "Rádio: " & TxtRadio.Text & Space(10) & vbCrLf
+            sLeitura = sLeitura & "Punho:     " & (TxtPunho.Text.Trim & Space(6)).Substring(0, 6) & Space(26) & vbCrLf & vbCrLf
 
             sLeitura = sLeitura & "RISCOS DE DOENÇAS CRÔNICAS (CINTURA X QUADRIL)" & vbCrLf
-            sLeitura = sLeitura & "Cintura: " & (txtCintura.Text.Trim & Space(6)).Substring(0, 6) & Space(10) & "Relação cintura ao quadril: " & txtRelCinQua.Text & vbCrLf
-            sLeitura = sLeitura & "Quadril: " & (txtQuadril.Text.Trim & Space(6)).Substring(0, 6) & Space(10) & "Risco: " & lblRelCinQua.Text & vbCrLf & vbCrLf
+            sLeitura = sLeitura & "Cintura: " & (TxtCintura.Text.Trim & Space(6)).Substring(0, 6) & Space(10) & "Relação cintura ao quadril: " & TxtRelCinQua.Text & vbCrLf
+            sLeitura = sLeitura & "Quadril: " & (TxtQuadril.Text.Trim & Space(6)).Substring(0, 6) & Space(10) & "Risco: " & LblRelCinQua.Text & vbCrLf & vbCrLf
 
             sLeitura = sLeitura & "COMPOSIÇÃO CORPORAL" & vbCrLf
-            sLeitura = sLeitura & "% de gordura:  " & (txtPorcGordura.Text.Trim & Space(6)).Substring(0, 6) & Space(10) & "MASSA PROVÁVEL DAS VÁRIAS PARTES DO CORPO (Kg)" & vbCrLf
-            sLeitura = sLeitura & "Peso Gordura:  " & (txtPesoGordura.Text.Trim & Space(6)).Substring(0, 6) & Space(10) & "Cabeça:    " & (txtCabeca.Text.Trim & Space(6)).Substring(0, 6) & Space(3) & "Mão:   " & txtMao.Text & vbCrLf
-            sLeitura = sLeitura & "Peso Muscular: " & (txtPesoMusc.Text.Trim & Space(6)).Substring(0, 6) & Space(10) & "Tronco:    " & (txtTronco.Text.Trim & Space(6)).Substring(0, 6) & Space(3) & "Coxa:  " & txtCoxa.Text & vbCrLf
-            sLeitura = sLeitura & "Peso Residual: " & (txtPesoResid.Text.Trim & Space(6)).Substring(0, 6) & Space(10) & "Braço:     " & (txtBraco.Text.Trim & Space(6)).Substring(0, 6) & Space(3) & "Perna: " & txtPerna.Text & vbCrLf
-            sLeitura = sLeitura & "Peso Ósseo:    " & (txtPesoOsseo.Text.Trim & Space(6)).Substring(0, 6) & Space(10) & "Antebraço: " & (txtAntebraco.Text.Trim & Space(6)).Substring(0, 6) & Space(3) & "Pé:    " & txtPe.Text & vbCrLf
-            sLeitura = sLeitura & "M. C. M:       " & (txtMcm.Text.Trim & Space(6)).Substring(0, 6) & vbCrLf & vbCrLf
+            sLeitura = sLeitura & "% de gordura:  " & (TxtPorcGordura.Text.Trim & Space(6)).Substring(0, 6) & Space(10) & "MASSA PROVÁVEL DAS VÁRIAS PARTES DO CORPO (Kg)" & vbCrLf
+            sLeitura = sLeitura & "Peso Gordura:  " & (TxtPesoGordura.Text.Trim & Space(6)).Substring(0, 6) & Space(10) & "Cabeça:    " & (TxtCabeca.Text.Trim & Space(6)).Substring(0, 6) & Space(3) & "Mão:   " & TxtMao.Text & vbCrLf
+            sLeitura = sLeitura & "Peso Muscular: " & (TxtPesoMusc.Text.Trim & Space(6)).Substring(0, 6) & Space(10) & "Tronco:    " & (TxtTronco.Text.Trim & Space(6)).Substring(0, 6) & Space(3) & "Coxa:  " & TxtCoxa.Text & vbCrLf
+            sLeitura = sLeitura & "Peso Residual: " & (TxtPesoResid.Text.Trim & Space(6)).Substring(0, 6) & Space(10) & "Braço:     " & (TxtBraco.Text.Trim & Space(6)).Substring(0, 6) & Space(3) & "Perna: " & TxtPerna.Text & vbCrLf
+            sLeitura = sLeitura & "Peso Ósseo:    " & (TxtPesoOsseo.Text.Trim & Space(6)).Substring(0, 6) & Space(10) & "Antebraço: " & (TxtAntebraco.Text.Trim & Space(6)).Substring(0, 6) & Space(3) & "Pé:    " & TxtPe.Text & vbCrLf
+            sLeitura = sLeitura & "M. C. M:       " & (TxtMcm.Text.Trim & Space(6)).Substring(0, 6) & vbCrLf & vbCrLf
 
             sLeitura = sLeitura & "PESO IDEAL" & vbCrLf
-            sLeitura = sLeitura & "Normal: " & (txtPesoNormal.Text.Trim & Space(6)).Substring(0, 6) & " Kg" & Space(4) & "Imc:           " & (txtIMC.Text.Trim & Space(6)).Substring(0, 6) & Space(1) & txtResIMC.Text & vbCrLf
-            sLeitura = sLeitura & "Mínimo: " & (txtPesoMinimo.Text.Trim & Space(6)).Substring(0, 6) & " Kg" & Space(4) & "Ossatura:      " & (txtOssatura.Text.Trim & Space(6)).Substring(0, 6) & Space(1) & txtResOssatura.Text & vbCrLf
-            sLeitura = sLeitura & "Máximo: " & (txtPesoMaximo.Text.Trim & Space(6)).Substring(0, 6) & " Kg" & Space(4) & "Compl. Físico: " & (txtCFisico.Text.Trim & Space(6)).Substring(0, 6) & Space(1) & txtResCFisico.Text & vbCrLf & vbCrLf & vbCrLf
+            sLeitura = sLeitura & "Normal: " & (TxtPesoNormal.Text.Trim & Space(6)).Substring(0, 6) & " Kg" & Space(4) & "Imc:           " & (TxtIMC.Text.Trim & Space(6)).Substring(0, 6) & Space(1) & TxtResIMC.Text & vbCrLf
+            sLeitura = sLeitura & "Mínimo: " & (TxtPesoMinimo.Text.Trim & Space(6)).Substring(0, 6) & " Kg" & Space(4) & "Ossatura:      " & (TxtOssatura.Text.Trim & Space(6)).Substring(0, 6) & Space(1) & TxtResOssatura.Text & vbCrLf
+            sLeitura = sLeitura & "Máximo: " & (TxtPesoMaximo.Text.Trim & Space(6)).Substring(0, 6) & " Kg" & Space(4) & "Compl. Físico: " & (TxtCFisico.Text.Trim & Space(6)).Substring(0, 6) & Space(1) & TxtResCFisico.Text & vbCrLf & vbCrLf & vbCrLf
 
             sLeitura = sLeitura & "                                     ____________________________________________________________" & vbCrLf
-            sLeitura = sLeitura & "                                         " & "Ass: " & (txtProf.Text.Trim & Space(40)).Substring(0, 40)
+            sLeitura = sLeitura & "                                         " & "Ass: " & (TxtProf.Text.Trim & Space(40)).Substring(0, 40)
             PrintDocument1.DefaultPageSettings = PrintPageSettings
 
             'Especifica o documento para a caixa de diálogo de impressão e exibe 
@@ -3379,34 +3358,34 @@ Public Class frm_AvaliacaoFisica
             sLeitura = "                                                                                   " & Date.Now & vbCrLf
             sLeitura = sLeitura & "                              AVALIAÇÃO FÍSICA - ADIPÔMETRO" & vbCrLf
             '=============================================102 ESPAÇOS============================================
-            sLeitura = sLeitura & "Professor: " & (txtProf.Text.Trim & Space(40)).Substring(0, 40) & Space(10) & (txtLocal.Text & Space(40)).Substring(0, 40) & vbCrLf
+            sLeitura = sLeitura & "Professor: " & (TxtProf.Text.Trim & Space(40)).Substring(0, 40) & Space(10) & (TxtLocal.Text & Space(40)).Substring(0, 40) & vbCrLf
             sLeitura = sLeitura & "======================================================================================================" & vbCrLf
-            sLeitura = sLeitura & " NOME:" & (txtNome.Text.Trim & Space(30)).Substring(0, 30) & Space(2) & "IDADE:" & txtIdade.Text & Space(2) & "SEXO:" & cbxSexo.Text & Space(2) & "PESO:" & txtPeso.Text & Space(2) & "ALTURA:" & txtAltura.Text & Space(2) & "DN:" & dtpDataNasc.Value & vbCrLf
+            sLeitura = sLeitura & " NOME:" & (TxtNome.Text.Trim & Space(30)).Substring(0, 30) & Space(2) & "IDADE:" & TxtIdade.Text & Space(2) & "SEXO:" & CbxSexo.Text & Space(2) & "PESO:" & TxtPeso.Text & Space(2) & "ALTURA:" & TxtAltura.Text & Space(2) & "DN:" & DtpDataNasc.Value & vbCrLf
             sLeitura = sLeitura & "------------------------------------------------------------------------------------------------------" & vbCrLf
             sLeitura = sLeitura & "CIRCUNFERÊNCIAS CORPORAIS            DIÂMETROS ÓSSEOS(mm)        Dobras" & vbCrLf
-            sLeitura = sLeitura & "Tornozelo: " & (txtTornozelo.Text.Trim & Space(6)).Substring(0, 6) & Space(20) & "Fêmur: " & (txtFemur.Text.Trim & Space(21)).Substring(0, 21) & "Suprailíaca:  18   Abdomen:    19" & vbCrLf
-            sLeitura = sLeitura & "Joelho:    " & (txtJoelho.Text.Trim & Space(6)).Substring(0, 6) & Space(20) & "Rádio: " & (txtRadio.Text.Trim & Space(21)).Substring(0, 21) & "Subescapular: 13   Tricipital: 20" & vbCrLf
-            sLeitura = sLeitura & "Punho:     " & (txtPunho.Text.Trim & Space(6)).Substring(0, 6) & Space(2) & vbCrLf & vbCrLf
+            sLeitura = sLeitura & "Tornozelo: " & (txtTornozelo.Text.Trim & Space(6)).Substring(0, 6) & Space(20) & "Fêmur: " & (TxtFemur.Text.Trim & Space(21)).Substring(0, 21) & "Suprailíaca:  18   Abdomen:    19" & vbCrLf
+            sLeitura = sLeitura & "Joelho:    " & (TxtJoelho.Text.Trim & Space(6)).Substring(0, 6) & Space(20) & "Rádio: " & (TxtRadio.Text.Trim & Space(21)).Substring(0, 21) & "Subescapular: 13   Tricipital: 20" & vbCrLf
+            sLeitura = sLeitura & "Punho:     " & (TxtPunho.Text.Trim & Space(6)).Substring(0, 6) & Space(2) & vbCrLf & vbCrLf
 
             sLeitura = sLeitura & "RISCOS DE DOENÇAS CRÔNICAS (CINTURA X QUADRIL)" & vbCrLf
-            sLeitura = sLeitura & "Cintura: " & (txtCintura.Text.Trim & Space(6)).Substring(0, 6) & Space(10) & "Relação cintura ao quadril: " & txtRelCinQua.Text & vbCrLf
-            sLeitura = sLeitura & "Quadril: " & (txtQuadril.Text.Trim & Space(6)).Substring(0, 6) & Space(10) & "Risco: " & lblRelCinQua.Text & vbCrLf & vbCrLf
+            sLeitura = sLeitura & "Cintura: " & (TxtCintura.Text.Trim & Space(6)).Substring(0, 6) & Space(10) & "Relação cintura ao quadril: " & TxtRelCinQua.Text & vbCrLf
+            sLeitura = sLeitura & "Quadril: " & (TxtQuadril.Text.Trim & Space(6)).Substring(0, 6) & Space(10) & "Risco: " & LblRelCinQua.Text & vbCrLf & vbCrLf
 
             sLeitura = sLeitura & "COMPOSIÇÃO CORPORAL" & vbCrLf
-            sLeitura = sLeitura & "% de gordura:  " & (txtPorcGordura.Text.Trim & Space(6)).Substring(0, 6) & Space(10) & "MASSA PROVÁVEL DAS VÁRIAS PARTES DO CORPO (Kg)" & vbCrLf
-            sLeitura = sLeitura & "Peso Gordura:  " & (txtPesoGordura.Text.Trim & Space(6)).Substring(0, 6) & Space(10) & "Cabeça:    " & (txtCabeca.Text.Trim & Space(6)).Substring(0, 6) & Space(3) & "Mão:   " & txtMao.Text & vbCrLf
-            sLeitura = sLeitura & "Peso Muscular: " & (txtPesoMusc.Text.Trim & Space(6)).Substring(0, 6) & Space(10) & "Tronco:    " & (txtTronco.Text.Trim & Space(6)).Substring(0, 6) & Space(3) & "Coxa:  " & txtCoxa.Text & vbCrLf
-            sLeitura = sLeitura & "Peso Residual: " & (txtPesoResid.Text.Trim & Space(6)).Substring(0, 6) & Space(10) & "Braço:     " & (txtBraco.Text.Trim & Space(6)).Substring(0, 6) & Space(3) & "Perna: " & txtPerna.Text & vbCrLf
-            sLeitura = sLeitura & "Peso Ósseo:    " & (txtPesoOsseo.Text.Trim & Space(6)).Substring(0, 6) & Space(10) & "Antebraço: " & (txtAntebraco.Text.Trim & Space(6)).Substring(0, 6) & Space(3) & "Pé:    " & txtPe.Text & vbCrLf
-            sLeitura = sLeitura & "M. C. M:       " & (txtMcm.Text.Trim & Space(6)).Substring(0, 6) & vbCrLf & vbCrLf
+            sLeitura = sLeitura & "% de gordura:  " & (TxtPorcGordura.Text.Trim & Space(6)).Substring(0, 6) & Space(10) & "MASSA PROVÁVEL DAS VÁRIAS PARTES DO CORPO (Kg)" & vbCrLf
+            sLeitura = sLeitura & "Peso Gordura:  " & (TxtPesoGordura.Text.Trim & Space(6)).Substring(0, 6) & Space(10) & "Cabeça:    " & (TxtCabeca.Text.Trim & Space(6)).Substring(0, 6) & Space(3) & "Mão:   " & TxtMao.Text & vbCrLf
+            sLeitura = sLeitura & "Peso Muscular: " & (TxtPesoMusc.Text.Trim & Space(6)).Substring(0, 6) & Space(10) & "Tronco:    " & (TxtTronco.Text.Trim & Space(6)).Substring(0, 6) & Space(3) & "Coxa:  " & TxtCoxa.Text & vbCrLf
+            sLeitura = sLeitura & "Peso Residual: " & (TxtPesoResid.Text.Trim & Space(6)).Substring(0, 6) & Space(10) & "Braço:     " & (TxtBraco.Text.Trim & Space(6)).Substring(0, 6) & Space(3) & "Perna: " & TxtPerna.Text & vbCrLf
+            sLeitura = sLeitura & "Peso Ósseo:    " & (TxtPesoOsseo.Text.Trim & Space(6)).Substring(0, 6) & Space(10) & "Antebraço: " & (TxtAntebraco.Text.Trim & Space(6)).Substring(0, 6) & Space(3) & "Pé:    " & TxtPe.Text & vbCrLf
+            sLeitura = sLeitura & "M. C. M:       " & (TxtMcm.Text.Trim & Space(6)).Substring(0, 6) & vbCrLf & vbCrLf
 
             sLeitura = sLeitura & "PESO IDEAL" & vbCrLf
-            sLeitura = sLeitura & "Normal: " & (txtPesoNormal.Text.Trim & Space(6)).Substring(0, 6) & " Kg" & Space(4) & "Imc:           " & (txtIMC.Text.Trim & Space(6)).Substring(0, 6) & Space(1) & txtResIMC.Text & vbCrLf
-            sLeitura = sLeitura & "Mínimo: " & (txtPesoMinimo.Text.Trim & Space(6)).Substring(0, 6) & " Kg" & Space(4) & "Ossatura:      " & (txtOssatura.Text.Trim & Space(6)).Substring(0, 6) & Space(1) & txtResOssatura.Text & vbCrLf
-            sLeitura = sLeitura & "Máximo: " & (txtPesoMaximo.Text.Trim & Space(6)).Substring(0, 6) & " Kg" & Space(4) & "Compl. Físico: " & (txtCFisico.Text.Trim & Space(6)).Substring(0, 6) & Space(1) & txtResCFisico.Text & vbCrLf & vbCrLf & vbCrLf
+            sLeitura = sLeitura & "Normal: " & (TxtPesoNormal.Text.Trim & Space(6)).Substring(0, 6) & " Kg" & Space(4) & "Imc:           " & (TxtIMC.Text.Trim & Space(6)).Substring(0, 6) & Space(1) & TxtResIMC.Text & vbCrLf
+            sLeitura = sLeitura & "Mínimo: " & (TxtPesoMinimo.Text.Trim & Space(6)).Substring(0, 6) & " Kg" & Space(4) & "Ossatura:      " & (TxtOssatura.Text.Trim & Space(6)).Substring(0, 6) & Space(1) & TxtResOssatura.Text & vbCrLf
+            sLeitura = sLeitura & "Máximo: " & (TxtPesoMaximo.Text.Trim & Space(6)).Substring(0, 6) & " Kg" & Space(4) & "Compl. Físico: " & (TxtCFisico.Text.Trim & Space(6)).Substring(0, 6) & Space(1) & TxtResCFisico.Text & vbCrLf & vbCrLf & vbCrLf
 
             sLeitura = sLeitura & "                                     ____________________________________________________________" & vbCrLf
-            sLeitura = sLeitura & "                                         " & "Ass: " & (txtProf.Text.Trim & Space(40)).Substring(0, 40)
+            sLeitura = sLeitura & "                                         " & "Ass: " & (TxtProf.Text.Trim & Space(40)).Substring(0, 40)
             PrintDocument1.DefaultPageSettings = PrintPageSettings
 
             'Especifica o documento para a caixa de diálogo de impressão e exibe 
@@ -3431,33 +3410,33 @@ Public Class frm_AvaliacaoFisica
             sLeitura = "                                                                                   " & Date.Now & vbCrLf
             sLeitura = sLeitura & "                              AVALIAÇÃO FÍSICA - ADIPÔMETRO" & vbCrLf
             '=============================================102 ESPAÇOS============================================
-            sLeitura = sLeitura & "Professor: " & (txtProf.Text.Trim & Space(40)).Substring(0, 40) & Space(10) & (txtLocal.Text & Space(40)).Substring(0, 40) & vbCrLf
+            sLeitura = sLeitura & "Professor: " & (TxtProf.Text.Trim & Space(40)).Substring(0, 40) & Space(10) & (TxtLocal.Text & Space(40)).Substring(0, 40) & vbCrLf
             sLeitura = sLeitura & "======================================================================================================" & vbCrLf
-            sLeitura = sLeitura & " NOME:" & (txtNome.Text.Trim & Space(30)).Substring(0, 30) & Space(2) & "IDADE:" & txtIdade.Text & Space(2) & "SEXO:" & cbxSexo.Text & Space(2) & "PESO:" & txtPeso.Text & Space(2) & "ALTURA:" & txtAltura.Text & Space(2) & "DN:" & dtpDataNasc.Value & vbCrLf
+            sLeitura = sLeitura & " NOME:" & (TxtNome.Text.Trim & Space(30)).Substring(0, 30) & Space(2) & "IDADE:" & TxtIdade.Text & Space(2) & "SEXO:" & CbxSexo.Text & Space(2) & "PESO:" & TxtPeso.Text & Space(2) & "ALTURA:" & TxtAltura.Text & Space(2) & "DN:" & DtpDataNasc.Value & vbCrLf
             sLeitura = sLeitura & "------------------------------------------------------------------------------------------------------" & vbCrLf
             sLeitura = sLeitura & "IMPEDÂNCIA BIOELÈTRICA                  DIÂMETROS ÓSSEOS(mm)" & vbCrLf
-            sLeitura = sLeitura & "% Gordura: 55" & Space(27) & "Fêmur: " & (txtFemur.Text.Trim & Space(21)).Substring(0, 21) & vbCrLf
-            sLeitura = sLeitura & Space(40) & "Rádio: " & (txtRadio.Text.Trim & Space(21)).Substring(0, 21) & vbCrLf & vbCrLf
+            sLeitura = sLeitura & "% Gordura: 55" & Space(27) & "Fêmur: " & (TxtFemur.Text.Trim & Space(21)).Substring(0, 21) & vbCrLf
+            sLeitura = sLeitura & Space(40) & "Rádio: " & (TxtRadio.Text.Trim & Space(21)).Substring(0, 21) & vbCrLf & vbCrLf
 
             sLeitura = sLeitura & "RISCOS DE DOENÇAS CRÔNICAS (CINTURA X QUADRIL)" & vbCrLf
-            sLeitura = sLeitura & "Cintura: " & (txtCintura.Text.Trim & Space(6)).Substring(0, 6) & Space(10) & "Relação cintura ao quadril: " & txtRelCinQua.Text & vbCrLf
-            sLeitura = sLeitura & "Quadril: " & (txtQuadril.Text.Trim & Space(6)).Substring(0, 6) & Space(10) & "Risco: " & lblRelCinQua.Text & vbCrLf & vbCrLf
+            sLeitura = sLeitura & "Cintura: " & (TxtCintura.Text.Trim & Space(6)).Substring(0, 6) & Space(10) & "Relação cintura ao quadril: " & TxtRelCinQua.Text & vbCrLf
+            sLeitura = sLeitura & "Quadril: " & (TxtQuadril.Text.Trim & Space(6)).Substring(0, 6) & Space(10) & "Risco: " & LblRelCinQua.Text & vbCrLf & vbCrLf
 
             sLeitura = sLeitura & "COMPOSIÇÃO CORPORAL" & vbCrLf
-            sLeitura = sLeitura & "% de gordura:  " & (txtPorcGordura.Text.Trim & Space(6)).Substring(0, 6) & Space(10) & "MASSA PROVÁVEL DAS VÁRIAS PARTES DO CORPO (Kg)" & vbCrLf
-            sLeitura = sLeitura & "Peso Gordura:  " & (txtPesoGordura.Text.Trim & Space(6)).Substring(0, 6) & Space(10) & "Cabeça:    " & (txtCabeca.Text.Trim & Space(6)).Substring(0, 6) & Space(3) & "Mão:   " & txtMao.Text & vbCrLf
-            sLeitura = sLeitura & "Peso Muscular: " & (txtPesoMusc.Text.Trim & Space(6)).Substring(0, 6) & Space(10) & "Tronco:    " & (txtTronco.Text.Trim & Space(6)).Substring(0, 6) & Space(3) & "Coxa:  " & txtCoxa.Text & vbCrLf
-            sLeitura = sLeitura & "Peso Residual: " & (txtPesoResid.Text.Trim & Space(6)).Substring(0, 6) & Space(10) & "Braço:     " & (txtBraco.Text.Trim & Space(6)).Substring(0, 6) & Space(3) & "Perna: " & txtPerna.Text & vbCrLf
-            sLeitura = sLeitura & "Peso Ósseo:    " & (txtPesoOsseo.Text.Trim & Space(6)).Substring(0, 6) & Space(10) & "Antebraço: " & (txtAntebraco.Text.Trim & Space(6)).Substring(0, 6) & Space(3) & "Pé:    " & txtPe.Text & vbCrLf
-            sLeitura = sLeitura & "M. C. M:       " & (txtMcm.Text.Trim & Space(6)).Substring(0, 6) & vbCrLf & vbCrLf
+            sLeitura = sLeitura & "% de gordura:  " & (TxtPorcGordura.Text.Trim & Space(6)).Substring(0, 6) & Space(10) & "MASSA PROVÁVEL DAS VÁRIAS PARTES DO CORPO (Kg)" & vbCrLf
+            sLeitura = sLeitura & "Peso Gordura:  " & (TxtPesoGordura.Text.Trim & Space(6)).Substring(0, 6) & Space(10) & "Cabeça:    " & (TxtCabeca.Text.Trim & Space(6)).Substring(0, 6) & Space(3) & "Mão:   " & TxtMao.Text & vbCrLf
+            sLeitura = sLeitura & "Peso Muscular: " & (TxtPesoMusc.Text.Trim & Space(6)).Substring(0, 6) & Space(10) & "Tronco:    " & (TxtTronco.Text.Trim & Space(6)).Substring(0, 6) & Space(3) & "Coxa:  " & TxtCoxa.Text & vbCrLf
+            sLeitura = sLeitura & "Peso Residual: " & (TxtPesoResid.Text.Trim & Space(6)).Substring(0, 6) & Space(10) & "Braço:     " & (TxtBraco.Text.Trim & Space(6)).Substring(0, 6) & Space(3) & "Perna: " & TxtPerna.Text & vbCrLf
+            sLeitura = sLeitura & "Peso Ósseo:    " & (TxtPesoOsseo.Text.Trim & Space(6)).Substring(0, 6) & Space(10) & "Antebraço: " & (TxtAntebraco.Text.Trim & Space(6)).Substring(0, 6) & Space(3) & "Pé:    " & TxtPe.Text & vbCrLf
+            sLeitura = sLeitura & "M. C. M:       " & (TxtMcm.Text.Trim & Space(6)).Substring(0, 6) & vbCrLf & vbCrLf
 
             sLeitura = sLeitura & "PESO IDEAL" & vbCrLf
-            sLeitura = sLeitura & "Normal: " & (txtPesoNormal.Text.Trim & Space(6)).Substring(0, 6) & " Kg" & Space(4) & "Imc:           " & (txtIMC.Text.Trim & Space(6)).Substring(0, 6) & Space(1) & txtResIMC.Text & vbCrLf
-            sLeitura = sLeitura & "Mínimo: " & (txtPesoMinimo.Text.Trim & Space(6)).Substring(0, 6) & " Kg" & Space(4) & "Ossatura:      " & (txtOssatura.Text.Trim & Space(6)).Substring(0, 6) & Space(1) & txtResOssatura.Text & vbCrLf
-            sLeitura = sLeitura & "Máximo: " & (txtPesoMaximo.Text.Trim & Space(6)).Substring(0, 6) & " Kg" & Space(4) & "Compl. Físico: " & (txtCFisico.Text.Trim & Space(6)).Substring(0, 6) & Space(1) & txtResCFisico.Text & vbCrLf & vbCrLf & vbCrLf
+            sLeitura = sLeitura & "Normal: " & (TxtPesoNormal.Text.Trim & Space(6)).Substring(0, 6) & " Kg" & Space(4) & "Imc:           " & (TxtIMC.Text.Trim & Space(6)).Substring(0, 6) & Space(1) & TxtResIMC.Text & vbCrLf
+            sLeitura = sLeitura & "Mínimo: " & (TxtPesoMinimo.Text.Trim & Space(6)).Substring(0, 6) & " Kg" & Space(4) & "Ossatura:      " & (TxtOssatura.Text.Trim & Space(6)).Substring(0, 6) & Space(1) & TxtResOssatura.Text & vbCrLf
+            sLeitura = sLeitura & "Máximo: " & (TxtPesoMaximo.Text.Trim & Space(6)).Substring(0, 6) & " Kg" & Space(4) & "Compl. Físico: " & (TxtCFisico.Text.Trim & Space(6)).Substring(0, 6) & Space(1) & TxtResCFisico.Text & vbCrLf & vbCrLf & vbCrLf
 
             sLeitura = sLeitura & "                                     ____________________________________________________________" & vbCrLf
-            sLeitura = sLeitura & "                                         " & "Ass: " & (txtProf.Text.Trim & Space(40)).Substring(0, 40)
+            sLeitura = sLeitura & "                                         " & "Ass: " & (TxtProf.Text.Trim & Space(40)).Substring(0, 40)
             PrintDocument1.DefaultPageSettings = PrintPageSettings
 
             'Especifica o documento para a caixa de diálogo de impressão e exibe 
