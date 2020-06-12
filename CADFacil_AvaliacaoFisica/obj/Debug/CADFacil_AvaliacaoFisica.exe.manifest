@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CADFacil_AvaliacaoFisica.exe" size="188928">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CADFacil_AvaliacaoFisica.exe" size="172032">
       <assemblyIdentity name="CADFacil_AvaliacaoFisica" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Wj4lbQEnBWQCZD0kWMdL3j8Jqyy58bQnVI9+7Joz8J8=</dsig:DigestValue>
+        <dsig:DigestValue>7W9/8BINS8q5L9RhS65kh+dd4tHBHPLyITSBM7qJ2N8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
