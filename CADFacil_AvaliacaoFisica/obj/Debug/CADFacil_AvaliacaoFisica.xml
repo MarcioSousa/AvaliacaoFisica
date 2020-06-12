@@ -33,12 +33,6 @@ Represents a strongly typed in-memory cache of data.
  </summary>
  <remarks>Calcula a Idade do Aluno</remarks>
 </member>
-<member name="M:CADFacil_AvaliacaoFisica.frm_AvaliacaoFisica.Salto_Vertical">
- <summary>
- Testes Físicos (Salto Vertical, Abdominais, Flexão de Braço, Cooper e VO2Max)
- </summary>
- <remarks>Testes Físicos</remarks>
-</member>
 <member name="M:CADFacil_AvaliacaoFisica.frm_AvaliacaoFisica.Composicao_Corporal">
  <summary>
  Composição Corporal (% de Gordura, Pesos (Gordura, Muscular, Residual, Ósseo), M. C. M)
