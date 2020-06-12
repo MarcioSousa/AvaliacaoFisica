@@ -22,9 +22,7 @@ Public Class frm_AvaliacaoFisica
         TxtIdade.Text = avaliacaoFisica.Idade(DtpDataNasc.Value)
     End Sub
 
-    Private Sub VO2Max()
-        TxtVO2.Text = String.Format("{0:N2}", (CDec(TxtCooper.Text) - 504) / 45)
-    End Sub
+
 
 
     ''' <summary>
@@ -794,8 +792,8 @@ Public Class frm_AvaliacaoFisica
                 TxtClaAbd.Text = avaliacaoFisica.Abdominais(TxtIdade.Text, CbxSexo.Text, TxtAbdominais.Text)
                 TxtClaFle.Text = avaliacaoFisica.Flexao_Braco(TxtIdade.Text, CbxSexo.Text, TxtFlexaoBraco.Text)
                 TxtClaCoo.Text = avaliacaoFisica.Cooper(TxtIdade.Text, CbxSexo.Text, TxtCooper.Text)
+                TxtVO2.Text = String.Format("{0:N2}", (CDec(TxtCooper.Text) - 504) / 45)
 
-                VO2Max()
                 Composicao_Corporal()
                 Calculo_Cintura_Quadril()
                 MassaPartesCorpo()
