@@ -2929,7 +2929,7 @@ Public Class frm_AvaliacaoFisica
 
     End Sub
     Private Sub Frm_Principal_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
-        Dim teste As String = " asdfa"
+        Dim teste As Boolean = False
         Carrega_campos()
     End Sub
 
