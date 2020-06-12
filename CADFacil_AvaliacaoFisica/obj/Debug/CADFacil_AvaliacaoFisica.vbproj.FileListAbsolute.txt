@@ -1,0 +1,16 @@
+C:\Users\Marcio Sousa\Source\Repos\AvaliacaoFisica\CADFacil_AvaliacaoFisica\bin\Debug\CADFacil_AvaliacaoFisica.exe.config
+C:\Users\Marcio Sousa\Source\Repos\AvaliacaoFisica\CADFacil_AvaliacaoFisica\bin\Debug\CADFacil_AvaliacaoFisica.exe.manifest
+C:\Users\Marcio Sousa\Source\Repos\AvaliacaoFisica\CADFacil_AvaliacaoFisica\bin\Debug\CADFacil_AvaliacaoFisica.application
+C:\Users\Marcio Sousa\Source\Repos\AvaliacaoFisica\CADFacil_AvaliacaoFisica\bin\Debug\CADFacil_AvaliacaoFisica.exe
+C:\Users\Marcio Sousa\Source\Repos\AvaliacaoFisica\CADFacil_AvaliacaoFisica\bin\Debug\CADFacil_AvaliacaoFisica.pdb
+C:\Users\Marcio Sousa\Source\Repos\AvaliacaoFisica\CADFacil_AvaliacaoFisica\bin\Debug\CADFacil_AvaliacaoFisica.xml
+C:\Users\Marcio Sousa\Source\Repos\AvaliacaoFisica\CADFacil_AvaliacaoFisica\obj\Debug\CADFacil_AvaliacaoFisica.frm_AvaliacaoFisica.resources
+C:\Users\Marcio Sousa\Source\Repos\AvaliacaoFisica\CADFacil_AvaliacaoFisica\obj\Debug\CADFacil_AvaliacaoFisica.Resources.resources
+C:\Users\Marcio Sousa\Source\Repos\AvaliacaoFisica\CADFacil_AvaliacaoFisica\obj\Debug\CADFacil_AvaliacaoFisica.vbproj.GenerateResource.cache
+C:\Users\Marcio Sousa\Source\Repos\AvaliacaoFisica\CADFacil_AvaliacaoFisica\obj\Debug\CADFacil_AvaliacaoFisica.vbproj.CoreCompileInputs.cache
+C:\Users\Marcio Sousa\Source\Repos\AvaliacaoFisica\CADFacil_AvaliacaoFisica\obj\Debug\CADFacil_AvaliacaoFisica.exe.manifest
+C:\Users\Marcio Sousa\Source\Repos\AvaliacaoFisica\CADFacil_AvaliacaoFisica\obj\Debug\CADFacil_AvaliacaoFisica.application
+C:\Users\Marcio Sousa\Source\Repos\AvaliacaoFisica\CADFacil_AvaliacaoFisica\obj\Debug\CADFacil_AvaliacaoFisica.exe
+C:\Users\Marcio Sousa\Source\Repos\AvaliacaoFisica\CADFacil_AvaliacaoFisica\obj\Debug\CADFacil_AvaliacaoFisica.xml
+C:\Users\Marcio Sousa\Source\Repos\AvaliacaoFisica\CADFacil_AvaliacaoFisica\obj\Debug\CADFacil_AvaliacaoFisica.pdb
+C:\Users\Marcio Sousa\Source\Repos\AvaliacaoFisica\CADFacil_AvaliacaoFisica\obj\Debug\CADFacil_AvaliacaoFisica.vbprojAssemblyReference.cache

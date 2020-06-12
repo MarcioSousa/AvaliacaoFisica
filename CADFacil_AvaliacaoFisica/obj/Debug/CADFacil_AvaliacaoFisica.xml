@@ -1,0 +1,97 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+CADFacil_AvaliacaoFisica
+</name>
+</assembly>
+<members>
+<member name="T:CADFacil_AvaliacaoFisica.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:CADFacil_AvaliacaoFisica.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:CADFacil_AvaliacaoFisica.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="T:CADFacil_AvaliacaoFisica.AvaliacaoFisica">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="M:CADFacil_AvaliacaoFisica.frm_AvaliacaoFisica.DtpDataNasc_ValueChanged(System.Object,System.EventArgs)">
+ <summary>
+ Idade do Aluno
+ </summary>
+ <remarks>Calcula a Idade do Aluno</remarks>
+</member>
+<member name="M:CADFacil_AvaliacaoFisica.frm_AvaliacaoFisica.Salto_Vertical">
+ <summary>
+ Testes Físicos (Salto Vertical, Abdominais, Flexão de Braço, Cooper e VO2Max)
+ </summary>
+ <remarks>Testes Físicos</remarks>
+</member>
+<member name="M:CADFacil_AvaliacaoFisica.frm_AvaliacaoFisica.Composicao_Corporal">
+ <summary>
+ Composição Corporal (% de Gordura, Pesos (Gordura, Muscular, Residual, Ósseo), M. C. M)
+ </summary>
+ <remarks>Composição Corporal</remarks>
+</member>
+<member name="M:CADFacil_AvaliacaoFisica.frm_AvaliacaoFisica.MassaPartesCorpo">
+ <summary>
+ Massa Provável das Várias Partes do Corpo
+ </summary>
+ <remarks>Massa Partes do Corpo</remarks>
+</member>
+<member name="M:CADFacil_AvaliacaoFisica.frm_AvaliacaoFisica.PesosIdeais">
+ <summary>
+ Calcula o Peso Ideal ao Aluno
+ </summary>
+ <remarks>Peso Ideal</remarks>
+</member>
+<member name="M:CADFacil_AvaliacaoFisica.frm_AvaliacaoFisica.Calculo_Cintura_Quadril">
+ <summary>
+ Calcula a Relação da Cintura com o Quadril
+ </summary>
+ <remarks>Cintura com o Quadril</remarks>
+</member>
+<member name="M:CADFacil_AvaliacaoFisica.frm_AvaliacaoFisica.Prescricao_Treinamento">
+ <summary>
+ Calcula toda a Prescrição do Treinamento
+ </summary>
+ <remarks>Precrição do Treinamento</remarks>
+</member>
+<member name="M:CADFacil_AvaliacaoFisica.frm_AvaliacaoFisica.Gasto_Calorico">
+ <summary>
+ Faz o Cálculo do Grupo de Gasto Calórico
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:CADFacil_AvaliacaoFisica.frm_AvaliacaoFisica.ReducaoPeso_PesoPerdido">
+ <summary>
+ Calcula a Redução de Peso e a Qtde de Peso Perdido
+ </summary>
+ <remarks>Redução de Peso/Peso Perdido</remarks>
+</member>
+<member name="M:CADFacil_AvaliacaoFisica.frm_AvaliacaoFisica.TxtPeso_KeyPress(System.Object,System.Windows.Forms.KeyPressEventArgs)">
+ <summary>
+ Usando Keypress de todos os campos
+ </summary>
+ <remarks>Nessa parte é pressionado um botão e sempre aceitará número ou vírgula</remarks>
+</member>
+<member name="M:CADFacil_AvaliacaoFisica.frm_AvaliacaoFisica.PrintDocument1_PrintPage(System.Object,System.Drawing.Printing.PrintPageEventArgs)">
+ <summary>
+ Impressão do documento de AVALIAÇÃO FÍSICA
+ </summary>
+ <remarks>Aqui está anotado todo o código para impressão do documento preenchido no formulário</remarks>
+</member>
+</members>
+</doc>

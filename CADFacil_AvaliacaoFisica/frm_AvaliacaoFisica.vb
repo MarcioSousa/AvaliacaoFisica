@@ -6,6 +6,7 @@ Public Class frm_AvaliacaoFisica
     Dim vProcessar As Boolean = True
     Dim vPunho As Double = 0
     Dim sLeitura As String = ""
+    Dim avaliacaoFisica As New AvaliacaoFisica
 
     Private StringToPrint As String
     Private PrintFont As New Font("Consolas", 12)
@@ -18,13 +19,8 @@ Public Class frm_AvaliacaoFisica
     ''' </summary>
     ''' <remarks>Calcula a Idade do Aluno</remarks>
     Private Sub DtpDataNasc_ValueChanged(sender As System.Object, e As System.EventArgs) Handles DtpDataNasc.ValueChanged
-        Dim vAno As Double
-        Dim vDataNasc As Date = DtpDataNasc.Text
-
-        vAno = Now.Date.Year - vDataNasc.Date.Year
-        TxtIdade.Text = vAno
+        TxtIdade.Text = avaliacaoFisica.Idade(DtpDataNasc.Value)
     End Sub
-
 
     ''' <summary>
     ''' Testes Físicos (Salto Vertical, Abdominais, Flexão de Braço, Cooper e VO2Max)
@@ -2929,7 +2925,6 @@ Public Class frm_AvaliacaoFisica
 
     End Sub
     Private Sub Frm_Principal_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
-        Dim teste As Boolean = False
         Carrega_campos()
     End Sub
 

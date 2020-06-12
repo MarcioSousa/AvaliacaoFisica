@@ -110,6 +110,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AvaliacaoFisica.xsd</DependentUpon>
     </Compile>
+    <Compile Include="AvaliacaoFisica.vb">
+      <DependentUpon>AvaliacaoFisica.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Frm_AvaliacaoFisica.Designer.vb">
       <DependentUpon>Frm_AvaliacaoFisica.vb</DependentUpon>
     </Compile>
