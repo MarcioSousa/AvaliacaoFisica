@@ -2535,6 +2535,7 @@ Public Class frm_AvaliacaoFisica
             If vProcessar = True Then
                 Flexao_Braco()
                 TxtClasv.Text = avaliacaoFisica.SaltoVertical(TxtIdade.Text, CbxSexo.Text, TxtSaltoVert.Text)
+                TxtClaAbd.Text = avaliacaoFisica.Abdominais(TxtIdade.Text, CbxSexo.Text, TxtAbdominais.Text)
                 'Salto_Vertical()
                 Abdominais()
                 Flexao_Braco()

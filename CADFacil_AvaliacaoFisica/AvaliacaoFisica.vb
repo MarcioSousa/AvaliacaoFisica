@@ -374,4 +374,322 @@
 
     End Function
 
+    Public Function Abdominais(ByVal idade As Integer, ByVal sexo As String, ByVal abdom As Double) As String
+        If sexo = "Masculino" Then
+            If CDec(CDec(TxtIdade.Text)) < 10 Then
+                Return "Deficiente"
+            Else
+                If CDec(TxtAbdominais.Text) = 8 Then
+                    Return "Deficientes"
+                ElseIf CDec(TxtAbdominais.Text) <= 11 Then
+                    If CDec(CDec(TxtIdade.Text)) <= 59 Then
+                        Return "Deficientes"
+                    Else
+                        Return "Fraco"
+                    End If
+                ElseIf CDec(TxtAbdominais.Text) = 12 Then
+                    If CDec(CDec(TxtIdade.Text)) <= 49 Then
+                        Return "Deficientes"
+                    Else
+                        Return "Fraco"
+                    End If
+                ElseIf CDec(TxtAbdominais.Text) <= 16 Then
+                    If CDec(CDec(TxtIdade.Text)) <= 49 Then
+                        Return "Deficientes"
+                    ElseIf CDec(CDec(TxtIdade.Text)) <= 59 Then
+                        Return "Fraco"
+                    Else
+                        Return "Regular"
+                    End If
+                ElseIf CDec(TxtAbdominais.Text) <= 18 Then
+                    If CDec(CDec(TxtIdade.Text)) <= 39 Then
+                        Return "Deficiente"
+                    ElseIf CDec(CDec(TxtIdade.Text)) <= 49 Then
+                        Return "Fraco"
+                    Else
+                        Return "Regular"
+                    End If
+                ElseIf CDec(TxtAbdominais.Text) <= 20 Then
+                    If CDec(CDec(TxtIdade.Text)) <= 39 Then
+                        Return "Deficiente"
+                    ElseIf CDec(CDec(TxtIdade.Text)) <= 49 Then
+                        Return "Fraco"
+                    ElseIf CDec(CDec(TxtIdade.Text)) <= 59 Then
+                        Return "Regular"
+                    Else
+                        Return "Bom"
+                    End If
+                ElseIf CDec(TxtAbdominais.Text) = 21 Then
+                    If CDec(CDec(TxtIdade.Text)) <= 39 Then
+                        Return "Deficiente"
+                    ElseIf CDec(CDec(TxtIdade.Text)) <= 59 Then
+                        Return "Regular"
+                    Else
+                        Return "Bom"
+                    End If
+                ElseIf CDec(TxtAbdominais.Text) = 22 Then
+                    If CDec(CDec(TxtIdade.Text)) <= 29 Then
+                        Return "Deficiente"
+                    ElseIf CDec(CDec(TxtIdade.Text)) <= 39 Then
+                        Return "Fraco"
+                    Else
+                        Return "Regular"
+                    End If
+                ElseIf CDec(TxtAbdominais.Text) <= 24 Then
+                    If CDec(CDec(TxtIdade.Text)) <= 29 Then
+                        Return "Deficiente"
+                    ElseIf CDec(CDec(TxtIdade.Text)) <= 39 Then
+                        Return "Fraco"
+                    ElseIf CDec(CDec(TxtIdade.Text)) <= 49 Then
+                        Return "Regular"
+                    Else
+                        Return "Bom"
+                    End If
+                ElseIf CDec(TxtAbdominais.Text) = 25 Then
+                    If CDec(CDec(TxtIdade.Text)) <= 29 Then
+                        Return "Deficiente"
+                    ElseIf CDec(CDec(TxtIdade.Text)) <= 39 Then
+                        Return "Fraco"
+                    ElseIf CDec(CDec(TxtIdade.Text)) <= 49 Then
+                        Return "Regular"
+                    ElseIf CDec(CDec(TxtIdade.Text)) <= 59 Then
+                        Return "Bom"
+                    Else
+                        Return "Excelente"
+                    End If
+                ElseIf CDec(TxtAbdominais.Text) = 26 Then
+                    If CDec(CDec(TxtIdade.Text)) <= 29 Then
+                        Return "Deficiente"
+                    ElseIf CDec(CDec(TxtIdade.Text)) <= 39 Then
+                        Return "Fraco"
+                    ElseIf CDec(CDec(TxtIdade.Text)) <= 59 Then
+                        Return "Bom"
+                    Else
+                        Return "Excelente"
+                    End If
+                ElseIf CDec(TxtAbdominais.Text) <= 28 Then
+                    If CDec(CDec(TxtIdade.Text)) <= 29 Then
+                        Return "Deficiente"
+                    ElseIf CDec(CDec(TxtIdade.Text)) <= 39 Then
+                        Return "Regular"
+                    ElseIf CDec(CDec(TxtIdade.Text)) <= 59 Then
+                        Return "Bom"
+                    Else
+                        Return "Excelente"
+                    End If
+                ElseIf CDec(TxtAbdominais.Text) = 29 Then
+                    If CDec(CDec(TxtIdade.Text)) <= 29 Then
+                        Return "Deficiente"
+                    ElseIf CDec(CDec(TxtIdade.Text)) <= 39 Then
+                        Return "Regular"
+                    ElseIf CDec(CDec(TxtIdade.Text)) <= 49 Then
+                        Return "Bom"
+                    Else
+                        Return "Excelente"
+                    End If
+                ElseIf CDec(TxtAbdominais.Text) <= 31 Then
+                    If CDec(CDec(TxtIdade.Text)) <= 19 Then
+                        Return "Deficiente"
+                    ElseIf CDec(CDec(TxtIdade.Text)) <= 29 Then
+                        Return "Fraco"
+                    ElseIf CDec(CDec(TxtIdade.Text)) <= 39 Then
+                        Return "Regular"
+                    ElseIf CDec(CDec(TxtIdade.Text)) <= 49 Then
+                        Return "Bom"
+                    Else
+                        Return "Excelente"
+                    End If
+                ElseIf CDec(TxtAbdominais.Text) <= 34 Then
+                    If CDec(CDec(TxtIdade.Text)) <= 19 Then
+                        Return "Deficiente"
+                    ElseIf CDec(CDec(TxtIdade.Text)) <= 29 Then
+                        Return "Fraco"
+                    ElseIf CDec(CDec(TxtIdade.Text)) <= 39 Then
+                        Return "Bom"
+                    Else
+                        Return "Excelente"
+                    End If
+                ElseIf CDec(TxtAbdominais.Text) <= 36 Then
+                    If CDec(CDec(TxtIdade.Text)) <= 19 Then
+                        Return "Deficiente"
+                    ElseIf CDec(CDec(TxtIdade.Text)) <= 29 Then
+                        Return "Regular"
+                    ElseIf CDec(CDec(TxtIdade.Text)) <= 39 Then
+                        Return "Bom"
+                    Else
+                        Return "Excelente"
+                    End If
+                ElseIf CDec(TxtAbdominais.Text) = 37 Then
+                    If CDec(CDec(TxtIdade.Text)) <= 19 Then
+                        Return "Deficiente"
+                    ElseIf CDec(CDec(TxtIdade.Text)) <= 29 Then
+                        Return "Regular"
+                    Else
+                        Return "Excelente"
+                    End If
+                ElseIf CDec(TxtAbdominais.Text) <= 39 Then
+                    If CDec(CDec(TxtIdade.Text)) <= 19 Then
+                        Return "Fraco"
+                    ElseIf CDec(CDec(TxtIdade.Text)) <= 29 Then
+                        Return "Regular"
+                    Else
+                        Return "Excelente"
+                    End If
+                ElseIf CDec(TxtAbdominais.Text) <= 42 Then
+                    If CDec(CDec(TxtIdade.Text)) <= 19 Then
+                        Return "Fraco"
+                    ElseIf CDec(CDec(TxtIdade.Text)) <= 29 Then
+                        Return "Bom"
+                    Else
+                        Return "Excelente"
+                    End If
+                ElseIf CDec(TxtAbdominais.Text) <= 44 Then
+                    If CDec(CDec(TxtIdade.Text)) <= 19 Then
+                        Return "Regular"
+                    ElseIf CDec(CDec(TxtIdade.Text)) <= 29 Then
+                        Return "Bom"
+                    Else
+                        Return "Excelente"
+                    End If
+                ElseIf CDec(TxtAbdominais.Text) <= 47 Then
+                    If CDec(CDec(TxtIdade.Text)) <= 19 Then
+                        Return "Regular"
+                    Else
+                        Return "Excelente"
+                    End If
+                ElseIf CDec(TxtAbdominais.Text) <= 52 Then
+                    If CDec(CDec(TxtIdade.Text)) <= 19 Then
+                        Return "Bom"
+                    Else
+                        Return "Excelente"
+                    End If
+                Else
+                    Return "Excelente"
+                End If
+            End If
+        Else
+            If CDec(TxtAbdominais.Text) <= 9 Then
+                If CDec(CDec(TxtIdade.Text)) <= 59 Then
+                    Return "Deficiente"
+                Else
+                    Return "Fraco"
+                End If
+            ElseIf CDec(TxtAbdominais.Text) = 10 Then
+                If CDec(CDec(TxtIdade.Text)) <= 59 Then
+                    Return "Deficiente"
+                Else
+                    Return "Regular"
+                End If
+            ElseIf CDec(TxtAbdominais.Text) <= 14 Then
+                If CDec(CDec(TxtIdade.Text)) <= 49 Then
+                    Return "Deficiente"
+                ElseIf CDec(CDec(TxtIdade.Text)) <= 59 Then
+                    Return "Fraco"
+                Else
+                    Return "Regular"
+                End If
+            ElseIf CDec(TxtAbdominais.Text) = 15 Then
+                If CDec(CDec(TxtIdade.Text)) <= 49 Then
+                    Return "Deficiente"
+                ElseIf CDec(CDec(TxtIdade.Text)) <= 59 Then
+                    Return "Regular"
+                Else
+                    Return "Bom"
+                End If
+            ElseIf CDec(TxtAbdominais.Text) <= 19 Then
+                If CDec(CDec(TxtIdade.Text)) <= 39 Then
+                    Return "Deficiente"
+                ElseIf CDec(CDec(TxtIdade.Text)) <= 49 Then
+                    Return "Fraco"
+                ElseIf CDec(CDec(TxtIdade.Text)) <= 59 Then
+                    Return "Regular"
+                Else
+                    Return "Bom"
+                End If
+            ElseIf CDec(TxtAbdominais.Text) = 20 Then
+                If CDec(CDec(TxtIdade.Text)) <= 39 Then
+                    Return "Deficiente"
+                ElseIf CDec(CDec(TxtIdade.Text)) <= 49 Then
+                    Return "Regular"
+                ElseIf CDec(CDec(TxtIdade.Text)) <= 59 Then
+                    Return "Bom"
+                Else
+                    Return "Excelente"
+                End If
+            ElseIf CDec(TxtAbdominais.Text) <= 24 Then
+                If CDec(CDec(TxtIdade.Text)) <= 29 Then
+                    Return "Deficiente"
+                ElseIf CDec(CDec(TxtIdade.Text)) <= 39 Then
+                    Return "Fraco"
+                ElseIf CDec(CDec(TxtIdade.Text)) <= 49 Then
+                    Return "Regular"
+                ElseIf CDec(CDec(TxtIdade.Text)) <= 59 Then
+                    Return "Bom"
+                Else
+                    Return "Excelente"
+                End If
+            ElseIf CDec(TxtAbdominais.Text) = 25 Then
+                If CDec(CDec(TxtIdade.Text)) <= 29 Then
+                    Return "Deficiente"
+                ElseIf CDec(CDec(TxtIdade.Text)) <= 39 Then
+                    Return "Regular"
+                ElseIf CDec(CDec(TxtIdade.Text)) <= 49 Then
+                    Return "Bom"
+                Else
+                    Return "Excelente"
+                End If
+            ElseIf CDec(TxtAbdominais.Text) <= 29 Then
+                If CDec(CDec(TxtIdade.Text)) <= 29 Then
+                    Return "Deficiente"
+                ElseIf CDec(CDec(TxtIdade.Text)) <= 29 Then
+                    Return "Fraco"
+                ElseIf CDec(CDec(TxtIdade.Text)) <= 39 Then
+                    Return "Regular"
+                ElseIf CDec(CDec(TxtIdade.Text)) <= 49 Then
+                    Return "Bom"
+                Else
+                    Return "Excelente"
+                End If
+            ElseIf CDec(TxtAbdominais.Text) = 26 Then
+                If CDec(CDec(TxtIdade.Text)) <= 29 Then
+                    Return "Deficiente"
+                ElseIf CDec(CDec(TxtIdade.Text)) <= 39 Then
+                    Return "Fraco"
+                ElseIf CDec(CDec(TxtIdade.Text)) <= 59 Then
+                    Return "Bom"
+                Else
+                    Return "Excelente"
+                End If
+            ElseIf CDec(TxtAbdominais.Text) <= 34 Then
+                If CDec(CDec(TxtIdade.Text)) <= 19 Then
+                    Return "Fraco"
+                ElseIf CDec(CDec(TxtIdade.Text)) <= 29 Then
+                    Return "Regular"
+                ElseIf CDec(CDec(TxtIdade.Text)) <= 39 Then
+                    Return "Bom"
+                Else
+                    Return "Excelente"
+                End If
+            ElseIf CDec(TxtAbdominais.Text) <= 39 Then
+                If CDec(CDec(TxtIdade.Text)) <= 19 Then
+                    Return "Regular"
+                ElseIf CDec(CDec(TxtIdade.Text)) <= 29 Then
+                    Return "Bom"
+                Else
+                    Return "Excelente"
+                End If
+            ElseIf CDec(TxtAbdominais.Text) <= 44 Then
+                If CDec(CDec(TxtIdade.Text)) <= 19 Then
+                    Return "Bom"
+                Else
+                    Return "Excelente"
+                End If
+            Else
+                Return "Excelente"
+            End If
+        End If
+    End Function
+
+
+
 End Class
