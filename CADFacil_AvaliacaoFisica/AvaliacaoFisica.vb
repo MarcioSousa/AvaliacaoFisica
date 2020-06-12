@@ -1,4 +1,6 @@
-﻿Public Class AvaliacaoFisica
+﻿Imports System.Windows.Controls
+
+Public Class AvaliacaoFisica
 
     Public Function Idade(ByVal dataNascimento As Date) As Integer
         Dim vAno As Integer
@@ -376,189 +378,189 @@
 
     Public Function Abdominais(ByVal idade As Integer, ByVal sexo As String, ByVal abdom As Double) As String
         If sexo = "Masculino" Then
-            If CDec(CDec(TxtIdade.Text)) < 10 Then
+            If idade < 10 Then
                 Return "Deficiente"
             Else
-                If CDec(TxtAbdominais.Text) = 8 Then
+                If abdom = 8 Then
                     Return "Deficientes"
-                ElseIf CDec(TxtAbdominais.Text) <= 11 Then
-                    If CDec(CDec(TxtIdade.Text)) <= 59 Then
+                ElseIf abdom <= 11 Then
+                    If idade <= 59 Then
                         Return "Deficientes"
                     Else
                         Return "Fraco"
                     End If
-                ElseIf CDec(TxtAbdominais.Text) = 12 Then
-                    If CDec(CDec(TxtIdade.Text)) <= 49 Then
+                ElseIf abdom = 12 Then
+                    If idade <= 49 Then
                         Return "Deficientes"
                     Else
                         Return "Fraco"
                     End If
-                ElseIf CDec(TxtAbdominais.Text) <= 16 Then
-                    If CDec(CDec(TxtIdade.Text)) <= 49 Then
+                ElseIf abdom <= 16 Then
+                    If idade <= 49 Then
                         Return "Deficientes"
-                    ElseIf CDec(CDec(TxtIdade.Text)) <= 59 Then
+                    ElseIf idade <= 59 Then
                         Return "Fraco"
                     Else
                         Return "Regular"
                     End If
-                ElseIf CDec(TxtAbdominais.Text) <= 18 Then
-                    If CDec(CDec(TxtIdade.Text)) <= 39 Then
+                ElseIf abdom <= 18 Then
+                    If idade <= 39 Then
                         Return "Deficiente"
-                    ElseIf CDec(CDec(TxtIdade.Text)) <= 49 Then
+                    ElseIf idade <= 49 Then
                         Return "Fraco"
                     Else
                         Return "Regular"
                     End If
-                ElseIf CDec(TxtAbdominais.Text) <= 20 Then
-                    If CDec(CDec(TxtIdade.Text)) <= 39 Then
+                ElseIf abdom <= 20 Then
+                    If idade <= 39 Then
                         Return "Deficiente"
-                    ElseIf CDec(CDec(TxtIdade.Text)) <= 49 Then
+                    ElseIf idade <= 49 Then
                         Return "Fraco"
-                    ElseIf CDec(CDec(TxtIdade.Text)) <= 59 Then
+                    ElseIf idade <= 59 Then
                         Return "Regular"
                     Else
                         Return "Bom"
                     End If
-                ElseIf CDec(TxtAbdominais.Text) = 21 Then
-                    If CDec(CDec(TxtIdade.Text)) <= 39 Then
+                ElseIf abdom = 21 Then
+                    If idade <= 39 Then
                         Return "Deficiente"
-                    ElseIf CDec(CDec(TxtIdade.Text)) <= 59 Then
+                    ElseIf idade <= 59 Then
                         Return "Regular"
                     Else
                         Return "Bom"
                     End If
-                ElseIf CDec(TxtAbdominais.Text) = 22 Then
-                    If CDec(CDec(TxtIdade.Text)) <= 29 Then
+                ElseIf abdom = 22 Then
+                    If idade <= 29 Then
                         Return "Deficiente"
-                    ElseIf CDec(CDec(TxtIdade.Text)) <= 39 Then
+                    ElseIf idade <= 39 Then
                         Return "Fraco"
                     Else
                         Return "Regular"
                     End If
-                ElseIf CDec(TxtAbdominais.Text) <= 24 Then
-                    If CDec(CDec(TxtIdade.Text)) <= 29 Then
+                ElseIf abdom <= 24 Then
+                    If idade <= 29 Then
                         Return "Deficiente"
-                    ElseIf CDec(CDec(TxtIdade.Text)) <= 39 Then
+                    ElseIf idade <= 39 Then
                         Return "Fraco"
-                    ElseIf CDec(CDec(TxtIdade.Text)) <= 49 Then
+                    ElseIf idade <= 49 Then
                         Return "Regular"
                     Else
                         Return "Bom"
                     End If
-                ElseIf CDec(TxtAbdominais.Text) = 25 Then
-                    If CDec(CDec(TxtIdade.Text)) <= 29 Then
+                ElseIf abdom = 25 Then
+                    If idade <= 29 Then
                         Return "Deficiente"
-                    ElseIf CDec(CDec(TxtIdade.Text)) <= 39 Then
+                    ElseIf idade <= 39 Then
                         Return "Fraco"
-                    ElseIf CDec(CDec(TxtIdade.Text)) <= 49 Then
+                    ElseIf idade <= 49 Then
                         Return "Regular"
-                    ElseIf CDec(CDec(TxtIdade.Text)) <= 59 Then
+                    ElseIf idade <= 59 Then
                         Return "Bom"
                     Else
                         Return "Excelente"
                     End If
-                ElseIf CDec(TxtAbdominais.Text) = 26 Then
-                    If CDec(CDec(TxtIdade.Text)) <= 29 Then
+                ElseIf abdom = 26 Then
+                    If idade <= 29 Then
                         Return "Deficiente"
-                    ElseIf CDec(CDec(TxtIdade.Text)) <= 39 Then
+                    ElseIf idade <= 39 Then
                         Return "Fraco"
-                    ElseIf CDec(CDec(TxtIdade.Text)) <= 59 Then
+                    ElseIf idade <= 59 Then
                         Return "Bom"
                     Else
                         Return "Excelente"
                     End If
-                ElseIf CDec(TxtAbdominais.Text) <= 28 Then
-                    If CDec(CDec(TxtIdade.Text)) <= 29 Then
+                ElseIf abdom <= 28 Then
+                    If idade <= 29 Then
                         Return "Deficiente"
-                    ElseIf CDec(CDec(TxtIdade.Text)) <= 39 Then
+                    ElseIf idade <= 39 Then
                         Return "Regular"
-                    ElseIf CDec(CDec(TxtIdade.Text)) <= 59 Then
+                    ElseIf idade <= 59 Then
                         Return "Bom"
                     Else
                         Return "Excelente"
                     End If
-                ElseIf CDec(TxtAbdominais.Text) = 29 Then
-                    If CDec(CDec(TxtIdade.Text)) <= 29 Then
+                ElseIf abdom = 29 Then
+                    If idade <= 29 Then
                         Return "Deficiente"
-                    ElseIf CDec(CDec(TxtIdade.Text)) <= 39 Then
+                    ElseIf idade <= 39 Then
                         Return "Regular"
-                    ElseIf CDec(CDec(TxtIdade.Text)) <= 49 Then
+                    ElseIf idade <= 49 Then
                         Return "Bom"
                     Else
                         Return "Excelente"
                     End If
-                ElseIf CDec(TxtAbdominais.Text) <= 31 Then
-                    If CDec(CDec(TxtIdade.Text)) <= 19 Then
+                ElseIf abdom <= 31 Then
+                    If idade <= 19 Then
                         Return "Deficiente"
-                    ElseIf CDec(CDec(TxtIdade.Text)) <= 29 Then
+                    ElseIf idade <= 29 Then
                         Return "Fraco"
-                    ElseIf CDec(CDec(TxtIdade.Text)) <= 39 Then
+                    ElseIf idade <= 39 Then
                         Return "Regular"
-                    ElseIf CDec(CDec(TxtIdade.Text)) <= 49 Then
+                    ElseIf idade <= 49 Then
                         Return "Bom"
                     Else
                         Return "Excelente"
                     End If
-                ElseIf CDec(TxtAbdominais.Text) <= 34 Then
-                    If CDec(CDec(TxtIdade.Text)) <= 19 Then
+                ElseIf abdom <= 34 Then
+                    If idade <= 19 Then
                         Return "Deficiente"
-                    ElseIf CDec(CDec(TxtIdade.Text)) <= 29 Then
+                    ElseIf idade <= 29 Then
                         Return "Fraco"
-                    ElseIf CDec(CDec(TxtIdade.Text)) <= 39 Then
+                    ElseIf idade <= 39 Then
                         Return "Bom"
                     Else
                         Return "Excelente"
                     End If
-                ElseIf CDec(TxtAbdominais.Text) <= 36 Then
-                    If CDec(CDec(TxtIdade.Text)) <= 19 Then
+                ElseIf abdom <= 36 Then
+                    If idade <= 19 Then
                         Return "Deficiente"
-                    ElseIf CDec(CDec(TxtIdade.Text)) <= 29 Then
+                    ElseIf idade <= 29 Then
                         Return "Regular"
-                    ElseIf CDec(CDec(TxtIdade.Text)) <= 39 Then
+                    ElseIf idade <= 39 Then
                         Return "Bom"
                     Else
                         Return "Excelente"
                     End If
-                ElseIf CDec(TxtAbdominais.Text) = 37 Then
-                    If CDec(CDec(TxtIdade.Text)) <= 19 Then
+                ElseIf abdom = 37 Then
+                    If idade <= 19 Then
                         Return "Deficiente"
-                    ElseIf CDec(CDec(TxtIdade.Text)) <= 29 Then
+                    ElseIf idade <= 29 Then
                         Return "Regular"
                     Else
                         Return "Excelente"
                     End If
-                ElseIf CDec(TxtAbdominais.Text) <= 39 Then
-                    If CDec(CDec(TxtIdade.Text)) <= 19 Then
+                ElseIf abdom <= 39 Then
+                    If idade <= 19 Then
                         Return "Fraco"
-                    ElseIf CDec(CDec(TxtIdade.Text)) <= 29 Then
+                    ElseIf idade <= 29 Then
                         Return "Regular"
                     Else
                         Return "Excelente"
                     End If
-                ElseIf CDec(TxtAbdominais.Text) <= 42 Then
-                    If CDec(CDec(TxtIdade.Text)) <= 19 Then
+                ElseIf abdom <= 42 Then
+                    If idade <= 19 Then
                         Return "Fraco"
-                    ElseIf CDec(CDec(TxtIdade.Text)) <= 29 Then
+                    ElseIf idade <= 29 Then
                         Return "Bom"
                     Else
                         Return "Excelente"
                     End If
-                ElseIf CDec(TxtAbdominais.Text) <= 44 Then
-                    If CDec(CDec(TxtIdade.Text)) <= 19 Then
+                ElseIf abdom <= 44 Then
+                    If idade <= 19 Then
                         Return "Regular"
-                    ElseIf CDec(CDec(TxtIdade.Text)) <= 29 Then
+                    ElseIf idade <= 29 Then
                         Return "Bom"
                     Else
                         Return "Excelente"
                     End If
-                ElseIf CDec(TxtAbdominais.Text) <= 47 Then
-                    If CDec(CDec(TxtIdade.Text)) <= 19 Then
+                ElseIf abdom <= 47 Then
+                    If idade <= 19 Then
                         Return "Regular"
                     Else
                         Return "Excelente"
                     End If
-                ElseIf CDec(TxtAbdominais.Text) <= 52 Then
-                    If CDec(CDec(TxtIdade.Text)) <= 19 Then
+                ElseIf abdom <= 52 Then
+                    If idade <= 19 Then
                         Return "Bom"
                     Else
                         Return "Excelente"
@@ -568,118 +570,118 @@
                 End If
             End If
         Else
-            If CDec(TxtAbdominais.Text) <= 9 Then
-                If CDec(CDec(TxtIdade.Text)) <= 59 Then
+            If abdom <= 9 Then
+                If idade <= 59 Then
                     Return "Deficiente"
                 Else
                     Return "Fraco"
                 End If
-            ElseIf CDec(TxtAbdominais.Text) = 10 Then
-                If CDec(CDec(TxtIdade.Text)) <= 59 Then
+            ElseIf abdom = 10 Then
+                If idade <= 59 Then
                     Return "Deficiente"
                 Else
                     Return "Regular"
                 End If
-            ElseIf CDec(TxtAbdominais.Text) <= 14 Then
-                If CDec(CDec(TxtIdade.Text)) <= 49 Then
+            ElseIf abdom <= 14 Then
+                If idade <= 49 Then
                     Return "Deficiente"
-                ElseIf CDec(CDec(TxtIdade.Text)) <= 59 Then
+                ElseIf idade <= 59 Then
                     Return "Fraco"
                 Else
                     Return "Regular"
                 End If
-            ElseIf CDec(TxtAbdominais.Text) = 15 Then
-                If CDec(CDec(TxtIdade.Text)) <= 49 Then
+            ElseIf abdom = 15 Then
+                If idade <= 49 Then
                     Return "Deficiente"
-                ElseIf CDec(CDec(TxtIdade.Text)) <= 59 Then
+                ElseIf idade <= 59 Then
                     Return "Regular"
                 Else
                     Return "Bom"
                 End If
-            ElseIf CDec(TxtAbdominais.Text) <= 19 Then
-                If CDec(CDec(TxtIdade.Text)) <= 39 Then
+            ElseIf abdom <= 19 Then
+                If idade <= 39 Then
                     Return "Deficiente"
-                ElseIf CDec(CDec(TxtIdade.Text)) <= 49 Then
+                ElseIf idade <= 49 Then
                     Return "Fraco"
-                ElseIf CDec(CDec(TxtIdade.Text)) <= 59 Then
+                ElseIf idade <= 59 Then
                     Return "Regular"
                 Else
                     Return "Bom"
                 End If
-            ElseIf CDec(TxtAbdominais.Text) = 20 Then
-                If CDec(CDec(TxtIdade.Text)) <= 39 Then
+            ElseIf abdom = 20 Then
+                If idade <= 39 Then
                     Return "Deficiente"
-                ElseIf CDec(CDec(TxtIdade.Text)) <= 49 Then
+                ElseIf idade <= 49 Then
                     Return "Regular"
-                ElseIf CDec(CDec(TxtIdade.Text)) <= 59 Then
+                ElseIf idade <= 59 Then
                     Return "Bom"
                 Else
                     Return "Excelente"
                 End If
-            ElseIf CDec(TxtAbdominais.Text) <= 24 Then
-                If CDec(CDec(TxtIdade.Text)) <= 29 Then
+            ElseIf abdom <= 24 Then
+                If idade <= 29 Then
                     Return "Deficiente"
-                ElseIf CDec(CDec(TxtIdade.Text)) <= 39 Then
+                ElseIf idade <= 39 Then
                     Return "Fraco"
-                ElseIf CDec(CDec(TxtIdade.Text)) <= 49 Then
+                ElseIf idade <= 49 Then
                     Return "Regular"
-                ElseIf CDec(CDec(TxtIdade.Text)) <= 59 Then
+                ElseIf idade <= 59 Then
                     Return "Bom"
                 Else
                     Return "Excelente"
                 End If
-            ElseIf CDec(TxtAbdominais.Text) = 25 Then
-                If CDec(CDec(TxtIdade.Text)) <= 29 Then
+            ElseIf abdom = 25 Then
+                If idade <= 29 Then
                     Return "Deficiente"
-                ElseIf CDec(CDec(TxtIdade.Text)) <= 39 Then
+                ElseIf idade <= 39 Then
                     Return "Regular"
-                ElseIf CDec(CDec(TxtIdade.Text)) <= 49 Then
+                ElseIf idade <= 49 Then
                     Return "Bom"
                 Else
                     Return "Excelente"
                 End If
-            ElseIf CDec(TxtAbdominais.Text) <= 29 Then
-                If CDec(CDec(TxtIdade.Text)) <= 29 Then
+            ElseIf abdom <= 29 Then
+                If idade <= 29 Then
                     Return "Deficiente"
-                ElseIf CDec(CDec(TxtIdade.Text)) <= 29 Then
+                ElseIf idade <= 29 Then
                     Return "Fraco"
-                ElseIf CDec(CDec(TxtIdade.Text)) <= 39 Then
+                ElseIf idade <= 39 Then
                     Return "Regular"
-                ElseIf CDec(CDec(TxtIdade.Text)) <= 49 Then
+                ElseIf idade <= 49 Then
                     Return "Bom"
                 Else
                     Return "Excelente"
                 End If
-            ElseIf CDec(TxtAbdominais.Text) = 26 Then
-                If CDec(CDec(TxtIdade.Text)) <= 29 Then
+            ElseIf abdom = 26 Then
+                If idade <= 29 Then
                     Return "Deficiente"
-                ElseIf CDec(CDec(TxtIdade.Text)) <= 39 Then
+                ElseIf idade <= 39 Then
                     Return "Fraco"
-                ElseIf CDec(CDec(TxtIdade.Text)) <= 59 Then
+                ElseIf idade <= 59 Then
                     Return "Bom"
                 Else
                     Return "Excelente"
                 End If
-            ElseIf CDec(TxtAbdominais.Text) <= 34 Then
-                If CDec(CDec(TxtIdade.Text)) <= 19 Then
+            ElseIf abdom <= 34 Then
+                If idade <= 19 Then
                     Return "Fraco"
-                ElseIf CDec(CDec(TxtIdade.Text)) <= 29 Then
+                ElseIf idade <= 29 Then
                     Return "Regular"
-                ElseIf CDec(CDec(TxtIdade.Text)) <= 39 Then
+                ElseIf idade <= 39 Then
                     Return "Bom"
                 Else
                     Return "Excelente"
                 End If
-            ElseIf CDec(TxtAbdominais.Text) <= 39 Then
-                If CDec(CDec(TxtIdade.Text)) <= 19 Then
+            ElseIf abdom <= 39 Then
+                If idade <= 19 Then
                     Return "Regular"
-                ElseIf CDec(CDec(TxtIdade.Text)) <= 29 Then
+                ElseIf idade <= 29 Then
                     Return "Bom"
                 Else
                     Return "Excelente"
                 End If
-            ElseIf CDec(TxtAbdominais.Text) <= 44 Then
-                If CDec(CDec(TxtIdade.Text)) <= 19 Then
+            ElseIf abdom <= 44 Then
+                If idade <= 19 Then
                     Return "Bom"
                 Else
                     Return "Excelente"
@@ -689,6 +691,331 @@
             End If
         End If
     End Function
+
+    Public Function Flexao_Braco(ByVal idade As Integer, ByVal sexo As String, ByVal flexaoBra As Double) As String
+        If sexo = "Masculino" Then
+            If flexaoBra <= 4 Then
+                Return "Deficiente"
+            Else
+                If flexaoBra <= 7 Then
+                    If idade < 60 Then
+                        Return "Deficiente"
+                    Else
+                        Return "Fraco"
+                    End If
+                ElseIf flexaoBra <= 9 Then
+                    If idade < 50 Then
+                        Return "Deficiente"
+                    Else
+                        Return "Fraco"
+                    End If
+                ElseIf flexaoBra = 10 Then
+                    If idade < 50 Then
+                        Return "Deficiente"
+                    ElseIf idade < 60 Then
+                        Return "Fraco"
+                    Else
+                        Return "Regular"
+                    End If
+                ElseIf flexaoBra <= 13 Then
+                    If idade < 40 Then
+                        Return "Deficiente"
+                    ElseIf idade < 60 Then
+                        Return "Fraco"
+                    Else
+                        Return "Regular"
+                    End If
+                ElseIf flexaoBra = 14 Then
+                    If idade < 30 Then
+                        Return "Deficiente"
+                    ElseIf idade < 60 Then
+                        Return "Fraco"
+                    Else
+                        Return "Regular"
+                    End If
+                ElseIf flexaoBra <= 16 Then
+                    If idade < 30 Then
+                        Return "Deficiente"
+                    ElseIf idade < 50 Then
+                        Return "Fraco"
+                    Else
+                        Return "Regular"
+                    End If
+                ElseIf flexaoBra = 17 Then
+                    If idade < 20 Then
+                        Return "Deficiente"
+                    ElseIf idade < 50 Then
+                        Return "Fraco"
+                    ElseIf idade < 60 Then
+                        Return "Regular"
+                    Else
+                        Return "Bom"
+                    End If
+                ElseIf flexaoBra <= 21 Then
+                    If idade < 20 Then
+                        Return "Deficiente"
+                    ElseIf idade < 40 Then
+                        Return "Fraco"
+                    ElseIf idade < 60 Then
+                        Return "Regular"
+                    Else
+                        Return "Bom"
+                    End If
+                ElseIf flexaoBra <= 23 Then
+                    If idade < 20 Then
+                        Return "Deficiente"
+                    ElseIf idade < 30 Then
+                        Return "Fraco"
+                    ElseIf idade < 60 Then
+                        Return "Regular"
+                    Else
+                        Return "Bom"
+                    End If
+                ElseIf flexaoBra = 24 Then
+                    If idade < 20 Then
+                        Return "Deficiente"
+                    ElseIf idade < 30 Then
+                        Return "Fraco"
+                    ElseIf idade < 50 Then
+                        Return "Regular"
+                    Else
+                        Return "Bom"
+                    End If
+                ElseIf flexaoBra <= 26 Then
+                    If idade < 20 Then
+                        Return "Deficiente"
+                    ElseIf idade < 30 Then
+                        Return "Fraco"
+                    ElseIf idade < 50 Then
+                        Return "Regular"
+                    ElseIf idade < 60 Then
+                        Return "Bom"
+                    Else
+                        Return "Excelente"
+                    End If
+                ElseIf flexaoBra <= 29 Then
+                    If idade < 20 Then
+                        Return "Deficiente"
+                    ElseIf idade < 30 Then
+                        Return "Fraco"
+                    ElseIf idade < 40 Then
+                        Return "Regular"
+                    ElseIf idade < 60 Then
+                        Return "Bom"
+                    Else
+                        Return "Excelente"
+                    End If
+                ElseIf flexaoBra = 30 Then
+                    If idade < 20 Then
+                        Return "Fraco"
+                    ElseIf idade < 40 Then
+                        Return "Regular"
+                    ElseIf idade < 50 Then
+                        Return "Bom"
+                    Else
+                        Return "Excelente"
+                    End If
+                ElseIf flexaoBra <= 34 Then
+                    If idade < 20 Then
+                        Return "Fraco"
+                    ElseIf idade < 30 Then
+                        Return "Regular"
+                    ElseIf idade < 50 Then
+                        Return "Bom"
+                    Else
+                        Return "Excelente"
+                    End If
+                ElseIf flexaoBra <= 39 Then
+                    If idade < 20 Then
+                        Return "Fraco"
+                    ElseIf idade < 30 Then
+                        Return "Regular"
+                    ElseIf idade < 40 Then
+                        Return "Bom"
+                    Else
+                        Return "Excelente"
+                    End If
+                ElseIf flexaoBra <= 49 Then
+                    If idade < 20 Then
+                        Return "Regular"
+                    ElseIf idade < 30 Then
+                        Return "Bom"
+                    Else
+                        Return "Excelente"
+                    End If
+                ElseIf flexaoBra <= 49 Then
+                    If idade < 20 Then
+                        Return "Regular"
+                    ElseIf idade < 30 Then
+                        Return "Bom"
+                    Else
+                        Return "Excelente"
+                    End If
+                ElseIf flexaoBra <= 59 Then
+                    If idade < 20 Then
+                        Return "Bom"
+                    Else
+                        Return "Excelente"
+                    End If
+                Else
+                    Return "Excelente"
+                End If
+            End If
+        Else
+            'Aluno do Sexo Feminino
+            If flexaoBra <= 1 Then
+                Return "Deficiente"
+            Else
+                If flexaoBra = 2 Then
+                    If idade < 60 Then
+                        Return "Deficiente"
+                    Else
+                        Return "Fraco"
+                    End If
+                ElseIf flexaoBra = 3 Then
+                    If idade < 50 Then
+                        Return "Deficiente"
+                    Else
+                        Return "Fraco"
+                    End If
+                ElseIf flexaoBra = 4 Then
+                    If idade < 40 Then
+                        Return "Deficiente"
+                    Else
+                        Return "Fraco"
+                    End If
+                ElseIf flexaoBra = 5 Then
+                    If idade < 30 Then
+                        Return "Deficiente"
+                    Else
+                        Return "Fraco"
+                    End If
+                ElseIf flexaoBra = 6 Then
+                    If idade < 30 Then
+                        Return "Deficiente"
+                    ElseIf idade < 60 Then
+                        Return "Fraco"
+                    Else
+                        Return "Regular"
+                    End If
+                ElseIf flexaoBra = 7 Then
+                    If idade < 20 Then
+                        Return "Deficiente"
+                    ElseIf idade < 60 Then
+                        Return "Fraco"
+                    Else
+                        Return "Regular"
+                    End If
+                ElseIf flexaoBra <= 9 Then
+                    If idade < 20 Then
+                        Return "Deficiente"
+                    ElseIf idade < 50 Then
+                        Return "Fraco"
+                    Else
+                        Return "Regular"
+                    End If
+                ElseIf flexaoBra <= 12 Then
+                    If idade < 40 Then
+                        Return "Fraco"
+                    Else
+                        Return "Regular"
+                    End If
+                ElseIf flexaoBra <= 15 Then
+                    If idade < 30 Then
+                        Return "Fraco"
+                    ElseIf idade < 60 Then
+                        Return "Regular"
+                    Else
+                        Return "Bom"
+                    End If
+                ElseIf flexaoBra <= 17 Then
+                    If idade < 20 Then
+                        Return "Fraco"
+                    ElseIf idade < 60 Then
+                        Return "Regular"
+                    Else
+                        Return "Bom"
+                    End If
+                ElseIf flexaoBra <= 19 Then
+                    If idade < 20 Then
+                        Return "Fraco"
+                    ElseIf idade < 50 Then
+                        Return "Regular"
+                    Else
+                        Return "Bom"
+                    End If
+                ElseIf flexaoBra = 20 Then
+                    If idade < 50 Then
+                        Return "Regular"
+                    ElseIf idade < 60 Then
+                        Return "Bom"
+                    Else
+                        Return "Excelente"
+                    End If
+                ElseIf flexaoBra <= 23 Then
+                    If idade < 40 Then
+                        Return "Regular"
+                    ElseIf idade < 60 Then
+                        Return "Bom"
+                    Else
+                        Return "Excelente"
+                    End If
+                ElseIf flexaoBra <= 26 Then
+                    If idade < 30 Then
+                        Return "Regular"
+                    ElseIf idade < 60 Then
+                        Return "Bom"
+                    Else
+                        Return "Excelente"
+                    End If
+                ElseIf flexaoBra <= 28 Then
+                    If idade < 20 Then
+                        Return "Regular"
+                    ElseIf idade < 60 Then
+                        Return "Bom"
+                    Else
+                        Return "Excelente"
+                    End If
+                ElseIf flexaoBra = 29 Then
+                    If idade < 20 Then
+                        Return "Regular"
+                    ElseIf idade < 50 Then
+                        Return "Bom"
+                    Else
+                        Return "Excelente"
+                    End If
+                ElseIf flexaoBra <= 31 Then
+                    If idade < 50 Then
+                        Return "Bom"
+                    Else
+                        Return "Excelente"
+                    End If
+                ElseIf flexaoBra <= 34 Then
+                    If idade < 40 Then
+                        Return "Bom"
+                    Else
+                        Return "Excelente"
+                    End If
+                ElseIf flexaoBra <= 37 Then
+                    If idade < 30 Then
+                        Return "Bom"
+                    Else
+                        Return "Excelente"
+                    End If
+                ElseIf flexaoBra <= 40 Then
+                    If idade < 20 Then
+                        Return "Bom"
+                    Else
+                        Return "Excelente"
+                    End If
+                Else
+                    Return "Excelente"
+                End If
+            End If
+        End If
+    End Function
+
+
 
 
 
