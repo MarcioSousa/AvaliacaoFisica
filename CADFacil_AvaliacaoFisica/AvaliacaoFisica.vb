@@ -1,4 +1,5 @@
-﻿Imports System.Windows.Controls
+﻿Imports System.Runtime.InteropServices.WindowsRuntime
+Imports System.Windows.Controls
 Imports System.Windows.Media.Animation
 
 Public Class AvaliacaoFisica
@@ -2239,6 +2240,43 @@ Public Class AvaliacaoFisica
         Else
             Return 0
         End If
+    End Function
+
+    Public Function Imc(ByVal sexo As String, ByVal valorimc As Double) As String
+        If sexo = "Masculino" Then
+            If valorimc = 22 Then
+                Return "IDEAL"
+            ElseIf valorimc < 20 Then
+                Return "ABAIXO DO NORMAL"
+            ElseIf valorimc <= 24.9 Then
+                Return "NORMAL"
+            ElseIf valorimc = 29.9 Then
+                Return "OBESO -- 1"
+            ElseIf valorimc <= 40 Then
+                Return "OBESO -- 2"
+            ElseIf valorimc > 40 Then
+                Return "OBESO -- 3"
+            Else
+                Return "Não encontrado"
+            End If
+        Else
+            If valorimc = 21 Then
+                Return "IDEAL"
+            ElseIf valorimc < 19 Then
+                Return "ABAIXO DO NORMAL"
+            ElseIf valorimc <= 23.9 Then
+                Return "NORMAL"
+            ElseIf valorimc = 28.9 Then
+                Return "OBESA -- 1"
+            ElseIf valorimc <= 39 Then
+                Return "OBESA -- 2"
+            ElseIf valorimc > 39 Then
+                Return "OBESA -- 3"
+            Else
+                Return "Não encontrado"
+            End If
+        End If
+
     End Function
 
 End Class

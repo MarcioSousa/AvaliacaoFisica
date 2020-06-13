@@ -123,35 +123,7 @@ Public Class frm_AvaliacaoFisica
         TxtIMC.Text = String.Format("{0:N2}", CDec(TxtPeso.Text) / (CDec(TxtAltura.Text) * CDec(TxtAltura.Text)))
         vImc = String.Format("{0:N2}", CDec(TxtPeso.Text) / (CDec(TxtAltura.Text) * CDec(TxtAltura.Text)))
 
-        If CbxSexo.Text = "Masculino" Then
-            If CDec(TxtIMC.Text) = 22 Then
-                TxtResIMC.Text = "IDEAL"
-            ElseIf CDec(TxtIMC.Text) < 20 Then
-                TxtResIMC.Text = "ABAIXO DO NORMAL"
-            ElseIf CDec(TxtIMC.Text) <= 24.9 Then
-                TxtResIMC.Text = "NORMAL"
-            ElseIf CDec(TxtIMC.Text) = 29.9 Then
-                TxtResIMC.Text = "OBESO -- 1"
-            ElseIf CDec(TxtIMC.Text) <= 40 Then
-                TxtResIMC.Text = "OBESO -- 2"
-            ElseIf CDec(TxtIMC.Text) > 40 Then
-                TxtResIMC.Text = "OBESO -- 3"
-            End If
-        Else
-            If CDec(TxtIMC.Text) = 21 Then
-                TxtResIMC.Text = "IDEAL"
-            ElseIf CDec(TxtIMC.Text) < 19 Then
-                TxtResIMC.Text = "ABAIXO DO NORMAL"
-            ElseIf CDec(TxtIMC.Text) <= 23.9 Then
-                TxtResIMC.Text = "NORMAL"
-            ElseIf CDec(TxtIMC.Text) = 28.9 Then
-                TxtResIMC.Text = "OBESA -- 1"
-            ElseIf CDec(TxtIMC.Text) <= 39 Then
-                TxtResIMC.Text = "OBESA -- 2"
-            ElseIf CDec(TxtIMC.Text) > 39 Then
-                TxtResIMC.Text = "OBESA -- 3"
-            End If
-        End If
+        TxtResIMC.Text = avaliacaoFisica.Imc(CbxSexo.Text, TxtIMC.Text)
 
         'Ossatura
         TxtOssatura.Text = String.Format("{0:N1}", (CDec(txtTornozelo.Text) + CDec(TxtJoelho.Text) + CDec(TxtPunho.Text)) / CDec(TxtAltura.Text))
