@@ -2279,4 +2279,217 @@ Public Class AvaliacaoFisica
 
     End Function
 
+    Public Function Calculo_Cintura_Quadril(ByVal sexo As String, ByVal idade As Integer, ByVal cintura As Double, ByVal quadril As Double) As String
+        Dim vResultado As Double
+
+        vResultado = String.Format("{0:N2}", cintura / quadril)
+
+        If sexo = "Masculino" Then
+            If vResultado < 0.83 Then
+                Return "Baixo"
+            ElseIf vResultado = 0.83 Then
+                If idade < 30 Then
+                    Return "Moderado"
+                Else
+                    Return "Baixo"
+                End If
+            ElseIf vResultado < 0.88 Then
+                If idade < 40 Then
+                    Return "Moderado"
+                Else
+                    Return "Baixo"
+                End If
+            ElseIf vResultado = 0.88 Then
+                If idade < 50 Then
+                    Return "Moderado"
+                Else
+                    Return "Baixo"
+                End If
+            ElseIf vResultado = 0.89 Then
+                If idade < 30 Then
+                    Return "Elevado"
+                ElseIf idade < 50 Then
+                    Return "Moderado"
+                Else
+                    Return "Baixo"
+                End If
+            ElseIf vResultado = 0.9 Then
+                If idade < 30 Then
+                    Return "Elevado"
+                ElseIf idade < 60 Then
+                    Return "Moderado"
+                Else
+                    Return "Baixo"
+                End If
+            ElseIf vResultado = 0.91 Then
+                If idade < 30 Then
+                    Return "Elevado"
+                Else
+                    Return "Moderado"
+                End If
+            ElseIf vResultado < 0.95 Then
+                If idade < 40 Then
+                    Return "Elevado"
+                Else
+                    Return "Moderado"
+                End If
+            ElseIf vResultado = 0.95 Then
+                If idade < 30 Then
+                    Return "Muito Elevado"
+                ElseIf idade < 40 Then
+                    Return "Elevado"
+                Else
+                    Return "Moderado"
+                End If
+            ElseIf vResultado = 0.96 Then
+                If idade < 30 Then
+                    Return "Muito Elevado"
+                ElseIf idade < 50 Then
+                    Return "Elevado"
+                Else
+                    Return "Moderado"
+                End If
+            ElseIf vResultado < 0.99 Then
+                If idade < 40 Then
+                    Return "Muito Elevado"
+                ElseIf idade < 60 Then
+                    Return "Elevado"
+                Else
+                    Return "Moderado"
+                End If
+            ElseIf vResultado < 1.01 Then
+                If idade < 40 Then
+                    Return "Muito Elevado"
+                Else
+                    Return "Elevado"
+                End If
+            ElseIf vResultado < 1.03 Then
+                If idade < 50 Then
+                    Return "Muito Elevado"
+                Else
+                    Return "Elevado"
+                End If
+            ElseIf vResultado = 1.03 Then
+                If idade < 60 Then
+                    Return "Muito Elevado"
+                Else
+                    Return "Elevado"
+                End If
+            Else
+                Return "Muito Elevado"
+            End If
+        Else
+            'Feminino
+            If vResultado < 0.71 Then
+                Return "Baixo"
+            ElseIf vResultado = 0.71 Then
+                If idade < 20 Then
+                    Return "Baixo"
+                ElseIf idade < 30 Then
+                    Return "Moderado"
+                Else
+                    Return "Baixo"
+                End If
+            ElseIf vResultado = 0.72 Then
+                If idade < 20 Then
+                    Return "Baixo"
+                ElseIf idade < 40 Then
+                    Return "Moderado"
+                Else
+                    Return "Baixo"
+                End If
+            ElseIf vResultado = 0.73 Then
+                If idade < 20 Then
+                    Return "Baixo"
+                ElseIf idade < 50 Then
+                    Return "Moderado"
+                Else
+                    Return "Baixo"
+                End If
+            ElseIf vResultado < 0.76 Then
+                If idade < 20 Then
+                    Return "Baixo"
+                ElseIf idade < 60 Then
+                    Return "Moderado"
+                Else
+                    Return "Baixo"
+                End If
+            ElseIf vResultado < 0.78 Then
+                If idade < 20 Then
+                    Return "Baixo"
+                Else
+                    Return "Moderado"
+                End If
+            ElseIf vResultado = 0.8 Then
+                If idade < 20 Then
+                    Return "Baixo"
+                ElseIf idade < 40 Then
+                    Return "Elevado"
+                Else
+                    Return "Moderado"
+                End If
+            ElseIf vResultado < 0.82 Then
+                If idade < 20 Then
+                    Return "Baixo"
+                ElseIf idade < 50 Then
+                    Return "Elevado"
+                Else
+                    Return "Moderado"
+                End If
+            ElseIf vResultado = 0.82 Then
+                If idade < 20 Then
+                    Return "Baixo"
+                ElseIf idade < 60 Then
+                    Return "Elevado"
+                Else
+                    Return "Moderado"
+                End If
+            ElseIf vResultado = 0.83 Then
+                If idade < 20 Then
+                    Return "Moderado"
+                ElseIf idade < 30 Then
+                    Return "Muito Elevado"
+                ElseIf idade < 60 Then
+                    Return "Elevado"
+                Else
+                    Return "Moderado"
+                End If
+            ElseIf vResultado = 0.84 Then
+                If idade < 20 Then
+                    Return "Moderado"
+                ElseIf idade < 30 Then
+                    Return "Muito Elevado"
+                Else
+                    Return "Elevado"
+                End If
+            ElseIf vResultado < 0.88 Then
+                If idade < 20 Then
+                    Return "Moderado"
+                ElseIf idade < 40 Then
+                    Return "Muito Elevado"
+                Else
+                    Return "Elevado"
+                End If
+            ElseIf vResultado < 0.91 Then
+                If idade < 20 Then
+                    Return "Elevado"
+                ElseIf idade < 60 Then
+                    Return "Muito Elevado"
+                Else
+                    Return "Elevado"
+                End If
+            ElseIf vResultado < 0.95 Then
+                If idade < 20 Then
+                    Return "Elevado"
+                Else
+                    Return "Muito Elevado"
+                End If
+            Else
+                Return "Muito Elevado"
+            End If
+
+        End If
+
+    End Function
+
 End Class

@@ -51,12 +51,6 @@ Represents a strongly typed in-memory cache of data.
  </summary>
  <remarks>Peso Ideal</remarks>
 </member>
-<member name="M:CADFacil_AvaliacaoFisica.frm_AvaliacaoFisica.Calculo_Cintura_Quadril">
- <summary>
- Calcula a Relação da Cintura com o Quadril
- </summary>
- <remarks>Cintura com o Quadril</remarks>
-</member>
 <member name="M:CADFacil_AvaliacaoFisica.frm_AvaliacaoFisica.Prescricao_Treinamento">
  <summary>
  Calcula toda a Prescrição do Treinamento
