@@ -35,125 +35,10 @@ Public Class frm_AvaliacaoFisica
         '=========================================================================================================
         Dim vPorGordura As Double
 
-        If CDec(TxtPunho.Text) < 11 Then
-            vPunho = 4
-        ElseIf CDec(TxtPunho.Text) = 11 Then
-            If CDec(TxtAltura.Text) * 100 <= 150 Then
-                vPunho = 3.5
-            Else
-                vPunho = 4
-            End If
-        ElseIf CDec(TxtPunho.Text) = 12 Then
-            If CDec(TxtAltura.Text) * 100 <= 150 Then
-                vPunho = 3
-            ElseIf CDec(TxtAltura.Text) * 100 <= 160 Then
-                vPunho = 3.5
-            Else
-                vPunho = 4
-            End If
-        ElseIf CDec(TxtPunho.Text) = 13 Then
-            If CDec(TxtAltura.Text) * 100 <= 150 Then
-                vPunho = 2.5
-            ElseIf CDec(TxtAltura.Text) * 100 <= 160 Then
-                vPunho = 3
-            ElseIf CDec(TxtAltura.Text) * 100 <= 170 Then
-                vPunho = 3.5
-            Else
-                vPunho = 4
-            End If
-        ElseIf CDec(TxtPunho.Text) = 14 Then
-            If CDec(TxtAltura.Text) * 100 <= 150 Then
-                vPunho = 2
-            ElseIf CDec(TxtAltura.Text) * 100 <= 160 Then
-                vPunho = 2.5
-            ElseIf CDec(TxtAltura.Text) * 100 <= 170 Then
-                vPunho = 3
-            ElseIf CDec(TxtAltura.Text) * 100 <= 180 Then
-                vPunho = 3.5
-            Else
-                vPunho = 4
-            End If
-        ElseIf CDec(TxtPunho.Text) = 15 Then
-            If CDec(TxtAltura.Text) * 100 <= 150 Then
-                vPunho = 1.5
-            ElseIf CDec(TxtAltura.Text) * 100 <= 160 Then
-                vPunho = 2
-            ElseIf CDec(TxtAltura.Text) * 100 <= 170 Then
-                vPunho = 2.5
-            ElseIf CDec(TxtAltura.Text) * 100 <= 180 Then
-                vPunho = 3
-            Else
-                vPunho = 3.5
-            End If
-        ElseIf CDec(TxtPunho.Text) = 16 Then
-            If CDec(TxtAltura.Text) * 100 <= 150 Then
-                vPunho = 1
-            ElseIf CDec(TxtAltura.Text) * 100 <= 160 Then
-                vPunho = 1.5
-            ElseIf CDec(TxtAltura.Text) * 100 <= 170 Then
-                vPunho = 2
-            ElseIf CDec(TxtAltura.Text) * 100 <= 180 Then
-                vPunho = 2.5
-            Else
-                vPunho = 3
-            End If
-        ElseIf CDec(TxtPunho.Text) = 17 Then
-            If CDec(TxtAltura.Text) * 100 <= 150 Then
-                vPunho = 0.5
-            ElseIf CDec(TxtAltura.Text) * 100 <= 160 Then
-                vPunho = 1
-            ElseIf CDec(TxtAltura.Text) * 100 <= 170 Then
-                vPunho = 1.5
-            ElseIf CDec(TxtAltura.Text) * 100 <= 180 Then
-                vPunho = 2
-            Else
-                vPunho = 2.5
-            End If
-        ElseIf CDec(TxtPunho.Text) = 18 Then
-            If CDec(TxtAltura.Text) * 100 <= 150 Then
-                vPunho = 0
-            ElseIf CDec(TxtAltura.Text) * 100 <= 160 Then
-                vPunho = 0.5
-            ElseIf CDec(TxtAltura.Text) * 100 <= 170 Then
-                vPunho = 1
-            ElseIf CDec(TxtAltura.Text) * 100 <= 180 Then
-                vPunho = 1.5
-            Else
-                vPunho = 2
-            End If
-        ElseIf CDec(TxtPunho.Text) = 19 Then
-            If CDec(TxtAltura.Text) * 100 <= 160 Then
-                vPunho = 0
-            ElseIf CDec(TxtAltura.Text) * 100 <= 170 Then
-                vPunho = 0.5
-            ElseIf CDec(TxtAltura.Text) * 100 <= 180 Then
-                vPunho = 1
-            Else
-                vPunho = 1.5
-            End If
-        ElseIf CDec(TxtPunho.Text) = 20 Then
-            If CDec(TxtAltura.Text) * 100 <= 170 Then
-                vPunho = 0
-            ElseIf CDec(TxtAltura.Text) * 100 <= 180 Then
-                vPunho = 0.5
-            Else
-                vPunho = 1
-            End If
-        ElseIf CDec(TxtPunho.Text) = 21 Then
-            If CDec(TxtAltura.Text) * 100 <= 180 Then
-                vPunho = 0
-            Else
-                vPunho = 0.5
-            End If
-        Else
-            vPunho = 0
-        End If
-
         If CbxSexo.Text = "Masculino" Then
-            vPorGordura = ((vPunho + 115) + CDec(TxtPeso.Text)) - (CDec(TxtAltura.Text) * 100)
-
+            vPorGordura = ((avaliacaoFisica.Punho(TxtPunho.Text, TxtAltura.Text) + 155) + CDec(TxtPeso.Text)) - (CDec(TxtAltura.Text) * 100)
         ElseIf CbxSexo.Text = "Feminino" Then
-            vPorGordura = ((vPunho + 125) + CDec(TxtPeso.Text)) - (CDec(TxtAltura.Text) * 100)
+            vPorGordura = ((avaliacaoFisica.Punho(TxtPunho.Text, TxtAltura.Text) + 125) + CDec(TxtPeso.Text)) - (CDec(TxtAltura.Text) * 100)
         Else
             vPorGordura = 6
         End If
@@ -792,6 +677,8 @@ Public Class frm_AvaliacaoFisica
                 TxtClaAbd.Text = avaliacaoFisica.Abdominais(TxtIdade.Text, CbxSexo.Text, TxtAbdominais.Text)
                 TxtClaFle.Text = avaliacaoFisica.Flexao_Braco(TxtIdade.Text, CbxSexo.Text, TxtFlexaoBraco.Text)
                 TxtClaCoo.Text = avaliacaoFisica.Cooper(TxtIdade.Text, CbxSexo.Text, TxtCooper.Text)
+
+
                 TxtVO2.Text = String.Format("{0:N2}", (CDec(TxtCooper.Text) - 504) / 45)
 
                 Composicao_Corporal()

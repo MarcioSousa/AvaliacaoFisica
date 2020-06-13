@@ -1,4 +1,5 @@
 ﻿Imports System.Windows.Controls
+Imports System.Windows.Media.Animation
 
 Public Class AvaliacaoFisica
 
@@ -2121,6 +2122,123 @@ Public Class AvaliacaoFisica
 
     End Function
 
-
+    Public Function Punho(ByVal vPunho As Double, ByVal altura As Double) As Double
+        '=========================================================================================================
+        '=========================================% DA GORDURA====================================================
+        '=========================================================================================================
+        If vPunho < 11 Then
+            Return 4
+        ElseIf vPunho = 11 Then
+            If altura * 100 <= 150 Then
+                Return 3.5
+            Else
+                Return 4
+            End If
+        ElseIf vPunho = 12 Then
+            If altura * 100 <= 150 Then
+                Return 3
+            ElseIf altura * 100 <= 160 Then
+                Return 3.5
+            Else
+                Return 4
+            End If
+        ElseIf vPunho = 13 Then
+            If altura * 100 <= 150 Then
+                Return 2.5
+            ElseIf altura * 100 <= 160 Then
+                Return 3
+            ElseIf altura * 100 <= 170 Then
+                Return 3.5
+            Else
+                Return 4
+            End If
+        ElseIf vPunho = 14 Then
+            If altura * 100 <= 150 Then
+                Return 2
+            ElseIf altura * 100 <= 160 Then
+                Return 2.5
+            ElseIf altura * 100 <= 170 Then
+                Return 3
+            ElseIf altura * 100 <= 180 Then
+                Return 3.5
+            Else
+                Return 4
+            End If
+        ElseIf vPunho = 15 Then
+            If altura * 100 <= 150 Then
+                Return 1.5
+            ElseIf altura * 100 <= 160 Then
+                Return 2
+            ElseIf altura * 100 <= 170 Then
+                Return 2.5
+            ElseIf altura * 100 <= 180 Then
+                Return 3
+            Else
+                Return 3.5
+            End If
+        ElseIf vPunho = 16 Then
+            If altura * 100 <= 150 Then
+                Return 1
+            ElseIf altura * 100 <= 160 Then
+                Return 1.5
+            ElseIf altura * 100 <= 170 Then
+                Return 2
+            ElseIf altura * 100 <= 180 Then
+                Return 2.5
+            Else
+                Return 3
+            End If
+        ElseIf vPunho = 17 Then
+            If altura * 100 <= 150 Then
+                Return 0.5
+            ElseIf altura * 100 <= 160 Then
+                Return 1
+            ElseIf altura * 100 <= 170 Then
+                Return 1.5
+            ElseIf altura * 100 <= 180 Then
+                Return 2
+            Else
+                Return 2.5
+            End If
+        ElseIf vPunho = 18 Then
+            If altura * 100 <= 150 Then
+                Return 0
+            ElseIf altura * 100 <= 160 Then
+                Return 0.5
+            ElseIf altura * 100 <= 170 Then
+                Return 1
+            ElseIf altura * 100 <= 180 Then
+                Return 1.5
+            Else
+                Return 2
+            End If
+        ElseIf vPunho = 19 Then
+            If altura * 100 <= 160 Then
+                Return 0
+            ElseIf altura * 100 <= 170 Then
+                Return 0.5
+            ElseIf altura * 100 <= 180 Then
+                Return 1
+            Else
+                Return 1.5
+            End If
+        ElseIf vPunho = 20 Then
+            If altura * 100 <= 170 Then
+                Return 0
+            ElseIf altura * 100 <= 180 Then
+                Return 0.5
+            Else
+                Return 1
+            End If
+        ElseIf vPunho = 21 Then
+            If altura * 100 <= 180 Then
+                Return 0
+            Else
+                Return 0.5
+            End If
+        Else
+            Return 0
+        End If
+    End Function
 
 End Class
